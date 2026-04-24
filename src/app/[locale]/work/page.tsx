@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { useLocale } from "next-intl";
 import { ButtonAnchor } from "@/components/ui/Button";
 
 const caseStudies = [
@@ -40,7 +39,10 @@ const caseStudies = [
   },
 ];
 
-export default function WorkPage() {
+export default async function WorkPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const lp = (path: string) => `/${locale}${path}`;
+
   return (
     <div className="pt-44">
       <div className="max-w-6xl mx-auto px-6 pb-24">
@@ -59,9 +61,10 @@ export default function WorkPage() {
         {/* Case study list */}
         <div className="space-y-4">
           {caseStudies.map((cs, i) => (
-            <div
+            <Link
               key={i}
-              className="group grid md:grid-cols-[1fr_320px] gap-8 items-center p-8 rounded-2xl border border-surface-muted hover:border-teal/30 hover:bg-teal-subtle/20 transition-all duration-200"
+              href={lp(cs.href)}
+              className="group grid md:grid-cols-[1fr_320px] gap-8 items-center p-8 rounded-2xl border border-surface-muted hover:border-teal/30 hover:bg-teal-subtle/20 transition-all duration-200 block"
             >
               <div className="space-y-3">
                 <span className="text-xs font-semibold tracking-widest text-ink-disabled uppercase">
@@ -73,19 +76,16 @@ export default function WorkPage() {
                 <p className="text-sm text-ink-secondary leading-relaxed max-w-lg">
                   {cs.body}
                 </p>
-                <Link
-                  href={cs.href}
-                  className="inline-block text-sm font-medium text-teal group-hover:text-teal-hover transition-colors"
-                >
+                <span className="inline-block text-sm font-medium text-teal group-hover:text-teal-hover transition-colors">
                   {cs.cta} →
-                </Link>
+                </span>
               </div>
 
               {/* Card image placeholder */}
               <div className="hidden md:flex aspect-video rounded-xl bg-surface-muted items-center justify-center text-ink-disabled text-xs">
                 Case study image
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

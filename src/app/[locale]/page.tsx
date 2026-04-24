@@ -9,7 +9,6 @@ const workCards = [
     body: "A provisioning flow that lets teams launch Aerospike clusters in under 90 seconds, with safe defaults or deep configuration, and clear guidance and guardrails throughout.",
     cta: "View case study",
     href: "/work/aerospike-provisioning",
-    gradient: "from-teal-subtle to-surface-light",
   },
   {
     tag: "AEROSPIKE",
@@ -17,7 +16,6 @@ const workCards = [
     body: "Led end-to-end design of Aerospike's first visual developer tool. A guided path from connection to confidence, with a foundation built for AI-assisted workflows.",
     cta: "View case study",
     href: "/work/aerospike-voyager",
-    gradient: "from-fox-subtle to-surface-light",
   },
   {
     tag: "MULTIPLE COMPANIES",
@@ -25,15 +23,6 @@ const workCards = [
     body: "Built systems from scratch across three companies, with a documentation layer at Aerospike that makes AI-generated output system-consistent by default.",
     cta: "Explore the systems",
     href: "/work/design-systems",
-    gradient: "from-teal-subtle to-fox-subtle",
-  },
-  {
-    tag: "SYGNUM BANK",
-    title: "No one should have to call their bank just to check their balance",
-    body: "At the world's first regulated digital asset bank, clients had to call their account manager just to check their balance. I designed the dashboard that changed that.",
-    cta: "See the project",
-    href: "/work/sygnum",
-    gradient: "from-surface-muted to-surface-light",
   },
 ];
 
@@ -211,28 +200,31 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           <h2 className="font-syne text-4xl font-bold text-ink mb-16">
             Featured <span className="text-fox">work</span>
           </h2>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="space-y-4">
             {workCards.map((card, i) => (
-              <div
+              <Link
                 key={i}
-                className={`rounded-2xl bg-gradient-to-br ${card.gradient} p-8 flex flex-col gap-4 group`}
+                href={lp(card.href)}
+                className="group grid md:grid-cols-[1fr_320px] gap-8 items-center p-8 rounded-2xl border border-surface-muted hover:border-teal/30 hover:bg-teal-subtle/20 transition-all duration-200 block"
               >
-                <span className="text-xs font-semibold tracking-widest text-ink-disabled uppercase">
-                  {card.tag}
-                </span>
-                <h3 className="font-syne font-bold text-xl text-ink leading-snug">
-                  {card.title}
-                </h3>
-                <p className="text-sm text-ink-secondary leading-relaxed flex-1">
-                  {card.body}
-                </p>
-                <Link
-                  href={lp(card.href)}
-                  className="text-sm font-medium text-teal group-hover:text-teal-hover transition-colors"
-                >
-                  {card.cta} →
-                </Link>
-              </div>
+                <div className="space-y-3">
+                  <span className="text-xs font-semibold tracking-widest text-ink-disabled uppercase">
+                    {card.tag}
+                  </span>
+                  <h3 className="font-syne font-bold text-2xl text-ink leading-snug">
+                    {card.title}
+                  </h3>
+                  <p className="text-sm text-ink-secondary leading-relaxed max-w-lg">
+                    {card.body}
+                  </p>
+                  <span className="inline-block text-sm font-medium text-teal group-hover:text-teal-hover transition-colors">
+                    {card.cta} →
+                  </span>
+                </div>
+                <div className="hidden md:flex aspect-video rounded-xl bg-surface-muted items-center justify-center text-ink-disabled text-xs">
+                  Case study image
+                </div>
+              </Link>
             ))}
           </div>
         </div>

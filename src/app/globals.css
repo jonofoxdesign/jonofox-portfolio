@@ -1,5 +1,33 @@
 @import "tailwindcss";
 
+@theme {
+  /* Fonts */
+  --font-syne: var(--next-font-syne), sans-serif;
+  --font-sans: var(--next-font-dm-sans), sans-serif;
+
+  /* Ink (text) */
+  --color-ink: #1F2D3D;
+  --color-ink-secondary: #4F5D75;
+  --color-ink-disabled: #9CA3AF;
+  --color-ink-inverse: #FFFFFF;
+
+  /* Surface (background) */
+  --color-surface: #F9FAFB;
+  --color-surface-light: #FFFFFF;
+  --color-surface-muted: #E5E7EB;
+  --color-surface-inverse: #1F2D3D;
+
+  /* Teal */
+  --color-teal: #2A9D8F;
+  --color-teal-hover: #21867A;
+  --color-teal-subtle: #E0F5F2;
+
+  /* Fox orange */
+  --color-fox: #F57C00;
+  --color-fox-hover: #DB6800;
+  --color-fox-subtle: #FFF2E0;
+}
+
 :root {
   --gradient-accent: linear-gradient(to right, #2A9D8F, #F57C00);
   --gradient-accent-diagonal: linear-gradient(135deg, #2A9D8F, #F57C00);
@@ -17,8 +45,6 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  background-color: #F9FAFB;
-  color: #1F2D3D;
 }
 
 /* Gradient text utility */
@@ -32,7 +58,6 @@ body {
 /* Gradient border utility */
 .gradient-border {
   position: relative;
-  background: #F9FAFB;
   border-radius: 8px;
 }
 
@@ -56,4 +81,9 @@ body {
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 12px;
+}
+
+/* Gradient accent background — used for decorative lines */
+.bg-gradient-accent {
+  background: var(--gradient-accent);
 }

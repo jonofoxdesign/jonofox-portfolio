@@ -4,13 +4,13 @@ import "./globals.css";
 
 const syne = Syne({
   subsets: ["latin"],
-  variable: "--font-syne",
+  variable: "--next-font-syne",
   display: "swap",
 });
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
-  variable: "--font-dm-sans",
+  variable: "--next-font-dm-sans",
   display: "swap",
 });
 

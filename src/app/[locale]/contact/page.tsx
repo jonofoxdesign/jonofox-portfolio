@@ -1,6 +1,6 @@
 export default function ContactPage() {
   return (
-    <div className="pt-32 min-h-screen">
+    <div className="pt-36 min-h-screen">
       <div className="max-w-2xl mx-auto px-6 pb-24 text-center">
         <h1 className="font-syne text-5xl md:text-6xl font-bold text-ink leading-tight mb-6">
           Let's <span className="text-teal">talk</span>

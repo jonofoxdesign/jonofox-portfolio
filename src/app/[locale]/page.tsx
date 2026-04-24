@@ -98,21 +98,16 @@ const pillars = [
 
 export default function HomePage() {
   return (
-    <div className="pt-24">
+    <div className="pt-0">
       {/* Hero */}
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+      <section className="relative overflow-hidden">
         {/* Background grid + blobs */}
         <div className="absolute inset-0 bg-[image:repeating-linear-gradient(0deg,transparent,transparent_79px,#E5E7EB_79px,#E5E7EB_80px),repeating-linear-gradient(90deg,transparent,transparent_79px,#E5E7EB_79px,#E5E7EB_80px)] opacity-40" />
         <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-teal/20 blur-3xl" />
         <div className="absolute top-1/3 right-1/4 w-64 h-64 rounded-full bg-fox/20 blur-3xl" />
 
-        <div className="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center py-24">
+        <div className="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center pt-36 pb-24">
           <div>
-            {/* Available badge */}
-            <div className="inline-flex items-center gap-2 bg-teal-subtle text-teal text-xs font-semibold px-3 py-1.5 rounded-full mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-teal animate-pulse" />
-              Available for projects
-            </div>
             <h1 className="font-syne text-5xl md:text-6xl font-bold leading-tight text-ink mb-6">
               I design{" "}
               <span className="text-teal italic">complex</span>{" "}

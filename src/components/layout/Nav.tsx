@@ -49,7 +49,10 @@ export default function Nav() {
           </nav>
 
           <div className="flex items-center gap-4">
-            <LanguageToggle />
+            {/* Language toggle — desktop only */}
+            <div className="hidden md:flex">
+              <LanguageToggle />
+            </div>
             {/* Hamburger — mobile only */}
             <button
               className="md:hidden flex flex-col gap-1.5 p-1"
@@ -83,6 +86,10 @@ export default function Nav() {
                 {link.label}
               </Link>
             ))}
+            {/* Language toggle — inside mobile menu */}
+            <div className="pt-2 border-t border-surface-muted">
+              <LanguageToggle />
+            </div>
           </div>
         )}
       </div>

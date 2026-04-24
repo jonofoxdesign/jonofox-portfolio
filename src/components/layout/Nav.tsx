@@ -87,7 +87,7 @@ export default function Nav() {
               </Link>
             ))}
             {/* Language toggle — inside mobile menu */}
-            <div className="pt-2 border-t border-surface-muted">
+            <div className="pt-4 mt-1 border-t border-surface-muted">
               <LanguageToggle />
             </div>
           </div>

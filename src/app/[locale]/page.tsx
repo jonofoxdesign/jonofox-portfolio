@@ -126,7 +126,7 @@ export default function HomePage() {
             <img
               src="/hero-color.png"
               alt="Jono Fox"
-              className="w-full max-w-md rounded-2xl"
+              className="w-full rounded-2xl"
             />
           </div>
         </div>

@@ -96,6 +96,21 @@
   background: var(--gradient-accent);
 }
 
+/* Logo marquee */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee 28s linear infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation-play-state: paused; }
+}
+
 /* Portrait: always color on mobile, grayscale→color on hover for desktop */
 @media (max-width: 767px) {
   .portrait {

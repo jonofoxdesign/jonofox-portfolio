@@ -70,9 +70,17 @@ const testimonials = [
   },
 ];
 
-const logos = [
-  "Aerospike", "Sygnum", "UBS", "Workwise", "Netflix",
-  "Heineken", "Goodlife", "Gillette", "Swiss Post", "American Express",
+const logoFiles = [
+  { name: "Aerospike",        file: "/logo-aerospike.svg" },
+  { name: "Sygnum",           file: "/logo-sygnum.svg" },
+  { name: "UBS",              file: "/logo-ubs.svg" },
+  { name: "Workwise",         file: "/logo-workwise.svg" },
+  { name: "Netflix",          file: "/logo-netflix.svg" },
+  { name: "Heineken",         file: "/logo-heineken.svg" },
+  { name: "Goodlife",         file: "/logo-goodlife.svg" },
+  { name: "Gillette",         file: "/logo-gillette.svg" },
+  { name: "Swiss Post",       file: "/logo-swiss-post.svg" },
+  { name: "American Express", file: "/logo-american-express.svg" },
 ];
 
 const pillars = [
@@ -133,16 +141,36 @@ export default function HomePage() {
       </section>
 
       {/* Logo strip */}
-      <section className="py-12 border-y border-surface-muted">
-        <div className="max-w-6xl mx-auto px-6">
-          <p className="text-xs font-semibold tracking-widest text-ink-disabled text-center mb-8 uppercase">
-            Worked with teams at:
-          </p>
-          <div className="flex flex-wrap justify-center gap-8 items-center">
-            {logos.map((logo) => (
-              <span key={logo} className="text-sm font-medium text-ink-disabled">
-                {logo}
-              </span>
+      <section
+        className="py-10 overflow-hidden"
+        style={{
+          background: "linear-gradient(135deg, rgba(42,157,143,0.06) 0%, rgba(245,245,247,1) 40%, rgba(245,245,247,1) 60%, rgba(245,124,0,0.06) 100%)",
+        }}
+      >
+        <p className="text-xs font-medium tracking-widest text-ink-disabled text-center mb-8">
+          Worked with teams at:
+        </p>
+        {/* Marquee — mask fades edges */}
+        <div
+          className="relative"
+          style={{
+            maskImage: "linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%)",
+            WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%)",
+          }}
+        >
+          <div className="flex marquee-track">
+            {/* Two identical sets so the loop is seamless */}
+            {[0, 1].map((set) => (
+              <div key={set} className="flex items-center gap-12 px-6 shrink-0" aria-hidden={set === 1}>
+                {logoFiles.map(({ name, file }) => (
+                  <img
+                    key={name}
+                    src={file}
+                    alt={name}
+                    className="h-7 w-auto opacity-40 grayscale"
+                  />
+                ))}
+              </div>
             ))}
           </div>
         </div>

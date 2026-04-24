@@ -6,8 +6,14 @@ export default getRequestConfig(async ({ requestLocale }) => {
   if (!locale || !routing.locales.includes(locale as "en" | "de")) {
     locale = routing.defaultLocale;
   }
+
+  const messages =
+    locale === "de"
+      ? (await import("../../messages/de.json")).default
+      : (await import("../../messages/en.json")).default;
+
   return {
     locale,
-    messages: (await import(`../../messages/${locale}.json`)).default,
+    messages,
   };
 });

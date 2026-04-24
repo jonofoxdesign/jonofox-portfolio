@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import CaseStudyLayout, { Section, ImagePlaceholder } from "@/components/layout/CaseStudyLayout";
 
 export const metadata: Metadata = {
-  title: "A design system designers, engineers, and AI tools all follow",
   description: "Building design systems across three companies — and extending them into an instruction layer for AI-assisted workflows.",
 };
 

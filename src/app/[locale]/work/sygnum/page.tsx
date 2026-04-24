@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import CaseStudyLayout, { Section } from "@/components/layout/CaseStudyLayout";
 
 export const metadata: Metadata = {
-  title: "No one should have to call their bank just to check their balance",
   description: "Designing the central dashboard for Sygnum — the world's first regulated digital asset bank.",
 };
 

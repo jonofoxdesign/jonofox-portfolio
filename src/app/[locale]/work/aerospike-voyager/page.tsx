@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import CaseStudyLayout, { Section, ImagePlaceholder } from "@/components/layout/CaseStudyLayout";
 
 export const metadata: Metadata = {
-  title: "The aha moment shouldn't take three days",
   description: "Leading end-to-end design of Aerospike's first visual developer tool — a guided path from connection to confidence.",
 };
 

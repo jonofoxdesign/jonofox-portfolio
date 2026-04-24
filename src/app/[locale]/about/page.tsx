@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { ButtonAnchor } from "@/components/ui/Button";
 
 const roles = [
@@ -10,28 +9,39 @@ const roles = [
 
 const awards = [
   "Cannes Lions", "The Webby Awards", "D&AD", "The One Show",
-  "New York Festivals", "Deutscher Design Club", "AWWWD Awards", "A&D Awards",
+  "New York Festivals", "Deutscher Design Club", "AWARD Awards", "AXIS Awards",
 ];
 
 const skills = {
   howIThink: ["Deep focus", "Systems thinking", "Decision driven", "Asks 'Why' a lot", "Pattern recognition", "Team mentoring"],
-  whatIDo: ["DevEx design", "Scalable design systems", "Figma Blaster", "AI-augmented workflows", "Product strategy", "User research"],
-  howIWork: ["Feedback firstly", "Problem-first", "Shares early", "Human-centered", "Cuts complexity", "Pragmatic polish"],
+  whatIDo: ["DevEx design", "Scalable design systems", "Figma libraries", "AI-augmented workflows", "Product strategy", "User research"],
+  howIWork: ["Feedback friendly", "Problem-first", "Shares early", "Human-centered", "Cuts complexity", "Pragmatic polish"],
 };
 
 const values = [
   {
     title: "Keep a learning mindset",
-    body: "I enjoy uncertainty, set out to learn, and aim to grow with every project.",
+    body: "I stay curious, test assumptions, and aim to grow with every project.",
   },
   {
     title: "Find creative solutions to complexity",
-    body: "I get most excited when everything clicks into place.",
+    body: "I love that moment when everything clicks into place.",
   },
   {
     title: "Ask 'how can this be more fun?'",
     body: "Small sparks of delight matter. I try to build them in without getting in the way of clarity or usability.",
   },
+];
+
+const logos = [
+  { src: "/logos/aerospike.svg", alt: "Aerospike" },
+  { src: "/logos/sygnum.svg", alt: "Sygnum Bank" },
+  { src: "/logos/workwise.svg", alt: "Workwise" },
+  { src: "/logos/goodlife.svg", alt: "Goodlife" },
+  { src: "/logos/amex.svg", alt: "American Express" },
+  { src: "/logos/heineken.svg", alt: "Heineken" },
+  { src: "/logos/netflix.svg", alt: "Netflix" },
+  { src: "/logos/ubs.svg", alt: "UBS" },
 ];
 
 export default function AboutPage() {
@@ -51,10 +61,10 @@ export default function AboutPage() {
             closer to real outcomes for real users.
           </p>
           <p className="text-lg text-ink-secondary leading-relaxed mb-6">
-            Since 2015, I have worked across industries helping teams simplify complexity,
-            improve Developer Experience, and scale systems that help them do their best
-            work over time. I am now a Principal Product Designer, often working on problems
-            where direction is unclear and alignment matters as much as execution.
+            Since 2019, I have worked across industries helping teams simplify complexity,
+            improve Developer Experience, and scale systems that hold up over time. I am now a
+            Principal Product Designer, often working on problems where direction is unclear
+            and alignment matters as much as execution.
           </p>
           <p className="text-lg text-ink-secondary leading-relaxed">
             I believe great product design is about helping others do their best work.
@@ -63,36 +73,39 @@ export default function AboutPage() {
           </p>
         </div>
 
-        {/* Photos placeholder */}
-        <div className="grid grid-cols-4 gap-4 mb-24">
-          {[1, 2, 3, 4].map((i) => (
-            <div
-              key={i}
-              className="aspect-square rounded-xl bg-surface-muted flex items-center justify-center text-ink-disabled text-xs"
-            >
-              Photo {i}
-            </div>
-          ))}
+        {/* Logo strip */}
+        <div className="border-t border-b border-surface-muted py-10 mb-24">
+          <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-8">
+            Worked with
+          </p>
+          <div className="flex flex-wrap items-center gap-x-10 gap-y-6">
+            {logos.map((logo) => (
+              <img
+                key={logo.alt}
+                src={logo.src}
+                alt={logo.alt}
+                className="h-6 opacity-40 grayscale hover:opacity-70 hover:grayscale-0 transition-all duration-300"
+              />
+            ))}
+          </div>
         </div>
 
         {/* Roles + Awards */}
         <div className="grid md:grid-cols-2 gap-16 mb-24">
           <div>
-            <h2 className="font-syne text-2xl font-bold text-ink mb-8">
-              Recent roles
-            </h2>
-            <div className="space-y-6">
+            <h2 className="font-syne text-2xl font-bold text-ink mb-8">Recent roles</h2>
+            <div className="space-y-6 mb-10">
               {roles.map((role) => (
                 <div key={role.company} className="flex justify-between items-start gap-4">
                   <div>
                     <p className="font-semibold text-ink text-sm">{role.company}</p>
                     <p className="text-sm text-ink-secondary">{role.title}</p>
                   </div>
-                  <span className="text-xs text-ink-disabled whitespace-nowrap">{role.years}</span>
+                  <span className="text-xs text-ink-disabled whitespace-nowrap pt-0.5">{role.years}</span>
                 </div>
               ))}
             </div>
-            <div className="mt-8 flex gap-4">
+            <div className="flex flex-wrap gap-4">
               <ButtonAnchor
                 href="https://drive.google.com/drive/folders/1W-wVnS8RzMKucIRXi-ASznmiOAx8ZqEX?usp=drive_link"
                 target="_blank"
@@ -116,11 +129,9 @@ export default function AboutPage() {
             <h2 className="font-syne text-2xl font-bold text-ink mb-8">
               Awards &amp; <span className="text-fox">recognition</span>
             </h2>
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-2 gap-x-8 gap-y-3">
               {awards.map((award) => (
-                <p key={award} className="text-sm text-ink-secondary">
-                  {award}
-                </p>
+                <p key={award} className="text-sm text-ink-secondary">{award}</p>
               ))}
             </div>
           </div>
@@ -174,6 +185,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
+
       </div>
     </div>
   );

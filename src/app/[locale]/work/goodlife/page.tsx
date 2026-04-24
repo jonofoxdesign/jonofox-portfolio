@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import CaseStudyLayout, { Section, ImagePlaceholder } from "@/components/layout/CaseStudyLayout";
 
 export const metadata: Metadata = {
-  title: "Replacing lock-in anxiety with sign-up confidence",
   description: "Redesigning Goodlife's membership sign-up flow to make contracts clear, choices understandable, and commitment something people felt good about.",
 };
 

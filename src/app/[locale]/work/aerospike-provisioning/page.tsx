@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import CaseStudyLayout, { Section, ImagePlaceholder } from "@/components/layout/CaseStudyLayout";
 
 export const metadata: Metadata = {
-  title: "Depth when you want it. Safety when you don't.",
   description: "A cluster provisioning flow that lets teams move fast with safe defaults, switch to advanced control when needed, and recover quickly when something goes wrong.",
 };
 

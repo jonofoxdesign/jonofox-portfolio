@@ -5,7 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 
 // Emil's strong ease-out — starts fast, feels responsive
-const easeOut = [0.23, 1, 0.32, 1];
+const easeOut: [number, number, number, number] = [0.23, 1, 0.32, 1];
 
 export default function LanguageToggle() {
   const locale = useLocale();

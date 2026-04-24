@@ -108,9 +108,14 @@ export default function HomePage() {
 
         <div className="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center py-24">
           <div>
+            {/* Available badge */}
+            <div className="inline-flex items-center gap-2 bg-teal-subtle text-teal text-xs font-semibold px-3 py-1.5 rounded-full mb-6">
+              <span className="w-1.5 h-1.5 rounded-full bg-teal animate-pulse" />
+              Available for projects
+            </div>
             <h1 className="font-syne text-5xl md:text-6xl font-bold leading-tight text-ink mb-6">
               I design{" "}
-              <span className="text-teal">complex</span>{" "}
+              <span className="text-teal italic">complex</span>{" "}
               tools that feel{" "}
               <span className="text-fox">clear</span>
             </h1>
@@ -134,11 +139,19 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Portrait placeholder */}
-          <div className="relative hidden md:block">
-            <div className="aspect-square rounded-2xl bg-surface-muted flex items-center justify-center text-ink-disabled text-sm">
-              Portrait photo
-            </div>
+          {/* Portrait */}
+          <div className="relative flex justify-center md:justify-end">
+            <img
+              src="/portrait.png"
+              alt="Jono Fox"
+              className="
+                w-72 md:w-full max-w-sm
+                grayscale hover:grayscale-0
+                md:grayscale md:hover:grayscale-0
+                transition-all duration-500 ease-in-out
+                drop-shadow-xl
+              "
+            />
           </div>
         </div>
       </section>

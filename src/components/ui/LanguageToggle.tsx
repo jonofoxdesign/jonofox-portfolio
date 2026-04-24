@@ -2,7 +2,6 @@
 
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
-import Image from "next/image";
 
 export default function LanguageToggle() {
   const locale = useLocale();
@@ -13,8 +12,8 @@ export default function LanguageToggle() {
 
   const toggle = () => {
     if (isDE) {
-      const newPath = pathname.replace(/^\/de/, "") || "/";
-      router.push(`/en${newPath === "/" ? "" : newPath}`);
+      const newPath = pathname.replace(/^\/de/, "") || "";
+      router.push(`/en${newPath}`);
     } else {
       const newPath = pathname.replace(/^\/en/, "") || "";
       router.push(`/de${newPath}`);
@@ -25,27 +24,42 @@ export default function LanguageToggle() {
     <button
       onClick={toggle}
       aria-label={`Switch to ${isDE ? "English" : "Deutsch"}`}
-      className="flex items-center gap-1.5 bg-surface rounded-full px-3 py-1.5 border border-surface-muted hover:border-ink-disabled transition-colors select-none"
+      className="flex items-center gap-2 select-none cursor-pointer bg-transparent border-0 p-0"
     >
-      <Image
-        src={isDE ? "/flag-de.svg" : "/flag-en.svg"}
-        alt={isDE ? "DE" : "EN"}
-        width={18}
-        height={18}
-        className="rounded-full"
-      />
-      <span className="text-xs font-semibold text-ink tracking-wide">
-        {isDE ? "DE" : "EN"}
+      <span className={`text-xs font-semibold tracking-wide transition-colors ${!isDE ? "text-ink" : "text-ink-disabled"}`}>
+        EN
       </span>
-      <svg
-        className="w-3 h-3 text-ink-disabled"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        strokeWidth={2.5}
+
+      {/* Track */}
+      <div
+        className="relative w-14 h-7 rounded-full flex-shrink-0"
+        style={{
+          background: isDE
+            ? "linear-gradient(135deg, #F57C00, #c0392b)"
+            : "linear-gradient(135deg, #2A9D8F, #1565C0)",
+          transition: "background 0.3s ease",
+        }}
       >
-        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-      </svg>
+        {/* Thumb */}
+        <div
+          className="absolute top-0.5 w-6 h-6 rounded-full bg-white shadow-md overflow-hidden"
+          style={{
+            left: isDE ? "30px" : "2px",
+            transition: "left 0.3s ease",
+          }}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={isDE ? "/flag-de.svg" : "/flag-en.svg"}
+            alt={isDE ? "DE" : "EN"}
+            style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "50%", display: "block" }}
+          />
+        </div>
+      </div>
+
+      <span className={`text-xs font-semibold tracking-wide transition-colors ${isDE ? "text-ink" : "text-ink-disabled"}`}>
+        DE
+      </span>
     </button>
   );
 }

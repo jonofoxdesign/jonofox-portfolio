@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { Syne, DM_Sans } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
 import "../globals.css";
+
+import enMessages from "../../../messages/en.json";
+import deMessages from "../../../messages/de.json";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -22,12 +24,10 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: "Jono Fox — Product Designer",
-  description:
-    "Principal product designer for developer tools and complex systems.",
+  description: "Principal product designer for developer tools and complex systems.",
   openGraph: {
     title: "Jono Fox — Product Designer",
-    description:
-      "Principal product designer for developer tools and complex systems.",
+    description: "Principal product designer for developer tools and complex systems.",
     url: "https://jonofox.com",
     siteName: "Jono Fox",
     locale: "en_US",
@@ -48,12 +48,12 @@ export default async function LocaleLayout({
     notFound();
   }
 
-  const messages = await getMessages();
+  const messages = locale === "de" ? deMessages : enMessages;
 
   return (
     <html lang={locale} className={`${syne.variable} ${dmSans.variable}`}>
       <body className="font-sans bg-surface text-ink antialiased">
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider messages={messages} locale={locale}>
           <Nav />
           <main>{children}</main>
           <Footer />

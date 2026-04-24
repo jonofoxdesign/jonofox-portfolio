@@ -140,17 +140,19 @@ export default function HomePage() {
           </div>
 
           {/* Portrait */}
-          <div className="relative flex justify-center md:justify-end">
+          <div className="relative flex justify-center md:justify-end group">
+            {/* B&W — default */}
             <img
-              src="/portrait.png"
+              src="/hero-bw.png"
               alt="Jono Fox"
-              className="
-                w-72 md:w-full max-w-sm
-                grayscale hover:grayscale-0
-                md:grayscale md:hover:grayscale-0
-                transition-all duration-500 ease-in-out
-                drop-shadow-xl
-              "
+              className="w-72 md:w-full max-w-md rounded-2xl transition-opacity duration-500 ease-in-out group-hover:opacity-0"
+            />
+            {/* Colour — revealed on hover */}
+            <img
+              src="/hero-color.png"
+              alt=""
+              aria-hidden="true"
+              className="absolute inset-0 w-72 md:w-full max-w-md rounded-2xl opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100 mx-auto md:ml-auto md:mx-0"
             />
           </div>
         </div>

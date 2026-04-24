@@ -98,7 +98,10 @@ const pillars = [
   },
 ];
 
-export default function HomePage() {
+export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const lp = (path: string) => `/${locale}${path}`;
+
   return (
     <div className="pt-0">
       {/* Hero */}
@@ -120,10 +123,10 @@ export default function HomePage() {
               I help engineering teams ship products people actually understand.
             </p>
             <div className="flex flex-wrap gap-4">
-              <ButtonLink href="/work" variant="primary">
+              <ButtonLink href={lp("/work")} variant="primary">
                 See my work
               </ButtonLink>
-              <ButtonLink href="/contact" variant="outline">
+              <ButtonLink href={lp("/contact")} variant="outline">
                 Get in contact
               </ButtonLink>
             </div>
@@ -147,8 +150,9 @@ export default function HomePage() {
           background: "linear-gradient(135deg, rgba(42,157,143,0.06) 0%, rgba(245,245,247,1) 40%, rgba(245,245,247,1) 60%, rgba(245,124,0,0.06) 100%)",
         }}
       >
-        <p className="text-xs font-medium tracking-widest text-ink-disabled text-center mb-8">
+        <p className="text-sm font-medium tracking-widest text-ink-disabled text-center mb-8">
           Worked with teams at:
+
         </p>
         {/* Marquee — mask fades edges */}
         <div
@@ -196,7 +200,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="mt-12">
-            <TextLink href="/about">Learn more about me →</TextLink>
+            <TextLink href={lp("/about")}>Learn more about me →</TextLink>
           </div>
         </div>
       </section>
@@ -223,7 +227,7 @@ export default function HomePage() {
                   {card.body}
                 </p>
                 <Link
-                  href={card.href}
+                  href={lp(card.href)}
                   className="text-sm font-medium text-teal group-hover:text-teal-hover transition-colors"
                 >
                   {card.cta} →

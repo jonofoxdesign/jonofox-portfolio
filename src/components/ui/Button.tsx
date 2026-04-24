@@ -16,8 +16,8 @@ const base =
 const variants = {
   primary:   `${base} bg-fox text-white hover:bg-fox-hover`,
   teal:      `${base} bg-teal text-white hover:bg-teal-hover`,
-  outline:   `${base} gradient-border text-ink hover:text-teal`,
-  outlineLight: `${base} gradient-border text-white hover:text-teal`,
+  outline:   `${base} gradient-border text-ink`,
+  outlineLight: `${base} gradient-border text-white`,
 };
 
 type Variant = keyof typeof variants;

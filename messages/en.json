@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "work": "Work",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "footer": {
+    "nav": {
+      "work": "Work",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "tagline": "Product design that makes things clearer.",
+    "copyright": "© {year} Jono Fox"
+  },
+  "home": {
+    "hero": {
+      "headline": "Product design that makes things clearer.",
+      "sub": "I help companies turn complex systems into products people trust."
+    },
+    "cta": {
+      "primary": "See my work",
+      "secondary": "About me"
+    }
+  },
+  "work": {
+    "heading": "Selected work",
+    "viewCase": "View case study"
+  },
+  "about": {
+    "heading": "About"
+  },
+  "contact": {
+    "heading": "Get in touch",
+    "email": "Email me",
+    "linkedin": "LinkedIn"
+  }
+}

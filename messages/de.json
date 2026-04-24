@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "work": "Arbeiten",
+    "about": "Über mich",
+    "contact": "Kontakt"
+  },
+  "footer": {
+    "nav": {
+      "work": "Arbeiten",
+      "about": "Über mich",
+      "contact": "Kontakt"
+    },
+    "tagline": "Product Design, das Dinge klarer macht.",
+    "copyright": "© {year} Jono Fox"
+  },
+  "home": {
+    "hero": {
+      "headline": "Product Design, das Dinge klarer macht.",
+      "sub": "Ich helfe Unternehmen, komplexe Systeme in vertrauenswürdige Produkte zu verwandeln."
+    },
+    "cta": {
+      "primary": "Meine Arbeiten",
+      "secondary": "Über mich"
+    }
+  },
+  "work": {
+    "heading": "Ausgewählte Arbeiten",
+    "viewCase": "Fallstudie ansehen"
+  },
+  "about": {
+    "heading": "Über mich"
+  },
+  "contact": {
+    "heading": "Kontakt aufnehmen",
+    "email": "E-Mail schreiben",
+    "linkedin": "LinkedIn"
+  }
+}

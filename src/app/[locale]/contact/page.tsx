@@ -1,3 +1,5 @@
+import { ButtonAnchor } from "@/components/ui/Button";
+
 export default function ContactPage() {
   return (
     <div className="pt-36 min-h-screen">
@@ -10,20 +12,17 @@ export default function ContactPage() {
           conversation about developer tools and design systems.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <a
-            href="mailto:jonathanlouisfox@gmail.com"
-            className="px-8 py-4 rounded-xl bg-teal text-white font-medium font-syne text-lg hover:bg-teal-hover transition-colors"
-          >
+          <ButtonAnchor href="mailto:jonathanlouisfox@gmail.com" variant="teal">
             jonathanlouisfox@gmail.com
-          </a>
-          <a
+          </ButtonAnchor>
+          <ButtonAnchor
             href="https://www.linkedin.com/in/jonofox/"
             target="_blank"
             rel="noopener noreferrer"
-            className="gradient-border px-8 py-4 rounded-xl font-medium font-syne text-lg text-ink hover:text-teal transition-colors"
+            variant="outline"
           >
             LinkedIn
-          </a>
+          </ButtonAnchor>
         </div>
       </div>
     </div>

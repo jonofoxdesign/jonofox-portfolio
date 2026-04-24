@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useLocale } from "next-intl";
+import { ButtonAnchor } from "@/components/ui/Button";
 
 const caseStudies = [
   {
@@ -100,20 +101,17 @@ export default function WorkPage() {
             collaboration, or a good conversation about design.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a
-              href="mailto:jonathanlouisfox@gmail.com"
-              className="px-6 py-3 rounded-lg bg-teal text-white font-medium font-syne hover:bg-teal-hover transition-colors"
-            >
+            <ButtonAnchor href="mailto:jonathanlouisfox@gmail.com" variant="teal">
               Send an email
-            </a>
-            <a
+            </ButtonAnchor>
+            <ButtonAnchor
               href="https://www.linkedin.com/in/jonofox/"
               target="_blank"
               rel="noopener noreferrer"
-              className="gradient-border px-6 py-3 rounded-lg font-medium font-syne text-white hover:text-teal transition-colors"
+              variant="outlineLight"
             >
               Connect on LinkedIn
-            </a>
+            </ButtonAnchor>
           </div>
         </div>
       </section>

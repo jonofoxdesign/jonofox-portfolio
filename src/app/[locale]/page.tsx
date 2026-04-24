@@ -1,7 +1,6 @@
 
 import Link from "next/link";
-import { AnimatedButton, AnimatedTextLink } from "@/components/ui/AnimatedLink";
-
+import { ButtonLink, ButtonAnchor, TextLink } from "@/components/ui/Button";
 
 const workCards = [
   {
@@ -40,38 +39,32 @@ const workCards = [
 
 const testimonials = [
   {
-    quote:
-      "Jono has consistently demonstrated strategic impact that goes beyond his role, excelling in design while driving project leadership and cross-functional alignment.",
+    quote: "Jono has consistently demonstrated strategic impact that goes beyond his role, excelling in design while driving project leadership and cross-functional alignment.",
     name: "Evan Cummack",
     title: "Chief Product Officer, Aerospike",
   },
   {
-    quote:
-      "Jono brought a clear uplift in both aesthetics and UX. Even in chaotic times, I could always rely on his smart prioritization and ability to balance different stakeholders.",
+    quote: "Jono brought a clear uplift in both aesthetics and UX. Even in chaotic times, I could always rely on his smart prioritization and ability to balance different stakeholders.",
     name: "Gino Weiss",
     title: "Senior Product Manager, Workwise",
   },
   {
-    quote:
-      "Jono has one of those minds that sees things differently, producing unique outcomes no matter the complexity of the requirement.",
+    quote: "Jono has one of those minds that sees things differently, producing unique outcomes no matter the complexity of the requirement.",
     name: "Ash Durham",
     title: "Lead Developer, Matter Design",
   },
   {
-    quote:
-      "Jono's leadership built an atmosphere where the team felt motivated and supported. His strong UI/UX expertise helped us design a system that worked better every day for both designers and developers.",
+    quote: "Jono's leadership built an atmosphere where the team felt motivated and supported. His strong UI/UX expertise helped us design a system that worked better every day for both designers and developers.",
     name: "Iryna Melnykova",
     title: "Product Designer, Sygnum",
   },
   {
-    quote:
-      "Working with Jono was one of the greatest gains for our team. He combined exceptional design skills with a strategic mindset and always knew exactly what the squad needed at the right time.",
+    quote: "Working with Jono was one of the greatest gains for our team. He combined exceptional design skills with a strategic mindset and always knew exactly what the squad needed at the right time.",
     name: "Samuel Fleck",
     title: "Product Manager, Workwise",
   },
   {
-    quote:
-      "Jono successfully established a strong foundation for product design, demonstrating exceptional skill and vision, and will be key in elevating the user and developer experience as we grow.",
+    quote: "Jono successfully established a strong foundation for product design, demonstrating exceptional skill and vision, and will be key in elevating the user and developer experience as we grow.",
     name: "Nicholas Naraja",
     title: "Brand Design Lead, Aerospike",
   },
@@ -102,7 +95,6 @@ export default function HomePage() {
     <div className="pt-0">
       {/* Hero */}
       <section className="relative overflow-hidden">
-        {/* Background grid + blobs */}
         <div className="absolute inset-0 bg-[image:repeating-linear-gradient(0deg,transparent,transparent_79px,#E5E7EB_79px,#E5E7EB_80px),repeating-linear-gradient(90deg,transparent,transparent_79px,#E5E7EB_79px,#E5E7EB_80px)] opacity-40" />
         <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-teal/20 blur-3xl" />
         <div className="absolute top-1/3 right-1/4 w-64 h-64 rounded-full bg-fox/20 blur-3xl" />
@@ -120,35 +112,21 @@ export default function HomePage() {
               I help engineering teams ship products people actually understand.
             </p>
             <div className="flex flex-wrap gap-4">
-              <AnimatedButton
-                href="/work"
-                className="px-6 py-3 rounded-lg bg-fox text-white font-medium font-syne hover:bg-fox-hover transition-colors"
-              >
+              <ButtonLink href="/work" variant="primary">
                 See my work
-              </AnimatedButton>
-              <AnimatedButton
-                href="/contact"
-                className="gradient-border px-6 py-3 rounded-lg font-medium font-syne text-ink hover:text-teal transition-colors"
-              >
+              </ButtonLink>
+              <ButtonLink href="/contact" variant="outline">
                 Get in contact
-              </AnimatedButton>
+              </ButtonLink>
             </div>
           </div>
 
-          {/* Portrait */}
-          <div className="relative flex justify-center md:justify-end group">
-            {/* B&W — default */}
-            <img
-              src="/hero-bw.png"
-              alt="Jono Fox"
-              className="w-72 md:w-full max-w-md rounded-2xl transition-opacity duration-500 ease-in-out group-hover:opacity-0"
-            />
-            {/* Colour — revealed on hover */}
+          {/* Portrait — always colour */}
+          <div className="relative flex justify-center md:justify-end">
             <img
               src="/hero-color.png"
-              alt=""
-              aria-hidden="true"
-              className="absolute inset-0 w-72 md:w-full max-w-md rounded-2xl opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100 mx-auto md:ml-auto md:mx-0"
+              alt="Jono Fox"
+              className="w-72 md:w-full max-w-md rounded-2xl"
             />
           </div>
         </div>
@@ -190,12 +168,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="mt-12">
-            <AnimatedTextLink
-              href="/about"
-              className="text-base font-medium font-syne text-teal hover:text-teal-hover transition-colors"
-            >
-              Learn more about me →
-            </AnimatedTextLink>
+            <TextLink href="/about">Learn more about me →</TextLink>
           </div>
         </div>
       </section>
@@ -266,20 +239,17 @@ export default function HomePage() {
             collaboration, or a good conversation about design.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a
-              href="mailto:jonathanlouisfox@gmail.com"
-              className="px-6 py-3 rounded-lg bg-teal text-white font-medium font-syne hover:bg-teal-hover transition-colors"
-            >
+            <ButtonAnchor href="mailto:jonathanlouisfox@gmail.com" variant="teal">
               Send an email
-            </a>
-            <a
+            </ButtonAnchor>
+            <ButtonAnchor
               href="https://www.linkedin.com/in/jonofox/"
               target="_blank"
               rel="noopener noreferrer"
-              className="gradient-border px-6 py-3 rounded-lg font-medium font-syne text-white hover:text-teal transition-colors"
+              variant="outlineLight"
             >
               Connect on LinkedIn
-            </a>
+            </ButtonAnchor>
           </div>
         </div>
       </section>

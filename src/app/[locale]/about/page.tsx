@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ButtonAnchor } from "@/components/ui/Button";
 
 const roles = [
   { company: "Aerospike", title: "Principal Product Designer", years: "2023 – Now" },
@@ -92,22 +93,22 @@ export default function AboutPage() {
               ))}
             </div>
             <div className="mt-8 flex gap-4">
-              <a
+              <ButtonAnchor
                 href="https://drive.google.com/drive/folders/1W-wVnS8RzMKucIRXi-ASznmiOAx8ZqEX?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-2.5 rounded-lg bg-teal text-white text-sm font-medium font-syne hover:bg-teal-hover transition-colors"
+                variant="teal"
               >
                 Download CV
-              </a>
-              <a
+              </ButtonAnchor>
+              <ButtonAnchor
                 href="https://www.linkedin.com/in/jonofox/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-2.5 rounded-lg border border-surface-muted text-sm font-medium text-ink hover:border-teal/40 transition-colors"
+                variant="outline"
               >
                 Connect on LinkedIn
-              </a>
+              </ButtonAnchor>
             </div>
           </div>
 

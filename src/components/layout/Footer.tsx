@@ -13,16 +13,16 @@ export default function Footer() {
     <footer className="border-t border-surface-muted py-10">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
         <Link href={localePath("/")}>
-          <img src="/logo.svg" alt="Jono Fox" className="h-7 w-auto" />
+          <img src="/logo.svg" alt="Jono Fox" className="h-10 w-auto" />
         </Link>
         <nav className="flex items-center gap-8">
-          <Link href={localePath("/work")} className="text-sm text-ink-secondary hover:text-ink transition-colors">
+          <Link href={localePath("/work")} className="text-sm font-medium text-ink-secondary hover:text-ink underline-offset-4 hover:underline transition-colors">
             {locale === "de" ? "Arbeiten" : "Work"}
           </Link>
-          <Link href={localePath("/about")} className="text-sm text-ink-secondary hover:text-ink transition-colors">
+          <Link href={localePath("/about")} className="text-sm font-medium text-ink-secondary hover:text-ink underline-offset-4 hover:underline transition-colors">
             {locale === "de" ? "Über mich" : "About"}
           </Link>
-          <Link href={localePath("/contact")} className="text-sm text-ink-secondary hover:text-ink transition-colors">
+          <Link href={localePath("/contact")} className="text-sm font-medium text-ink-secondary hover:text-ink underline-offset-4 hover:underline transition-colors">
             {locale === "de" ? "Kontakt" : "Contact"}
           </Link>
         </nav>

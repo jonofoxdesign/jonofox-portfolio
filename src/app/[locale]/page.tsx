@@ -1,6 +1,7 @@
 
 import Link from "next/link";
 import { ButtonLink, ButtonAnchor, TextLink } from "@/components/ui/Button";
+import TestimonialCarousel from "@/components/ui/TestimonialCarousel";
 
 const workCards = [
   {
@@ -26,38 +27,6 @@ const workCards = [
   },
 ];
 
-const testimonials = [
-  {
-    quote: "Jono has consistently demonstrated strategic impact that goes beyond his role, excelling in design while driving project leadership and cross-functional alignment.",
-    name: "Evan Cummack",
-    title: "Chief Product Officer, Aerospike",
-  },
-  {
-    quote: "Jono brought a clear uplift in both aesthetics and UX. Even in chaotic times, I could always rely on his smart prioritization and ability to balance different stakeholders.",
-    name: "Gino Weiss",
-    title: "Senior Product Manager, Workwise",
-  },
-  {
-    quote: "Jono has one of those minds that sees things differently, producing unique outcomes no matter the complexity of the requirement.",
-    name: "Ash Durham",
-    title: "Lead Developer, Matter Design",
-  },
-  {
-    quote: "Jono's leadership built an atmosphere where the team felt motivated and supported. His strong UI/UX expertise helped us design a system that worked better every day for both designers and developers.",
-    name: "Iryna Melnykova",
-    title: "Product Designer, Sygnum",
-  },
-  {
-    quote: "Working with Jono was one of the greatest gains for our team. He combined exceptional design skills with a strategic mindset and always knew exactly what the squad needed at the right time.",
-    name: "Samuel Fleck",
-    title: "Product Manager, Workwise",
-  },
-  {
-    quote: "Jono successfully established a strong foundation for product design, demonstrating exceptional skill and vision, and will be key in elevating the user and developer experience as we grow.",
-    name: "Nicholas Naraja",
-    title: "Brand Design Lead, Aerospike",
-  },
-];
 
 const logoFiles = [
   { name: "Aerospike",        file: "/logo-aerospike.svg" },
@@ -231,30 +200,26 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </section>
 
       {/* Testimonials */}
-      <section className="py-24">
+      <section className="py-24 bg-surface-light">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="font-syne text-4xl font-bold text-ink mb-16">
+          <h2 className="font-syne text-4xl font-bold text-ink mb-12">
             In their <span className="text-teal">own words</span>
           </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {testimonials.map((t, i) => (
-              <div key={i} className="space-y-4">
-                <p className="text-sm text-ink-secondary leading-relaxed italic">
-                  "{t.quote}"
-                </p>
-                <div>
-                  <p className="text-sm font-semibold text-ink">{t.name}</p>
-                  <p className="text-xs text-ink-disabled">{t.title}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <TestimonialCarousel />
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-surface-inverse text-white">
-        <div className="max-w-2xl mx-auto px-6 text-center">
+      <section
+        className="py-24 text-white relative overflow-hidden"
+        style={{
+          background: "#1F2D3D",
+        }}
+      >
+        {/* Gradient orbs */}
+        <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-96 h-96 rounded-full bg-teal/10 blur-3xl pointer-events-none" />
+        <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-96 h-96 rounded-full bg-fox/10 blur-3xl pointer-events-none" />
+        <div className="relative max-w-2xl mx-auto px-6 text-center">
           <h2 className="font-syne text-4xl font-bold mb-4">
             Let's <span className="text-fox">talk</span>
           </h2>

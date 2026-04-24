@@ -91,8 +91,10 @@ export default async function WorkPage({ params }: { params: Promise<{ locale: s
       </div>
 
       {/* CTA */}
-      <section className="py-24 bg-surface-inverse text-white">
-        <div className="max-w-2xl mx-auto px-6 text-center">
+      <section className="py-24 text-white relative overflow-hidden" style={{ background: "#1F2D3D" }}>
+        <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-96 h-96 rounded-full bg-teal/10 blur-3xl pointer-events-none" />
+        <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-96 h-96 rounded-full bg-fox/10 blur-3xl pointer-events-none" />
+        <div className="relative max-w-2xl mx-auto px-6 text-center">
           <h2 className="font-syne text-4xl font-bold mb-4">
             Let's <span className="text-teal">talk</span>
           </h2>
@@ -118,3 +120,4 @@ export default async function WorkPage({ params }: { params: Promise<{ locale: s
     </div>
   );
 }
+

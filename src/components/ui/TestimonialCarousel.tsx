@@ -44,6 +44,9 @@ const testimonials = [
 
 const pages = [testimonials.slice(0, 3), testimonials.slice(3)];
 
+// Render all pages invisibly to let the browser determine the tallest one,
+// then lock the container to that height. Cards use position:absolute so
+// entering and exiting slides overlap — no layout shift.
 export default function TestimonialCarousel() {
   const [page, setPage] = useState(0);
   const [direction, setDirection] = useState(1);
@@ -90,46 +93,66 @@ export default function TestimonialCarousel() {
         </div>
       </div>
 
-      {/* Cards — fixed height so page 2 can't cause a jump */}
-      <div className="relative overflow-hidden">
-        <AnimatePresence mode="wait" custom={direction}>
-          <motion.div
-            key={page}
-            custom={direction}
-            variants={{
-              enter: (d: number) => ({ x: d * 40, opacity: 0 }),
-              center: { x: 0, opacity: 1 },
-              exit: (d: number) => ({ x: d * -40, opacity: 0 }),
-            }}
-            initial="enter"
-            animate="center"
-            exit="exit"
-            transition={{ duration: 0.28, ease: [0.23, 1, 0.32, 1] }}
-            className="grid md:grid-cols-3 gap-4"
-          >
-            {pages[page].map((t) => (
-              <div
-                key={t.name}
-                className="bg-surface-light rounded-2xl border border-surface-muted p-6 flex flex-col gap-6 min-h-[220px]"
-              >
-                <p className="text-sm text-ink-secondary leading-relaxed italic flex-1">
-                  "{t.quote}"
-                </p>
-                <div className="flex items-center gap-3">
-                  <img
-                    src={t.image}
-                    alt={t.name}
-                    className="w-10 h-10 rounded-full object-cover grayscale flex-shrink-0"
-                  />
-                  <div>
-                    <p className="text-sm font-semibold text-ink">{t.name}</p>
-                    <p className="text-xs text-ink-disabled">{t.title}</p>
-                  </div>
+      {/* Sizer: renders tallest page invisibly to lock container height */}
+      <div className="relative">
+        <div aria-hidden className="invisible grid md:grid-cols-3 gap-4">
+          {pages.reduce((tallest, pg) =>
+            pg === pages[1] ? pg : tallest
+          ).map((t) => (
+            <div key={t.name} className="bg-surface-light rounded-2xl border border-surface-muted p-6 flex flex-col gap-6">
+              <p className="text-sm text-ink-secondary leading-relaxed italic flex-1">"{t.quote}"</p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-surface-muted flex-shrink-0" />
+                <div>
+                  <p className="text-sm font-semibold text-ink">{t.name}</p>
+                  <p className="text-xs text-ink-disabled">{t.title}</p>
                 </div>
               </div>
-            ))}
-          </motion.div>
-        </AnimatePresence>
+            </div>
+          ))}
+        </div>
+
+        {/* Animated slides — absolute so they don't push the sizer */}
+        <div className="absolute inset-0 overflow-hidden">
+          <AnimatePresence custom={direction} initial={false}>
+            <motion.div
+              key={page}
+              custom={direction}
+              variants={{
+                enter: (d: number) => ({ x: `${d * 100}%`, opacity: 0 }),
+                center: { x: "0%", opacity: 1 },
+                exit: (d: number) => ({ x: `${d * -100}%`, opacity: 0 }),
+              }}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              transition={{ duration: 0.32, ease: [0.23, 1, 0.32, 1] }}
+              className="grid md:grid-cols-3 gap-4 absolute inset-0 content-start"
+            >
+              {pages[page].map((t) => (
+                <div
+                  key={t.name}
+                  className="bg-surface-light rounded-2xl border border-surface-muted p-6 flex flex-col gap-6"
+                >
+                  <p className="text-sm text-ink-secondary leading-relaxed italic flex-1">
+                    "{t.quote}"
+                  </p>
+                  <div className="flex items-center gap-3">
+                    <img
+                      src={t.image}
+                      alt={t.name}
+                      className="w-10 h-10 rounded-full object-cover grayscale flex-shrink-0"
+                    />
+                    <div>
+                      <p className="text-sm font-semibold text-ink">{t.name}</p>
+                      <p className="text-xs text-ink-disabled">{t.title}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </motion.div>
+          </AnimatePresence>
+        </div>
       </div>
     </div>
   );

@@ -68,7 +68,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-teal/20 blur-3xl" />
         <div className="absolute top-1/3 right-1/4 w-64 h-64 rounded-full bg-fox/20 blur-3xl" />
 
-        <div className="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center pt-36 pb-24">
+        <div className="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center pt-44 pb-24">
           <div>
             <h1 className="font-syne text-5xl md:text-6xl font-bold leading-tight text-ink mb-6">
               I design{" "}

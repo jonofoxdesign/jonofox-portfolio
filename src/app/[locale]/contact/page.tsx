@@ -2,7 +2,7 @@ import { ButtonAnchor } from "@/components/ui/Button";
 
 export default function ContactPage() {
   return (
-    <div className="pt-36 min-h-screen">
+    <div className="pt-44 min-h-screen">
       <div className="max-w-6xl mx-auto px-6 pb-24">
         <div className="grid md:grid-cols-2 gap-16 items-center">
 

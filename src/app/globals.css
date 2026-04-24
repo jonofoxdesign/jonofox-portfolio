@@ -89,3 +89,10 @@
 .bg-gradient-accent {
   background: var(--gradient-accent);
 }
+
+/* Portrait: always color on mobile, grayscale→color on hover for desktop */
+@media (max-width: 767px) {
+  .portrait {
+    filter: none !important;
+  }
+}

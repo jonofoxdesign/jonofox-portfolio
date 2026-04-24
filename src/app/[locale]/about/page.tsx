@@ -161,13 +161,13 @@ export default function AboutPage() {
 
         {/* Values */}
         <div>
-          <h2 className="font-syne text-2xl font-bold text-ink mb-10 text-center">
+          <h2 className="font-syne text-2xl font-bold text-ink mb-10">
             Design <span className="text-fox">values</span>
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {values.map((v) => (
-              <div key={v.title} className="space-y-3 text-center">
-                <div className="w-10 h-10 rounded-xl bg-gradient-accent-diagonal mx-auto" />
+              <div key={v.title} className="space-y-3">
+                <div className="w-8 h-0.5 bg-gradient-accent" />
                 <h3 className="font-syne font-semibold text-ink">{v.title}</h3>
                 <p className="text-sm text-ink-secondary leading-relaxed">{v.body}</p>
               </div>

@@ -21,7 +21,7 @@ const workCards = [
     tag: "MULTIPLE COMPANIES",
     title: "A design system designers, engineers, and AI tools all follow",
     body: "Built systems from scratch across three companies, with a documentation layer at Aerospike that makes AI-generated output system-consistent by default.",
-    cta: "Explore the systems",
+    cta: "View case study",
     href: "/work/design-systems",
   },
 ];
@@ -233,7 +233,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       {/* Testimonials */}
       <section className="py-24">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="font-syne text-4xl font-bold text-ink mb-16 text-center">
+          <h2 className="font-syne text-4xl font-bold text-ink mb-16">
             In their <span className="text-teal">own words</span>
           </h2>
           <div className="grid md:grid-cols-3 gap-6">

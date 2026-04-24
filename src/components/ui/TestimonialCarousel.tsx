@@ -62,11 +62,11 @@ export default function TestimonialCarousel() {
   return (
     <div>
       {/* Header row with navigation */}
-      <div className="flex items-center justify-between mb-12">
+      <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between mb-12">
         <h2 className="font-syne text-4xl font-bold text-ink">
           In their <span className="text-teal">own words</span>
         </h2>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 flex-shrink-0">
           <button
             onClick={prev}
             disabled={page === 0}
@@ -77,7 +77,7 @@ export default function TestimonialCarousel() {
               <path d="M10 12L6 8L10 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </button>
-          <span className="text-sm text-ink-disabled tabular-nums">
+          <span className="text-sm text-ink-disabled tabular-nums whitespace-nowrap">
             {page + 1} / {pages.length}
           </span>
           <button

@@ -121,7 +121,7 @@ export default function HomePage() {
             </h1>
             <p className="text-lg text-ink-secondary leading-relaxed mb-8 max-w-lg">
               Principal product designer for developer tools and complex systems.
-              I help teams move faster without losing the trust they've built.
+              I help engineering teams ship products people actually understand.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link

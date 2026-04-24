@@ -35,8 +35,8 @@ const values = [
 
 export default function AboutPage() {
   return (
-    <div className="pt-16">
-      <div className="max-w-6xl mx-auto px-6 py-24">
+    <div className="pt-32">
+      <div className="max-w-6xl mx-auto px-6 pb-24">
 
         {/* Hero */}
         <div className="max-w-3xl mb-20">

@@ -41,8 +41,8 @@ const caseStudies = [
 
 export default function WorkPage() {
   return (
-    <div className="pt-16">
-      <div className="max-w-6xl mx-auto px-6 py-24">
+    <div className="pt-32">
+      <div className="max-w-6xl mx-auto px-6 pb-24">
         {/* Header */}
         <div className="mb-20 max-w-2xl">
           <h1 className="font-syne text-5xl md:text-6xl font-bold text-ink leading-tight mb-6">

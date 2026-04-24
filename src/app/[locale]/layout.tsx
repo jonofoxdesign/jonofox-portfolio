@@ -4,6 +4,10 @@ import { routing } from "@/i18n/routing";
 import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
 
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
 import enMessages from "../../../messages/en.json";
 import deMessages from "../../../messages/de.json";
 

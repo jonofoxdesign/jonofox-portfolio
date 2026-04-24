@@ -13,9 +13,9 @@ export default function Nav() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-4 px-4">
-      <div className="w-full max-w-6xl bg-white/90 backdrop-blur-md rounded-2xl shadow-sm border border-surface-muted px-6 h-16 flex items-center justify-between">
+      <div className="w-full max-w-6xl bg-white/40 backdrop-blur-xl rounded-2xl shadow-lg border border-white/60 px-6 h-16 flex items-center justify-between">
         <Link href={localePath("/")} className="flex items-center">
-          <img src="/logo.svg" alt="Jono Fox" className="h-10 w-auto" />
+          <img src="/logo.svg" alt="Jono Fox" className="h-12 w-auto" />
         </Link>
         <nav className="hidden md:flex items-center gap-8">
           <Link

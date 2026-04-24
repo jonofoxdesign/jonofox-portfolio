@@ -200,11 +200,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 bg-surface-light">
+      <section className="py-24">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="font-syne text-4xl font-bold text-ink mb-12">
-            In their <span className="text-teal">own words</span>
-          </h2>
           <TestimonialCarousel />
         </div>
       </section>

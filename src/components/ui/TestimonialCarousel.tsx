@@ -42,7 +42,6 @@ const testimonials = [
   },
 ];
 
-const PER_PAGE = 3;
 const pages = [testimonials.slice(0, 3), testimonials.slice(3)];
 
 export default function TestimonialCarousel() {
@@ -54,8 +53,44 @@ export default function TestimonialCarousel() {
     setPage(idx);
   };
 
+  const prev = () => goTo(Math.max(0, page - 1));
+  const next = () => goTo(Math.min(pages.length - 1, page + 1));
+
   return (
     <div>
+      {/* Header row with navigation */}
+      <div className="flex items-center justify-between mb-12">
+        <h2 className="font-syne text-4xl font-bold text-ink">
+          In their <span className="text-teal">own words</span>
+        </h2>
+        <div className="flex items-center gap-3">
+          <button
+            onClick={prev}
+            disabled={page === 0}
+            aria-label="Previous"
+            className="w-9 h-9 rounded-full border border-surface-muted flex items-center justify-center text-ink-secondary hover:border-teal hover:text-teal transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+          >
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M10 12L6 8L10 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </button>
+          <span className="text-sm text-ink-disabled tabular-nums">
+            {page + 1} / {pages.length}
+          </span>
+          <button
+            onClick={next}
+            disabled={page === pages.length - 1}
+            aria-label="Next"
+            className="w-9 h-9 rounded-full border border-surface-muted flex items-center justify-center text-ink-secondary hover:border-teal hover:text-teal transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+          >
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6 4L10 8L6 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      {/* Cards — fixed height so page 2 can't cause a jump */}
       <div className="relative overflow-hidden">
         <AnimatePresence mode="wait" custom={direction}>
           <motion.div
@@ -69,13 +104,13 @@ export default function TestimonialCarousel() {
             initial="enter"
             animate="center"
             exit="exit"
-            transition={{ duration: 0.3, ease: [0.23, 1, 0.32, 1] }}
+            transition={{ duration: 0.28, ease: [0.23, 1, 0.32, 1] }}
             className="grid md:grid-cols-3 gap-4"
           >
             {pages[page].map((t) => (
               <div
                 key={t.name}
-                className="bg-surface-light rounded-2xl border border-surface-muted p-6 flex flex-col gap-6"
+                className="bg-surface-light rounded-2xl border border-surface-muted p-6 flex flex-col gap-6 min-h-[220px]"
               >
                 <p className="text-sm text-ink-secondary leading-relaxed italic flex-1">
                   "{t.quote}"
@@ -84,7 +119,7 @@ export default function TestimonialCarousel() {
                   <img
                     src={t.image}
                     alt={t.name}
-                    className="w-10 h-10 rounded-full object-cover grayscale"
+                    className="w-10 h-10 rounded-full object-cover grayscale flex-shrink-0"
                   />
                   <div>
                     <p className="text-sm font-semibold text-ink">{t.name}</p>
@@ -95,20 +130,6 @@ export default function TestimonialCarousel() {
             ))}
           </motion.div>
         </AnimatePresence>
-      </div>
-
-      {/* Pagination dots */}
-      <div className="flex items-center gap-2 mt-8">
-        {pages.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => goTo(i)}
-            aria-label={`Go to page ${i + 1}`}
-            className={`h-1.5 rounded-full transition-all duration-300 ${
-              i === page ? "w-6 bg-teal" : "w-1.5 bg-surface-muted hover:bg-ink-disabled"
-            }`}
-          />
-        ))}
       </div>
     </div>
   );

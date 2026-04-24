@@ -2,6 +2,7 @@
 
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function LanguageToggle() {
   const locale = useLocale();
@@ -12,12 +13,11 @@ export default function LanguageToggle() {
 
   const toggle = () => {
     if (isDE) {
-      // Remove /de prefix
       const newPath = pathname.replace(/^\/de/, "") || "/";
-      router.push(newPath);
+      router.push(`/en${newPath === "/" ? "" : newPath}`);
     } else {
-      // Add /de prefix
-      router.push(`/de${pathname}`);
+      const newPath = pathname.replace(/^\/en/, "") || "";
+      router.push(`/de${newPath}`);
     }
   };
 
@@ -25,44 +25,27 @@ export default function LanguageToggle() {
     <button
       onClick={toggle}
       aria-label={`Switch to ${isDE ? "English" : "Deutsch"}`}
-      className="flex items-center gap-2 select-none"
+      className="flex items-center gap-1.5 bg-surface rounded-full px-3 py-1.5 border border-surface-muted hover:border-ink-disabled transition-colors select-none"
     >
-      <span
-        className={`text-xs font-semibold tracking-wide transition-colors ${
-          !isDE ? "text-ink" : "text-ink-disabled"
-        }`}
-      >
-        EN
+      <Image
+        src={isDE ? "/flag-de.svg" : "/flag-en.svg"}
+        alt={isDE ? "DE" : "EN"}
+        width={18}
+        height={18}
+        className="rounded-full"
+      />
+      <span className="text-xs font-semibold text-ink tracking-wide">
+        {isDE ? "DE" : "EN"}
       </span>
-
-      {/* Toggle track */}
-      <div
-        className="relative w-12 h-6 rounded-full transition-all duration-300"
-        style={{
-          background: isDE
-            ? "linear-gradient(135deg, #F57C00, #DB6800)"
-            : "linear-gradient(135deg, #2A9D8F, #1565C0)",
-        }}
+      <svg
+        className="w-3 h-3 text-ink-disabled"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2.5}
       >
-        {/* Thumb */}
-        <div
-          className={`absolute top-0.5 w-5 h-5 rounded-full bg-white shadow-sm transition-all duration-300 flex items-center justify-center overflow-hidden ${
-            isDE ? "left-6" : "left-0.5"
-          }`}
-        >
-          <span className="text-xs leading-none">
-            {isDE ? "🇩🇪" : "🇬🇧"}
-          </span>
-        </div>
-      </div>
-
-      <span
-        className={`text-xs font-semibold tracking-wide transition-colors ${
-          isDE ? "text-ink" : "text-ink-disabled"
-        }`}
-      >
-        DE
-      </span>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+      </svg>
     </button>
   );
 }

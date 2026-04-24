@@ -98,7 +98,7 @@ const pillars = [
 
 export default function HomePage() {
   return (
-    <div className="pt-16">
+    <div className="pt-24">
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
         {/* Background grid + blobs */}

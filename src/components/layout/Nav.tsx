@@ -12,19 +12,28 @@ export default function Nav() {
     locale === "en" ? `/en${path}` : `/de${path}`;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-sm border-b border-surface-muted">
-      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <header className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-4 px-4">
+      <div className="w-full max-w-6xl bg-white/90 backdrop-blur-md rounded-2xl shadow-sm border border-surface-muted px-6 h-16 flex items-center justify-between">
         <Link href={localePath("/")} className="flex items-center">
-          <img src="/logo.svg" alt="Jono Fox" className="h-8 w-auto" />
+          <img src="/logo.svg" alt="Jono Fox" className="h-10 w-auto" />
         </Link>
         <nav className="hidden md:flex items-center gap-8">
-          <Link href={localePath("/work")} className="text-sm font-medium text-ink-secondary hover:text-ink transition-colors">
+          <Link
+            href={localePath("/work")}
+            className="text-sm font-medium text-ink-secondary hover:text-ink underline-offset-4 hover:underline transition-colors"
+          >
             {locale === "de" ? "Arbeiten" : "Work"}
           </Link>
-          <Link href={localePath("/about")} className="text-sm font-medium text-ink-secondary hover:text-ink transition-colors">
+          <Link
+            href={localePath("/about")}
+            className="text-sm font-medium text-ink-secondary hover:text-ink underline-offset-4 hover:underline transition-colors"
+          >
             {locale === "de" ? "Über mich" : "About"}
           </Link>
-          <Link href={localePath("/contact")} className="text-sm font-medium text-ink-secondary hover:text-ink transition-colors">
+          <Link
+            href={localePath("/contact")}
+            className="text-sm font-medium text-ink-secondary hover:text-ink underline-offset-4 hover:underline transition-colors"
+          >
             {locale === "de" ? "Kontakt" : "Contact"}
           </Link>
         </nav>

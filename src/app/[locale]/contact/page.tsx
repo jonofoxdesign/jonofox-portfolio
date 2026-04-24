@@ -4,10 +4,10 @@ export default function ContactPage() {
   return (
     <div className="pt-36 min-h-screen">
       <div className="max-w-6xl mx-auto px-6 pb-24">
-        <div className="grid md:grid-cols-2 gap-16 items-start">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
 
           {/* Left — content */}
-          <div className="pt-8">
+          <div>
             <h1 className="font-syne text-5xl md:text-6xl font-bold text-ink leading-tight mb-6">
               Let&apos;s <span className="text-teal">talk</span>
             </h1>
@@ -30,17 +30,13 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Right — photos */}
+          {/* Right — 2×2 photo grid */}
           <div className="grid grid-cols-2 gap-3">
-            <div className="aspect-square rounded-2xl overflow-hidden">
-              <img src="/jono/jono1.png" alt="Jono Fox" className="w-full h-full object-cover" />
-            </div>
-            <div className="aspect-square rounded-2xl overflow-hidden">
-              <img src="/jono/jono2.png" alt="Jono Fox" className="w-full h-full object-cover" />
-            </div>
-            <div className="col-span-2 aspect-[2/1] rounded-2xl overflow-hidden">
-              <img src="/jono/jono3.png" alt="Jono Fox" className="w-full h-full object-cover object-top" />
-            </div>
+            {["/jono/jono1.png", "/jono/jono2.png", "/jono/jono3.png", "/jono/jono4.png"].map((src, i) => (
+              <div key={i} className="aspect-square rounded-2xl overflow-hidden">
+                <img src={src} alt="Jono Fox" className="w-full h-full object-cover" />
+              </div>
+            ))}
           </div>
 
         </div>

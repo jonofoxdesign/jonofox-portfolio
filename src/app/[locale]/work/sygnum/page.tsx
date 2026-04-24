@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import CaseStudyLayout, { Section, ImagePlaceholder } from "@/components/layout/CaseStudyLayout";
+import CaseStudyLayout, { Section } from "@/components/layout/CaseStudyLayout";
 
 export const metadata: Metadata = {
   title: "No one should have to call their bank just to check their balance",
@@ -10,7 +10,7 @@ export default function SygnumPage() {
   return (
     <CaseStudyLayout
       tag="Sygnum Bank"
-      title={<>No one should have to call their bank<br />just to check their balance</>}
+      title="No one should have to call their bank just to check their balance"
       intro="Sygnum is a regulated Swiss digital asset bank. When I joined, clients who wanted to understand their holdings had to call their account manager or read a printed statement. For the world's first regulated digital asset bank, that wasn't just a UX problem — it was a credibility gap. This project created the central dashboard that changed that."
       meta={{
         company: "Sygnum Bank",
@@ -26,7 +26,13 @@ export default function SygnumPage() {
         <p>Clients were high-net-worth private banking clients, accustomed to personal service. They still expected immediate access to their balances, clear explanations of what they owned, and an experience comparable to modern banking. They understood financial products. The interface needed to respect that, not talk down to it.</p>
       </Section>
 
-      <ImagePlaceholder label="Digital assets overview dashboard" />
+      <div className="my-12 w-full aspect-video rounded-2xl overflow-hidden border border-surface-muted shadow-xl">
+        <img
+          src="/case-studies/sygnum/asset-overview.png"
+          alt="Sygnum digital assets overview dashboard"
+          className="w-full h-full object-cover object-top"
+        />
+      </div>
 
       <Section heading="My role">
         <p>I was the Design Lead on this project, supported by a junior designer. I defined the overall structure and interaction model, translated complex blockchain concepts into understandable UI, set and maintained the visual quality bar, and decided what to simplify and what to surface explicitly.</p>
@@ -38,12 +44,35 @@ export default function SygnumPage() {
         <p>Common actions like trading and staking needed to be easy to find without turning the dashboard into a control panel. The challenge was simplifying without oversimplifying. Regulation made accuracy non-negotiable. Asset complexity — balances, fees, settlement timing, transaction states — couldn&apos;t be hidden, only structured.</p>
       </Section>
 
-      <ImagePlaceholder label="Asset type grouping — crypto, tokenised assets, staking, NFTs" />
+      <div className="my-12 grid grid-cols-2 gap-4">
+        <div className="aspect-[3/4] rounded-2xl overflow-hidden border border-surface-muted shadow-xl">
+          <img
+            src="/case-studies/sygnum/asset-overview-scrolled.png"
+            alt="Asset breakdown by type — trading wallets, vault wallets, staking, asset tokens"
+            className="w-full h-full object-cover object-top"
+          />
+        </div>
+        <div className="aspect-[3/4] rounded-2xl overflow-hidden border border-surface-muted shadow-xl">
+          <img
+            src="/case-studies/sygnum/btc-wallet-detail.png"
+            alt="BTC wallet detail — balance, performance chart, and transaction history"
+            className="w-full h-full object-cover object-top"
+          />
+        </div>
+      </div>
 
       <Section heading="The result">
         <p>The final dashboard gave clients a clear overview of what they held and its current value, supported crypto, tokenised assets, staking, and NFTs, and made common actions easy to find without intruding on the overview. It worked both as a quick check-in and a deeper exploration tool.</p>
         <p>It also proved the design system could hold up under real complexity — which led to adoption across other teams.</p>
       </Section>
+
+      <div className="my-12 w-full aspect-video rounded-2xl overflow-hidden border border-surface-muted shadow-xl">
+        <img
+          src="/case-studies/sygnum/dashboard-overlay-send.png"
+          alt="Send transaction overlay — inline action modal over the dashboard"
+          className="w-full h-full object-cover object-top"
+        />
+      </div>
 
       <Section heading="Outcomes">
         <p>Without detailed analytics, success came through qualitative signals. Clients could clearly understand their digital asset holdings. Feedback from account teams was consistently positive. Support requests related to balances decreased. Other teams adopted the design system after seeing it work in a complex context.</p>

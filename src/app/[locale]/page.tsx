@@ -1,5 +1,6 @@
 
 import Link from "next/link";
+import { AnimatedButton, AnimatedTextLink } from "@/components/ui/AnimatedLink";
 
 
 const workCards = [
@@ -119,18 +120,18 @@ export default function HomePage() {
               I help engineering teams ship products people actually understand.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link
+              <AnimatedButton
                 href="/work"
                 className="px-6 py-3 rounded-lg bg-fox text-white font-medium font-syne hover:bg-fox-hover transition-colors"
               >
                 See my work
-              </Link>
-              <Link
+              </AnimatedButton>
+              <AnimatedButton
                 href="/contact"
                 className="gradient-border px-6 py-3 rounded-lg font-medium font-syne text-ink hover:text-teal transition-colors"
               >
                 Get in contact
-              </Link>
+              </AnimatedButton>
             </div>
           </div>
 
@@ -189,12 +190,12 @@ export default function HomePage() {
             ))}
           </div>
           <div className="mt-12">
-            <Link
+            <AnimatedTextLink
               href="/about"
-              className="text-sm font-medium text-teal hover:text-teal-hover transition-colors"
+              className="text-base font-medium font-syne text-teal hover:text-teal-hover transition-colors"
             >
               Learn more about me →
-            </Link>
+            </AnimatedTextLink>
           </div>
         </div>
       </section>

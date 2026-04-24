@@ -41,7 +41,7 @@ const caseStudies = [
 
 export default function WorkPage() {
   return (
-    <div className="pt-36">
+    <div className="pt-44">
       <div className="max-w-6xl mx-auto px-6 pb-24">
         {/* Header */}
         <div className="mb-20 max-w-2xl">

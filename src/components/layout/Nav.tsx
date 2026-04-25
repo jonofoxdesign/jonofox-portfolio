@@ -48,8 +48,8 @@ export default function Nav() {
                     href={link.href}
                     className={`text-sm font-medium transition-colors pb-0.5 border-b-2 ${
                       isActive
-                        ? "text-ink border-ink"
-                        : "text-ink-secondary border-transparent hover:text-ink hover:border-fox"
+                        ? "text-ink border-fox"
+                        : "text-ink-secondary border-transparent hover:text-ink hover:border-ink"
                     }`}
                   >
                     {link.label}

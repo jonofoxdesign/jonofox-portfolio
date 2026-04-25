@@ -15,7 +15,7 @@ export default function ContactPage() {
               I&apos;m open to the right opportunity, a good collaboration, or a
               conversation about developer tools and design systems.
             </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <ButtonAnchor href="mailto:jonathanlouisfox@gmail.com" variant="teal">
                 Send an email
               </ButtonAnchor>
@@ -30,9 +30,9 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Right — 2×2 photo grid */}
+          {/* Right — 2×2 photo grid (orange + blue swapped) */}
           <div className="grid grid-cols-2 gap-3">
-            {["/jono/jono1.png", "/jono/jono2.png", "/jono/jono3.png", "/jono/jono4.png"].map((src, i) => (
+            {["/jono/jono1.png", "/jono/jono2.png", "/jono/jono4.png", "/jono/jono3.png"].map((src, i) => (
               <div key={i} className="aspect-square rounded-2xl overflow-hidden">
                 <img src={src} alt="Jono Fox" className="w-full h-full object-cover" />
               </div>

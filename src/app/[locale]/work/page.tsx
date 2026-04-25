@@ -8,6 +8,7 @@ const caseStudies = [
     body: "A provisioning flow that lets teams launch Aerospike clusters in under 90 seconds, with safe defaults or deep configuration, and clear guidance and guardrails throughout.",
     cta: "View case study",
     href: "/work/aerospike-provisioning",
+    gradient: "linear-gradient(135deg, #E0F5F2 0%, #2A9D8F22 100%)",
   },
   {
     tag: "AEROSPIKE",
@@ -15,6 +16,7 @@ const caseStudies = [
     body: "Led end-to-end design of Aerospike's first visual developer tool. A guided path from connection to confidence, with a foundation built for AI-assisted workflows.",
     cta: "View case study",
     href: "/work/aerospike-voyager",
+    gradient: "linear-gradient(135deg, #EDE9FE 0%, #8B5CF622 100%)",
   },
   {
     tag: "MULTIPLE COMPANIES",
@@ -22,6 +24,7 @@ const caseStudies = [
     body: "Built systems from scratch across three companies, with a documentation layer at Aerospike that makes AI-generated output system-consistent by default.",
     cta: "View case study",
     href: "/work/design-systems",
+    gradient: "linear-gradient(135deg, #FFF2E0 0%, #F57C0022 100%)",
   },
   {
     tag: "SYGNUM BANK",
@@ -29,6 +32,7 @@ const caseStudies = [
     body: "At the world's first regulated digital asset bank, clients had to call their account manager just to check their balance. I designed the dashboard that changed that.",
     cta: "View case study",
     href: "/work/sygnum",
+    image: "/case-studies/sygnum/sygnum1.png",
   },
   {
     tag: "GOODLIFE HEALTH CLUBS",
@@ -36,6 +40,7 @@ const caseStudies = [
     body: "Redesigned Goodlife's membership sign-up flow to make contracts clear, choices understandable, and commitment something people felt good about.",
     cta: "View case study",
     href: "/work/goodlife",
+    gradient: "linear-gradient(135deg, #FEE2E2 0%, #EF444422 100%)",
   },
 ];
 
@@ -81,9 +86,14 @@ export default async function WorkPage({ params }: { params: Promise<{ locale: s
                 </span>
               </div>
 
-              {/* Card image placeholder */}
-              <div className="hidden md:flex aspect-video rounded-xl bg-surface-muted items-center justify-center text-ink-disabled text-xs">
-                Case study image
+              {/* Card image */}
+              <div
+                className="hidden md:block aspect-video rounded-xl overflow-hidden"
+                style={{ background: cs.gradient ?? "linear-gradient(135deg, #F3F4F6 0%, #E5E7EB 100%)" }}
+              >
+                {cs.image && (
+                  <img src={cs.image} alt={cs.title} className="w-full h-full object-cover object-top" />
+                )}
               </div>
             </Link>
           ))}

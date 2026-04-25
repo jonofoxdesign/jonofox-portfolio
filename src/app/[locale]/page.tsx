@@ -10,6 +10,7 @@ const workCards = [
     body: "A provisioning flow that lets teams launch Aerospike clusters in under 90 seconds, with safe defaults or deep configuration, and clear guidance and guardrails throughout.",
     cta: "View case study",
     href: "/work/aerospike-provisioning",
+    gradient: "linear-gradient(135deg, #E0F5F2 0%, rgba(42,157,143,0.13) 100%)",
   },
   {
     tag: "AEROSPIKE",
@@ -17,6 +18,7 @@ const workCards = [
     body: "Led end-to-end design of Aerospike's first visual developer tool. A guided path from connection to confidence, with a foundation built for AI-assisted workflows.",
     cta: "View case study",
     href: "/work/aerospike-voyager",
+    gradient: "linear-gradient(135deg, #EDE9FE 0%, rgba(139,92,246,0.13) 100%)",
   },
   {
     tag: "MULTIPLE COMPANIES",
@@ -24,6 +26,7 @@ const workCards = [
     body: "Built systems from scratch across three companies, with a documentation layer at Aerospike that makes AI-generated output system-consistent by default.",
     cta: "View case study",
     href: "/work/design-systems",
+    gradient: "linear-gradient(135deg, #FFF2E0 0%, rgba(245,124,0,0.13) 100%)",
   },
 ];
 
@@ -139,7 +142,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </section>
 
       {/* What I do best */}
-      <section className="py-24 bg-surface">
+      <section className="py-24 bg-surface-light">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="font-syne text-4xl font-bold text-ink mb-16">
             What I do <span className="text-teal">best</span>
@@ -190,9 +193,10 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                     {card.cta} →
                   </span>
                 </div>
-                <div className="hidden md:flex aspect-video rounded-xl bg-surface-muted items-center justify-center text-ink-disabled text-xs">
-                  Case study image
-                </div>
+                <div
+                  className="hidden md:block aspect-video rounded-xl overflow-hidden"
+                  style={{ background: card.gradient ?? "linear-gradient(135deg, #F3F4F6 0%, #E5E7EB 100%)" }}
+                />
               </Link>
             ))}
           </div>
@@ -200,7 +204,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 bg-surface">
+      <section className="py-24 bg-surface-light">
         <div className="max-w-6xl mx-auto px-6">
           <TestimonialCarousel />
         </div>

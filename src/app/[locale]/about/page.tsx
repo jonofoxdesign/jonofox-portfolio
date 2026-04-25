@@ -40,7 +40,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   return (
     <div>
       {/* Hero */}
-      <section className="pt-44 pb-24">
+      <section className="pt-44 pb-24 bg-surface-light">
         <div className="max-w-6xl mx-auto px-6">
           <div className="max-w-3xl">
             <h1 className="font-syne text-5xl md:text-6xl font-bold text-ink leading-tight mb-8">
@@ -121,7 +121,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
       </section>
 
       {/* Skills */}
-      <section className="py-24">
+      <section className="py-24 bg-surface-light">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="font-syne text-2xl font-bold text-ink mb-10">
             Skills &amp; <span className="text-teal">strengths</span>

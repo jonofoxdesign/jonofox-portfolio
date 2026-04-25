@@ -2,11 +2,12 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { useParams } from "next/navigation";
+import { useParams, usePathname } from "next/navigation";
 import LanguageToggle from "@/components/ui/LanguageToggle";
 
 export default function Nav() {
   const params = useParams();
+  const pathname = usePathname();
   const locale = (params?.locale as string) ?? "en";
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -31,29 +32,38 @@ export default function Nav() {
             border: "1px solid rgba(255,255,255,0.5)",
           }}
         >
-          <Link href={localePath("/")} className="flex items-center">
-            <img src="/logo.svg" alt="Jono Fox" className="h-12 w-auto" />
-          </Link>
+          {/* Logo + links grouped left */}
+          <div className="flex items-center gap-8">
+            <Link href={localePath("/")} className="flex items-center">
+              <img src="/logo.svg" alt="Jono Fox" className="h-12 w-auto" />
+            </Link>
 
-          {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-8">
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-sm font-medium text-ink-secondary hover:text-ink underline-offset-4 hover:underline transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
+            {/* Desktop nav — next to logo */}
+            <nav className="hidden md:flex items-center gap-6">
+              {links.map((link) => {
+                const isActive = pathname === link.href || pathname.startsWith(link.href + "/");
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={`text-sm font-medium transition-colors pb-0.5 border-b-2 ${
+                      isActive
+                        ? "text-ink border-ink"
+                        : "text-ink-secondary border-transparent hover:text-ink hover:border-fox"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
+            </nav>
+          </div>
 
+          {/* Right — language toggle + hamburger */}
           <div className="flex items-center gap-4">
-            {/* Language toggle — desktop only */}
             <div className="hidden md:flex">
               <LanguageToggle />
             </div>
-            {/* Hamburger — mobile only */}
             <button
               className="md:hidden flex flex-col gap-1.5 p-1"
               onClick={() => setMenuOpen((v) => !v)}
@@ -76,17 +86,21 @@ export default function Nav() {
               border: "1px solid rgba(255,255,255,0.5)",
             }}
           >
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setMenuOpen(false)}
-                className="text-sm font-medium text-ink-secondary hover:text-ink transition-colors py-1"
-              >
-                {link.label}
-              </Link>
-            ))}
-            {/* Language toggle — inside mobile menu */}
+            {links.map((link) => {
+              const isActive = pathname === link.href || pathname.startsWith(link.href + "/");
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMenuOpen(false)}
+                  className={`text-sm font-medium transition-colors py-1 ${
+                    isActive ? "text-ink" : "text-ink-secondary hover:text-ink"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
             <div className="pt-4 mt-1 border-t border-surface-muted">
               <LanguageToggle />
             </div>

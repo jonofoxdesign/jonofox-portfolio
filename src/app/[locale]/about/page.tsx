@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ButtonAnchor } from "@/components/ui/Button";
 
 const roles = [
@@ -33,61 +34,43 @@ const values = [
   },
 ];
 
-const logos = [
-  { src: "/logos/aerospike.svg", alt: "Aerospike" },
-  { src: "/logos/sygnum.svg", alt: "Sygnum Bank" },
-  { src: "/logos/workwise.svg", alt: "Workwise" },
-  { src: "/logos/goodlife.svg", alt: "Goodlife" },
-  { src: "/logos/amex.svg", alt: "American Express" },
-  { src: "/logos/heineken.svg", alt: "Heineken" },
-  { src: "/logos/netflix.svg", alt: "Netflix" },
-  { src: "/logos/ubs.svg", alt: "UBS" },
-];
+export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const contactHref = `/${locale}/contact`;
 
-export default function AboutPage() {
   return (
     <div className="pt-44">
       <div className="max-w-6xl mx-auto px-6 pb-24">
 
         {/* Hero */}
-        <div className="max-w-3xl mb-20">
+        <div className="max-w-3xl mb-24">
           <h1 className="font-syne text-5xl md:text-6xl font-bold text-ink leading-tight mb-8">
             I think clearly, design carefully,{" "}
             <span className="text-teal">and ship</span>
           </h1>
           <p className="text-lg text-ink-secondary leading-relaxed mb-6">
-            After nine years as an Art Director in advertising, where I honed storytelling,
-            problem-solving, and craft, I moved into Product and Product Design to work
-            closer to real outcomes for real users.
+            I spent nine years as an Art Director in advertising, at Droga5, Clemenger BBDO,
+            Grey, and others. That&apos;s where I learned how to make complicated things clear,
+            compelling, and human. I moved into product design in 2019 because I wanted to
+            work closer to the actual thing being built.
           </p>
           <p className="text-lg text-ink-secondary leading-relaxed mb-6">
-            Since 2019, I have worked across industries helping teams simplify complexity,
-            improve Developer Experience, and scale systems that hold up over time. I am now a
-            Principal Product Designer, often working on problems where direction is unclear
-            and alignment matters as much as execution.
+            Since then, I&apos;ve worked across industries helping teams simplify complexity,
+            improve developer experience, and scale systems that hold up over time. I&apos;m
+            now a Principal Product Designer, often working on problems where direction is
+            still forming and alignment matters as much as execution.
           </p>
-          <p className="text-lg text-ink-secondary leading-relaxed">
-            I believe great product design is about helping others do their best work.
-            That means building systems and tools that are durable, intuitive, and calm
-            under pressure.
+          <p className="text-lg text-ink-secondary leading-relaxed mb-10">
+            I believe great product design is about helping others do their best work. That
+            means building tools and systems that are durable, clear, and calm under pressure.
+            It also means knowing when to subtract rather than add.
           </p>
-        </div>
-
-        {/* Logo strip */}
-        <div className="border-t border-b border-surface-muted py-10 mb-24">
-          <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-8">
-            Worked with
-          </p>
-          <div className="flex flex-wrap items-center gap-x-10 gap-y-6">
-            {logos.map((logo) => (
-              <img
-                key={logo.alt}
-                src={logo.src}
-                alt={logo.alt}
-                className="h-6 opacity-40 grayscale hover:opacity-70 hover:grayscale-0 transition-all duration-300"
-              />
-            ))}
-          </div>
+          <Link
+            href={contactHref}
+            className="inline-flex items-center gap-2 text-sm font-medium text-teal hover:text-ink transition-colors border-b border-teal/40 hover:border-ink/40 pb-0.5"
+          >
+            Get in touch →
+          </Link>
         </div>
 
         {/* Roles + Awards */}

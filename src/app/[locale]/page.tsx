@@ -139,7 +139,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </section>
 
       {/* What I do best */}
-      <section className="py-24">
+      <section className="py-24 bg-surface">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="font-syne text-4xl font-bold text-ink mb-16">
             What I do <span className="text-teal">best</span>
@@ -164,7 +164,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </section>
 
       {/* Featured work */}
-      <section className="py-24 bg-surface-light">
+      <section className="py-24">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="font-syne text-4xl font-bold text-ink mb-16">
             Featured <span className="text-fox">work</span>
@@ -200,7 +200,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </section>
 
       {/* Testimonials */}
-      <section className="py-24">
+      <section className="py-24 bg-surface">
         <div className="max-w-6xl mx-auto px-6">
           <TestimonialCarousel />
         </div>

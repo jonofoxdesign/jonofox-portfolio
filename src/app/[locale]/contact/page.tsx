@@ -15,7 +15,7 @@ export default function ContactPage() {
               I&apos;m open to the right opportunity, a good collaboration, or a
               conversation about developer tools and design systems.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
               <ButtonAnchor href="mailto:jonathanlouisfox@gmail.com" variant="teal">
                 Send an email
               </ButtonAnchor>

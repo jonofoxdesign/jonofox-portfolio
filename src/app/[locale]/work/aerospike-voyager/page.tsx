@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import CaseStudyLayout, { Section, ImagePlaceholder } from "@/components/layout/CaseStudyLayout";
 
 export const metadata: Metadata = {
-  description: "Leading end-to-end design of Aerospike's first visual developer tool — a guided path from connection to confidence.",
+  title: "Voyager Visual Developer Tool — Aerospike Database",
+  description: "Product design case study: end-to-end design of Aerospike's first visual developer tool for an enterprise NoSQL database. Developer experience design from connection to confidence.",
 };
 
 export default function AerospikeVoyagerPage() {

@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import { ButtonAnchor, TextLink } from "@/components/ui/Button";
+
+export const metadata: Metadata = {
+  title: "About",
+  description: "Jono Fox — Principal Product Designer with 6+ years in product and 9 years as an Art Director. Specialist in developer tools, design systems, DevEx, and enterprise B2B products. Expert in Figma and AI-augmented design workflows.",
+};
 
 const roles = [
   { company: "Aerospike", title: "Principal Product Designer", years: "2023 – Now" },

@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import CaseStudyLayout, { Section, ImagePlaceholder } from "@/components/layout/CaseStudyLayout";
 
 export const metadata: Metadata = {
-  description: "A cluster provisioning flow that lets teams move fast with safe defaults, switch to advanced control when needed, and recover quickly when something goes wrong.",
+  title: "Cluster Provisioning — Aerospike Database",
+  description: "Product design case study: cluster provisioning for Aerospike, an enterprise NoSQL database. Safe defaults, deep configuration, and clear guidance for developer teams.",
 };
 
 export default function AerospikeProvisioningPage() {

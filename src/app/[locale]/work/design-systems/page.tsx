@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import CaseStudyLayout, { Section, ImagePlaceholder } from "@/components/layout/CaseStudyLayout";
 
 export const metadata: Metadata = {
-  description: "Building design systems across three companies — and extending them into an instruction layer for AI-assisted workflows.",
+  title: "Design Systems at Scale",
+  description: "Product design case study: building scalable design systems at Aerospike, Sygnum Bank, and Workwise — Figma libraries, token architecture, and an AI instruction layer for Claude, Cursor, and Codex.",
 };
 
 export default function DesignSystemsPage() {

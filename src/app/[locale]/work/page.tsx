@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ButtonAnchor } from "@/components/ui/Button";
+
+export const metadata: Metadata = {
+  title: "Work",
+  description: "Product design case studies in developer tools, design systems, fintech, and enterprise B2B. Aerospike database, Sygnum digital assets bank, Goodlife Health Clubs, and more.",
+};
 
 const caseStudies = [
   {

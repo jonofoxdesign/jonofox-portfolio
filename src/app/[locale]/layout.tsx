@@ -25,8 +25,8 @@ export async function generateMetadata({
       template: "%s | Jono Fox",
     },
     description: isDE
-      ? "Principal Product Designer für Developer Tools und komplexe Systeme. Ich helfe Engineering-Teams, Produkte zu entwickeln, die Menschen wirklich verstehen."
-      : "Principal product designer for developer tools and complex systems. I help engineering teams ship products people actually understand.",
+      ? "Principal Product Designer für Developer Tools, Design Systems und komplexe B2B-Produkte. Aerospike, Sygnum Bank, Goodlife. Verfügbar für Senior-IC- und Design-Leadership-Rollen."
+      : "Jono Fox — Principal Product Designer specialising in developer tools, design systems, and complex B2B products. Aerospike, Sygnum Bank, Goodlife. Available for senior IC and design leadership roles.",
     metadataBase: new URL("https://jonofox.com"),
     alternates: {
       canonical: `/${locale}`,
@@ -86,8 +86,62 @@ export default async function LocaleLayout({
 
   const messages = locale === "de" ? deMessages : enMessages;
 
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Jono Fox",
+    url: "https://jonofox.com",
+    jobTitle: "Principal Product Designer",
+    description:
+      "Principal Product Designer specialising in developer tools, design systems, and complex B2B products. 6+ years in product design, 9 years as an Art Director. Available for senior IC and design leadership roles.",
+    sameAs: [
+      "https://www.linkedin.com/in/jonofox/",
+    ],
+    knowsAbout: [
+      "Product Design",
+      "UX Design",
+      "Developer Experience",
+      "Developer Tools",
+      "Design Systems",
+      "User Research",
+      "Interaction Design",
+      "Visual Design",
+      "Prototyping",
+      "Design Leadership",
+      "Figma",
+      "Design Tokens",
+      "B2B Product Design",
+      "Enterprise Software",
+      "SaaS",
+      "Fintech",
+      "DevEx",
+      "AI-augmented Design",
+      "Art Direction",
+    ],
+    hasOccupation: {
+      "@type": "Occupation",
+      name: "Principal Product Designer",
+      skills:
+        "Product Design, UX Design, Design Systems, Developer Experience, Figma, User Research, Interaction Design, Prototyping, Design Leadership, B2B, SaaS, Enterprise, Fintech",
+    },
+    worksFor: {
+      "@type": "Organization",
+      name: "Aerospike",
+      url: "https://aerospike.com",
+    },
+    alumniOf: [
+      { "@type": "Organization", name: "Workwise" },
+      { "@type": "Organization", name: "Sygnum Bank" },
+      { "@type": "Organization", name: "Publicis" },
+    ],
+  };
+
   return (
     <NextIntlClientProvider messages={messages} locale={locale}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
       <Nav />
       <main>{children}</main>
       <Footer />

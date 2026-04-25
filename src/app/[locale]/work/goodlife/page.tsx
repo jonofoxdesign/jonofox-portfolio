@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import CaseStudyLayout, { Section, ImagePlaceholder } from "@/components/layout/CaseStudyLayout";
 
 export const metadata: Metadata = {
-  description: "Redesigning Goodlife's membership sign-up flow to make contracts clear, choices understandable, and commitment something people felt good about.",
+  title: "Membership Sign-up Redesign — Goodlife Health Clubs",
+  description: "Product design case study: membership sign-up redesign for Goodlife Health Clubs, one of Australia's largest gym chains. Conversion-focused UX that prioritised trust and transparency over dark patterns.",
 };
 
 export default function GoodlifePage() {

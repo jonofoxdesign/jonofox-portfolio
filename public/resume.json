@@ -1,0 +1,144 @@
+{
+  "basics": {
+    "name": "Jono Fox",
+    "label": "Principal Product Designer",
+    "url": "https://jonofox.com",
+    "summary": "Principal Product Designer with 6+ years in product design and 9 years as an Art Director in advertising. Specialist in developer tools, design systems, developer experience (DevEx), and complex B2B/enterprise products. Currently at Aerospike, previously Workwise, Sygnum Bank, and Publicis. Available for senior IC and design leadership roles.",
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "url": "https://www.linkedin.com/in/jonofox/"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://jonofox.com"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Aerospike",
+      "position": "Principal Product Designer",
+      "url": "https://aerospike.com",
+      "startDate": "2023",
+      "endDate": "Present",
+      "summary": "Principal Product Designer at an enterprise NoSQL database company. Leading design of developer tools, cluster provisioning flows, and visual database exploration tools. Building and owning the design system including an AI instruction layer for Claude, Cursor, and Codex.",
+      "highlights": [
+        "Designed cluster provisioning flow enabling teams to launch in under 90 seconds",
+        "Led end-to-end design of Aerospike Voyager, the company's first visual developer tool",
+        "Built and owns design system including AI-readable documentation layer",
+        "Established design system used across multiple product teams"
+      ]
+    },
+    {
+      "name": "Workwise",
+      "position": "Expert Product Designer",
+      "startDate": "2022",
+      "endDate": "2023",
+      "summary": "Senior product design role at a recruiting platform. Stabilised and evolved a design system that had grown organically, improving consistency across teams.",
+      "highlights": [
+        "Stabilised and evolved company-wide design system",
+        "Improved UI consistency across product teams"
+      ]
+    },
+    {
+      "name": "Sygnum Bank",
+      "position": "Senior Product Designer / Team Lead",
+      "startDate": "2021",
+      "endDate": "2022",
+      "summary": "Design Lead at the world's first regulated digital asset bank. Designed the central digital assets dashboard. Led a junior designer. Built and validated a new design system under real product complexity.",
+      "highlights": [
+        "Designed digital assets dashboard for high-net-worth private banking clients",
+        "Led junior designer as Team Lead",
+        "Built design system from scratch, adopted across all product teams",
+        "Translated complex blockchain and fintech concepts into understandable UI"
+      ]
+    },
+    {
+      "name": "Publicis",
+      "position": "Senior Conceptual Designer",
+      "startDate": "2018",
+      "endDate": "2021",
+      "summary": "Senior Conceptual Designer / Art Director at global advertising agency. Worked across Droga5, Clemenger BBDO, Grey, and others.",
+      "highlights": [
+        "Cannes Lions award winner",
+        "Webby Awards, D&AD, The One Show, New York Festivals recognition",
+        "Worked with clients including Heineken, Netflix, American Express, Gillette, UBS"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Product Design",
+      "keywords": [
+        "UX Design",
+        "Interaction Design",
+        "Visual Design",
+        "Prototyping",
+        "User Research",
+        "Usability Testing",
+        "Information Architecture",
+        "Product Strategy"
+      ]
+    },
+    {
+      "name": "Design Systems",
+      "keywords": [
+        "Figma",
+        "Figma Libraries",
+        "Design Tokens",
+        "Component Architecture",
+        "Design System Documentation",
+        "AI Instruction Layers",
+        "Material UI"
+      ]
+    },
+    {
+      "name": "Domain Expertise",
+      "keywords": [
+        "Developer Tools",
+        "Developer Experience (DevEx)",
+        "B2B / Enterprise Software",
+        "SaaS",
+        "Fintech",
+        "Database Tools",
+        "Complex Systems",
+        "AI-augmented Workflows"
+      ]
+    },
+    {
+      "name": "Leadership",
+      "keywords": [
+        "Design Leadership",
+        "Team Mentoring",
+        "Design Strategy",
+        "Cross-functional Collaboration",
+        "Stakeholder Management"
+      ]
+    }
+  ],
+  "awards": [
+    { "title": "Cannes Lions" },
+    { "title": "The Webby Awards" },
+    { "title": "D&AD" },
+    { "title": "The One Show" },
+    { "title": "New York Festivals" },
+    { "title": "Deutscher Design Club" },
+    { "title": "AWARD Awards" },
+    { "title": "AXIS Awards" }
+  ],
+  "interests": [
+    "Developer Experience Design",
+    "AI-augmented Design Workflows",
+    "Design Systems at Scale",
+    "Design and Engineering Collaboration"
+  ],
+  "openToWork": true,
+  "availableFor": [
+    "Senior Individual Contributor (IC)",
+    "Design Leadership",
+    "Principal Product Designer",
+    "Head of Design",
+    "Design Director"
+  ]
+}

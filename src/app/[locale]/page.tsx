@@ -1,5 +1,11 @@
 
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Jono Fox — Principal Product Designer",
+  description: "Jono Fox — Principal Product Designer specialising in developer tools, design systems, and complex B2B products. Aerospike, Sygnum Bank, Goodlife. Available for senior IC and design leadership roles.",
+};
 import { ButtonLink, ButtonAnchor, TextLink } from "@/components/ui/Button";
 import TestimonialCarousel from "@/components/ui/TestimonialCarousel";
 

@@ -21,8 +21,8 @@ export default function GoodlifePage() {
       }}
     >
       <Section heading="The problem">
-        <p>Gym memberships are notoriously difficult to understand. At Goodlife, this showed up clearly in customer feedback. People weren&apos;t frustrated by the gyms or the staff — they were frustrated by contracts, hidden fees, and unclear cancellation terms. The existing sign-up experience reinforced that mistrust.</p>
-        <p>From a business perspective, the flow was also dated and brittle. It relied on patterns that pushed people through checkout without helping them feel confident in their decisions. The challenge wasn&apos;t just to increase conversion. It was to create an experience that felt transparent, modern, and fair.</p>
+        <p>Gym memberships are notoriously difficult to understand. At Goodlife, this showed up clearly in customer feedback. People weren&apos;t frustrated by the gyms or the staff. They were frustrated by contracts, hidden fees, and unclear cancellation terms. The existing sign-up experience reinforced that mistrust.</p>
+        <p>From a business perspective, the flow was also dated and brittle. It relied on patterns that pushed people through checkout without helping them feel confident. The goal wasn&apos;t just higher conversion. I wanted the experience to feel transparent, so that people who signed up actually felt good about what they&apos;d agreed to.</p>
         <p>Underneath, every decision added complexity. Location, membership length, deposit amount, and location-specific extras all affected pricing and terms. Together, these inputs created hundreds of valid membership configurations that needed to remain accurate, consistent, and explainable.</p>
       </Section>
 
@@ -40,7 +40,7 @@ export default function GoodlifePage() {
       <Section heading="The core design decision">
         <p>The most important decision was to treat sign-up as an exploration and configuration process, not a traditional checkout.</p>
         <p>I designed a progressive flow where users made one decision at a time, each shaping what they saw next. I removed the standard cart step entirely and replaced it with a persistent summary that updated in real time as users configured their membership. As people adjusted membership length, deposits, or optional features, the summary immediately reflected the impact on pricing and commitments.</p>
-        <p>The goal was not persuasion. It was confidence. If someone reached payment, they should already understand their commitment.</p>
+        <p>The goal wasn&apos;t to push people through. It was to make sure that by the time someone reached payment, they already understood exactly what they were signing up for.</p>
       </Section>
 
       <ImagePlaceholder label="Progressive configuration — one decision at a time, summary updating in real time" />
@@ -52,12 +52,12 @@ export default function GoodlifePage() {
 
       <Section heading="Outcome">
         <p>The redesigned sign-up flow shipped largely as designed. Users responded positively to the increased clarity and sense of control. Stakeholders felt confident signing off on the experience, and the prototype reduced back-and-forth during development by making the logic explicit early.</p>
-        <p>What stayed with me most was how much people were already carrying before they clicked the first button. The frustration wasn&apos;t with the gym — it was the anxiety of committing to something they didn&apos;t fully understand. Designing for that emotional state turned out to be a better brief than &quot;increase conversion.&quot;</p>
+        <p>What stayed with me most was how much people were already carrying before they clicked the first button. The frustration wasn&apos;t with the gym. It was the anxiety of committing to something they didn&apos;t fully understand. Designing for that emotional state turned out to be a better brief than &quot;increase conversion.&quot;</p>
       </Section>
 
       <Section heading="What I&apos;d carry forward">
         <p>Push harder on platform constraints earlier. The experience delivered what it was meant to, but some of that came at a cost in engineering time that better upfront scoping could have avoided.</p>
-        <p>The bigger lesson: understanding what users are feeling before they start is as important as understanding what they need to do. The best brief here wasn&apos;t the business goal — it was the emotional one.</p>
+        <p>The bigger lesson: understanding what users are feeling before they start is as important as understanding what they need to do. The best brief here wasn&apos;t the business goal. It was the emotional one.</p>
       </Section>
     </CaseStudyLayout>
   );

@@ -21,8 +21,8 @@ export default function AerospikeVoyagerPage() {
       }}
     >
       <Section heading="The problem">
-        <p>Aerospike is powerful but hard to learn. New developers didn&apos;t know where to start. Understanding the data model required jumping between tools. Early exploration felt opaque and error-prone. The first moment of clarity took too long to reach.</p>
-        <p>The core issue wasn&apos;t just missing tooling. It was a lack of clarity, confidence, and momentum in the first hour of using Aerospike. Existing tools exposed power. None of them explained what was happening.</p>
+        <p>Aerospike is powerful but hard to learn. New developers didn&apos;t know where to start, understanding the data model meant jumping between tools, and early exploration was mostly guesswork. The moment where things started to make sense took way too long.</p>
+        <p>Other tools gave you access to the database but didn&apos;t explain it. There was no guided path from zero to actually understanding what you were looking at.</p>
       </Section>
 
       <ImagePlaceholder label="Voyager — main data browser UI" />
@@ -32,7 +32,7 @@ export default function AerospikeVoyagerPage() {
       </Section>
 
       <Section heading="What I learned early">
-        <p>I started with a fast discovery phase — reviewing Gong calls, internal feedback, competitor tools, and the original engineering prototype. A few things showed up consistently: developers needed a clear starting point, not just flexibility. Seeing real data quickly was critical to building confidence. Existing tools exposed power, but not understanding. Aerospike&apos;s core concepts remained abstract without visualisation.</p>
+        <p>I started with a fast discovery phase, reviewing Gong calls, internal feedback, competitor tools, and the original engineering prototype. A few things kept coming up: developers needed a clear starting point more than they needed flexibility. Seeing real data quickly mattered a lot for building confidence. And Aerospike&apos;s core concepts stayed abstract until you could see them in front of you.</p>
         <p>This pointed to the job-to-be-done: get from zero to a working prototype fast enough to validate Aerospike for a real use case.</p>
       </Section>
 
@@ -53,12 +53,12 @@ export default function AerospikeVoyagerPage() {
 
       <Section heading="Outcome">
         <p>Voyager v0.1 shipped as Aerospike&apos;s first visual tool for data exploration. It introduced a visual way to understand Aerospike data, a guided onboarding flow for developers starting from zero, and a foundation for AI-assisted workflows via MCP server integration.</p>
-        <p>That last part matters. The guided path we designed for developers became the interface that AI tools use to explore the database. The same mental model that helps a new developer orient is now the structure that makes Aerospike legible to a machine. The UX work didn&apos;t just serve the product — it shaped what came after it.</p>
-        <p>Most importantly, it reframed the experience from &quot;figure it out yourself&quot; to &quot;guided path to confidence.&quot;</p>
+        <p>That last part matters. The guided path we designed for developers became the interface that AI tools use to explore the database. The same mental model that helps a new developer orient is now the structure that makes Aerospike legible to a machine. The UX work didn&apos;t just serve the product. It shaped what came after it.</p>
+        <p>And it got developers from &quot;figure it out yourself&quot; to &quot;I actually understand what I&apos;m looking at.&quot;</p>
       </Section>
 
       <Section heading="What I&apos;d carry forward">
-        <p>Define interaction constraints alongside technical constraints from the start. Complexity around querying, nested data, and edge cases is easier to design for early than to retrofit late.</p>
+        <p>Looking back, I&apos;d push harder to define interaction constraints and technical constraints at the same time. Querying complexity, nested data, edge cases — those were easier to design for early and a lot harder to retrofit once things were already built.</p>
         <p>Building at this pace also reinforced something I already suspected: moving fast without a shared foundation creates inconsistency that compounds. That realisation shaped how I approached the design system work that followed.</p>
       </Section>
     </CaseStudyLayout>

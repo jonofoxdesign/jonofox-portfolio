@@ -21,8 +21,8 @@ export default function DesignSystemsPage() {
       }}
     >
       <Section heading="The shared problem">
-        <p>At Sygnum, there were nine different design styles across separate CSS repositories. At Workwise, early decisions stopped scaling. At Aerospike, multiple teams were about to build without any shared foundation.</p>
-        <p>Different companies, same pattern: inconsistent UI patterns across teams, multiple versions of the same component, local decisions without shared standards, and new team members unsure what good looked like. The problem wasn&apos;t a lack of components. It was a lack of shared understanding.</p>
+        <p>At Sygnum there were nine different design styles across separate CSS repositories. At Workwise, early decisions had stopped scaling. At Aerospike, multiple teams were about to start building without anything shared to build from.</p>
+        <p>The pattern was the same every time: inconsistent UI across teams, multiple versions of the same component, local decisions without shared standards, new people not knowing what good looked like. It wasn&apos;t that there weren&apos;t components. It was that nobody agreed on them.</p>
       </Section>
 
       <ImagePlaceholder label="Before/after — UI consistency at one of the three companies" />
@@ -33,8 +33,8 @@ export default function DesignSystemsPage() {
       </Section>
 
       <Section heading="The real challenge">
-        <p>The hard part wasn&apos;t building components. It was aligning three things at once: design intent in Figma, production reality in code, and how decisions are made across people and process.</p>
-        <p>At Aerospike, there was a fourth challenge none of us had dealt with before — AI tools generating UI and prototypes alongside the team. A system designed for humans wasn&apos;t legible to machines. That had to change too.</p>
+        <p>Building components was the easy bit. The harder part was aligning design intent in Figma with production reality in code, and figuring out how decisions actually get made across people and process.</p>
+        <p>At Aerospike there was a fourth challenge none of us had dealt with before: AI tools were generating UI and prototypes alongside the team. A system designed for humans wasn&apos;t legible to machines. That had to change too.</p>
         <p>At Sygnum and Aerospike, I based the system on Material UI: a deliberate tradeoff for accessibility defaults, proven interaction patterns, and faster alignment with engineering. We adapted the visual layer to match the product instead of rebuilding everything from scratch.</p>
       </Section>
 
@@ -48,18 +48,18 @@ export default function DesignSystemsPage() {
       <ImagePlaceholder label="Figma → Code → Markdown → AI — the connected loop" />
 
       <Section heading="A connected ecosystem">
-        <p>The system evolved from a set of assets into a loop: Figma captures design intent and exploration → code (monorepo) holds production components → the markdown layer defines system logic and guidance → AI tools generate UI and prototypes using those rules.</p>
-        <p>Instead of a handoff, decisions are encoded once and reused across every layer. Speed increases — and so does the risk of inconsistency. Clear rules manage that. Existing coded components can be used freely, new components require review, and generated output must map back to system tokens and components.</p>
+        <p>The system evolved from a set of assets into a loop: Figma captures design intent → code holds production components → the markdown layer defines system logic and guidance → AI tools generate UI using those rules.</p>
+        <p>Decisions get encoded once and reused across every layer. That speeds things up, but it also means inconsistency scales fast when rules aren&apos;t clear. That&apos;s what the contribution rules and review process manage.</p>
       </Section>
 
       <Section heading="Outcomes">
-        <p>Across all three systems, components were reused consistently, design and engineering rework was reduced, and the systems remained in place beyond my involvement. Stakeholders gained confidence in UI decisions and delivery became more predictable.</p>
-        <p>These weren&apos;t perfect systems. They were stable enough to support growth.</p>
+        <p>Across all three systems, components were reused consistently, design and engineering rework went down, and the systems stayed in place beyond my involvement. Stakeholders gained confidence in UI decisions and delivery became more predictable.</p>
+        <p>None of these were perfect systems. They were solid enough that teams kept using them and building on top of them without needing to start over. That&apos;s what I was aiming for.</p>
       </Section>
 
       <Section heading="What I&apos;d carry forward">
-        <p>Design systems sit between rules and judgment. They need maintenance, conversation, and evolution — not just at launch.</p>
-        <p>What&apos;s changing now is the surface area. Systems are no longer just component libraries. They&apos;re becoming infrastructure for product teams, shared language between design and engineering, and instruction layers for AI-assisted workflows. The challenge is no longer just consistency across people — it&apos;s consistency across designers, engineers, and the tools helping build the product. That&apos;s the work I&apos;m most interested in.</p>
+        <p>Design systems need maintenance, conversation, and evolution. The work doesn&apos;t stop at launch. It just becomes a different kind of work.</p>
+        <p>What I find interesting now is that the surface area is changing. Systems aren&apos;t just component libraries anymore. They&apos;re becoming the shared language between design, engineering, and the AI tools building alongside the team. Keeping that consistent across all three is a harder and more interesting version of the same problem. That&apos;s the work I&apos;m most interested in.</p>
       </Section>
     </CaseStudyLayout>
   );

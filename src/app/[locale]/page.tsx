@@ -47,15 +47,15 @@ const logoFiles = [
 const pillars = [
   {
     title: "Design systems that designers, engineers, and AI tools can trust",
-    body: "I build design systems as shared infrastructure. Tokens, components, contribution rules, and documentation. At Aerospike, I extended that into a structured layer that AI tools use to generate system-aligned output. The system holds whether a human or a machine is building from it.",
+    body: "A design system only works if everyone uses it. So I build them as shared infrastructure: tokens, components, contribution rules, and documentation that holds up as teams grow. At Aerospike I took that further, building a structured layer that AI tools use to generate output that's system-consistent by default. That's increasingly the part that matters.",
   },
   {
     title: "Make developer tools feel approachable without dumbing them down",
-    body: "Developer tools usually fail in one of two ways. They're either too simple to trust, or too complex to move through. I design for the space in between. Experts get deep control when they need it, and newcomers have a clear path forward without needing a manual.",
+    body: "Developer tools usually fail in one of two ways. Too simple to trust, or too complex to move through. I try to work in the space between those. Experts can go deep when they want to, and newcomers have a path forward that doesn't require reading the docs first.",
   },
   {
     title: "The details are what really matter",
-    body: "I pay attention to the parts users notice without knowing why. The edge case handled gracefully, the label that doesn't need explaining, the transition that feels right. Those small moments add up into something that feels finished and trustworthy.",
+    body: "I pay attention to the parts users notice without knowing why. The edge case handled well, the label that doesn't need explaining, the transition that just feels right. Those things add up into something that feels properly done.",
   },
 ];
 
@@ -225,8 +225,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             Let's <span className="text-fox">talk</span>
           </h2>
           <p className="text-ink-disabled mb-8 leading-relaxed">
-            Seen something that resonates? I'm open to the right opportunity, a
-            collaboration, or a good conversation about design.
+            Seen something that resonates? I&apos;m open to the right opportunity, a
+            good collaboration, or just a conversation about where design is heading.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <ButtonAnchor href="mailto:jonathanlouisfox@gmail.com" variant="teal">

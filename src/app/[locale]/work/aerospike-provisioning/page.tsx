@@ -21,9 +21,9 @@ export default function AerospikeProvisioningPage() {
       }}
     >
       <Section heading="The problem">
-        <p>Before this project, getting started with Aerospike meant installing the database, provisioning your own infrastructure, and figuring out configuration yourself. For expert users, that was fine. For everyone else, it was a reason not to bother.</p>
-        <p>Aerospike Cloud was the managed offering that was supposed to change that. For it to succeed, customers needed a self-serve path to production-ready clusters. Not a tutorial, not a preview — a reliable first experience that felt trustworthy from the first click.</p>
-        <p>A managed service has a different bar. Defaults should be safe. Misconfiguration should be hard. Errors should be clear and actionable. Time to first value should be measured in minutes, not days. Aerospike&apos;s customers are deeply technical — backend, platform, and operations engineers who know their infrastructure and expect precision. A flow that felt dumbed down or opaque would lose their trust immediately.</p>
+        <p>Before this project, getting started with Aerospike meant installing the database yourself, provisioning your own infrastructure, and figuring out configuration from the docs. For expert users, that was fine. For everyone else, it was a reason not to bother.</p>
+        <p>Aerospike Cloud was the managed offering that was supposed to change that. For it to work, customers needed a self-serve path to production-ready clusters. Not a tutorial, not a preview. A reliable first experience that felt trustworthy from the start.</p>
+        <p>Managed services have a different bar than self-managed ones. Defaults have to be safe. Misconfiguration has to be hard. Errors have to actually tell you what went wrong. And the whole thing has to be fast. Aerospike&apos;s customers are backend, platform, and operations engineers who know their infrastructure and expect precision. A flow that felt dumbed down or opaque would lose them immediately.</p>
       </Section>
 
       <ImagePlaceholder label="Provisioning flow overview" />
@@ -43,9 +43,9 @@ export default function AerospikeProvisioningPage() {
 
       <Section heading="Designing for safe speed">
         <p><strong className="text-ink">Defaults that reflect how Aerospike actually works.</strong> Defaults were not generic cloud presets. They were based on Aerospike best practices and validated with engineers who run and support the database every day. If a user accepted every default, the result had to be something the Aerospike team would stand behind.</p>
-        <p><strong className="text-ink">Progressive control without punishment.</strong> Advanced settings were available without forcing everyone into expert mode from the start. For users who wanted full control, JSON/YAML configuration was exposed deliberately — not hidden, and not required. It was possible to move between modes without restarting the flow or losing context.</p>
-        <p><strong className="text-ink">Guardrails instead of surprises.</strong> Provisioning mistakes can be expensive. Throughout the flow, constraints and validation were designed to prevent invalid or risky configurations before launch. When something was wrong, errors were explicit about what needed to change and why. Errors were treated as part of the happy path, not edge cases.</p>
-        <p><strong className="text-ink">Docs as part of the system.</strong> Contextual guidance appeared alongside decisions, matched the language and behaviour of the UI, and reinforced the same mental model across UI, APIs, and docs. Users could learn and validate choices in place, without needing to leave the product.</p>
+        <p><strong className="text-ink">Progressive control without punishment.</strong> Advanced settings were available without forcing everyone into expert mode from the start. For users who wanted full control, JSON/YAML configuration was exposed deliberately. It wasn&apos;t hidden, and it wasn&apos;t required. And it was possible to move between modes without restarting the flow or losing context.</p>
+        <p><strong className="text-ink">Guardrails instead of surprises.</strong> Provisioning mistakes can be expensive. Throughout the flow, constraints and validation were designed to prevent invalid or risky configurations before launch. When something was wrong, errors were explicit about what needed to change and why. Error paths got as much design attention as success paths.</p>
+        <p><strong className="text-ink">Docs as part of the system.</strong> Contextual guidance appeared alongside decisions, matched the language and behaviour of the UI, and reinforced the same mental model across UI, APIs, and docs. Users could learn and validate choices without leaving the product.</p>
       </Section>
 
       <ImagePlaceholder label="Contextual documentation panel in context" />
@@ -57,8 +57,9 @@ export default function AerospikeProvisioningPage() {
       </Section>
 
       <Section heading="What I&apos;d carry forward">
-        <p>Speed and safety are not opposites. Advanced users still benefit from clear defaults. Errors and recovery deserve as much design attention as success paths. Documentation, APIs, and the UI have to tell the same story — when they do, users can move faster with more confidence.</p>
-        <p>Provisioning is not just setup. It is the first proof that a system can be trusted.</p>
+        <p>Speed and safety turned out not to be opposites here. Advanced users still got a lot from having clear defaults. Error paths and recovery needed as much design time as the happy path.</p>
+        <p>The other thing I&apos;d carry forward: documentation, APIs, and UI have to tell the same story. When they don&apos;t, users lose confidence fast. When they do, people move faster than you&apos;d expect.</p>
+        <p>For engineers evaluating whether to use a managed service, provisioning is basically the whole pitch. Get it wrong and they&apos;re looking elsewhere.</p>
       </Section>
     </CaseStudyLayout>
   );

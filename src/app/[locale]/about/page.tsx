@@ -21,7 +21,7 @@ const skills = {
 const values = [
   {
     title: "Keep a learning mindset",
-    body: "I stay curious, test assumptions, and aim to grow with every project.",
+    body: "The moment I think I've figured out what users need is usually when I stop listening to them. I try to stay curious and push on my own assumptions.",
   },
   {
     title: "Find creative solutions to complexity",
@@ -29,7 +29,7 @@ const values = [
   },
   {
     title: "Ask 'how can this be more fun?'",
-    body: "Small sparks of delight matter. I try to build them in without getting in the way of clarity or usability.",
+    body: "There should always be time to step back and ask this. I want to create the small moments that people notice without knowing why — the things that make a product feel properly finished.",
   },
 ];
 
@@ -48,21 +48,22 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
               <span className="text-teal">and ship</span>
             </h1>
             <p className="text-lg text-ink-secondary leading-relaxed mb-6">
-              I spent nine years as an Art Director in advertising, at Droga5, Clemenger BBDO,
-              Grey, and others. That&apos;s where I learned how to make complicated things clear,
-              compelling, and human. I moved into product design in 2019 because I wanted to
-              work closer to the actual thing being built.
+              Nine years as an Art Director in advertising at Droga5, Clemenger BBDO, Grey,
+              and others. That&apos;s where I figured out how to make complicated things feel
+              clear. I moved into product design in 2019 because I wanted to be closer to the
+              thing actually being built.
             </p>
             <p className="text-lg text-ink-secondary leading-relaxed mb-6">
-              Since then, I&apos;ve worked across industries helping teams simplify complexity,
-              improve developer experience, and scale systems that hold up over time. I&apos;m
-              now a Principal Product Designer, often working on problems where direction is
-              still forming and alignment matters as much as execution.
+              Since then I&apos;ve mostly worked on developer tools and complex systems, helping
+              teams get from messy to structured and from promising to actually usable. I&apos;m
+              now a Principal Product Designer, usually working on problems where nobody&apos;s
+              completely sure what good looks like yet, and figuring that out is part of the job.
             </p>
             <p className="text-lg text-ink-secondary leading-relaxed mb-10">
-              I believe great product design is about helping others do their best work. That
-              means building tools and systems that are durable, clear, and calm under pressure.
-              It also means knowing when to subtract rather than add.
+              What I actually believe about design is pretty simple: the person using the thing
+              shouldn&apos;t have to work hard to understand what it&apos;s asking of them. When
+              I&apos;m not sure what to do next, removing something tends to work better than
+              adding it.
             </p>
             <TextLink href={contactHref}>Get in touch →</TextLink>
           </div>

@@ -79,8 +79,8 @@ export default function SygnumPage() {
       </Section>
 
       <Section heading="What I&apos;d carry forward">
-        <p>Design systems only matter if they hold up under real complexity. This project reinforced that structure and understanding matter more than novelty or surface polish — and that the most important design decisions are often about what to leave out.</p>
-        <p>As tools and AI make component creation easier, the value shifts further toward decision making, structure, and systems thinking. That&apos;s the part of the work I enjoy most.</p>
+        <p>What this project showed me is that a design system only proves itself under real complexity. The easy version is having components. The hard version is having components that hold up when things get genuinely complicated.</p>
+        <p>The most important decisions were often about what to leave out. As tools and AI make component creation faster, I think that&apos;s the part that matters more and more. The structural thinking, the &quot;no, that&apos;s already handled by X&quot; conversations. That&apos;s the work I enjoy most.</p>
       </Section>
     </CaseStudyLayout>
   );

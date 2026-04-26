@@ -100,7 +100,7 @@ export default function TestimonialCarousel() {
             pg === pages[1] ? pg : tallest
           ).map((t) => (
             <div key={t.name} className="bg-surface-light rounded-2xl border border-surface-muted p-6 flex flex-col gap-6">
-              <p className="text-sm text-ink-secondary leading-relaxed italic flex-1">"{t.quote}"</p>
+              <p className="text-sm text-ink-secondary leading-relaxed flex-1">"{t.quote}"</p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-surface-muted flex-shrink-0" />
                 <div>
@@ -134,7 +134,7 @@ export default function TestimonialCarousel() {
                   key={t.name}
                   className="bg-surface-light rounded-2xl border border-surface-muted p-6 flex flex-col gap-6"
                 >
-                  <p className="text-sm text-ink-secondary leading-relaxed italic flex-1">
+                  <p className="text-sm text-ink-secondary leading-relaxed flex-1">
                     "{t.quote}"
                   </p>
                   <div className="flex items-center gap-3">

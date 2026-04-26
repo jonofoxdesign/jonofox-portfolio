@@ -192,7 +192,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                   <h3 className="font-syne font-bold text-2xl text-ink leading-snug">
                     {card.title}
                   </h3>
-                  <p className="text-sm text-ink-secondary leading-relaxed max-w-lg">
+                  <p className="text-sm text-ink-secondary leading-relaxed">
                     {card.body}
                   </p>
                   <span className="inline-block text-sm font-medium text-teal group-hover:text-teal-hover transition-colors">

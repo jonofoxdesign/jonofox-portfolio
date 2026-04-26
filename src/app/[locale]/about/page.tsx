@@ -18,29 +18,112 @@ const awards = [
   "New York Festivals", "Deutscher Design Club", "AWARD Awards", "AXIS Awards",
 ];
 
-const skills = {
-  howIThink: ["Deep focus", "Systems thinking", "Decision driven", "Asks 'Why' a lot", "Pattern recognition", "Team mentoring"],
-  whatIDo: ["DevEx design", "Scalable design systems", "Figma libraries", "AI-augmented workflows", "Product strategy", "User research"],
-  howIWork: ["Feedback friendly", "Problem-first", "Shares early", "Human-centered", "Cuts complexity", "Pragmatic polish"],
-};
-
-const values = [
-  {
-    title: "Keep a learning mindset",
-    body: "The moment I think I've figured out what users need is usually when I stop listening to them. I try to stay curious and push on my own assumptions.",
+const content = {
+  en: {
+    hero: {
+      h1a: "I think clearly, design carefully,",
+      h1b: "and ship",
+      p1: "Nine years as an Art Director in advertising at Droga5, Clemenger BBDO, Grey, and others. That's where I figured out how to make complicated things feel clear. I moved into product design in 2019 because I wanted to be closer to the thing actually being built.",
+      p2: "Since then I've mostly worked on complex systems. Developer tools at Aerospike, banking infrastructure at Sygnum, recruiting platform at Workwise. Helping teams get from messy to structured and from promising to actually usable. I'm now a Principal Product Designer, usually working on problems where nobody's completely sure what good looks like yet, and figuring that out is part of the job.",
+      p3: "What I actually believe about design is pretty simple: the person using the thing shouldn't have to work hard to understand what it's asking of them. When I'm not sure what to do next, removing something tends to work better than adding it.",
+      p4: "I also care about making the case for experience as something that moves the business. When design is close to decisions early, users get to value faster, friction drops, and teams ship better. I enjoy helping PMs and engineers see that connection.",
+      contact: "Get in touch →",
+    },
+    roles: {
+      heading: "Recent roles",
+    },
+    awards: {
+      heading: "Awards &",
+      headingAccent: "recognition",
+    },
+    buttons: {
+      cv: "Download CV",
+      linkedin: "Connect on LinkedIn",
+    },
+    skills: {
+      heading: "Skills &",
+      headingAccent: "strengths",
+      howIThink: "How I think",
+      whatIDo: "What I do",
+      howIWork: "How I work",
+      howIThinkItems: ["Deep focus", "Systems thinking", "Decision driven", "Asks 'Why' a lot", "Pattern recognition", "Team mentoring"],
+      whatIDoItems: ["DevEx design", "Scalable design systems", "Figma libraries", "AI-augmented workflows", "Product strategy", "User research"],
+      howIWorkItems: ["Feedback friendly", "Problem-first", "Shares early", "Human-centered", "Cuts complexity", "Pragmatic polish"],
+    },
+    values: {
+      heading: "Design",
+      headingAccent: "values",
+      items: [
+        {
+          title: "Keep a learning mindset",
+          body: "The moment I think I've figured out what users need is usually when I stop listening to them. I try to stay curious and push on my own assumptions.",
+        },
+        {
+          title: "Find creative solutions to complexity",
+          body: "I love that moment when everything clicks into place.",
+        },
+        {
+          title: "Ask 'how can this be more fun?'",
+          body: "There should always be time to step back and ask this. I want to create the small moments that people notice without knowing why — the things that make a product feel properly finished.",
+        },
+      ],
+    },
   },
-  {
-    title: "Find creative solutions to complexity",
-    body: "I love that moment when everything clicks into place.",
+  de: {
+    hero: {
+      h1a: "Ich denke klar, designe sorgfältig",
+      h1b: "und liefere",
+      p1: "Neun Jahre als Art Director in der Werbung – bei Droga5, Clemenger BBDO, Grey und anderen. Dort habe ich gelernt, wie man komplizierte Dinge klar erscheinen lässt. 2019 bin ich ins Product Design gewechselt, weil ich näher an dem sein wollte, was tatsächlich gebaut wird.",
+      p2: "Seitdem arbeite ich hauptsächlich an komplexen Systemen. Developer-Tools bei Aerospike, Banking-Infrastruktur bei Sygnum, Recruiting-Plattform bei Workwise. Dabei helfe ich Teams, vom Chaos zur Struktur zu kommen und von vielversprechend zu wirklich nutzbar. Ich bin jetzt Principal Product Designer und arbeite meistens an Problemen, bei denen noch niemand genau weiß, wie gut aussieht. Das herauszufinden ist ein Teil der Arbeit.",
+      p3: "Was ich wirklich über Design glaube, ist ziemlich einfach: Die Person, die etwas benutzt, sollte sich nicht anstrengen müssen, um zu verstehen, was es von ihr will. Wenn ich nicht sicher bin, was als nächstes zu tun ist, funktioniert Weglassen meistens besser als Hinzufügen.",
+      p4: "Mir ist auch wichtig, den Fall für Experience als etwas zu machen, das das Geschäft wirklich bewegt. Wenn Design früh nah an Entscheidungen ist, kommen Nutzer schneller zum Wert, Reibung nimmt ab und Teams liefern besser. Ich helfe PMs und Entwicklern gern, diese Verbindung zu sehen.",
+      contact: "Kontakt aufnehmen →",
+    },
+    roles: {
+      heading: "Letzte Positionen",
+    },
+    awards: {
+      heading: "Auszeichnungen &",
+      headingAccent: "Anerkennung",
+    },
+    buttons: {
+      cv: "Lebenslauf herunterladen",
+      linkedin: "Auf LinkedIn vernetzen",
+    },
+    skills: {
+      heading: "Fähigkeiten &",
+      headingAccent: "Stärken",
+      howIThink: "Wie ich denke",
+      whatIDo: "Was ich tue",
+      howIWork: "Wie ich arbeite",
+      howIThinkItems: ["Tiefe Konzentration", "Systemdenken", "Entscheidungsorientiert", "Fragt oft 'Warum'", "Mustererkennung", "Team-Mentoring"],
+      whatIDoItems: ["DevEx Design", "Skalierbare Design Systems", "Figma-Bibliotheken", "KI-gestützte Workflows", "Produktstrategie", "Nutzerforschung"],
+      howIWorkItems: ["Feedbackoffen", "Problemorientiert", "Teilt früh", "Menschenzentriert", "Reduziert Komplexität", "Pragmatische Sorgfalt"],
+    },
+    values: {
+      heading: "Design-",
+      headingAccent: "Werte",
+      items: [
+        {
+          title: "Lernbereit bleiben",
+          body: "Der Moment, in dem ich glaube, verstanden zu haben, was Nutzer brauchen, ist meistens genau dann, wenn ich aufgehört habe, ihnen zuzuhören. Ich versuche, neugierig zu bleiben und meine eigenen Annahmen zu hinterfragen.",
+        },
+        {
+          title: "Kreative Lösungen für Komplexität finden",
+          body: "Ich liebe den Moment, in dem alles an seinen Platz fällt.",
+        },
+        {
+          title: "Fragen: 'Wie kann das mehr Spaß machen?'",
+          body: "Es sollte immer Zeit geben, einen Schritt zurückzutreten und das zu fragen. Ich möchte die kleinen Momente schaffen, die Menschen bemerken, ohne zu wissen warum – die Dinge, die ein Produkt wirklich fertig wirken lassen.",
+        },
+      ],
+    },
   },
-  {
-    title: "Ask 'how can this be more fun?'",
-    body: "There should always be time to step back and ask this. I want to create the small moments that people notice without knowing why — the things that make a product feel properly finished.",
-  },
-];
+} as const;
 
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
+  const c = content[locale as keyof typeof content] ?? content.en;
   const contactHref = `/${locale}/contact`;
 
   return (
@@ -50,28 +133,22 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         <div className="max-w-6xl mx-auto px-6">
           <div className="max-w-3xl">
             <h1 className="font-syne text-5xl md:text-6xl font-bold text-ink leading-tight mb-8">
-              I think clearly, design carefully,{" "}
-              <span className="text-teal">and ship</span>
+              {c.hero.h1a}{" "}
+              <span className="text-teal">{c.hero.h1b}</span>
             </h1>
             <p className="text-lg text-ink-secondary leading-relaxed mb-6">
-              Nine years as an Art Director in advertising at Droga5, Clemenger BBDO, Grey,
-              and others. That&apos;s where I figured out how to make complicated things feel
-              clear. I moved into product design in 2019 because I wanted to be closer to the
-              thing actually being built.
+              {c.hero.p1}
             </p>
             <p className="text-lg text-ink-secondary leading-relaxed mb-6">
-              Since then I&apos;ve mostly worked on developer tools and complex systems, helping
-              teams get from messy to structured and from promising to actually usable. I&apos;m
-              now a Principal Product Designer, usually working on problems where nobody&apos;s
-              completely sure what good looks like yet, and figuring that out is part of the job.
+              {c.hero.p2}
+            </p>
+            <p className="text-lg text-ink-secondary leading-relaxed mb-6">
+              {c.hero.p3}
             </p>
             <p className="text-lg text-ink-secondary leading-relaxed mb-10">
-              What I actually believe about design is pretty simple: the person using the thing
-              shouldn&apos;t have to work hard to understand what it&apos;s asking of them. When
-              I&apos;m not sure what to do next, removing something tends to work better than
-              adding it.
+              {c.hero.p4}
             </p>
-            <TextLink href={contactHref}>Get in touch →</TextLink>
+            <TextLink href={contactHref}>{c.hero.contact}</TextLink>
           </div>
         </div>
       </section>
@@ -81,7 +158,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 mb-12">
             <div>
-              <h2 className="font-syne text-2xl font-bold text-ink mb-8">Recent roles</h2>
+              <h2 className="font-syne text-2xl font-bold text-ink mb-8">{c.roles.heading}</h2>
               <div className="space-y-6">
                 {roles.map((role) => (
                   <div key={role.company} className="flex justify-between items-start gap-4">
@@ -96,7 +173,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
             </div>
             <div>
               <h2 className="font-syne text-2xl font-bold text-ink mb-8">
-                Awards &amp; <span className="text-fox">recognition</span>
+                {c.awards.heading} <span className="text-fox">{c.awards.headingAccent}</span>
               </h2>
               <div className="grid grid-cols-2 gap-x-8 gap-y-3">
                 {awards.map((award) => (
@@ -112,7 +189,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
               rel="noopener noreferrer"
               variant="teal"
             >
-              Download CV
+              {c.buttons.cv}
             </ButtonAnchor>
             <ButtonAnchor
               href="https://www.linkedin.com/in/jonofox/"
@@ -120,7 +197,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
               rel="noopener noreferrer"
               variant="outline"
             >
-              Connect on LinkedIn
+              {c.buttons.linkedin}
             </ButtonAnchor>
           </div>
         </div>
@@ -130,29 +207,29 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
       <section className="py-24 bg-surface-light">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="font-syne text-2xl font-bold text-ink mb-10">
-            Skills &amp; <span className="text-teal">strengths</span>
+            {c.skills.heading} <span className="text-teal">{c.skills.headingAccent}</span>
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-4">How I think</p>
+              <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-4">{c.skills.howIThink}</p>
               <div className="flex flex-wrap gap-2">
-                {skills.howIThink.map((s) => (
+                {c.skills.howIThinkItems.map((s) => (
                   <span key={s} className="px-3 py-1 rounded-full bg-surface-muted text-xs text-ink-secondary">{s}</span>
                 ))}
               </div>
             </div>
             <div>
-              <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-4">What I do</p>
+              <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-4">{c.skills.whatIDo}</p>
               <div className="flex flex-wrap gap-2">
-                {skills.whatIDo.map((s) => (
+                {c.skills.whatIDoItems.map((s) => (
                   <span key={s} className="px-3 py-1 rounded-full bg-teal-subtle text-xs text-teal">{s}</span>
                 ))}
               </div>
             </div>
             <div>
-              <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-4">How I work</p>
+              <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-4">{c.skills.howIWork}</p>
               <div className="flex flex-wrap gap-2">
-                {skills.howIWork.map((s) => (
+                {c.skills.howIWorkItems.map((s) => (
                   <span key={s} className="px-3 py-1 rounded-full bg-surface-muted text-xs text-ink-secondary">{s}</span>
                 ))}
               </div>
@@ -165,10 +242,10 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
       <section className="py-24 bg-surface">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="font-syne text-2xl font-bold text-ink mb-10">
-            Design <span className="text-fox">values</span>
+            {c.values.heading} <span className="text-fox">{c.values.headingAccent}</span>
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            {values.map((v) => (
+            {c.values.items.map((v) => (
               <div key={v.title} className="space-y-3">
                 <div className="w-8 h-0.5 bg-gradient-accent" />
                 <h3 className="font-syne font-semibold text-ink">{v.title}</h3>

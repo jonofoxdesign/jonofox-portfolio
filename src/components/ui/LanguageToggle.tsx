@@ -15,9 +15,9 @@ export default function LanguageToggle() {
 
   const toggle = () => {
     if (isDE) {
-      router.push(`/en${pathname.replace(/^\/de/, "") || ""}`);
+      router.push(`/en${pathname.replace(/^\/de/, "") || ""}`, { scroll: false });
     } else {
-      router.push(`/de${pathname.replace(/^\/en/, "") || ""}`);
+      router.push(`/de${pathname.replace(/^\/en/, "") || ""}`, { scroll: false });
     }
   };
 

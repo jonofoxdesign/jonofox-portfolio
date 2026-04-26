@@ -16,7 +16,30 @@ interface CaseStudyLayoutProps {
   intro: string;
   meta: Meta;
   children: React.ReactNode;
+  locale?: string;
 }
+
+const metaLabels = {
+  en: { company: "Company", product: "Product", year: "Year", role: "Role", scope: "Scope", collaboration: "Collaboration" },
+  de: { company: "Unternehmen", product: "Produkt", year: "Jahr", role: "Rolle", scope: "Umfang", collaboration: "Zusammenarbeit" },
+};
+
+const cta = {
+  en: {
+    heading: "Let's",
+    headingAccent: "talk",
+    body: "Seen something that resonates? I'm open to the right opportunity, a collaboration, or a good conversation about design.",
+    email: "Send an email",
+    linkedin: "Connect on LinkedIn",
+  },
+  de: {
+    heading: "Lass uns",
+    headingAccent: "reden",
+    body: "Etwas gefunden, das dich anspricht? Ich bin offen für die richtige Gelegenheit, eine Zusammenarbeit oder ein gutes Gespräch über Design.",
+    email: "E-Mail schreiben",
+    linkedin: "Auf LinkedIn vernetzen",
+  },
+};
 
 export function ImagePlaceholder({ label }: { label: string }) {
   return (
@@ -35,7 +58,11 @@ export function Section({ heading, children }: { heading: string; children: Reac
   );
 }
 
-export default function CaseStudyLayout({ tag, title, intro, meta, children }: CaseStudyLayoutProps) {
+export default function CaseStudyLayout({ tag, title, intro, meta, children, locale }: CaseStudyLayoutProps) {
+  const lang = locale === "de" ? "de" : "en";
+  const labels = metaLabels[lang];
+  const c = cta[lang];
+
   return (
     <div className="pt-44">
       <div className="max-w-3xl mx-auto px-6 pb-24">
@@ -58,27 +85,27 @@ export default function CaseStudyLayout({ tag, title, intro, meta, children }: C
         {/* Metadata grid */}
         <div className="grid grid-cols-3 gap-x-8 gap-y-6 pb-12 border-b border-surface-muted mb-14">
           <div>
-            <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-1">Company</p>
+            <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-1">{labels.company}</p>
             <p className="text-sm text-ink">{meta.company}</p>
           </div>
           <div>
-            <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-1">Product</p>
+            <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-1">{labels.product}</p>
             <p className="text-sm text-ink">{meta.product}</p>
           </div>
           <div>
-            <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-1">Year</p>
+            <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-1">{labels.year}</p>
             <p className="text-sm text-ink">{meta.year}</p>
           </div>
           <div>
-            <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-1">Role</p>
+            <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-1">{labels.role}</p>
             <p className="text-sm text-ink">{meta.role}</p>
           </div>
           <div>
-            <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-1">Scope</p>
+            <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-1">{labels.scope}</p>
             <p className="text-sm text-ink">{meta.scope}</p>
           </div>
           <div>
-            <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-1">Collaboration</p>
+            <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-1">{labels.collaboration}</p>
             <p className="text-sm text-ink">{meta.collaboration}</p>
           </div>
         </div>
@@ -97,15 +124,14 @@ export default function CaseStudyLayout({ tag, title, intro, meta, children }: C
         <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-96 h-96 rounded-full bg-fox/10 blur-3xl pointer-events-none" />
         <div className="relative max-w-2xl mx-auto px-6 text-center">
           <h2 className="font-syne text-4xl font-bold mb-4">
-            Let's <span className="text-fox">talk</span>
+            {c.heading} <span className="text-fox">{c.headingAccent}</span>
           </h2>
           <p className="text-ink-disabled mb-8 leading-relaxed">
-            Seen something that resonates? I'm open to the right opportunity, a
-            collaboration, or a good conversation about design.
+            {c.body}
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <ButtonAnchor href="mailto:jonathanlouisfox@gmail.com" variant="teal">
-              Send an email
+              {c.email}
             </ButtonAnchor>
             <ButtonAnchor
               href="https://www.linkedin.com/in/jonofox/"
@@ -113,7 +139,7 @@ export default function CaseStudyLayout({ tag, title, intro, meta, children }: C
               rel="noopener noreferrer"
               variant="outlineLight"
             >
-              Connect on LinkedIn
+              {c.linkedin}
             </ButtonAnchor>
           </div>
         </div>

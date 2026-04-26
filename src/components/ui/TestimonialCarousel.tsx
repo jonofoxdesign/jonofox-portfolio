@@ -47,7 +47,13 @@ const pages = [testimonials.slice(0, 3), testimonials.slice(3)];
 // Render all pages invisibly to let the browser determine the tallest one,
 // then lock the container to that height. Cards use position:absolute so
 // entering and exiting slides overlap — no layout shift.
-export default function TestimonialCarousel() {
+export default function TestimonialCarousel({
+  heading = "In their",
+  headingAccent = "own words",
+}: {
+  heading?: string;
+  headingAccent?: string;
+}) {
   const [page, setPage] = useState(0);
   const [direction, setDirection] = useState(1);
 
@@ -64,7 +70,7 @@ export default function TestimonialCarousel() {
       {/* Header row with navigation */}
       <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between mb-12">
         <h2 className="font-syne text-4xl font-bold text-ink">
-          In their <span className="text-teal">own words</span>
+          {heading} <span className="text-teal">{headingAccent}</span>
         </h2>
         <div className="flex items-center gap-3 flex-shrink-0">
           <button

@@ -128,6 +128,10 @@
   will-change: transform;
 }
 
+@media (max-width: 767px) {
+  .marquee-track { animation-duration: 14s; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .marquee-track { animation-play-state: paused; }
 }

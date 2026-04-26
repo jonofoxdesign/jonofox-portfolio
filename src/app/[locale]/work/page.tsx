@@ -39,6 +39,7 @@ const caseStudies = [
     cta: "View case study",
     href: "/work/sygnum",
     image: "/case-studies/sygnum/sygnum-digital-assets-dashboard-hero.png",
+    gradient: "linear-gradient(135deg, #E0F2F1 0%, #E8EEF6 100%)",
   },
   {
     tag: "GOODLIFE HEALTH CLUBS",

@@ -26,6 +26,26 @@
   --color-fox: #F57C00;
   --color-fox-hover: #DB6800;
   --color-fox-subtle: #FFF2E0;
+
+  /* Indigo */
+  --color-indigo: #5A4FCF;
+  --color-indigo-hover: #473DB0;
+  --color-indigo-subtle: #ECEBFA;
+
+  /* Pink */
+  --color-pink: #E91E63;
+  --color-pink-hover: #C2185B;
+  --color-pink-subtle: #FCE4EC;
+
+  /* Green */
+  --color-green: #4CAF50;
+  --color-green-hover: #388E3C;
+  --color-green-subtle: #E8F5E9;
+
+  /* Blue */
+  --color-blue: #1976D2;
+  --color-blue-hover: #1565C0;
+  --color-blue-subtle: #E3F2FD;
 }
 
 :root {

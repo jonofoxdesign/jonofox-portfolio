@@ -22,7 +22,7 @@ const caseStudies = [
     body: "Led end-to-end design of Aerospike's first visual developer tool. A guided path from connection to confidence, with a foundation built for AI-assisted workflows.",
     cta: "View case study",
     href: "/work/aerospike-voyager",
-    gradient: "linear-gradient(135deg, #EDE9FE 0%, #8B5CF622 100%)",
+    gradient: "linear-gradient(135deg, #ECEBFA 0%, #5A4FCF22 100%)",
   },
   {
     tag: "MULTIPLE COMPANIES",
@@ -39,7 +39,7 @@ const caseStudies = [
     cta: "View case study",
     href: "/work/sygnum",
     image: "/case-studies/sygnum/sygnum-digital-assets-dashboard-hero.png",
-    gradient: "linear-gradient(135deg, #E0F2F1 0%, #E8EEF6 100%)",
+    gradient: "linear-gradient(135deg, #E3F2FD 0%, #1976D222 100%)",
   },
   {
     tag: "GOODLIFE HEALTH CLUBS",
@@ -47,7 +47,7 @@ const caseStudies = [
     body: "Redesigned Goodlife's membership sign-up flow to make contracts clear, choices understandable, and commitment something people felt good about.",
     cta: "View case study",
     href: "/work/goodlife",
-    gradient: "linear-gradient(135deg, #FEE2E2 0%, #EF444422 100%)",
+    gradient: "linear-gradient(135deg, #FCE4EC 0%, #E91E6322 100%)",
   },
 ];
 

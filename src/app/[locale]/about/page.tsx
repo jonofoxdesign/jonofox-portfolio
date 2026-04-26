@@ -26,7 +26,7 @@ const content = {
       p1: "Nine years as an Art Director in advertising at Droga5, Clemenger BBDO, Grey, and others. That's where I figured out how to make complicated things feel clear. I moved into product design in 2019 because I wanted to be closer to the thing actually being built.",
       p2: "Since then I've mostly worked on complex systems. Developer tools at Aerospike, banking infrastructure at Sygnum, recruiting platform at Workwise. Helping teams get from messy to structured and from promising to actually usable. I'm now a Principal Product Designer, usually working on problems where nobody's completely sure what good looks like yet, and figuring that out is part of the job.",
       p3: "What I actually believe about design is pretty simple: the person using the thing shouldn't have to work hard to understand what it's asking of them. When I'm not sure what to do next, removing something tends to work better than adding it.",
-      p4: "I also care about making the case for experience as something that moves the business. When design is close to decisions early, users get to value faster, friction drops, and teams ship better. I enjoy helping PMs and engineers see that connection.",
+      p4: "The other thing I've learned is that experience has a real effect on whether a product grows. Support load, retention, how fast users figure out what to do — design is in there somewhere. I've worked on enough of those situations to know how to get it right, and how to make the case when nobody's convinced yet.",
       contact: "Get in touch →",
     },
     roles: {
@@ -76,7 +76,7 @@ const content = {
       p1: "Neun Jahre als Art Director in der Werbung – bei Droga5, Clemenger BBDO, Grey und anderen. Dort habe ich gelernt, wie man komplizierte Dinge klar erscheinen lässt. 2019 bin ich ins Product Design gewechselt, weil ich näher an dem sein wollte, was tatsächlich gebaut wird.",
       p2: "Seitdem arbeite ich hauptsächlich an komplexen Systemen. Developer-Tools bei Aerospike, Banking-Infrastruktur bei Sygnum, Recruiting-Plattform bei Workwise. Dabei helfe ich Teams, vom Chaos zur Struktur zu kommen und von vielversprechend zu wirklich nutzbar. Ich bin jetzt Principal Product Designer und arbeite meistens an Problemen, bei denen noch niemand genau weiß, wie gut aussieht. Das herauszufinden ist ein Teil der Arbeit.",
       p3: "Was ich wirklich über Design glaube, ist ziemlich einfach: Die Person, die etwas benutzt, sollte sich nicht anstrengen müssen, um zu verstehen, was es von ihr will. Wenn ich nicht sicher bin, was als nächstes zu tun ist, funktioniert Weglassen meistens besser als Hinzufügen.",
-      p4: "Mir ist auch wichtig, den Fall für Experience als etwas zu machen, das das Geschäft wirklich bewegt. Wenn Design früh nah an Entscheidungen ist, kommen Nutzer schneller zum Wert, Reibung nimmt ab und Teams liefern besser. Ich helfe PMs und Entwicklern gern, diese Verbindung zu sehen.",
+      p4: "Was ich auch gelernt habe: Experience hat einen echten Einfluss darauf, ob ein Produkt wächst. Support-Aufwand, Retention, wie schnell Nutzer verstehen, was zu tun ist. Design steckt irgendwo dahinter. Ich habe genug solche Situationen erlebt, um zu wissen, wie man es richtig hinbekommt, und wie man argumentiert, wenn noch niemand überzeugt ist.",
       contact: "Kontakt aufnehmen →",
     },
     roles: {

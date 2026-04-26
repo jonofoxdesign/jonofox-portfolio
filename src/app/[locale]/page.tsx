@@ -36,7 +36,7 @@ const content = {
         },
         {
           title: "Good experience moves the numbers that matter",
-          body: "I work closely with PMs and engineering teams to make the case for design and then deliver on it. Getting users to value faster, reducing friction that becomes support volume, building something people actually come back to. I do my best work when I'm close to decisions from early on.",
+          body: "When the experience is right, users get to value faster, support load drops, and they come back. I've worked on enough products to know what it takes to get there, and to make the case when the room isn't there yet. I do my best work when I'm involved early enough that design can actually shape the outcome.",
         },
       ],
     },
@@ -108,7 +108,7 @@ const content = {
         },
         {
           title: "Gute Experience bewegt die Zahlen, die zählen",
-          body: "Ich arbeite eng mit PMs und Engineering-Teams zusammen, um den Fall für Design zu machen und ihn dann einzulösen. Nutzer schneller zum Wert bringen, Reibung reduzieren, die zu Support-Aufwand wird, etwas bauen, das Menschen wirklich wiederkommen lässt. Ich arbeite am besten, wenn ich früh nah an Entscheidungen bin.",
+          body: "Wenn die Experience stimmt, kommen Nutzer schneller zum Wert, der Support-Aufwand sinkt und sie kommen wieder. Ich habe genug Produkte begleitet, um zu wissen, was dafür nötig ist, und um den Fall zu machen, wenn der Raum noch nicht überzeugt ist. Ich arbeite am besten, wenn ich früh genug involviert bin, damit Design das Ergebnis wirklich beeinflussen kann.",
         },
       ],
     },

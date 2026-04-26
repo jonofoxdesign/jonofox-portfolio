@@ -38,7 +38,7 @@ const caseStudies = [
     body: "At the world's first regulated digital asset bank, clients had to call their account manager just to check their balance. I designed the dashboard that changed that.",
     cta: "View case study",
     href: "/work/sygnum",
-    image: "/case-studies/sygnum/sygnum1.png",
+    image: "/case-studies/sygnum/sygnum-digital-assets-dashboard-hero.png",
   },
   {
     tag: "GOODLIFE HEALTH CLUBS",

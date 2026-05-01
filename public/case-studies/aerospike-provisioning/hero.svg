@@ -1,0 +1,99 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,-apple-system,sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="675" fill="#E0F5F2"/>
+
+  <!-- Main card -->
+  <rect x="80" y="60" width="760" height="555" rx="16" fill="white" stroke="#C8EBE8" stroke-width="1.5"/>
+
+  <!-- Top bar -->
+  <rect x="80" y="60" width="760" height="56" rx="16" fill="#1F2D3D"/>
+  <rect x="80" y="88" width="760" height="28" fill="#1F2D3D"/>
+  <text x="124" y="93" font-size="14" font-weight="600" fill="white">New Cluster</text>
+
+  <!-- Step progress dots -->
+  <circle cx="740" cy="88" r="8" fill="#2A9D8F"/>
+  <line x1="756" y1="88" x2="786" y2="88" stroke="#4B6273" stroke-width="2"/>
+  <circle cx="800" cy="88" r="8" fill="#2A9D8F"/>
+  <line x1="816" y1="88" x2="846" y2="88" stroke="#4B6273" stroke-width="2"/>
+  <circle cx="860" cy="88" r="8" fill="#4B6273"/>
+  <line x1="876" y1="88" x2="906" y2="88" stroke="#4B6273" stroke-width="2"/>
+  <circle cx="920" cy="88" r="8" fill="#4B6273"/>
+
+  <!-- Step label -->
+  <text x="124" y="155" font-size="11" font-weight="600" fill="#9CA3AF" letter-spacing="1.5">STEP 2 OF 4</text>
+  <text x="124" y="188" font-size="22" font-weight="700" fill="#1F2D3D">Cluster Configuration</text>
+  <text x="124" y="210" font-size="13" fill="#4F5D75">Choose how much control you need. You can switch modes at any time.</text>
+
+  <!-- Mode toggle -->
+  <rect x="124" y="228" width="340" height="44" rx="10" fill="#F3F4F6"/>
+  <rect x="128" y="232" width="162" height="36" rx="8" fill="#2A9D8F"/>
+  <text x="209" y="254" font-size="13" font-weight="600" fill="white" text-anchor="middle">Quick Setup</text>
+  <text x="374" y="254" font-size="13" font-weight="500" fill="#4F5D75" text-anchor="middle">Advanced</text>
+
+  <!-- Form fields -->
+  <text x="124" y="304" font-size="12" font-weight="600" fill="#1F2D3D">Cluster Name</text>
+  <rect x="124" y="312" width="680" height="40" rx="8" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="144" y="336" font-size="13" fill="#9CA3AF">my-production-cluster</text>
+
+  <text x="124" y="376" font-size="12" font-weight="600" fill="#1F2D3D">Cloud Provider</text>
+  <!-- Provider tiles -->
+  <rect x="124" y="384" width="200" height="72" rx="10" fill="#F0FDF9" stroke="#2A9D8F" stroke-width="2"/>
+  <text x="224" y="418" font-size="13" font-weight="600" fill="#2A9D8F" text-anchor="middle">AWS</text>
+  <text x="224" y="436" font-size="11" fill="#4F5D75" text-anchor="middle">Amazon Web Services</text>
+  <!-- Checkmark -->
+  <circle cx="302" cy="394" r="9" fill="#2A9D8F"/>
+  <path d="M296 394 L300 398 L308 390" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="340" y="384" width="200" height="72" rx="10" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="440" y="418" font-size="13" font-weight="600" fill="#4F5D75" text-anchor="middle">GCP</text>
+  <text x="440" y="436" font-size="11" fill="#9CA3AF" text-anchor="middle">Google Cloud</text>
+
+  <rect x="556" y="384" width="200" height="72" rx="10" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="656" y="418" font-size="13" font-weight="600" fill="#4F5D75" text-anchor="middle">Azure</text>
+  <text x="656" y="436" font-size="11" fill="#9CA3AF" text-anchor="middle">Microsoft Azure</text>
+
+  <!-- Region select -->
+  <text x="124" y="484" font-size="12" font-weight="600" fill="#1F2D3D">Region</text>
+  <rect x="124" y="492" width="326" height="40" rx="8" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="144" y="516" font-size="13" fill="#1F2D3D">us-east-1 (N. Virginia)</text>
+  <text x="434" y="516" font-size="18" fill="#9CA3AF">⌄</text>
+
+  <!-- Node size -->
+  <text x="474" y="484" font-size="12" font-weight="600" fill="#1F2D3D">Node Size</text>
+  <rect x="474" y="492" width="326" height="40" rx="8" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="494" y="516" font-size="13" fill="#1F2D3D">Standard (8 CPU · 32 GB RAM)</text>
+  <text x="784" y="516" font-size="18" fill="#9CA3AF">⌄</text>
+
+  <!-- Info callout -->
+  <rect x="124" y="552" width="680" height="36" rx="8" fill="#E0F5F2"/>
+  <circle cx="144" cy="570" r="8" fill="#2A9D8F"/>
+  <text x="144" y="574" font-size="11" font-weight="700" fill="white" text-anchor="middle">i</text>
+  <text x="160" y="574" font-size="12" fill="#2A9D8F">These defaults are based on Aerospike best practices and are safe for production.</text>
+
+  <!-- Next button -->
+  <rect x="600" y="598" width="200" height="40" rx="10" fill="#2A9D8F"/>
+  <text x="700" y="622" font-size="13" font-weight="600" fill="white" text-anchor="middle">Network Settings →</text>
+
+  <!-- Right panel - docs -->
+  <rect x="872" y="60" width="268" height="555" rx="16" fill="white" stroke="#C8EBE8" stroke-width="1.5"/>
+  <rect x="872" y="60" width="268" height="44" rx="16" fill="#F9FAFB"/>
+  <rect x="872" y="88" width="268" height="16" fill="#F9FAFB"/>
+  <text x="912" y="88" font-size="12" font-weight="600" fill="#9CA3AF">DOCUMENTATION</text>
+
+  <text x="896" y="128" font-size="13" font-weight="700" fill="#1F2D3D">Cloud Provider</text>
+  <rect x="896" y="138" width="216" height="2" rx="1" fill="#E5E7EB"/>
+  <text x="896" y="158" font-size="11" fill="#4F5D75" xml:space="preserve">Choose where your cluster runs.</text>
+  <text x="896" y="174" font-size="11" fill="#4F5D75">AWS offers the broadest region</text>
+  <text x="896" y="190" font-size="11" fill="#4F5D75">coverage for Aerospike Cloud.</text>
+
+  <text x="896" y="220" font-size="13" font-weight="700" fill="#1F2D3D">Region Selection</text>
+  <rect x="896" y="230" width="216" height="2" rx="1" fill="#E5E7EB"/>
+  <text x="896" y="250" font-size="11" fill="#4F5D75">Pick the region closest to your</text>
+  <text x="896" y="266" font-size="11" fill="#4F5D75">application servers to minimize</text>
+  <text x="896" y="282" font-size="11" fill="#4F5D75">latency. Cross-region replication</text>
+  <text x="896" y="298" font-size="11" fill="#4F5D75">can be enabled later.</text>
+
+  <rect x="896" y="316" width="216" height="40" rx="8" fill="#E0F5F2"/>
+  <text x="904" y="332" font-size="11" fill="#2A9D8F" font-weight="600">Tip</text>
+  <text x="904" y="347" font-size="11" fill="#2A9D8F">Same region = ~0.5ms latency</text>
+</svg>

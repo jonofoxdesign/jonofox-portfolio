@@ -69,7 +69,7 @@ export default function TestimonialCarousel({
     <div>
       {/* Header row with navigation */}
       <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between mb-12">
-        <h2 className="font-syne text-4xl font-bold text-ink">
+        <h2 className="font-display text-4xl font-bold tracking-tight text-ink">
           {heading} <span className="text-teal">{headingAccent}</span>
         </h2>
         <div className="flex items-center gap-3 flex-shrink-0">

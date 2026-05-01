@@ -1,0 +1,86 @@
+<svg viewBox="0 0 1200 540" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,-apple-system,sans-serif">
+  <rect width="1200" height="540" fill="#F9FAFB"/>
+
+  <text x="600" y="44" font-size="12" font-weight="600" fill="#9CA3AF" text-anchor="middle" letter-spacing="1.5">FIGMA → CODE → MARKDOWN → AI — THE CONNECTED LOOP</text>
+  <text x="600" y="64" font-size="13" fill="#4F5D75" text-anchor="middle">Decisions get encoded once and reused across every layer. Inconsistency scales when rules aren't clear — so rules have to be clear.</text>
+
+  <!-- Central label -->
+  <circle cx="600" cy="290" r="90" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="600" y="282" font-size="13" font-weight="700" fill="#1F2D3D" text-anchor="middle">Decisions</text>
+  <text x="600" y="298" font-size="13" font-weight="700" fill="#1F2D3D" text-anchor="middle">encoded once</text>
+  <text x="600" y="318" font-size="12" fill="#4F5D75" text-anchor="middle">reused everywhere</text>
+
+  <!-- ── NODE 1: Figma (top) ── -->
+  <circle cx="600" cy="120" r="56" fill="white" stroke="#E5E7EB" stroke-width="2"/>
+  <circle cx="600" cy="100" r="28" fill="#1F2D3D"/>
+  <!-- Figma logo simplified -->
+  <rect x="588" y="88" width="12" height="12" rx="2" fill="#F57C00"/>
+  <rect x="600" y="88" width="12" height="12" rx="2" fill="#2A9D8F"/>
+  <rect x="588" y="100" width="12" height="12" rx="2" fill="#5A4FCF"/>
+  <rect x="600" y="100" width="12" height="12" rx="2" fill="#9CA3AF"/>
+  <text x="600" y="143" font-size="14" font-weight="700" fill="#1F2D3D" text-anchor="middle">Figma</text>
+  <text x="600" y="159" font-size="11" fill="#4F5D75" text-anchor="middle">Design intent</text>
+  <text x="600" y="172" font-size="11" fill="#4F5D75" text-anchor="middle">Variables · Components</text>
+
+  <!-- Arrow Figma → Code (top-right) -->
+  <path d="M 648 148 Q 780 180 840 234" stroke="#F57C00" stroke-width="2" fill="none"/>
+  <polygon points="836,226 848,240 825,237" fill="#F57C00"/>
+  <rect x="720" y="168" width="100" height="28" rx="8" fill="white" stroke="#F57C00" stroke-width="1.5"/>
+  <text x="770" y="186" font-size="11" fill="#F57C00" text-anchor="middle">token export</text>
+
+  <!-- ── NODE 2: Code (right) ── -->
+  <circle cx="870" cy="290" r="56" fill="white" stroke="#E5E7EB" stroke-width="2"/>
+  <circle cx="870" cy="270" r="28" fill="#1F2D3D"/>
+  <!-- Code brackets -->
+  <text x="855" y="277" font-size="16" fill="#F57C00" font-weight="700">&lt;/&gt;</text>
+  <text x="870" y="313" font-size="14" font-weight="700" fill="#1F2D3D" text-anchor="middle">Code</text>
+  <text x="870" y="329" font-size="11" fill="#4F5D75" text-anchor="middle">Production</text>
+  <text x="870" y="342" font-size="11" fill="#4F5D75" text-anchor="middle">components</text>
+
+  <!-- Arrow Code → Markdown (bottom-right) -->
+  <path d="M 840 338 Q 780 400 720 428" stroke="#2A9D8F" stroke-width="2" fill="none"/>
+  <polygon points="724,420 710,432 722,440" fill="#2A9D8F"/>
+  <rect x="750" y="368" width="100" height="28" rx="8" fill="white" stroke="#2A9D8F" stroke-width="1.5"/>
+  <text x="800" y="386" font-size="11" fill="#2A9D8F" text-anchor="middle">usage rules</text>
+
+  <!-- ── NODE 3: Markdown (bottom) ── -->
+  <circle cx="600" cy="460" r="56" fill="white" stroke="#E5E7EB" stroke-width="2"/>
+  <circle cx="600" cy="440" r="28" fill="#1F2D3D"/>
+  <!-- Markdown M icon -->
+  <text x="587" y="448" font-size="16" fill="#2A9D8F" font-weight="700">M↓</text>
+  <text x="600" y="483" font-size="14" font-weight="700" fill="#1F2D3D" text-anchor="middle">Markdown</text>
+  <text x="600" y="499" font-size="11" fill="#4F5D75" text-anchor="middle">AI instruction layer</text>
+  <text x="600" y="512" font-size="11" fill="#4F5D75" text-anchor="middle">Principles · Constraints</text>
+
+  <!-- Arrow Markdown → AI (bottom-left) -->
+  <path d="M 548 436 Q 440 400 380 338" stroke="#5A4FCF" stroke-width="2" fill="none"/>
+  <polygon points="386,330 370,338 382,347" fill="#5A4FCF"/>
+  <rect x="390" y="368" width="120" height="28" rx="8" fill="white" stroke="#5A4FCF" stroke-width="1.5"/>
+  <text x="450" y="386" font-size="11" fill="#5A4FCF" text-anchor="middle">system rules</text>
+
+  <!-- ── NODE 4: AI (left) ── -->
+  <circle cx="330" cy="290" r="56" fill="white" stroke="#E5E7EB" stroke-width="2"/>
+  <circle cx="330" cy="270" r="28" fill="#1F2D3D"/>
+  <!-- AI sparkle -->
+  <text x="316" y="277" font-size="18" fill="#5A4FCF">✦</text>
+  <text x="330" y="313" font-size="14" font-weight="700" fill="#1F2D3D" text-anchor="middle">AI Tools</text>
+  <text x="330" y="329" font-size="11" fill="#4F5D75" text-anchor="middle">Claude · Cursor</text>
+  <text x="330" y="342" font-size="11" fill="#4F5D75" text-anchor="middle">Codex</text>
+
+  <!-- Arrow AI → Figma (top-left) -->
+  <path d="M 360 238 Q 440 180 552 148" stroke="#9CA3AF" stroke-width="2" fill="none" stroke-dasharray="5 3"/>
+  <polygon points="547,143 560,152 549,160" fill="#9CA3AF"/>
+  <rect x="378" y="168" width="120" height="28" rx="8" fill="white" stroke="#9CA3AF" stroke-width="1.5"/>
+  <text x="438" y="186" font-size="11" fill="#9CA3AF" text-anchor="middle">system-consistent output</text>
+
+  <!-- AI output examples at the side -->
+  <rect x="60" y="220" width="200" height="110" rx="10" fill="white" stroke="#5A4FCF" stroke-width="1.5"/>
+  <text x="80" y="244" font-size="11" font-weight="600" fill="#5A4FCF">AI-generated component</text>
+  <rect x="80" y="252" width="90" height="28" rx="8" fill="#2A9D8F"/>
+  <text x="125" y="270" font-size="11" font-weight="600" fill="white" text-anchor="middle">Primary btn</text>
+  <rect x="80" y="288" width="160" height="28" rx="8" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="160" y="306" font-size="11" fill="#9CA3AF" text-anchor="middle">Input field</text>
+  <text x="80" y="330" font-size="10" fill="#2A9D8F">✓ Uses system tokens</text>
+
+  <line x1="260" y1="270" x2="276" y2="270" stroke="#5A4FCF" stroke-width="1.5" stroke-dasharray="3 2"/>
+</svg>

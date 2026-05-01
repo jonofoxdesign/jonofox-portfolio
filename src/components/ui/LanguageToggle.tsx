@@ -1,14 +1,14 @@
 "use client";
 
-import { useLocale } from "next-intl";
-import { usePathname, useRouter } from "next/navigation";
+import { useParams, usePathname, useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 
 // Emil's strong ease-out — starts fast, feels responsive
 const easeOut: [number, number, number, number] = [0.23, 1, 0.32, 1];
 
 export default function LanguageToggle() {
-  const locale = useLocale();
+  const params = useParams();
+  const locale = (params?.locale as string) ?? "en";
   const pathname = usePathname();
   const router = useRouter();
   const isDE = locale === "de";

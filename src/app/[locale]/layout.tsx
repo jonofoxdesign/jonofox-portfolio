@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
 
 export function generateStaticParams() {
@@ -142,7 +141,6 @@ export default async function LocaleLayout({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
       />
-      <Nav />
       <main>{children}</main>
       <Footer />
     </NextIntlClientProvider>

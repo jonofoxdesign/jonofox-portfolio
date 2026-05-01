@@ -50,7 +50,8 @@ const content = {
           body: "A provisioning flow that lets teams launch Aerospike clusters in under 90 seconds, with safe defaults or deep configuration, and clear guidance and guardrails throughout.",
           cta: "View case study",
           href: "/work/aerospike-provisioning",
-          gradient: "linear-gradient(135deg, #E0F5F2 0%, rgba(42,157,143,0.13) 100%)",
+          image: "/case-studies/aerospike-provisioning/aerospike-cloud-provisioning-hero.png",
+          gradient: "linear-gradient(135deg, #E4F4F2 0%, rgba(42, 157, 143, 0.24) 100%)",
         },
         {
           tag: "AEROSPIKE",
@@ -58,7 +59,8 @@ const content = {
           body: "Led end-to-end design of Aerospike's first visual developer tool. A guided path from connection to confidence, with a foundation built for AI-assisted workflows.",
           cta: "View case study",
           href: "/work/aerospike-voyager",
-          gradient: "linear-gradient(135deg, #EDE9FE 0%, rgba(139,92,246,0.13) 100%)",
+          image: "/case-studies/aerospike-voyager/aerospike-voyager-data-browser-hero.png",
+          gradient: "linear-gradient(135deg, #EEF2FF 0%, rgba(99, 102, 241, 0.20) 100%)",
         },
         {
           tag: "MULTIPLE COMPANIES",
@@ -66,6 +68,7 @@ const content = {
           body: "Built systems from scratch across three companies, with a documentation layer at Aerospike that makes AI-generated output system-consistent by default.",
           cta: "View case study",
           href: "/work/design-systems",
+          image: "/case-studies/design-systems/sygnum-components.png",
           gradient: "linear-gradient(135deg, #FFF2E0 0%, rgba(245,124,0,0.13) 100%)",
         },
       ],
@@ -122,7 +125,8 @@ const content = {
           body: "Ein Provisioning-Flow, der Teams ermöglicht, Aerospike-Cluster in unter 90 Sekunden zu starten – mit sicheren Standards oder tiefer Konfiguration und klarer Führung auf dem Weg.",
           cta: "Fallstudie ansehen",
           href: "/work/aerospike-provisioning",
-          gradient: "linear-gradient(135deg, #E0F5F2 0%, rgba(42,157,143,0.13) 100%)",
+          image: "/case-studies/aerospike-provisioning/aerospike-cloud-provisioning-hero.png",
+          gradient: "linear-gradient(135deg, #FFFBEB 0%, rgba(245, 158, 11, 0.12) 100%)",
         },
         {
           tag: "AEROSPIKE",
@@ -130,7 +134,8 @@ const content = {
           body: "End-to-End-Design von Aerospikes erstem visuellem Developer-Tool. Ein geführter Weg von der ersten Verbindung bis zum vollen Verständnis – mit einer Grundlage für KI-gestützte Workflows.",
           cta: "Fallstudie ansehen",
           href: "/work/aerospike-voyager",
-          gradient: "linear-gradient(135deg, #EDE9FE 0%, rgba(139,92,246,0.13) 100%)",
+          image: "/case-studies/aerospike-voyager/aerospike-voyager-data-browser-hero.png",
+          gradient: "linear-gradient(135deg, #EEEEF5 0%, rgba(15, 23, 42, 0.10) 100%)",
         },
         {
           tag: "MEHRERE UNTERNEHMEN",
@@ -138,6 +143,7 @@ const content = {
           body: "Systeme von Grund auf in drei Unternehmen aufgebaut – mit einer Dokumentationsebene bei Aerospike, die KI-generierten Output standardmäßig systemkonsistent macht.",
           cta: "Fallstudie ansehen",
           href: "/work/design-systems",
+          image: "/case-studies/design-systems/sygnum-components.png",
           gradient: "linear-gradient(135deg, #FFF2E0 0%, rgba(245,124,0,0.13) 100%)",
         },
       ],
@@ -184,7 +190,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
         <div className="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start pt-44 pb-24">
           <div>
-            <h1 className="font-syne text-5xl md:text-6xl font-bold leading-tight text-ink mb-6">
+            <h1 className="font-display text-5xl md:text-6xl font-bold tracking-tight leading-tight text-ink mb-6">
               {c.hero.headline1}{" "}
               <span className="text-teal italic">{c.hero.headline2}</span>{" "}
               {c.hero.headline3}{" "}
@@ -193,7 +199,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             <p className="text-lg text-ink-secondary leading-relaxed mb-8 max-w-lg">
               {c.hero.sub}
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <ButtonLink href={lp("/work")} variant="primary">
                 {c.hero.cta1}
               </ButtonLink>
@@ -253,14 +259,14 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       {/* What I do best */}
       <section className="py-24 bg-surface-light">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="font-syne text-4xl font-bold text-ink mb-16">
+          <h2 className="font-display text-4xl font-bold tracking-tight text-ink mb-16">
             {c.pillars.heading} <span className="text-teal">{c.pillars.headingAccent}</span>
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {c.pillars.items.map((pillar, i) => (
               <div key={i} className="space-y-4">
                 <div className="w-8 h-0.5 bg-gradient-accent" />
-                <h3 className="font-syne font-semibold text-ink leading-snug">
+                <h3 className="font-display font-medium text-xl text-ink leading-snug">
                   {pillar.title}
                 </h3>
                 <p className="text-sm text-ink-secondary leading-relaxed">
@@ -278,7 +284,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       {/* Featured work */}
       <section className="py-24">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="font-syne text-4xl font-bold text-ink mb-16">
+          <h2 className="font-display text-4xl font-bold tracking-tight text-ink mb-16">
             {c.work.heading} <span className="text-fox">{c.work.headingAccent}</span>
           </h2>
           <div className="space-y-4">
@@ -288,11 +294,11 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 href={lp(card.href)}
                 className="group grid md:grid-cols-[1fr_320px] gap-8 items-center p-8 rounded-2xl border border-surface-muted hover:border-teal/30 hover:bg-teal-subtle/20 transition-all duration-200 block"
               >
-                <div className="space-y-3">
+                <div className="order-2 md:order-1 space-y-3">
                   <span className="text-xs font-semibold tracking-widest text-ink-disabled uppercase">
                     {card.tag}
                   </span>
-                  <h3 className="font-syne font-bold text-2xl text-ink leading-snug">
+                  <h3 className="font-display font-bold text-2xl text-ink leading-snug">
                     {card.title}
                   </h3>
                   <p className="text-sm text-ink-secondary leading-relaxed">
@@ -303,9 +309,13 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                   </span>
                 </div>
                 <div
-                  className="hidden md:block aspect-video rounded-xl overflow-hidden"
+                  className="order-1 md:order-2 aspect-video rounded-xl overflow-hidden border border-surface-muted"
                   style={{ background: card.gradient ?? "linear-gradient(135deg, #F3F4F6 0%, #E5E7EB 100%)" }}
-                />
+                >
+                  {"image" in card && card.image && (
+                    <img src={card.image} alt={card.title} className="w-full h-full object-cover object-top" />
+                  )}
+                </div>
               </Link>
             ))}
           </div>
@@ -330,13 +340,13 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-96 h-96 rounded-full bg-teal/10 blur-3xl pointer-events-none" />
         <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-96 h-96 rounded-full bg-fox/10 blur-3xl pointer-events-none" />
         <div className="relative max-w-2xl mx-auto px-6 text-center">
-          <h2 className="font-syne text-4xl font-bold mb-4">
+          <h2 className="font-display text-4xl font-bold tracking-tight mb-4">
             {c.cta.heading} <span className="text-fox">{c.cta.headingAccent}</span>
           </h2>
           <p className="text-ink-disabled mb-8 leading-relaxed">
             {c.cta.body}
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-col sm:flex-row sm:justify-center gap-4">
             <ButtonAnchor href="mailto:jonathanlouisfox@gmail.com" variant="teal">
               {c.cta.email}
             </ButtonAnchor>

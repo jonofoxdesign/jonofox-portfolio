@@ -20,7 +20,8 @@ const content = {
         body: "A provisioning flow that lets teams launch Aerospike clusters in under 90 seconds, with safe defaults or deep configuration, and clear guidance and guardrails throughout.",
         cta: "View case study",
         href: "/work/aerospike-provisioning",
-        gradient: "linear-gradient(135deg, #E0F5F2 0%, #2A9D8F22 100%)",
+        image: "/case-studies/aerospike-provisioning/aerospike-cloud-provisioning-hero.png",
+        gradient: "linear-gradient(135deg, #E4F4F2 0%, rgba(42, 157, 143, 0.24) 100%)",
       },
       {
         tag: "AEROSPIKE",
@@ -28,7 +29,8 @@ const content = {
         body: "Led end-to-end design of Aerospike's first visual developer tool. A guided path from connection to confidence, with a foundation built for AI-assisted workflows.",
         cta: "View case study",
         href: "/work/aerospike-voyager",
-        gradient: "linear-gradient(135deg, #ECEBFA 0%, #5A4FCF22 100%)",
+        image: "/case-studies/aerospike-voyager/aerospike-voyager-data-browser-hero.png",
+        gradient: "linear-gradient(135deg, #EEF2FF 0%, rgba(99, 102, 241, 0.20) 100%)",
       },
       {
         tag: "MULTIPLE COMPANIES",
@@ -36,6 +38,7 @@ const content = {
         body: "Built systems from scratch across three companies, with a documentation layer at Aerospike that makes AI-generated output system-consistent by default.",
         cta: "View case study",
         href: "/work/design-systems",
+        image: "/case-studies/design-systems/sygnum-components.png",
         gradient: "linear-gradient(135deg, #FFF2E0 0%, #F57C0022 100%)",
       },
       {
@@ -44,8 +47,8 @@ const content = {
         body: "At the world's first regulated digital asset bank, clients had to call their account manager just to check their balance. I designed the dashboard that changed that.",
         cta: "View case study",
         href: "/work/sygnum",
-        image: "/case-studies/sygnum/sygnum-digital-assets-dashboard-hero.png",
-        gradient: "linear-gradient(135deg, #E3F2FD 0%, #1976D222 100%)",
+        image: "/case-studies/sygnum/hero-composite.png",
+        gradient: "linear-gradient(135deg, #FCE4EC 0%, #E91E6322 100%)",
       },
       {
         tag: "GOODLIFE HEALTH CLUBS",
@@ -53,7 +56,8 @@ const content = {
         body: "Redesigned Goodlife's membership sign-up flow to make contracts clear, choices understandable, and commitment something people felt good about.",
         cta: "View case study",
         href: "/work/goodlife",
-        gradient: "linear-gradient(135deg, #FCE4EC 0%, #E91E6322 100%)",
+        image: "/case-studies/goodlife/hero-redesigned-flow.png",
+        gradient: "linear-gradient(135deg, #E3F2FD 0%, #1976D222 100%)",
       },
     ],
     ctaHeading: "Let's",
@@ -74,7 +78,8 @@ const content = {
         body: "Ein Provisioning-Flow, der Teams ermöglicht, Aerospike-Cluster in unter 90 Sekunden zu starten – mit sicheren Standards oder tiefer Konfiguration und klarer Führung auf dem Weg.",
         cta: "Fallstudie ansehen",
         href: "/work/aerospike-provisioning",
-        gradient: "linear-gradient(135deg, #E0F5F2 0%, #2A9D8F22 100%)",
+        image: "/case-studies/aerospike-provisioning/aerospike-cloud-provisioning-hero.png",
+        gradient: "linear-gradient(135deg, #E4F4F2 0%, rgba(42, 157, 143, 0.24) 100%)",
       },
       {
         tag: "AEROSPIKE",
@@ -82,7 +87,8 @@ const content = {
         body: "End-to-End-Design von Aerospikes erstem visuellem Developer-Tool. Ein geführter Weg von der ersten Verbindung bis zum vollen Verständnis – mit einer Grundlage für KI-gestützte Workflows.",
         cta: "Fallstudie ansehen",
         href: "/work/aerospike-voyager",
-        gradient: "linear-gradient(135deg, #ECEBFA 0%, #5A4FCF22 100%)",
+        image: "/case-studies/aerospike-voyager/aerospike-voyager-data-browser-hero.png",
+        gradient: "linear-gradient(135deg, #EEF2FF 0%, rgba(99, 102, 241, 0.20) 100%)",
       },
       {
         tag: "MEHRERE UNTERNEHMEN",
@@ -90,6 +96,7 @@ const content = {
         body: "Systeme von Grund auf in drei Unternehmen aufgebaut – mit einer Dokumentationsebene bei Aerospike, die KI-generierten Output standardmäßig systemkonsistent macht.",
         cta: "Fallstudie ansehen",
         href: "/work/design-systems",
+        image: "/case-studies/design-systems/sygnum-components.png",
         gradient: "linear-gradient(135deg, #FFF2E0 0%, #F57C0022 100%)",
       },
       {
@@ -98,8 +105,8 @@ const content = {
         body: "Bei der weltweit ersten regulierten Digital-Asset-Bank mussten Kunden ihren Kundenbetreuer anrufen, um ihren Kontostand zu prüfen. Ich habe das Dashboard entworfen, das das geändert hat.",
         cta: "Fallstudie ansehen",
         href: "/work/sygnum",
-        image: "/case-studies/sygnum/sygnum-digital-assets-dashboard-hero.png",
-        gradient: "linear-gradient(135deg, #E3F2FD 0%, #1976D222 100%)",
+        image: "/case-studies/sygnum/hero-composite.png",
+        gradient: "linear-gradient(135deg, #FCE4EC 0%, #E91E6322 100%)",
       },
       {
         tag: "GOODLIFE HEALTH CLUBS",
@@ -107,7 +114,8 @@ const content = {
         body: "Goodlifes Mitgliedschafts-Registrierungsflow neu gestaltet, um Verträge klar, Entscheidungen verständlich und Verbindlichkeiten zu etwas zu machen, das sich gut anfühlt.",
         cta: "Fallstudie ansehen",
         href: "/work/goodlife",
-        gradient: "linear-gradient(135deg, #FCE4EC 0%, #E91E6322 100%)",
+        image: "/case-studies/goodlife/hero-redesigned-flow.png",
+        gradient: "linear-gradient(135deg, #E3F2FD 0%, #1976D222 100%)",
       },
     ],
     ctaHeading: "Lass uns",
@@ -128,7 +136,7 @@ export default async function WorkPage({ params }: { params: Promise<{ locale: s
       <div className="max-w-6xl mx-auto px-6 pb-24">
         {/* Header */}
         <div className="mb-20 max-w-2xl">
-          <h1 className="font-syne text-5xl md:text-6xl font-bold text-ink leading-tight mb-6">
+          <h1 className="font-display text-5xl md:text-6xl font-bold tracking-tight text-ink leading-tight mb-6">
             {c.heading} <span className="text-teal">{c.headingAccent}</span> {c.heading2}
           </h1>
           <p className="text-lg text-ink-secondary leading-relaxed">
@@ -144,11 +152,11 @@ export default async function WorkPage({ params }: { params: Promise<{ locale: s
               href={lp(cs.href)}
               className="group grid md:grid-cols-[1fr_320px] gap-8 items-center p-8 rounded-2xl border border-surface-muted hover:border-teal/30 hover:bg-teal-subtle/20 transition-all duration-200 block"
             >
-              <div className="space-y-3">
+              <div className="order-2 md:order-1 space-y-3">
                 <span className="text-xs font-semibold tracking-widest text-ink-disabled uppercase">
                   {cs.tag}
                 </span>
-                <h2 className="font-syne font-bold text-2xl text-ink leading-snug">
+                <h2 className="font-display font-bold text-2xl text-ink leading-snug">
                   {cs.title}
                 </h2>
                 <p className="text-sm text-ink-secondary leading-relaxed">
@@ -161,7 +169,7 @@ export default async function WorkPage({ params }: { params: Promise<{ locale: s
 
               {/* Card image */}
               <div
-                className="hidden md:block aspect-video rounded-xl overflow-hidden"
+                className="order-1 md:order-2 aspect-video rounded-xl overflow-hidden border border-surface-muted"
                 style={{ background: cs.gradient ?? "linear-gradient(135deg, #F3F4F6 0%, #E5E7EB 100%)" }}
               >
                 {"image" in cs && cs.image && (
@@ -178,13 +186,13 @@ export default async function WorkPage({ params }: { params: Promise<{ locale: s
         <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-96 h-96 rounded-full bg-teal/10 blur-3xl pointer-events-none" />
         <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-96 h-96 rounded-full bg-fox/10 blur-3xl pointer-events-none" />
         <div className="relative max-w-2xl mx-auto px-6 text-center">
-          <h2 className="font-syne text-4xl font-bold mb-4">
+          <h2 className="font-display text-4xl font-bold tracking-tight mb-4">
             {c.ctaHeading} <span className="text-teal">{c.ctaAccent}</span>
           </h2>
           <p className="text-ink-disabled mb-8">
             {c.ctaBody}
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-col sm:flex-row sm:justify-center gap-4">
             <ButtonAnchor href="mailto:jonathanlouisfox@gmail.com" variant="teal">
               {c.ctaEmail}
             </ButtonAnchor>

@@ -48,6 +48,10 @@ export default async function SygnumPage({ params }: { params: Promise<{ locale:
             <p>Kunden waren vermögende Private-Banking-Kunden, die an persönlichen Service gewöhnt waren. Sie erwarteten trotzdem sofortigen Zugriff auf ihre Salden, klare Erklärungen zu ihrem Besitz und ein Erlebnis, das dem modernen Banking entspricht. Sie verstanden Finanzprodukte. Die Oberfläche musste das respektieren, nicht herabsehen.</p>
           </Section>
 
+          <div className="my-12 w-full rounded-2xl overflow-hidden border border-surface-muted">
+            <img src="/case-studies/sygnum/before-after.svg" alt="Before and after — from phone calls to self-service dashboard" className="w-full h-auto" />
+          </div>
+
           <div className="my-12 w-full aspect-video rounded-2xl overflow-hidden border border-surface-muted shadow-xl">
             <img
               src="/case-studies/sygnum/asset-overview.png"
@@ -59,12 +63,18 @@ export default async function SygnumPage({ params }: { params: Promise<{ locale:
           <Section heading="Meine Rolle">
             <p>Ich war der Design Lead in diesem Projekt, unterstützt von einem Junior Designer. Ich definierte die Gesamtstruktur und das Interaktionsmodell, übersetzte komplexe Blockchain-Konzepte in verständliche UI, setzte und hielt den visuellen Qualitätsstandard und entschied, was zu vereinfachen und was explizit zu zeigen war.</p>
             <p>Dieses Projekt war auch eines der ersten großen Produktbereiche, die Sygnums neues Design System nutzten. Es musste beweisen, dass das System echte Komplexität bewältigen kann, nicht nur einfache Flows. Diese doppelte Verantwortung – das richtige Produkt liefern und das System unter Druck validieren – hat jede Entscheidung geprägt.</p>
+            <p>Das Schwerste war nicht das Design. Es war die Entdeckung, System für System, dass die zugrundeliegenden Plattformen nicht so verbunden waren, wie das Projekt es vorausgesetzt hatte. Wir entwarfen eine Ansicht des vollständigen Asset-Bildes eines Kunden, und ein Engineering-Team kam zurück und sagte, die NFT-Plattform könne diese Daten nicht liefern, oder Trading sei nicht mit dem Portfolio-Service verbunden. Das Briefing lautete „zeig Kunden ihre Bestände." Die Realität war eine Reihe isolierter Systeme, die unabhängig voneinander gebaut worden waren.</p>
+            <p>Meine Reaktion war, in Phasen zu designen. Anstatt einem Dashboard, das das vollständige Bild widerspiegelte, staffelten wir die Arbeit in Etappen, jede gebunden an eine spezifische technische Abhängigkeit, die zuerst gelöst werden musste. Das ist eine andere Art von Designproblem. Man designed nicht für einen Zustand, der existiert, sondern einen Weg zu einem Zustand, der noch nicht existiert.</p>
           </Section>
 
           <Section heading="Der Ansatz">
             <p>Anstatt einzelne Screens zu entwerfen, konzentrierte ich mich darauf, ein klares mentales Modell dafür zu etablieren, wie Sygnum digitale Assets präsentiert. Das bedeutete, das Erlebnis wo möglich in vertrauten Banking-Konzepten zu verankern, eine einzige Übersicht zu schaffen, die den Gesamtbestand über alle Asset-Typen widerspiegelt, und Assets und Aktionen so zu gruppieren, wie Kunden denken – nicht wie Systeme strukturiert sind.</p>
             <p>Häufige Aktionen wie Trading und Staking mussten leicht zu finden sein, ohne das Dashboard in ein Kontrollpanel zu verwandeln. Die Herausforderung war, zu vereinfachen ohne zu übervereinfachen. Regulierung machte Genauigkeit unverzichtbar. Asset-Komplexität – Salden, Gebühren, Settlement-Timing, Transaktionsstatus – konnte nicht versteckt, nur strukturiert werden.</p>
           </Section>
+
+          <div className="my-12 w-full rounded-2xl overflow-hidden border border-surface-muted">
+            <img src="/case-studies/sygnum/asset-architecture.svg" alt="Information architecture — assets grouped by client mental model" className="w-full h-auto" />
+          </div>
 
           <div className="my-12 grid grid-cols-2 gap-4">
             <div className="aspect-[3/4] rounded-2xl overflow-hidden border border-surface-muted shadow-xl">
@@ -104,6 +114,8 @@ export default async function SygnumPage({ params }: { params: Promise<{ locale:
           <Section heading="Was ich mitnehme">
             <p>Was mir dieses Projekt gezeigt hat: Ein Design System beweist sich nur unter echter Komplexität. Die einfache Version ist, Komponenten zu haben. Die schwierige Version ist, Komponenten zu haben, die standhalten, wenn es wirklich kompliziert wird.</p>
             <p>Die wichtigsten Entscheidungen drehten sich oft darum, was wegzulassen ist. Da Tools und KI die Komponentenerstellung beschleunigen, denke ich, dass das zunehmend der Teil ist, der zählt. Das strukturelle Denken, die &quot;nein, das wird bereits von X behandelt&quot;-Gespräche. Das ist die Arbeit, die mir am meisten Freude macht.</p>
+            <p>Ich habe das Projekt verlassen, bevor es abgeschlossen war. Ich hätte es gerne fertig gesehen.</p>
+            <p>Im Nachhinein würde ich am Vorabprozess etwas ändern. Die technischen Blockaden, auf die wir gestoßen sind, waren nicht unvorhersehbar. Sie wären entdeckbar gewesen, wenn alle Teams früh genug zusammen in einem Raum gewesen wären, um ihre Abhängigkeiten zu kartieren. Stattdessen entdeckten wir sie eine nach der anderen, während wir versuchten zu bauen. Wenn ich es nochmal täte, würde ich auf dieser Sitzung bestehen, bevor ein einziges Pixel designed wurde.</p>
           </Section>
         </>
       ) : (
@@ -112,6 +124,10 @@ export default async function SygnumPage({ params }: { params: Promise<{ locale:
             <p>Sygnum&apos;s product had grown quickly across multiple teams, each designing and building independently. The result was inconsistent layouts, changing terminology from page to page, and no single view of a client&apos;s digital asset holdings. The interface felt dated and untrustworthy.</p>
             <p>Clients were high-net-worth private banking clients, accustomed to personal service. They still expected immediate access to their balances, clear explanations of what they owned, and an experience comparable to modern banking. They understood financial products. The interface needed to respect that, not talk down to it.</p>
           </Section>
+
+          <div className="my-12 w-full rounded-2xl overflow-hidden border border-surface-muted">
+            <img src="/case-studies/sygnum/before-after.svg" alt="Before and after — from phone calls to self-service dashboard" className="w-full h-auto" />
+          </div>
 
           <div className="my-12 w-full aspect-video rounded-2xl overflow-hidden border border-surface-muted shadow-xl">
             <img
@@ -124,12 +140,18 @@ export default async function SygnumPage({ params }: { params: Promise<{ locale:
           <Section heading="My role">
             <p>I was the Design Lead on this project, supported by a junior designer. I defined the overall structure and interaction model, translated complex blockchain concepts into understandable UI, set and maintained the visual quality bar, and decided what to simplify and what to surface explicitly.</p>
             <p>This project was also one of the first major product areas to use Sygnum&apos;s new design system. It had to prove the system could handle real complexity, not just simple flows. That dual responsibility — shipping the right product and validating the system under pressure — shaped every decision.</p>
+            <p>The hardest part wasn&apos;t the design. It was discovering, one system at a time, that the underlying platforms weren&apos;t connected in the ways the project assumed. We&apos;d design a view of a client&apos;s full asset picture and an engineering team would come back and say the NFT platform couldn&apos;t surface that data, or that trading didn&apos;t connect with the portfolio service. The brief said &quot;show clients their holdings.&quot; The reality was a set of siloed systems that had been built independently.</p>
+            <p>My response was to design in phases. Rather than one dashboard that reflected the full picture, we stepped the work out into stages, each tied to a specific technical dependency that needed to be resolved first. That&apos;s a different kind of design problem. You&apos;re not designing for a state that exists, you&apos;re designing a path to a state that doesn&apos;t yet.</p>
           </Section>
 
           <Section heading="The approach">
             <p>Rather than designing individual screens, I focused on establishing a clear mental model for how Sygnum presents digital assets. That meant anchoring the experience in familiar banking concepts where possible, creating a single overview that reflected total holdings across asset types, and grouping assets and actions based on how clients think — not how systems are structured.</p>
             <p>Common actions like trading and staking needed to be easy to find without turning the dashboard into a control panel. The challenge was simplifying without oversimplifying. Regulation made accuracy non-negotiable. Asset complexity — balances, fees, settlement timing, transaction states — couldn&apos;t be hidden, only structured.</p>
           </Section>
+
+          <div className="my-12 w-full rounded-2xl overflow-hidden border border-surface-muted">
+            <img src="/case-studies/sygnum/asset-architecture.svg" alt="Information architecture — assets grouped by client mental model" className="w-full h-auto" />
+          </div>
 
           <div className="my-12 grid grid-cols-2 gap-4">
             <div className="aspect-[3/4] rounded-2xl overflow-hidden border border-surface-muted shadow-xl">
@@ -169,6 +191,8 @@ export default async function SygnumPage({ params }: { params: Promise<{ locale:
           <Section heading="What I&apos;d carry forward">
             <p>What this project showed me is that a design system only proves itself under real complexity. The easy version is having components. The hard version is having components that hold up when things get genuinely complicated.</p>
             <p>The most important decisions were often about what to leave out. As tools and AI make component creation faster, I think that&apos;s the part that matters more and more. The structural thinking, the &quot;no, that&apos;s already handled by X&quot; conversations. That&apos;s the work I enjoy most.</p>
+            <p>I left before the project was complete. I&apos;d have liked to see it done.</p>
+            <p>In hindsight, the thing I&apos;d change is the upfront process. The technical blockers we hit weren&apos;t unknowable. They were discoverable if all the teams had been in a room together early enough to map their dependencies. Instead we found them one by one as we tried to build. If I was doing it again, I&apos;d insist on that session before a pixel was designed.</p>
           </Section>
         </>
       )}

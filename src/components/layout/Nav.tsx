@@ -21,6 +21,14 @@ export default function Nav() {
   ];
 
   return (
+    <>
+    {menuOpen && (
+      <div
+        className="fixed inset-0 z-40"
+        onClick={() => setMenuOpen(false)}
+        aria-hidden="true"
+      />
+    )}
     <header className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-4 px-4">
       <div className="w-full max-w-6xl">
         {/* Main bar */}
@@ -108,5 +116,6 @@ export default function Nav() {
         )}
       </div>
     </header>
+    </>
   );
 }

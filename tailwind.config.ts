@@ -33,7 +33,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        syne: ["var(--font-syne)", "sans-serif"],
+        display: ["var(--font-display)", "sans-serif"],
         sans: ["var(--font-dm-sans)", "sans-serif"],
       },
       backgroundImage: {

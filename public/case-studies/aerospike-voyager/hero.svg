@@ -1,0 +1,156 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,-apple-system,sans-serif">
+  <!-- Background gradient -->
+  <rect width="1200" height="675" fill="#ECEBFA"/>
+
+  <!-- App window chrome -->
+  <rect x="60" y="40" width="1080" height="595" rx="16" fill="#1F2D3D"/>
+
+  <!-- Title bar -->
+  <rect x="60" y="40" width="1080" height="40" rx="16" fill="#283547"/>
+  <rect x="60" y="64" width="1080" height="16" fill="#283547"/>
+  <circle cx="96" cy="60" r="6" fill="#FF5F57"/>
+  <circle cx="116" cy="60" r="6" fill="#FEBC2E"/>
+  <circle cx="136" cy="60" r="6" fill="#28C840"/>
+  <text x="600" y="65" font-size="13" font-weight="600" fill="#9CA3AF" text-anchor="middle">Voyager — Aerospike Visual Explorer</text>
+
+  <!-- Left sidebar -->
+  <rect x="60" y="80" width="220" height="555" fill="#253347"/>
+
+  <!-- Sidebar header -->
+  <text x="88" y="116" font-size="11" font-weight="600" fill="#6B7A8D" letter-spacing="1.2">NAMESPACES</text>
+
+  <!-- Connection badge -->
+  <rect x="80" y="126" width="180" height="30" rx="6" fill="#2A9D8F22"/>
+  <circle cx="96" cy="141" r="5" fill="#2A9D8F"/>
+  <text x="108" y="145" font-size="12" font-weight="500" fill="#2A9D8F">localhost:3000</text>
+
+  <!-- Tree items -->
+  <rect x="80" y="164" width="180" height="28" rx="6" fill="#5A4FCF33"/>
+  <text x="98" y="182" font-size="12" font-weight="600" fill="#A89FF0">▾ test</text>
+  <text x="110" y="206" font-size="12" fill="#9CA3AF">  users</text>
+  <circle cx="102" cy="202" r="3" fill="#4F5D75"/>
+  <text x="110" y="226" font-size="12" fill="#9CA3AF">  sessions</text>
+  <circle cx="102" cy="222" r="3" fill="#4F5D75"/>
+  <text x="110" y="246" font-size="12" fill="#9CA3AF">  events</text>
+  <circle cx="102" cy="242" r="3" fill="#4F5D75"/>
+
+  <text x="98" y="272" font-size="12" fill="#6B7A8D">▸ production</text>
+  <text x="98" y="296" font-size="12" fill="#6B7A8D">▸ analytics</text>
+
+  <!-- Stats at bottom of sidebar -->
+  <rect x="80" y="520" width="180" height="60" rx="8" fill="#1F2D3D55"/>
+  <text x="96" y="540" font-size="11" fill="#6B7A8D">Records</text>
+  <text x="96" y="558" font-size="16" font-weight="700" fill="#A89FF0">2,847</text>
+  <text x="170" y="540" font-size="11" fill="#6B7A8D">Size</text>
+  <text x="170" y="558" font-size="16" font-weight="700" fill="#A89FF0">3.2 MB</text>
+
+  <!-- Main content area -->
+  <rect x="280" y="80" width="860" height="555" fill="#F9FAFB"/>
+
+  <!-- Toolbar -->
+  <rect x="280" y="80" width="860" height="52" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+  <!-- Filter bar -->
+  <rect x="300" y="94" width="380" height="28" rx="6" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="318" y="112" font-size="12" fill="#9CA3AF">🔍  Filter records...</text>
+  <!-- Actions -->
+  <rect x="700" y="94" width="100" height="28" rx="6" fill="#5A4FCF"/>
+  <text x="750" y="112" font-size="12" font-weight="600" fill="white" text-anchor="middle">+ Add Record</text>
+  <rect x="812" y="94" width="90" height="28" rx="6" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="857" y="112" font-size="12" fill="#4F5D75" text-anchor="middle">Export</text>
+  <rect x="914" y="94" width="80" height="28" rx="6" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="954" y="112" font-size="12" fill="#4F5D75" text-anchor="middle">Scan ⚠</text>
+
+  <!-- Table header -->
+  <rect x="280" y="132" width="860" height="36" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="304" y="154" font-size="11" font-weight="600" fill="#4F5D75">KEY</text>
+  <text x="484" y="154" font-size="11" font-weight="600" fill="#4F5D75">BINS</text>
+  <text x="684" y="154" font-size="11" font-weight="600" fill="#4F5D75">TYPE</text>
+  <text x="824" y="154" font-size="11" font-weight="600" fill="#4F5D75">TTL</text>
+  <text x="960" y="154" font-size="11" font-weight="600" fill="#4F5D75">ACTIONS</text>
+  <line x1="460" y1="132" x2="460" y2="168" stroke="#E5E7EB" stroke-width="1"/>
+  <line x1="660" y1="132" x2="660" y2="168" stroke="#E5E7EB" stroke-width="1"/>
+  <line x1="800" y1="132" x2="800" y2="168" stroke="#E5E7EB" stroke-width="1"/>
+  <line x1="940" y1="132" x2="940" y2="168" stroke="#E5E7EB" stroke-width="1"/>
+
+  <!-- Row 1 — selected -->
+  <rect x="280" y="168" width="860" height="48" fill="#EDE9FF"/>
+  <rect x="280" y="168" width="3" height="48" fill="#5A4FCF"/>
+  <text x="304" y="198" font-size="12" font-weight="600" fill="#5A4FCF">user:a9f3b2</text>
+  <rect x="484" y="180" width="50" height="20" rx="4" fill="#5A4FCF22"/>
+  <text x="509" y="194" font-size="11" fill="#5A4FCF" text-anchor="middle">name</text>
+  <rect x="542" y="180" width="50" height="20" rx="4" fill="#5A4FCF22"/>
+  <text x="567" y="194" font-size="11" fill="#5A4FCF" text-anchor="middle">email</text>
+  <rect x="600" y="180" width="44" height="20" rx="4" fill="#5A4FCF22"/>
+  <text x="622" y="194" font-size="11" fill="#5A4FCF" text-anchor="middle">age</text>
+  <text x="684" y="198" font-size="12" fill="#4F5D75">STRING</text>
+  <text x="824" y="198" font-size="12" fill="#4F5D75">Never</text>
+  <text x="960" y="198" font-size="12" fill="#5A4FCF">View  Edit</text>
+
+  <!-- Row 2 -->
+  <rect x="280" y="216" width="860" height="48" fill="white" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="304" y="246" font-size="12" fill="#1F2D3D">user:c1d8e4</text>
+  <rect x="484" y="228" width="50" height="20" rx="4" fill="#E5E7EB"/>
+  <text x="509" y="242" font-size="11" fill="#4F5D75" text-anchor="middle">name</text>
+  <rect x="542" y="228" width="50" height="20" rx="4" fill="#E5E7EB"/>
+  <text x="567" y="242" font-size="11" fill="#4F5D75" text-anchor="middle">email</text>
+  <text x="684" y="246" font-size="12" fill="#4F5D75">STRING</text>
+  <text x="824" y="246" font-size="12" fill="#4F5D75">2d 14h</text>
+  <text x="960" y="246" font-size="12" fill="#9CA3AF">View  Edit</text>
+
+  <!-- Row 3 -->
+  <rect x="280" y="264" width="860" height="48" fill="white" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="304" y="294" font-size="12" fill="#1F2D3D">session:f7a2c9</text>
+  <rect x="484" y="276" width="68" height="20" rx="4" fill="#E5E7EB"/>
+  <text x="518" y="290" font-size="11" fill="#4F5D75" text-anchor="middle">token</text>
+  <rect x="560" y="276" width="68" height="20" rx="4" fill="#E5E7EB"/>
+  <text x="594" y="290" font-size="11" fill="#4F5D75" text-anchor="middle">expires</text>
+  <text x="684" y="294" font-size="12" fill="#4F5D75">MAP</text>
+  <text x="824" y="294" font-size="12" fill="#F57C00">4h 2m</text>
+  <text x="960" y="294" font-size="12" fill="#9CA3AF">View  Edit</text>
+
+  <!-- Row 4 -->
+  <rect x="280" y="312" width="860" height="48" fill="white" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="304" y="342" font-size="12" fill="#1F2D3D">user:b5e1a7</text>
+  <rect x="484" y="324" width="50" height="20" rx="4" fill="#E5E7EB"/>
+  <text x="509" y="338" font-size="11" fill="#4F5D75" text-anchor="middle">name</text>
+  <rect x="542" y="324" width="68" height="20" rx="4" fill="#E5E7EB"/>
+  <text x="576" y="338" font-size="11" fill="#4F5D75" text-anchor="middle">metadata</text>
+  <text x="684" y="342" font-size="12" fill="#4F5D75">LIST</text>
+  <text x="824" y="342" font-size="12" fill="#4F5D75">Never</text>
+  <text x="960" y="342" font-size="12" fill="#9CA3AF">View  Edit</text>
+
+  <!-- Row 5 -->
+  <rect x="280" y="360" width="860" height="48" fill="white" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="304" y="390" font-size="12" fill="#1F2D3D">event:9c3f21</text>
+  <rect x="484" y="372" width="54" height="20" rx="4" fill="#E5E7EB"/>
+  <text x="511" y="386" font-size="11" fill="#4F5D75" text-anchor="middle">type</text>
+  <rect x="546" y="372" width="62" height="20" rx="4" fill="#E5E7EB"/>
+  <text x="577" y="386" font-size="11" fill="#4F5D75" text-anchor="middle">payload</text>
+  <rect x="616" y="372" width="50" height="20" rx="4" fill="#E5E7EB"/>
+  <text x="641" y="386" font-size="11" fill="#4F5D75" text-anchor="middle">ts</text>
+  <text x="684" y="390" font-size="12" fill="#4F5D75">MAP</text>
+  <text x="824" y="390" font-size="12" fill="#F57C00">1h 45m</text>
+  <text x="960" y="390" font-size="12" fill="#9CA3AF">View  Edit</text>
+
+  <!-- Record detail panel -->
+  <rect x="780" y="420" width="340" height="204" rx="12" fill="white" stroke="#5A4FCF" stroke-width="1.5"/>
+  <rect x="780" y="420" width="340" height="40" rx="12" fill="#5A4FCF"/>
+  <rect x="780" y="448" width="340" height="12" fill="#5A4FCF"/>
+  <text x="800" y="444" font-size="12" font-weight="600" fill="white">Record: user:a9f3b2</text>
+  <text x="800" y="480" font-size="11" font-weight="600" fill="#9CA3AF">name</text>
+  <text x="880" y="480" font-size="12" fill="#1F2D3D">"Alice Bergmann"</text>
+  <line x1="800" y1="490" x2="1100" y2="490" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="800" y="510" font-size="11" font-weight="600" fill="#9CA3AF">email</text>
+  <text x="880" y="510" font-size="12" fill="#1F2D3D">"alice@example.com"</text>
+  <line x1="800" y1="520" x2="1100" y2="520" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="800" y="540" font-size="11" font-weight="600" fill="#9CA3AF">age</text>
+  <text x="880" y="540" font-size="12" fill="#5A4FCF">34</text>
+  <line x1="800" y1="550" x2="1100" y2="550" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="800" y="570" font-size="11" font-weight="600" fill="#9CA3AF">TTL</text>
+  <text x="880" y="570" font-size="12" fill="#1F2D3D">Never expires</text>
+  <line x1="800" y1="580" x2="1100" y2="580" stroke="#F3F4F6" stroke-width="1"/>
+  <rect x="800" y="590" width="72" height="24" rx="6" fill="#5A4FCF"/>
+  <text x="836" y="606" font-size="11" font-weight="600" fill="white" text-anchor="middle">Edit</text>
+  <rect x="884" y="590" width="72" height="24" rx="6" fill="#F3F4F6"/>
+  <text x="920" y="606" font-size="11" font-weight="600" fill="#4F5D75" text-anchor="middle">Delete</text>
+</svg>

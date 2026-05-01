@@ -1,0 +1,96 @@
+<svg viewBox="0 0 1200 580" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,-apple-system,sans-serif">
+  <rect width="1200" height="580" fill="#F9FAFB"/>
+
+  <text x="600" y="44" font-size="12" font-weight="600" fill="#9CA3AF" text-anchor="middle" letter-spacing="1.5">VISUAL FILTER BUILDER — UI INPUTS MAPPED TO AEROSPIKE EXPRESSION DSL</text>
+  <text x="600" y="64" font-size="13" fill="#4F5D75" text-anchor="middle">Reduces the need to memorise syntax. Users learn by doing, not by reading docs first.</text>
+
+  <!-- Left: Visual builder -->
+  <rect x="60" y="88" width="640" height="460" rx="16" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="100" y="124" font-size="15" font-weight="700" fill="#1F2D3D">Filter Records</text>
+
+  <!-- Filter condition rows -->
+  <text x="100" y="156" font-size="11" font-weight="600" fill="#9CA3AF" letter-spacing="1">CONDITIONS  (all must match)</text>
+
+  <!-- Condition 1 — active/selected -->
+  <rect x="100" y="164" width="560" height="56" rx="10" fill="#EDE9FF" stroke="#5A4FCF" stroke-width="1.5"/>
+  <!-- Field picker -->
+  <rect x="116" y="178" width="140" height="28" rx="6" fill="white" stroke="#5A4FCF" stroke-width="1.5"/>
+  <text x="186" y="196" font-size="13" fill="#5A4FCF" text-anchor="middle">age</text>
+  <text x="242" y="196" font-size="10" fill="#9CA3AF">▾</text>
+  <!-- Operator picker -->
+  <rect x="268" y="178" width="110" height="28" rx="6" fill="white" stroke="#5A4FCF" stroke-width="1.5"/>
+  <text x="323" y="196" font-size="13" fill="#5A4FCF" text-anchor="middle">greater than</text>
+  <!-- Value input -->
+  <rect x="390" y="178" width="100" height="28" rx="6" fill="white" stroke="#5A4FCF" stroke-width="1.5"/>
+  <text x="440" y="196" font-size="13" fill="#1F2D3D" text-anchor="middle">25</text>
+  <!-- Remove -->
+  <text x="642" y="196" font-size="18" fill="#9CA3AF" text-anchor="middle">×</text>
+
+  <!-- Condition 2 -->
+  <rect x="100" y="232" width="560" height="56" rx="10" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1.5"/>
+  <rect x="116" y="246" width="140" height="28" rx="6" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="186" y="264" font-size="13" fill="#1F2D3D" text-anchor="middle">country</text>
+  <text x="242" y="264" font-size="10" fill="#9CA3AF">▾</text>
+  <rect x="268" y="246" width="110" height="28" rx="6" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="323" y="264" font-size="13" fill="#1F2D3D" text-anchor="middle">equals</text>
+  <rect x="390" y="246" width="140" height="28" rx="6" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="460" y="264" font-size="13" fill="#9CA3AF" text-anchor="middle">"DE"</text>
+  <text x="642" y="264" font-size="18" fill="#9CA3AF" text-anchor="middle">×</text>
+
+  <!-- Add condition -->
+  <rect x="100" y="300" width="140" height="32" rx="8" fill="white" stroke="#5A4FCF" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <text x="170" y="320" font-size="12" fill="#5A4FCF" text-anchor="middle">+ Add condition</text>
+
+  <!-- Bin path explorer for nested data -->
+  <line x1="100" y1="356" x2="620" y2="356" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="100" y="380" font-size="13" font-weight="700" fill="#1F2D3D">Nested Record Browser</text>
+  <text x="100" y="398" font-size="12" fill="#4F5D75">Expand bins to explore nested structures before you write a filter</text>
+
+  <!-- Nested record tree -->
+  <rect x="100" y="412" width="560" height="108" rx="10" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="120" y="436" font-size="12" fill="#1F2D3D" font-weight="600">▾ Record: user:a9f3b2</text>
+  <text x="140" y="456" font-size="12" fill="#9CA3AF">  age</text>
+  <text x="300" y="456" font-size="12" fill="#5A4FCF">  34  </text>
+  <rect x="332" y="444" width="42" height="18" rx="4" fill="#EDE9FF"/>
+  <text x="353" y="457" font-size="10" fill="#5A4FCF" text-anchor="middle">INT</text>
+  <text x="390" y="456" font-size="11" fill="#2A9D8F">  Use in filter →</text>
+  <text x="140" y="476" font-size="12" fill="#9CA3AF">  ▾ address</text>
+  <rect x="292" y="464" width="46" height="18" rx="4" fill="#E5E7EB"/>
+  <text x="315" y="477" font-size="10" fill="#4F5D75" text-anchor="middle">MAP</text>
+  <text x="160" y="496" font-size="12" fill="#9CA3AF">      city</text>
+  <text x="300" y="496" font-size="12" fill="#5A4FCF">  "Berlin"</text>
+  <rect x="372" y="484" width="52" height="18" rx="4" fill="#EDE9FF"/>
+  <text x="398" y="497" font-size="10" fill="#5A4FCF" text-anchor="middle">STRING</text>
+  <text x="430" y="496" font-size="11" fill="#2A9D8F">  Use in filter →</text>
+
+  <!-- Right: Generated expression -->
+  <rect x="724" y="88" width="420" height="460" rx="16" fill="#1F2D3D"/>
+  <text x="934" y="120" font-size="11" font-weight="600" fill="#6B7A8D" text-anchor="middle" letter-spacing="1">AEROSPIKE EXPRESSION DSL</text>
+  <text x="934" y="140" font-size="11" fill="#4F5D75" text-anchor="middle">generated from your UI selections</text>
+
+  <!-- Expression code -->
+  <text x="754" y="176" font-size="12" fill="#9CA3AF">exp.and(</text>
+  <text x="770" y="196" font-size="12" fill="#5A4FCF">  exp.gt(</text>
+  <text x="786" y="216" font-size="12" fill="#A89FF0">    exp.intBin("age"),</text>
+  <text x="786" y="236" font-size="12" fill="#F57C00">    exp.intVal(25)</text>
+  <text x="770" y="256" font-size="12" fill="#5A4FCF">  ),</text>
+  <text x="770" y="276" font-size="12" fill="#5A4FCF">  exp.eq(</text>
+  <text x="786" y="296" font-size="12" fill="#A89FF0">    exp.stringBin("country"),</text>
+  <text x="786" y="316" font-size="12" fill="#2A9D8F">    exp.stringVal("DE")</text>
+  <text x="770" y="336" font-size="12" fill="#5A4FCF">  )</text>
+  <text x="754" y="356" font-size="12" fill="#9CA3AF">)</text>
+
+  <!-- Divider -->
+  <line x1="744" y1="380" x2="1124" y2="380" stroke="#2A3547" stroke-width="1"/>
+
+  <!-- Result preview -->
+  <text x="754" y="404" font-size="11" font-weight="600" fill="#6B7A8D" letter-spacing="1">MATCHING RECORDS</text>
+  <text x="754" y="428" font-size="12" fill="#9CA3AF">user:a9f3b2  age=34  country="DE"</text>
+  <text x="754" y="448" font-size="12" fill="#9CA3AF">user:c3e1f9  age=29  country="DE"</text>
+  <text x="754" y="468" font-size="12" fill="#9CA3AF">user:b8d2a1  age=41  country="DE"</text>
+
+  <rect x="754" y="492" width="60" height="24" rx="6" fill="#5A4FCF"/>
+  <text x="784" y="508" font-size="11" fill="white" text-anchor="middle">Run</text>
+
+  <text x="754" y="532" font-size="11" fill="#4F5D75">2,341 records matched · 0.4ms</text>
+</svg>

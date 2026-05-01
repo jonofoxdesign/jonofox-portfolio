@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import CaseStudyLayout, { Section, ImagePlaceholder } from "@/components/layout/CaseStudyLayout";
+import CaseStudyLayout, { Section } from "@/components/layout/CaseStudyLayout";
 
 export const metadata: Metadata = {
   title: "Design Systems at Scale",
@@ -15,8 +15,8 @@ export default async function DesignSystemsPage({ params }: { params: Promise<{ 
       locale={locale}
       tag="Sygnum · Workwise · Aerospike"
       title={de
-        ? <>Ein Design System, das Designer, Entwickler<br />und KI-Tools gleichermaßen befolgen</>
-        : <>A design system designers, engineers,<br />and AI tools all follow</>
+        ? "Ein Design System, das Designer, Entwickler und KI-Tools gleichermaßen befolgen"
+        : "A design system designers, engineers, and AI tools all follow"
       }
       intro={de
         ? "Ich habe Design Systems in mehreren Organisationen aufgebaut und weiterentwickelt. Drei stechen hervor: eine regulierte Schweizer Digital-Asset-Bank, eine Recruiting-Plattform, die schnell genug gewachsen war, um sich selbst in Unordnung zu bringen, und ein Enterprise-Datenbankunterhemen. Unterschiedliche Teams, unterschiedliche Einschränkungen, dasselbe Grundproblem: mangelndes gemeinsames Verständnis. Bei Aerospike habe ich das System weiter erweitert, um eine Dokumentationsebene einzuschließen, die KI-Tools wie Claude, Cursor und Codex nutzen können, um standardmäßig systemkonsistenten Output zu erzeugen."
@@ -48,11 +48,14 @@ export default async function DesignSystemsPage({ params }: { params: Promise<{ 
             <p>Das Muster war jedes Mal dasselbe: inkonsistente UI über Teams hinweg, mehrere Versionen derselben Komponente, lokale Entscheidungen ohne gemeinsame Standards, neue Personen, die nicht wussten, wie gut aussieht. Es fehlten nicht die Komponenten. Es fehlte die Einigung darüber.</p>
           </Section>
 
-          <ImagePlaceholder label="Vorher/Nachher – UI-Konsistenz in einem der drei Unternehmen" />
+          <div className="my-12 w-full rounded-2xl overflow-hidden border border-surface-muted"><img src="/case-studies/design-systems/hero-9-buttons.png" alt="Nine completely different button styles across nine separate CSS repositories at Sygnum" className="w-full h-auto" /></div>
+          <div className="my-12 w-full rounded-2xl overflow-hidden border border-surface-muted"><img src="/case-studies/design-systems/sygnum-components.png" alt="Sygnum unified design system component library" className="w-full h-auto" /></div>
 
           <Section heading="Meine Rolle">
             <p>In allen drei Projekten verantwortete ich das Design System von der Definition bis zur Adoption. Bei Sygnum und Aerospike war ich der erste eingestellte Designer und definierte Standards von Grund auf, in direkter Zusammenarbeit mit Frontend-Engineers. Bei Workwise stabilisierte und entwickelte ich ein System weiter, das organisch gewachsen war.</p>
             <p>In allen Fällen definierte ich die Systemarchitektur mit Engineering-Input, verantwortete Designentscheidungen und Contribution-Regeln und arbeitete täglich eng mit Frontend-Engineers zusammen.</p>
+            <p>Bei Sygnum war die größte Herausforderung, Engineering-Teams davon zu überzeugen, Zeit für die Migration weg von ihren eigenen hardgecodeten Komponenten in das Monorepo zu investieren. Jedes Team hatte seine eigenen Lösungen gebaut und betrachtete diese als funktionierend. Sie davon zu überzeugen, dass die Konsolidierung die Unterbrechung wert war, erforderte es, immer wieder den Fall zu machen, nicht nur einmal.</p>
+            <p>Bei Workwise war der Widerstand passiver. Niemand war gegen das Design System. Man hielt es nur nicht für wichtig genug, um mir Frontend-Zeit für Updates zu geben. Dieses Muster wiederholte sich in allen drei Unternehmen in verschiedenen Formen: Die technische Arbeit an einem Design System ist der handhabbare Teil. Menschen dazu zu bringen, es als echte Arbeit zu behandeln statt als Nebenprojekt des Design-Teams, ist die eigentliche Aufgabe.</p>
           </Section>
 
           <Section heading="Die eigentliche Herausforderung">
@@ -61,14 +64,23 @@ export default async function DesignSystemsPage({ params }: { params: Promise<{ 
             <p>Bei Sygnum und Aerospike basierte ich das System auf Material UI: ein bewusster Kompromiss für Barrierefreiheits-Standards, bewährte Interaktionsmuster und schnellere Ausrichtung mit Engineering. Wir passten die visuelle Ebene an das Produkt an, anstatt alles von Grund auf neu aufzubauen.</p>
           </Section>
 
-          <ImagePlaceholder label="Token-Architektur – Farbe, Typografie, Abstände" />
+          <div className="my-12 w-full rounded-2xl overflow-hidden border border-surface-muted"><img src="/case-studies/design-systems/token-architecture.svg" alt="Token-Architektur — Primitive zu Semantisch zu Komponente" className="w-full h-auto" /></div>
+          <div className="my-12 grid grid-cols-2 gap-4">
+            <div className="rounded-2xl overflow-hidden border border-surface-muted">
+              <img src="/case-studies/design-systems/aerospike-token-docs.png" alt="Aerospike Markdown-Token-Dokumentation — maschinenlesbar für KI-Tools" className="w-full h-auto" />
+            </div>
+            <div className="rounded-2xl overflow-hidden border border-surface-muted">
+              <img src="/case-studies/design-systems/aerospike-storybook.png" alt="Aerospike Storybook — ClusterAccordion-Komponente mit allen Zuständen" className="w-full h-auto" />
+            </div>
+          </div>
 
           <Section heading="Was ich systematisiert habe">
             <p>Ich konzentrierte mich auf die Teile, die die meiste Reibung zwischen Teams erzeugten: Tokens als Grundlage (Farbe, Typografie, Abstände, Layout – einmal definiert, zwischen Design und Code gemappt), Komponenten mit klaren Zuständen und Verhaltensweisen, die von Anfang an mit Barrierefreiheit entwickelt wurden, Contribution-Regeln, die klar machten, wie das System sich weiterentwickelte, und Dokumentation, die Entscheidungen erklärte – nicht nur was zu verwenden ist, sondern warum es existiert und wann.</p>
             <p>Bei Aerospike erweiterte ich die Dokumentation zu einer strukturierten Markdown-Ebene, die Tokens und ihren Zweck, Komponentennutzung und -einschränkungen, Designprinzipien mit Begründungen und Contribution-Logik definiert. Dies wurde zu einer gemeinsamen Instruktionsebene, die Claude, Cursor und Codex nutzen können, um systemkonforme Ausgaben zu erzeugen.</p>
           </Section>
 
-          <ImagePlaceholder label="Figma → Code → Markdown → KI – der vernetzte Loop" />
+          <div className="my-12 w-full rounded-2xl overflow-hidden border border-surface-muted"><img src="/case-studies/design-systems/workwise-palette-gen.png" alt="Workwise algorithmische Farbpalettengenerierung — Skalierung eines Design Systems über Mandanten hinweg" className="w-full h-auto" /></div>
+          <div className="my-12 w-full rounded-2xl overflow-hidden border border-surface-muted"><img src="/case-studies/design-systems/figma-ai-loop.svg" alt="Figma to Code to Markdown to AI loop" className="w-full h-auto" /></div>
 
           <Section heading="Ein vernetztes Ökosystem">
             <p>Das System entwickelte sich von einem Satz von Assets zu einem Loop: Figma erfasst Designabsichten → Code enthält Produktionskomponenten → die Markdown-Ebene definiert Systemlogik und Anleitungen → KI-Tools generieren UI nach diesen Regeln.</p>
@@ -83,6 +95,9 @@ export default async function DesignSystemsPage({ params }: { params: Promise<{ 
           <Section heading="Was ich mitnehme">
             <p>Design Systems brauchen Pflege, Gespräch und Weiterentwicklung. Die Arbeit hört beim Launch nicht auf. Sie wird nur zu einer anderen Art von Arbeit.</p>
             <p>Was mich jetzt interessiert, ist, dass sich die Oberfläche verändert. Systeme sind nicht mehr nur Komponentenbibliotheken. Sie werden zur gemeinsamen Sprache zwischen Design, Engineering und den KI-Tools, die neben dem Team bauen. Das über alle drei hinweg konsistent zu halten ist eine schwierigere und interessantere Version desselben Problems. Das ist die Arbeit, die mich am meisten interessiert.</p>
+            <p>Der schwierigste Teil jedes Systems, das ich gebaut habe, waren nicht die Komponenten, die Architektur oder die Dokumentation. Es war, Menschen davon zu überzeugen, dass die Arbeit real ist. Engineers haben Features zu liefern. Hardgecodete Komponenten in eine gemeinsame Bibliothek zu migrieren fühlt sich nicht dringend an, bis es das tut. Man macht den Fall kontinuierlich, nicht einmal.</p>
+            <p>Die Systeme, auf die ich am stolzesten bin, sind die, bei denen ich Engineers überzeugt habe, die den Wert anfangs nicht sahen. Das bedeutete, die Arbeit in Begriffen zu zeigen, die ihnen wichtig waren, und die Vorteile in ihrem Alltag sichtbar zu machen, nicht nur in Design-Reviews. Sobald sie es verstanden, fingen sie an, den Fall gegenüber ihren eigenen Teamkollegen zu machen. Diese Gespräche verbreiteten sich weiter als jede Dokumentation, die ich geschrieben habe.</p>
+            <p>Dieses Argument hat jetzt ein neues Publikum. KI-Tools konsumieren Design Systems genauso wie Engineers. Wenn die Menschen im Team das System nicht befolgen, werden es die Tools auch nicht. Es ist dasselbe Argument, in einem größeren Raum.</p>
           </Section>
         </>
       ) : (
@@ -92,11 +107,14 @@ export default async function DesignSystemsPage({ params }: { params: Promise<{ 
             <p>The pattern was the same every time: inconsistent UI across teams, multiple versions of the same component, local decisions without shared standards, new people not knowing what good looked like. It wasn&apos;t that there weren&apos;t components. It was that nobody agreed on them.</p>
           </Section>
 
-          <ImagePlaceholder label="Before/after — UI consistency at one of the three companies" />
+          <div className="my-12 w-full rounded-2xl overflow-hidden border border-surface-muted"><img src="/case-studies/design-systems/hero-9-buttons.png" alt="Nine completely different button styles across nine separate CSS repositories at Sygnum" className="w-full h-auto" /></div>
+          <div className="my-12 w-full rounded-2xl overflow-hidden border border-surface-muted"><img src="/case-studies/design-systems/sygnum-components.png" alt="Sygnum unified design system component library" className="w-full h-auto" /></div>
 
           <Section heading="My role">
             <p>Across all three projects, I owned the design system from definition through adoption. At Sygnum and Aerospike, I was the first designer hired and defined standards from scratch, working directly with front-end engineers. At Workwise, I stabilised and evolved a system that had grown organically.</p>
             <p>In all cases, I defined system architecture with engineering input, owned design decisions and contribution rules, and partnered closely with front-end engineers day-to-day.</p>
+            <p>At Sygnum, the biggest challenge was convincing engineering teams to commit time to migrating away from their own hardcoded components into the monorepo. Every team had built their own things and regarded those things as working. Getting them to agree that consolidating was worth the disruption required making the case repeatedly, not just once.</p>
+            <p>At Workwise the resistance was more passive. Nobody was opposed to the design system. They just didn't think it was important enough to give me frontend time to make updates. That pattern repeated across all three companies in different forms: the technical work in a design system is the tractable part. Getting people to treat it as real work, rather than a design team side project, is the actual job.</p>
           </Section>
 
           <Section heading="The real challenge">
@@ -105,14 +123,23 @@ export default async function DesignSystemsPage({ params }: { params: Promise<{ 
             <p>At Sygnum and Aerospike, I based the system on Material UI: a deliberate tradeoff for accessibility defaults, proven interaction patterns, and faster alignment with engineering. We adapted the visual layer to match the product instead of rebuilding everything from scratch.</p>
           </Section>
 
-          <ImagePlaceholder label="Token architecture — colour, typography, spacing" />
+          <div className="my-12 w-full rounded-2xl overflow-hidden border border-surface-muted"><img src="/case-studies/design-systems/token-architecture.svg" alt="Token architecture — primitive to semantic to component" className="w-full h-auto" /></div>
+          <div className="my-12 grid grid-cols-2 gap-4">
+            <div className="rounded-2xl overflow-hidden border border-surface-muted">
+              <img src="/case-studies/design-systems/aerospike-token-docs.png" alt="Aerospike markdown token documentation — machine-readable for AI tools" className="w-full h-auto" />
+            </div>
+            <div className="rounded-2xl overflow-hidden border border-surface-muted">
+              <img src="/case-studies/design-systems/aerospike-storybook.png" alt="Aerospike Storybook — ClusterAccordion component with all states" className="w-full h-auto" />
+            </div>
+          </div>
 
           <Section heading="What I systematised">
             <p>I focused on the parts that created the most friction between teams: tokens as the foundation (colour, typography, spacing, layout — defined once, mapped between design and code), components with clear states and behaviours built with accessibility from the start, contribution rules that made it clear how the system evolved, and documentation that explained decisions — not just what to use, but why it existed and when.</p>
             <p>At Aerospike, I extended the documentation into a structured markdown layer that defines tokens and their purpose, component usage and constraints, design principles with reasoning, and contribution logic. This became a shared instruction layer that Claude, Cursor, and Codex can use to generate system-aligned output.</p>
           </Section>
 
-          <ImagePlaceholder label="Figma → Code → Markdown → AI — the connected loop" />
+          <div className="my-12 w-full rounded-2xl overflow-hidden border border-surface-muted"><img src="/case-studies/design-systems/workwise-palette-gen.png" alt="Workwise algorithmic colour palette generation — scaling a design system across tenants" className="w-full h-auto" /></div>
+          <div className="my-12 w-full rounded-2xl overflow-hidden border border-surface-muted"><img src="/case-studies/design-systems/figma-ai-loop.svg" alt="Figma to Code to Markdown to AI loop" className="w-full h-auto" /></div>
 
           <Section heading="A connected ecosystem">
             <p>The system evolved from a set of assets into a loop: Figma captures design intent → code holds production components → the markdown layer defines system logic and guidance → AI tools generate UI using those rules.</p>
@@ -127,6 +154,9 @@ export default async function DesignSystemsPage({ params }: { params: Promise<{ 
           <Section heading="What I&apos;d carry forward">
             <p>Design systems need maintenance, conversation, and evolution. The work doesn&apos;t stop at launch. It just becomes a different kind of work.</p>
             <p>What I find interesting now is that the surface area is changing. Systems aren&apos;t just component libraries anymore. They&apos;re becoming the shared language between design, engineering, and the AI tools building alongside the team. Keeping that consistent across all three is a harder and more interesting version of the same problem. That&apos;s the work I&apos;m most interested in.</p>
+            <p>The hardest part of every system I&apos;ve built wasn&apos;t the components or the architecture or the documentation. It was convincing people the work was real. Engineers have features to ship. Migrating hardcoded components to a shared library doesn&apos;t feel urgent until it does. You end up making the case continuously rather than once.</p>
+            <p>The systems I&apos;m most proud of are the ones where I convinced engineers who didn&apos;t initially see the value. That meant showing the work in terms they cared about, making the benefits visible in their day-to-day rather than just in design reviews. Once they got it, they started making the case to their own teammates. Those conversations spread further than any documentation I wrote.</p>
+            <p>That argument has a new audience now. AI tools consume design systems the same way engineers do. If the people on the team don&apos;t follow the system, the tools won&apos;t either. It&apos;s the same argument, to a bigger room.</p>
           </Section>
         </>
       )}

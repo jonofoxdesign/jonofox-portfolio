@@ -1,0 +1,88 @@
+<svg viewBox="0 0 1200 520" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,-apple-system,sans-serif">
+  <rect width="1200" height="520" fill="#F9FAFB"/>
+
+  <text x="600" y="44" font-size="12" font-weight="600" fill="#9CA3AF" text-anchor="middle" letter-spacing="1.5">CONFIGURATION COMPLEXITY — HUNDREDS OF VALID COMBINATIONS</text>
+  <text x="600" y="64" font-size="13" fill="#4F5D75" text-anchor="middle">Every input affected pricing, terms, and commitments. The design had to make this complexity understandable — not hide it.</text>
+
+  <!-- Inputs on the left -->
+  <text x="80" y="108" font-size="13" font-weight="700" fill="#1F2D3D">User inputs</text>
+
+  <!-- Location -->
+  <rect x="80" y="120" width="180" height="64" rx="10" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="170" y="148" font-size="13" font-weight="600" fill="#1F2D3D" text-anchor="middle">Location</text>
+  <text x="170" y="168" font-size="12" fill="#4F5D75" text-anchor="middle">50+ clubs</text>
+
+  <!-- Membership Plan -->
+  <rect x="80" y="200" width="180" height="64" rx="10" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="170" y="228" font-size="13" font-weight="600" fill="#1F2D3D" text-anchor="middle">Plan</text>
+  <text x="170" y="248" font-size="12" fill="#4F5D75" text-anchor="middle">Basic · Standard · Premium</text>
+
+  <!-- Duration -->
+  <rect x="80" y="280" width="180" height="64" rx="10" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="170" y="308" font-size="13" font-weight="600" fill="#1F2D3D" text-anchor="middle">Duration</text>
+  <text x="170" y="328" font-size="12" fill="#4F5D75" text-anchor="middle">6 · 12 · No lock-in</text>
+
+  <!-- Extras -->
+  <rect x="80" y="360" width="180" height="64" rx="10" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="170" y="388" font-size="13" font-weight="600" fill="#1F2D3D" text-anchor="middle">Extras</text>
+  <text x="170" y="408" font-size="12" fill="#4F5D75" text-anchor="middle">PT · Nutrition · Lockers</text>
+
+  <!-- Arrow lines from inputs to center -->
+  <line x1="262" y1="152" x2="380" y2="260" stroke="#E5E7EB" stroke-width="1.5"/>
+  <line x1="262" y1="232" x2="380" y2="260" stroke="#E5E7EB" stroke-width="1.5"/>
+  <line x1="262" y1="312" x2="380" y2="260" stroke="#E5E7EB" stroke-width="1.5"/>
+  <line x1="262" y1="392" x2="380" y2="260" stroke="#E5E7EB" stroke-width="1.5"/>
+
+  <!-- Central complexity node -->
+  <circle cx="460" cy="260" r="80" fill="#FCE4EC" stroke="#E91E63" stroke-width="2"/>
+  <text x="460" y="248" font-size="32" font-weight="700" fill="#E91E63" text-anchor="middle">450+</text>
+  <text x="460" y="272" font-size="13" font-weight="600" fill="#E91E63" text-anchor="middle">valid</text>
+  <text x="460" y="290" font-size="13" font-weight="600" fill="#E91E63" text-anchor="middle">configurations</text>
+
+  <!-- Arrow to output approach -->
+  <line x1="544" y1="260" x2="614" y2="260" stroke="#E91E63" stroke-width="2"/>
+  <polygon points="610,255 622,260 610,265" fill="#E91E63"/>
+
+  <!-- Design approach -->
+  <text x="900" y="108" font-size="13" font-weight="700" fill="#1F2D3D" text-anchor="middle">Design approach</text>
+
+  <!-- One decision at a time -->
+  <rect x="636" y="120" width="528" height="280" rx="16" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
+
+  <!-- Progressive step chips -->
+  <rect x="660" y="144" width="140" height="32" rx="8" fill="#E91E63"/>
+  <text x="730" y="164" font-size="12" font-weight="600" fill="white" text-anchor="middle">1. Location</text>
+
+  <text x="810" y="164" font-size="18" fill="#9CA3AF">→</text>
+
+  <rect x="836" y="144" width="140" height="32" rx="8" fill="#E91E63" opacity="0.7"/>
+  <text x="906" y="164" font-size="12" font-weight="600" fill="white" text-anchor="middle">2. Plan</text>
+
+  <text x="986" y="164" font-size="18" fill="#9CA3AF">→</text>
+
+  <rect x="1012" y="144" width="120" height="32" rx="8" fill="#FCE4EC" stroke="#E91E63" stroke-width="1.5"/>
+  <text x="1072" y="164" font-size="12" font-weight="600" fill="#E91E63" text-anchor="middle">3. Duration</text>
+
+  <line x1="660" y1="188" x2="1140" y2="188" stroke="#F3F4F6" stroke-width="1"/>
+
+  <!-- Rule 1 -->
+  <rect x="660" y="204" width="480" height="64" rx="10" fill="#FFF2E0"/>
+  <text x="684" y="228" font-size="12" font-weight="700" fill="#F57C00">One decision at a time</text>
+  <text x="684" y="248" font-size="12" fill="#4F5D75">Each choice narrows what comes next. Users don't face all</text>
+  <text x="684" y="264" font-size="12" fill="#4F5D75">450+ options at once — just the relevant ones for their context.</text>
+
+  <!-- Rule 2 -->
+  <rect x="660" y="280" width="480" height="64" rx="10" fill="#E0F5F2"/>
+  <text x="684" y="304" font-size="12" font-weight="700" fill="#2A9D8F">Persistent live summary</text>
+  <text x="684" y="324" font-size="12" fill="#4F5D75">As each decision is made, the price, terms, and commitment</text>
+  <text x="684" y="340" font-size="12" fill="#4F5D75">update in real time — no surprises at checkout.</text>
+
+  <!-- Rule 3 -->
+  <rect x="660" y="356" width="480" height="44" rx="10" fill="#EDE9FF"/>
+  <text x="684" y="376" font-size="12" font-weight="700" fill="#5A4FCF">Transparency replaces anxiety</text>
+  <text x="684" y="393" font-size="12" fill="#4F5D75">Cancellation terms shown upfront, not buried in fine print.</text>
+
+  <!-- Bottom insight -->
+  <rect x="80" y="452" width="1064" height="44" rx="10" fill="#1F2D3D"/>
+  <text x="600" y="478" font-size="13" fill="#9CA3AF" text-anchor="middle">The goal wasn't to simplify by removing choice — it was to make choice understandable.</text>
+</svg>

@@ -11,7 +11,7 @@ const tapTransition = {
 };
 
 const base =
-  "inline-flex items-center justify-center px-6 py-3 rounded-xl font-medium font-syne text-base transition-colors";
+  "flex items-center justify-center px-6 py-3 rounded-xl font-medium font-display text-base transition-colors";
 
 const variants = {
   primary:   `${base} bg-fox text-white hover:bg-fox-hover`,
@@ -39,7 +39,7 @@ export function ButtonLink({
     <motion.div
       whileTap={{ scale: 0.97 }}
       transition={tapTransition}
-      style={{ display: "inline-block" }}
+      className="block"
     >
       <Link className={`${variants[variant]} ${className ?? ""}`} {...props}>
         {children}
@@ -68,7 +68,7 @@ export function ButtonAnchor({
     <motion.div
       whileTap={{ scale: 0.97 }}
       transition={tapTransition}
-      style={{ display: "inline-block" }}
+      className="block"
     >
       <a className={`${variants[variant]} ${className ?? ""}`} {...props}>
         {children}
@@ -91,7 +91,7 @@ export function TextLink({ children, className, ...props }: TextLinkProps) {
       style={{ display: "inline-block" }}
     >
       <Link
-        className={`text-base font-medium font-syne text-teal hover:text-teal-hover transition-colors ${className ?? ""}`}
+        className={`text-base font-medium font-display text-teal hover:text-teal-hover transition-colors ${className ?? ""}`}
         {...props}
       >
         {children}

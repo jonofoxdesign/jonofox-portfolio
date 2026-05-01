@@ -52,7 +52,7 @@ export function ImagePlaceholder({ label }: { label: string }) {
 export function Section({ heading, children }: { heading: string; children: React.ReactNode }) {
   return (
     <section className="mb-14">
-      <h2 className="font-syne text-2xl font-bold text-ink mb-4">{heading}</h2>
+      <h2 className="font-display text-2xl font-bold text-ink mb-4">{heading}</h2>
       <div className="space-y-4 text-ink-secondary leading-relaxed">{children}</div>
     </section>
   );
@@ -73,7 +73,7 @@ export default function CaseStudyLayout({ tag, title, intro, meta, children, loc
         </p>
 
         {/* Title */}
-        <h1 className="font-syne text-4xl md:text-5xl font-bold text-ink leading-tight mb-8">
+        <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-ink leading-tight mb-8">
           {title}
         </h1>
 
@@ -123,13 +123,13 @@ export default function CaseStudyLayout({ tag, title, intro, meta, children, loc
         <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-96 h-96 rounded-full bg-teal/10 blur-3xl pointer-events-none" />
         <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-96 h-96 rounded-full bg-fox/10 blur-3xl pointer-events-none" />
         <div className="relative max-w-2xl mx-auto px-6 text-center">
-          <h2 className="font-syne text-4xl font-bold mb-4">
+          <h2 className="font-display text-4xl font-bold tracking-tight mb-4">
             {c.heading} <span className="text-fox">{c.headingAccent}</span>
           </h2>
           <p className="text-ink-disabled mb-8 leading-relaxed">
             {c.body}
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-col sm:flex-row sm:justify-center gap-4">
             <ButtonAnchor href="mailto:jonathanlouisfox@gmail.com" variant="teal">
               {c.email}
             </ButtonAnchor>

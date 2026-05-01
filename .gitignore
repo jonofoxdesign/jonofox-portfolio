@@ -42,3 +42,4 @@ next-env.d.ts
 
 # lock file — let Vercel resolve fresh
 package-lock.json
+.env*.local

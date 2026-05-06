@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import CaseStudyLayout, { Section, CaseStudyImage, ImagePlaceholder } from "@/components/layout/CaseStudyLayout";
+import CaseStudyLayout, { Section, CaseStudyImage } from "@/components/layout/CaseStudyLayout";
 
 export const metadata: Metadata = {
   title: "Membership Sign-up Redesign — Goodlife Health Clubs",
@@ -73,7 +73,10 @@ export default async function GoodlifePage({ params }: { params: Promise<{ local
             <p>Der Blick auf Wettbewerber bestätigte das Muster. Die meisten Fitnessstudios priorisierten Lead-Erfassung über Klarheit und versteckten bedeutungsvolle Details bis spät im Prozess. Die Chance war nicht, durch Entfernen von Optionen zu vereinfachen — es war, Optionen verständlich zu machen. Darunter fügte jede Entscheidung Komplexität hinzu: Standort, Mitgliedschaftsdauer, Anzahlungshöhe und standortspezifische Extras beeinflussten alle Preise und Konditionen und erzeugten Hunderte von gültigen Mitgliedschaftskonfigurationen.</p>
           </Section>
 
-          <ImagePlaceholder label="Konfigurationskomplexität — Diagramm folgt" />
+          <CaseStudyImage
+            src="/case-studies/goodlife/goodlife-health-clubs-configuration-complexity.png"
+            alt="Konfigurationskomplexität — Standort, Mitgliedschaftsdauer, Anzahlung und Extras erzeugen Hunderte gültiger Mitgliedschaftskonfigurationen"
+          />
 
           <Section heading="Die zentrale Designentscheidung">
             <p>Die wichtigste Entscheidung war, die Anmeldung als Explorations- und Konfigurationsprozess zu behandeln, nicht als traditionellen Checkout.</p>
@@ -81,7 +84,10 @@ export default async function GoodlifePage({ params }: { params: Promise<{ local
             <p>Das Ziel war nicht, Menschen durchzudrängen. Es war sicherzustellen, dass jemand, der die Zahlung erreichte, bereits genau verstand, wofür er sich anmeldete.</p>
           </Section>
 
-          <ImagePlaceholder label="Progressive Konfiguration — Diagramm folgt" />
+          <CaseStudyImage
+            src="/case-studies/goodlife/goodlife-health-clubs-progressive-configuration.png"
+            alt="Progressive Konfiguration — persistente Zusammenfassung aktualisiert sich in Echtzeit, während Nutzer Mitgliedschaftsdauer, Anzahlung und optionale Features anpassen"
+          />
 
           <Section heading="Arbeiten innerhalb von Beschränkungen">
             <p>Das Erlebnis wurde auf BigCommerce aufgebaut. Die Nutzung einer SaaS-Plattform gab uns zuverlässige Infrastruktur und schnellere Lieferung, aber das für den gewünschten Flow erforderliche Maß an Anpassung führte Komplexität ein. Früh erweiterten wir Standardmuster, um das Interaktionsmodell zu unterstützen, das wir für richtig hielten.</p>
@@ -122,7 +128,10 @@ export default async function GoodlifePage({ params }: { params: Promise<{ local
             <p>Looking at competitors reinforced the pattern. Most gyms prioritised lead capture over clarity, hiding meaningful details until late in the process. The opportunity wasn&apos;t to simplify by removing choice — it was to make choice understandable. Underneath, every decision added complexity: location, membership length, deposit amount, and location-specific extras all affected pricing and terms, creating hundreds of valid membership configurations that needed to remain accurate, consistent, and explainable.</p>
           </Section>
 
-          <ImagePlaceholder label="Configuration complexity diagram — coming soon" />
+          <CaseStudyImage
+            src="/case-studies/goodlife/goodlife-health-clubs-configuration-complexity.png"
+            alt="Configuration complexity — location, membership length, deposit amount, and location-specific extras create hundreds of valid membership configurations"
+          />
 
           <Section heading="The core design decision">
             <p>The most important decision was to treat sign-up as an exploration and configuration process, not a traditional checkout.</p>
@@ -130,7 +139,10 @@ export default async function GoodlifePage({ params }: { params: Promise<{ local
             <p>The goal wasn&apos;t to push people through. It was to make sure that by the time someone reached payment, they already understood exactly what they were signing up for.</p>
           </Section>
 
-          <ImagePlaceholder label="Progressive configuration diagram — coming soon" />
+          <CaseStudyImage
+            src="/case-studies/goodlife/goodlife-health-clubs-progressive-configuration.png"
+            alt="Progressive configuration — persistent summary updates in real time as users adjust membership length, deposits, and optional features"
+          />
 
           <Section heading="Working within constraints">
             <p>The experience was built on BigCommerce. Using a SaaS platform gave us reliable infrastructure and faster delivery, but the level of customisation required to support the desired flow introduced complexity. Early on, we extended default patterns to support the interaction model we believed was right.</p>

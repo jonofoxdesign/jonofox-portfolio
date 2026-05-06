@@ -108,10 +108,10 @@ export default function Image() {
         <img
           src={voyagerSrc}
           style={{
-            width: "92%",
-            height: "92%",
-            objectFit: "contain",
-            objectPosition: "center",
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "bottom center",
           }}
         />
       </div>

@@ -83,10 +83,10 @@ export default function Image() {
         <img
           src={heroSrc}
           style={{
-            width: "90%",
-            height: "90%",
-            objectFit: "contain",
-            objectPosition: "center",
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "bottom center",
           }}
         />
       </div>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/layout/Nav";
+import PostHogProvider from "@/components/providers/PostHogProvider";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -38,7 +39,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Skip to main content
         </a>
         <Nav />
-        {children}
+        <PostHogProvider>
+          {children}
+        </PostHogProvider>
       </body>
     </html>
   );

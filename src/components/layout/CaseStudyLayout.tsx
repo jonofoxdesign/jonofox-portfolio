@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { ButtonAnchor } from "@/components/ui/Button";
 
@@ -41,6 +44,17 @@ const cta = {
   },
 };
 
+// Shared scroll-reveal variants
+const revealVariants = {
+  hidden: { opacity: 0, y: 18, scale: 0.98 },
+  visible: { opacity: 1, y: 0, scale: 1 },
+};
+
+const revealTransition = {
+  duration: 0.55,
+  ease: [0.23, 1, 0.32, 1] as [number, number, number, number],
+};
+
 export function ImagePlaceholder({ label }: { label: string }) {
   return (
     <div className="my-12 w-full aspect-video rounded-2xl bg-surface-muted flex items-center justify-center text-ink-disabled text-sm">
@@ -49,12 +63,35 @@ export function ImagePlaceholder({ label }: { label: string }) {
   );
 }
 
+/** Shared case study image — animated scroll reveal, no shadow */
+export function CaseStudyImage({ src, alt }: { src: string; alt: string }) {
+  return (
+    <motion.div
+      className="my-12 w-full rounded-2xl overflow-hidden border border-surface-muted"
+      variants={revealVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-60px" }}
+      transition={revealTransition}
+    >
+      <img src={src} alt={alt} className="w-full h-auto" />
+    </motion.div>
+  );
+}
+
 export function Section({ heading, children }: { heading: string; children: React.ReactNode }) {
   return (
-    <section className="mb-14">
+    <motion.section
+      className="mb-14"
+      variants={revealVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-60px" }}
+      transition={revealTransition}
+    >
       <h2 className="font-display text-2xl font-bold text-ink mb-4">{heading}</h2>
       <div className="space-y-4 text-ink-secondary leading-relaxed">{children}</div>
-    </section>
+    </motion.section>
   );
 }
 
@@ -68,22 +105,46 @@ export default function CaseStudyLayout({ tag, title, intro, meta, children, loc
       <div className="max-w-3xl mx-auto px-6 pb-24">
 
         {/* Tag */}
-        <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-6">
+        <motion.p
+          className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-6"
+          variants={revealVariants}
+          initial="hidden"
+          animate="visible"
+          transition={{ ...revealTransition, delay: 0.05 }}
+        >
           {tag}
-        </p>
+        </motion.p>
 
         {/* Title */}
-        <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-ink leading-tight mb-8">
+        <motion.h1
+          className="font-display text-4xl md:text-5xl font-bold tracking-tight text-ink leading-tight mb-8"
+          variants={revealVariants}
+          initial="hidden"
+          animate="visible"
+          transition={{ ...revealTransition, delay: 0.12 }}
+        >
           {title}
-        </h1>
+        </motion.h1>
 
         {/* Intro */}
-        <p className="text-lg text-ink-secondary leading-relaxed mb-12">
+        <motion.p
+          className="text-lg text-ink-secondary leading-relaxed mb-12"
+          variants={revealVariants}
+          initial="hidden"
+          animate="visible"
+          transition={{ ...revealTransition, delay: 0.22 }}
+        >
           {intro}
-        </p>
+        </motion.p>
 
         {/* Metadata grid */}
-        <div className="grid grid-cols-3 gap-x-8 gap-y-6 pb-12 border-b border-surface-muted mb-14">
+        <motion.div
+          className="grid grid-cols-3 gap-x-8 gap-y-6 pb-12 border-b border-surface-muted mb-14"
+          variants={revealVariants}
+          initial="hidden"
+          animate="visible"
+          transition={{ ...revealTransition, delay: 0.32 }}
+        >
           <div>
             <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-1">{labels.company}</p>
             <p className="text-sm text-ink">{meta.company}</p>
@@ -108,7 +169,7 @@ export default function CaseStudyLayout({ tag, title, intro, meta, children, loc
             <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-1">{labels.collaboration}</p>
             <p className="text-sm text-ink">{meta.collaboration}</p>
           </div>
-        </div>
+        </motion.div>
 
         {/* Content */}
         {children}

@@ -190,16 +190,16 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
         <div className="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start pt-44 pb-24">
           <div>
-            <h1 className="font-display text-5xl md:text-6xl font-bold tracking-tight leading-tight text-ink mb-6">
+            <h1 className="animate-fade-up font-display text-5xl md:text-6xl font-bold tracking-tight leading-tight text-ink mb-6">
               {c.hero.headline1}{" "}
               <span className="text-teal italic">{c.hero.headline2}</span>{" "}
               {c.hero.headline3}{" "}
               <span className="text-fox">{c.hero.headline4}</span>
             </h1>
-            <p className="text-lg text-ink-secondary leading-relaxed mb-8 max-w-lg">
+            <p className="animate-fade-up-1 text-lg text-ink-secondary leading-relaxed mb-8 max-w-lg">
               {c.hero.sub}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="animate-fade-up-2 flex flex-col sm:flex-row gap-4">
               <ButtonLink href={lp("/work")} variant="primary">
                 {c.hero.cta1}
               </ButtonLink>
@@ -210,7 +210,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           </div>
 
           {/* Portrait — always colour */}
-          <div className="relative flex justify-center md:justify-end">
+          <div className="animate-fade-up-1 relative flex justify-center md:justify-end">
             <img
               src="/hero-color.png"
               alt="Jono Fox"
@@ -292,7 +292,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               <Link
                 key={i}
                 href={lp(card.href)}
-                className="group grid md:grid-cols-[1fr_320px] gap-8 items-center p-8 rounded-2xl border border-surface-muted hover:border-teal/30 hover:bg-teal-subtle/20 transition-all duration-200 block"
+                className="group grid md:grid-cols-[1fr_320px] gap-8 items-center p-8 rounded-2xl border border-surface-muted hover:border-teal/30 hover:bg-teal-subtle/20 hover:-translate-y-0.5 transition-[transform,border-color,background-color] duration-300 ease-[cubic-bezier(0.23,1,0.32,1)] block"
               >
                 <div className="order-2 md:order-1 space-y-3">
                   <span className="text-xs font-semibold tracking-widest text-ink-disabled uppercase">

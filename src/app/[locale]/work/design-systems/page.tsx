@@ -1,16 +1,19 @@
 import type { Metadata } from "next";
-import CaseStudyLayout, { Section } from "@/components/layout/CaseStudyLayout";
+import CaseStudyLayout, { Section, CaseStudyImage } from "@/components/layout/CaseStudyLayout";
 
 export const metadata: Metadata = {
   title: "Design Systems at Scale",
   description: "Product design case study: building scalable design systems at Aerospike, Sygnum Bank, and Workwise — Figma libraries, token architecture, and an AI instruction layer for Claude, Cursor, and Codex.",
+  openGraph: {
+    title: "Design Systems at Scale | Jono Fox",
+    description: "Built design systems across three companies. At Aerospike, extended it into a documentation layer that AI tools use to generate system-consistent output by default.",
+    images: [{ url: "/case-studies/design-systems/og-image.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/case-studies/design-systems/og-image.png"],
+  },
 };
-
-const IMG = ({ src, alt }: { src: string; alt: string }) => (
-  <div className="my-12 w-full rounded-2xl overflow-hidden border border-surface-muted">
-    <img src={src} alt={alt} className="w-full h-auto" />
-  </div>
-);
 
 export default async function DesignSystemsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -54,7 +57,7 @@ export default async function DesignSystemsPage({ params }: { params: Promise<{ 
             <p>Das Muster war jedes Mal dasselbe: inkonsistente UI über Teams hinweg, mehrere Versionen derselben Komponente, lokale Entscheidungen ohne gemeinsame Standards, neue Personen, die nicht wussten, wie gut aussieht. Es fehlten nicht die Komponenten. Es fehlte die Einigung darüber.</p>
           </Section>
 
-          <IMG src="/case-studies/design-systems/design-systems-nine-repos-problem.png" alt="Das Nine-Repos-Problem bei Sygnum — neun Teams, die unabhängig voneinander bauen" />
+          <CaseStudyImage src="/case-studies/design-systems/design-systems-nine-repos-problem.png" alt="Das Nine-Repos-Problem bei Sygnum — neun Teams, die unabhängig voneinander bauen" />
 
           <Section heading="Meine Rolle">
             <p>In allen drei Projekten verantwortete ich das Design System von der Definition bis zur Adoption. Bei Sygnum und Aerospike war ich der erste eingestellte Designer und definierte Standards von Grund auf, in direkter Zusammenarbeit mit Frontend-Engineers. Bei Workwise stabilisierte und entwickelte ich ein System weiter, das organisch gewachsen war.</p>
@@ -69,21 +72,21 @@ export default async function DesignSystemsPage({ params }: { params: Promise<{ 
             <p>Bei Sygnum und Aerospike basierte ich das System auf Material UI: ein bewusster Kompromiss für Barrierefreiheits-Standards, bewährte Interaktionsmuster und schnellere Ausrichtung mit Engineering. Wir passten die visuelle Ebene an das Produkt an, anstatt alles von Grund auf neu aufzubauen.</p>
           </Section>
 
-          <IMG src="/case-studies/design-systems/design-systems-tokens.png" alt="Design-System-Tokens bei Aerospike — Farb-, Typografie- und Abstands-Tokens in der Praxis" />
+          <CaseStudyImage src="/case-studies/design-systems/design-systems-tokens.png" alt="Design-System-Tokens bei Aerospike — Farb-, Typografie- und Abstands-Tokens in der Praxis" />
 
           <Section heading="Was ich systematisiert habe">
             <p>Ich konzentrierte mich auf die Teile, die die meiste Reibung zwischen Teams erzeugten: Tokens als Grundlage (Farbe, Typografie, Abstände, Layout – einmal definiert, zwischen Design und Code gemappt), Komponenten mit klaren Zuständen und Verhaltensweisen, die von Anfang an mit Barrierefreiheit entwickelt wurden, Contribution-Regeln, die klar machten, wie das System sich weiterentwickelte, und Dokumentation, die Entscheidungen erklärte – nicht nur was zu verwenden ist, sondern warum es existiert und wann.</p>
             <p>Bei Aerospike erweiterte ich die Dokumentation zu einer strukturierten Markdown-Ebene, die Tokens und ihren Zweck, Komponentennutzung und -einschränkungen, Designprinzipien mit Begründungen und Contribution-Logik definiert. Dies wurde zu einer gemeinsamen Instruktionsebene, die Claude, Cursor und Codex nutzen können, um systemkonforme Ausgaben zu erzeugen.</p>
           </Section>
 
-          <IMG src="/case-studies/design-systems/design-systems-figma-code-ai-connected-loop.png" alt="Figma, Code und KI-Tools in einem verbundenen Loop bei Aerospike" />
+          <CaseStudyImage src="/case-studies/design-systems/design-systems-figma-code-ai-connected-loop.png" alt="Figma, Code und KI-Tools in einem verbundenen Loop bei Aerospike" />
 
           <Section heading="Ein vernetztes Ökosystem">
             <p>Das System entwickelte sich von einem Satz von Assets zu einem Loop: Figma erfasst Designabsichten → Code enthält Produktionskomponenten → die Markdown-Ebene definiert Systemlogik und Anleitungen → KI-Tools generieren UI nach diesen Regeln.</p>
             <p>Entscheidungen werden einmal kodiert und über jede Ebene hinweg wiederverwendet. Das beschleunigt die Dinge, bedeutet aber auch, dass Inkonsistenz schnell skaliert, wenn Regeln nicht klar sind. Das ist es, was die Contribution-Regeln und der Review-Prozess verwalten.</p>
           </Section>
 
-          <IMG src="/case-studies/design-systems/design-systems-ai-agent-skills.png" alt="KI-Agent-Skills, die auf der Design-System-Dokumentation basieren — Claude und Cursor folgen denselben Regeln wie das Team" />
+          <CaseStudyImage src="/case-studies/design-systems/design-systems-ai-agent-skills.png" alt="KI-Agent-Skills, die auf der Design-System-Dokumentation basieren — Claude und Cursor folgen denselben Regeln wie das Team" />
 
           <Section heading="Ergebnisse">
             <p>In allen drei Systemen wurden Komponenten konsistent wiederverwendet, Design- und Engineering-Nacharbeit ging zurück, und die Systeme blieben auch nach meiner Beteiligung bestehen. Stakeholder gewannen Vertrauen in UI-Entscheidungen und die Lieferung wurde vorhersehbarer.</p>
@@ -105,7 +108,7 @@ export default async function DesignSystemsPage({ params }: { params: Promise<{ 
             <p>The pattern was the same every time: inconsistent UI across teams, multiple versions of the same component, local decisions without shared standards, new people not knowing what good looked like. It wasn&apos;t that there weren&apos;t components. It was that nobody agreed on them.</p>
           </Section>
 
-          <IMG src="/case-studies/design-systems/design-systems-nine-repos-problem.png" alt="The nine repos problem at Sygnum — nine teams building independently with no shared foundation" />
+          <CaseStudyImage src="/case-studies/design-systems/design-systems-nine-repos-problem.png" alt="The nine repos problem at Sygnum — nine teams building independently with no shared foundation" />
 
           <Section heading="My role">
             <p>Across all three projects, I owned the design system from definition through adoption. At Sygnum and Aerospike, I was the first designer hired and defined standards from scratch, working directly with front-end engineers. At Workwise, I stabilised and evolved a system that had grown organically.</p>
@@ -120,21 +123,21 @@ export default async function DesignSystemsPage({ params }: { params: Promise<{ 
             <p>At Sygnum and Aerospike, I based the system on Material UI: a deliberate tradeoff for accessibility defaults, proven interaction patterns, and faster alignment with engineering. We adapted the visual layer to match the product instead of rebuilding everything from scratch.</p>
           </Section>
 
-          <IMG src="/case-studies/design-systems/design-systems-tokens.png" alt="Design system tokens at Aerospike — colour, typography and spacing tokens in practice" />
+          <CaseStudyImage src="/case-studies/design-systems/design-systems-tokens.png" alt="Design system tokens at Aerospike — colour, typography and spacing tokens in practice" />
 
           <Section heading="What I systematised">
             <p>I focused on the parts that created the most friction between teams: tokens as the foundation (colour, typography, spacing, layout — defined once, mapped between design and code), components with clear states and behaviours built with accessibility from the start, contribution rules that made it clear how the system evolved, and documentation that explained decisions — not just what to use, but why it existed and when.</p>
             <p>At Aerospike, I extended the documentation into a structured markdown layer that defines tokens and their purpose, component usage and constraints, design principles with reasoning, and contribution logic. This became a shared instruction layer that Claude, Cursor, and Codex can use to generate system-aligned output.</p>
           </Section>
 
-          <IMG src="/case-studies/design-systems/design-systems-figma-code-ai-connected-loop.png" alt="Figma, code and AI tools in a connected loop at Aerospike" />
+          <CaseStudyImage src="/case-studies/design-systems/design-systems-figma-code-ai-connected-loop.png" alt="Figma, code and AI tools in a connected loop at Aerospike" />
 
           <Section heading="A connected ecosystem">
             <p>The system evolved from a set of assets into a loop: Figma captures design intent → code holds production components → the markdown layer defines system logic and guidance → AI tools generate UI using those rules.</p>
             <p>Decisions get encoded once and reused across every layer. That speeds things up, but it also means inconsistency scales fast when rules aren&apos;t clear. That&apos;s what the contribution rules and review process manage.</p>
           </Section>
 
-          <IMG src="/case-studies/design-systems/design-systems-ai-agent-skills.png" alt="AI agent skills built on design system documentation — Claude and Cursor following the same rules as the team" />
+          <CaseStudyImage src="/case-studies/design-systems/design-systems-ai-agent-skills.png" alt="AI agent skills built on design system documentation — Claude and Cursor following the same rules as the team" />
 
           <Section heading="Outcomes">
             <p>Across all three systems, components were reused consistently, design and engineering rework went down, and the systems stayed in place beyond my involvement. Stakeholders gained confidence in UI decisions and delivery became more predictable.</p>

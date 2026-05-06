@@ -1,16 +1,20 @@
 import type { Metadata } from "next";
-import CaseStudyLayout, { Section } from "@/components/layout/CaseStudyLayout";
+import CaseStudyLayout, { Section, CaseStudyImage } from "@/components/layout/CaseStudyLayout";
 
 export const metadata: Metadata = {
   title: "Voyager Visual Developer Tool — Aerospike Database",
   description: "Product design case study: end-to-end design of Aerospike's first visual developer tool for an enterprise NoSQL database. Developer experience design from connection to confidence.",
+  openGraph: {
+    title: "Aerospike Voyager Developer Tool | Jono Fox",
+    description: "End-to-end design of Aerospike's first visual developer tool. A guided path from first connection to confident use.",
+    images: [{ url: "/case-studies/aerospike-voyager/og-image.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/case-studies/aerospike-voyager/og-image.png"],
+  },
 };
 
-const IMG = ({ src, alt }: { src: string; alt: string }) => (
-  <div className="my-12 w-full rounded-2xl overflow-hidden border border-surface-muted" >
-    <img src={src} alt={alt} className="w-full h-auto" />
-  </div>
-);
 
 export default async function AerospikeVoyagerPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -54,7 +58,7 @@ export default async function AerospikeVoyagerPage({ params }: { params: Promise
             <p>Das eigentliche Problem war nicht nur fehlendes Tooling. Es war ein Mangel an Klarheit, Vertrauen und Momentum in der ersten Stunde mit Aerospike. Bestehende Tools zeigten Power. Keines davon erklärte, was passiert.</p>
           </Section>
 
-          <IMG src="/case-studies/aerospike-voyager/aerospike-voyager-app.png" alt="Voyager — visuelles Developer-Tool für Aerospike" />
+          <CaseStudyImage src="/case-studies/aerospike-voyager/aerospike-voyager-app.png" alt="Voyager — visuelles Developer-Tool für Aerospike" />
 
           <Section heading="Meine Rolle">
             <p>Ich war der Product Designer für das gesamte Erlebnis, von der frühen Discovery bis zur fertigen UI. Ich definierte die Produktrichtung, entwarf das Interaktionsmodell und übersetzte komplexe Datenbankkonzepte in etwas, das Entwickler verstehen konnten. Ich arbeitete eng mit Engineering, Produktmanagement sowie Growth- und Developer-Experience-Teams zusammen und blieb während Build und QA involviert, als Randfälle auftauchten.</p>
@@ -73,7 +77,7 @@ export default async function AerospikeVoyagerPage({ params }: { params: Promise
             <p>Die Definition dieses Pfades hat auch das Team ausgerichtet. Produkt, Growth und Engineering hatten unterschiedliche Vorstellungen davon, wofür Voyager ist. Der Golden Path beantwortete die Frage: Wie sieht Erfolg wirklich aus? Er wurde zum Rückgrat sowohl der UX als auch der Telemetriestrategie.</p>
           </Section>
 
-          <IMG src="/case-studies/aerospike-voyager/aerospike-voyager-golden-path-user-journey.png" alt="Golden path — user journey from connect to confidence" />
+          <CaseStudyImage src="/case-studies/aerospike-voyager/aerospike-voyager-golden-path-user-journey.png" alt="Golden path — user journey from connect to confidence" />
 
           <Section heading="Design für Komplexität">
             <p>Aerospike ist eine NoSQL-Datenbank. Die Daten sind unstrukturiert, was sie extrem schnell, aber auch schwer zu visualisieren macht. Sie verhält sich nicht wie eine typische JSON-basierte Datenbank. Records, Bins, Datentypen, Ausdrücke und verschachtelte Strukturen erzeugen mentalen Overhead.</p>
@@ -84,7 +88,7 @@ export default async function AerospikeVoyagerPage({ params }: { params: Promise
             <p>Für Abfragen führte ich einen visuellen Filter-Builder ein, der UI-Eingaben auf Aerospikes Expression DSL abbildet – was die Notwendigkeit reduziert, Syntax auswendig zu lernen, und Nutzern ermöglicht, durch Tun zu lernen. Für riskante Operationen wie Scans entwarf ich klare Warnungen und Leitplanken statt stiller Fehler.</p>
           </Section>
 
-          <IMG src="/case-studies/aerospike-voyager/aerospike-voyager-filters-dsl.png" alt="Visueller Filter-Builder und Expression DSL — Abfragen ohne Syntax auswendig zu lernen" />
+          <CaseStudyImage src="/case-studies/aerospike-voyager/aerospike-voyager-filters-dsl.png" alt="Visueller Filter-Builder und Expression DSL — Abfragen ohne Syntax auswendig zu lernen" />
 
           <Section heading="Ergebnis">
             <p>Voyager Preview wurde im April 2026 öffentlich als Aerospikes erstes visuelles Developer-Tool veröffentlicht, verfügbar für macOS, Windows und Linux. Im Umfang deckte es Datenbrowsing, geführtes Onboarding und einen eingebetteten MCP-Server ab. In der Absicht war es das Fundament für etwas Größeres.</p>
@@ -92,7 +96,7 @@ export default async function AerospikeVoyagerPage({ params }: { params: Promise
             <p>Es führte eine visuelle Möglichkeit ein, Aerospike-Daten zu verstehen, einen geführten Onboarding-Flow für Entwickler die von null starten, einen visuellen Filter-Builder zum Formulieren von Abfragen ohne Syntax auswendig zu lernen, und Leitplanken bei riskanten Operationen statt stiller Fehler. Und dann ist da noch der MCP-Server, den ich für das interessanteste Ergebnis von allem halte.</p>
           </Section>
 
-          <IMG src="/case-studies/aerospike-voyager/aerospike-voyager-mcp.png" alt="MCP Server — KI-Tools über MCP mit Aerospike verbinden" />
+          <CaseStudyImage src="/case-studies/aerospike-voyager/aerospike-voyager-mcp.png" alt="MCP Server — KI-Tools über MCP mit Aerospike verbinden" />
 
           <Section heading="Was danach kam">
             <p>Der geführte Pfad, den wir für Entwickler entworfen haben, wurde zur Struktur, die Aerospike für eine Maschine lesbar macht. Tools wie Claude Code, Cursor, Codex und Gemini CLI können jetzt direkt über Voyager mit Aerospike-Clustern kommunizieren, weil das mentale Modell, das wir entwickelt haben, um einem neuen Entwickler zu helfen, sich zu orientieren, dasselbe ist, das KI-Agenten nutzen, um echte Daten zu erkunden. Der MCP-Server kommt mit 21 Tools über Verbindungsverwaltung, Browsing, Record-CRUD und Info-Befehle. In der ersten Woche der öffentlichen Verfügbarkeit hatten Nutzer bereits fast alle davon erkundet. Die UX-Arbeit diente nicht nur dem Produkt. Sie formte, was danach kam.</p>
@@ -113,7 +117,7 @@ export default async function AerospikeVoyagerPage({ params }: { params: Promise
             <p>The core issue wasn&apos;t just missing tooling. It was a lack of clarity, confidence, and momentum in the first hour of using Aerospike. Existing tools exposed power. None of them explained what was happening.</p>
           </Section>
 
-          <IMG src="/case-studies/aerospike-voyager/aerospike-voyager-app.png" alt="Voyager — visual developer tool for Aerospike" />
+          <CaseStudyImage src="/case-studies/aerospike-voyager/aerospike-voyager-app.png" alt="Voyager — visual developer tool for Aerospike" />
 
           <Section heading="My role">
             <p>I was the product designer across the entire experience, from early discovery through to shipped UI. I defined the product direction, designed the interaction model, and translated complex database concepts into something developers could reason about. I worked closely with engineering, product management, and growth and developer experience teams, staying involved through build and QA as edge cases surfaced throughout.</p>
@@ -132,7 +136,7 @@ export default async function AerospikeVoyagerPage({ params }: { params: Promise
             <p>Defining this path also aligned the team. Product, growth, and engineering had different ideas about what Voyager was for. The golden path answered the question: what does success actually look like? It became the backbone of both the UX and the telemetry strategy.</p>
           </Section>
 
-          <IMG src="/case-studies/aerospike-voyager/aerospike-voyager-golden-path-user-journey.png" alt="Golden path — user journey from connect to confidence" />
+          <CaseStudyImage src="/case-studies/aerospike-voyager/aerospike-voyager-golden-path-user-journey.png" alt="Golden path — user journey from connect to confidence" />
 
           <Section heading="Designing for complexity">
             <p>Aerospike is a NoSQL database. The data is unstructured, which makes it extremely fast but also hard to visualise. It doesn&apos;t behave like a typical JSON-based database. Records, bins, data types, expressions, and nested structures all introduce mental overhead.</p>
@@ -143,7 +147,7 @@ export default async function AerospikeVoyagerPage({ params }: { params: Promise
             <p>For querying, I introduced a visual filter builder that maps UI inputs to Aerospike&apos;s Expression DSL — reducing the need to memorise syntax and letting users learn by doing. For risky operations like scans, I designed clear warnings and guardrails instead of silent failures.</p>
           </Section>
 
-          <IMG src="/case-studies/aerospike-voyager/aerospike-voyager-filters-dsl.png" alt="Visual filter builder and Expression DSL — shaping queries without memorising syntax" />
+          <CaseStudyImage src="/case-studies/aerospike-voyager/aerospike-voyager-filters-dsl.png" alt="Visual filter builder and Expression DSL — shaping queries without memorising syntax" />
 
           <Section heading="Outcome">
             <p>Voyager Preview shipped publicly in April 2026 as Aerospike&apos;s first visual developer tool, available on macOS, Windows, and Linux. In scope, it covered data browsing, guided onboarding, and an embedded MCP server. In intent, it was the foundation for something bigger.</p>
@@ -151,7 +155,7 @@ export default async function AerospikeVoyagerPage({ params }: { params: Promise
             <p>It introduced a visual way to understand Aerospike data, a guided onboarding flow for developers starting from zero, a visual filter builder for shaping queries without memorising syntax, and guardrails on risky operations instead of silent failures. And then there&apos;s the MCP server, which I think is the most interesting outcome of all of it.</p>
           </Section>
 
-          <IMG src="/case-studies/aerospike-voyager/aerospike-voyager-mcp.png" alt="MCP Server — connect AI tools to Aerospike clusters via MCP" />
+          <CaseStudyImage src="/case-studies/aerospike-voyager/aerospike-voyager-mcp.png" alt="MCP Server — connect AI tools to Aerospike clusters via MCP" />
 
           <Section heading="What came after">
             <p>The guided path we designed for developers became the structure that makes Aerospike legible to a machine. Tools like Claude Code, Cursor, Codex, and Gemini CLI can now talk directly to Aerospike clusters through Voyager, because the mental model we built to help a new developer orient is the same one AI agents use to explore real data. The MCP server ships with 21 tools across connection management, browsing, record CRUD, and info commands. In the first week of public availability, users had already explored nearly every one of them. The UX work didn&apos;t just serve the product. It shaped what came after it.</p>

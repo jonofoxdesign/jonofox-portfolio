@@ -34,11 +34,11 @@ const content = {
       },
       {
         tag: "MULTIPLE COMPANIES",
-        title: "A design system designers, engineers, and AI tools all follow",
+        title: "Design systems that designers, engineers, and AI tools all follow",
         body: "Built systems from scratch across three companies, with a documentation layer at Aerospike that makes AI-generated output system-consistent by default.",
         cta: "View case study",
         href: "/work/design-systems",
-        image: "/case-studies/design-systems/sygnum-components.png",
+        image: "/case-studies/design-systems/design-systems-hero.png",
         gradient: "linear-gradient(135deg, #FFF2E0 0%, #F57C0022 100%)",
       },
       {
@@ -47,7 +47,7 @@ const content = {
         body: "At the world's first regulated digital asset bank, clients had to call their account manager just to check their balance. I designed the dashboard that changed that.",
         cta: "View case study",
         href: "/work/sygnum",
-        image: "/case-studies/sygnum/hero-composite.png",
+        image: "/case-studies/sygnum/sygnum-digital-assets-dashboard-hero.png",
         gradient: "linear-gradient(135deg, #FCE4EC 0%, #E91E6322 100%)",
       },
       {
@@ -92,11 +92,11 @@ const content = {
       },
       {
         tag: "MEHRERE UNTERNEHMEN",
-        title: "Ein Design System, das Designer, Entwickler und KI-Tools gleichermaßen befolgen",
+        title: "Design Systems, die Designer, Entwickler und KI-Tools gleichermaßen befolgen",
         body: "Systeme von Grund auf in drei Unternehmen aufgebaut – mit einer Dokumentationsebene bei Aerospike, die KI-generierten Output standardmäßig systemkonsistent macht.",
         cta: "Fallstudie ansehen",
         href: "/work/design-systems",
-        image: "/case-studies/design-systems/sygnum-components.png",
+        image: "/case-studies/design-systems/design-systems-hero.png",
         gradient: "linear-gradient(135deg, #FFF2E0 0%, #F57C0022 100%)",
       },
       {
@@ -105,7 +105,7 @@ const content = {
         body: "Bei der weltweit ersten regulierten Digital-Asset-Bank mussten Kunden ihren Kundenbetreuer anrufen, um ihren Kontostand zu prüfen. Ich habe das Dashboard entworfen, das das geändert hat.",
         cta: "Fallstudie ansehen",
         href: "/work/sygnum",
-        image: "/case-studies/sygnum/hero-composite.png",
+        image: "/case-studies/sygnum/sygnum-digital-assets-dashboard-hero.png",
         gradient: "linear-gradient(135deg, #FCE4EC 0%, #E91E6322 100%)",
       },
       {

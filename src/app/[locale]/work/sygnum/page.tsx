@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   description: "Product design case study: digital assets dashboard for Sygnum Bank — the world's first regulated digital asset bank. Fintech UX design for high-net-worth private banking clients.",
 };
 
+const IMG = ({ src, alt }: { src: string; alt: string }) => (
+  <div className="my-12 w-full rounded-2xl overflow-hidden border border-surface-muted">
+    <img src={src} alt={alt} className="w-full h-auto" />
+  </div>
+);
+
 export default async function SygnumPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const de = locale === "de";
@@ -48,17 +54,11 @@ export default async function SygnumPage({ params }: { params: Promise<{ locale:
             <p>Kunden waren vermögende Private-Banking-Kunden, die an persönlichen Service gewöhnt waren. Sie erwarteten trotzdem sofortigen Zugriff auf ihre Salden, klare Erklärungen zu ihrem Besitz und ein Erlebnis, das dem modernen Banking entspricht. Sie verstanden Finanzprodukte. Die Oberfläche musste das respektieren, nicht herabsehen.</p>
           </Section>
 
-          <div className="my-12 w-full rounded-2xl overflow-hidden border border-surface-muted">
-            <img src="/case-studies/sygnum/before-after.svg" alt="Before and after — from phone calls to self-service dashboard" className="w-full h-auto" />
-          </div>
-
-          <div className="my-12 w-full aspect-video rounded-2xl overflow-hidden border border-surface-muted shadow-xl">
-            <img
-              src="/case-studies/sygnum/asset-overview.png"
-              alt="Sygnum digital assets overview dashboard"
-              className="w-full h-full object-cover object-top"
-            />
-          </div>
+          <IMG
+            src="/case-studies/sygnum/sygnum-digital-assets-problem-before-after.png"
+            alt="Vorher-Nachher — vom Anruf beim Kundenbetreuer zum Self-Service-Dashboard"
+           
+          />
 
           <Section heading="Meine Rolle">
             <p>Ich war der Design Lead in diesem Projekt, unterstützt von einem Junior Designer. Ich definierte die Gesamtstruktur und das Interaktionsmodell, übersetzte komplexe Blockchain-Konzepte in verständliche UI, setzte und hielt den visuellen Qualitätsstandard und entschied, was zu vereinfachen und was explizit zu zeigen war.</p>
@@ -67,44 +67,32 @@ export default async function SygnumPage({ params }: { params: Promise<{ locale:
             <p>Meine Reaktion war, in Phasen zu designen. Anstatt einem Dashboard, das das vollständige Bild widerspiegelte, staffelten wir die Arbeit in Etappen, jede gebunden an eine spezifische technische Abhängigkeit, die zuerst gelöst werden musste. Das ist eine andere Art von Designproblem. Man designed nicht für einen Zustand, der existiert, sondern einen Weg zu einem Zustand, der noch nicht existiert.</p>
           </Section>
 
+          <IMG
+            src="/case-studies/sygnum/sygnum-digital-assets-overview.png"
+            alt="Digitale Asset-Übersicht — vollständiges Portfolio auf einen Blick"
+          />
+
           <Section heading="Der Ansatz">
             <p>Anstatt einzelne Screens zu entwerfen, konzentrierte ich mich darauf, ein klares mentales Modell dafür zu etablieren, wie Sygnum digitale Assets präsentiert. Das bedeutete, das Erlebnis wo möglich in vertrauten Banking-Konzepten zu verankern, eine einzige Übersicht zu schaffen, die den Gesamtbestand über alle Asset-Typen widerspiegelt, und Assets und Aktionen so zu gruppieren, wie Kunden denken – nicht wie Systeme strukturiert sind.</p>
             <p>Häufige Aktionen wie Trading und Staking mussten leicht zu finden sein, ohne das Dashboard in ein Kontrollpanel zu verwandeln. Die Herausforderung war, zu vereinfachen ohne zu übervereinfachen. Regulierung machte Genauigkeit unverzichtbar. Asset-Komplexität – Salden, Gebühren, Settlement-Timing, Transaktionsstatus – konnte nicht versteckt, nur strukturiert werden.</p>
           </Section>
 
-          <div className="my-12 w-full rounded-2xl overflow-hidden border border-surface-muted">
-            <img src="/case-studies/sygnum/asset-architecture.svg" alt="Information architecture — assets grouped by client mental model" className="w-full h-auto" />
-          </div>
-
-          <div className="my-12 grid grid-cols-2 gap-4">
-            <div className="aspect-[3/4] rounded-2xl overflow-hidden border border-surface-muted shadow-xl">
-              <img
-                src="/case-studies/sygnum/asset-overview-scrolled.png"
-                alt="Asset breakdown by type — trading wallets, vault wallets, staking, asset tokens"
-                className="w-full h-full object-cover object-top"
-              />
-            </div>
-            <div className="aspect-[3/4] rounded-2xl overflow-hidden border border-surface-muted shadow-xl">
-              <img
-                src="/case-studies/sygnum/btc-wallet-detail.png"
-                alt="BTC wallet detail — balance, performance chart, and transaction history"
-                className="w-full h-full object-cover object-top"
-              />
-            </div>
-          </div>
+          <IMG
+            src="/case-studies/sygnum/sygnum-digital-assets-information-architecture.png"
+            alt="Informationsarchitektur — Assets nach dem mentalen Modell der Kunden gruppiert"
+           
+          />
 
           <Section heading="Das Ergebnis">
             <p>Das finale Dashboard gab Kunden eine klare Übersicht darüber, was sie hielten und dessen aktuellen Wert, unterstützte Crypto, tokenisierte Assets, Staking und NFTs und machte häufige Aktionen leicht auffindbar, ohne die Übersicht zu beeinträchtigen. Es funktionierte sowohl als schneller Check-in als auch als tieferes Explorationstool.</p>
             <p>Es bewies auch, dass das Design System unter echter Komplexität standhält – was zur Adoption über andere Teams hinweg führte.</p>
           </Section>
 
-          <div className="my-12 w-full aspect-video rounded-2xl overflow-hidden border border-surface-muted shadow-xl">
-            <img
-              src="/case-studies/sygnum/dashboard-overlay-send.png"
-              alt="Send transaction overlay — inline action modal over the dashboard"
-              className="w-full h-full object-cover object-top"
-            />
-          </div>
+          <IMG
+            src="/case-studies/sygnum/sygnum-digital-assets-complex-concepts.png"
+            alt="Komplexe Konzepte — Staking, tokenisierte Assets und NFTs strukturiert dargestellt"
+           
+          />
 
           <Section heading="Ergebnisse">
             <p>Ohne detaillierte Analytics kam Erfolg durch qualitative Signale. Kunden konnten ihre digitalen Asset-Bestände klar verstehen. Feedback von Account-Teams war durchgehend positiv. Support-Anfragen zu Salden gingen zurück. Andere Teams adoptierten das Design System, nachdem sie es in einem komplexen Kontext funktionieren sahen.</p>
@@ -125,17 +113,11 @@ export default async function SygnumPage({ params }: { params: Promise<{ locale:
             <p>Clients were high-net-worth private banking clients, accustomed to personal service. They still expected immediate access to their balances, clear explanations of what they owned, and an experience comparable to modern banking. They understood financial products. The interface needed to respect that, not talk down to it.</p>
           </Section>
 
-          <div className="my-12 w-full rounded-2xl overflow-hidden border border-surface-muted">
-            <img src="/case-studies/sygnum/before-after.svg" alt="Before and after — from phone calls to self-service dashboard" className="w-full h-auto" />
-          </div>
-
-          <div className="my-12 w-full aspect-video rounded-2xl overflow-hidden border border-surface-muted shadow-xl">
-            <img
-              src="/case-studies/sygnum/asset-overview.png"
-              alt="Sygnum digital assets overview dashboard"
-              className="w-full h-full object-cover object-top"
-            />
-          </div>
+          <IMG
+            src="/case-studies/sygnum/sygnum-digital-assets-problem-before-after.png"
+            alt="Before and after — from phone calls to self-service dashboard"
+           
+          />
 
           <Section heading="My role">
             <p>I was the Design Lead on this project, supported by a junior designer. I defined the overall structure and interaction model, translated complex blockchain concepts into understandable UI, set and maintained the visual quality bar, and decided what to simplify and what to surface explicitly.</p>
@@ -144,44 +126,32 @@ export default async function SygnumPage({ params }: { params: Promise<{ locale:
             <p>My response was to design in phases. Rather than one dashboard that reflected the full picture, we stepped the work out into stages, each tied to a specific technical dependency that needed to be resolved first. That&apos;s a different kind of design problem. You&apos;re not designing for a state that exists, you&apos;re designing a path to a state that doesn&apos;t yet.</p>
           </Section>
 
+          <IMG
+            src="/case-studies/sygnum/sygnum-digital-assets-overview.png"
+            alt="Digital assets overview — full portfolio at a glance"
+          />
+
           <Section heading="The approach">
             <p>Rather than designing individual screens, I focused on establishing a clear mental model for how Sygnum presents digital assets. That meant anchoring the experience in familiar banking concepts where possible, creating a single overview that reflected total holdings across asset types, and grouping assets and actions based on how clients think — not how systems are structured.</p>
             <p>Common actions like trading and staking needed to be easy to find without turning the dashboard into a control panel. The challenge was simplifying without oversimplifying. Regulation made accuracy non-negotiable. Asset complexity — balances, fees, settlement timing, transaction states — couldn&apos;t be hidden, only structured.</p>
           </Section>
 
-          <div className="my-12 w-full rounded-2xl overflow-hidden border border-surface-muted">
-            <img src="/case-studies/sygnum/asset-architecture.svg" alt="Information architecture — assets grouped by client mental model" className="w-full h-auto" />
-          </div>
-
-          <div className="my-12 grid grid-cols-2 gap-4">
-            <div className="aspect-[3/4] rounded-2xl overflow-hidden border border-surface-muted shadow-xl">
-              <img
-                src="/case-studies/sygnum/asset-overview-scrolled.png"
-                alt="Asset breakdown by type — trading wallets, vault wallets, staking, asset tokens"
-                className="w-full h-full object-cover object-top"
-              />
-            </div>
-            <div className="aspect-[3/4] rounded-2xl overflow-hidden border border-surface-muted shadow-xl">
-              <img
-                src="/case-studies/sygnum/btc-wallet-detail.png"
-                alt="BTC wallet detail — balance, performance chart, and transaction history"
-                className="w-full h-full object-cover object-top"
-              />
-            </div>
-          </div>
+          <IMG
+            src="/case-studies/sygnum/sygnum-digital-assets-information-architecture.png"
+            alt="Information architecture — assets grouped by client mental model"
+           
+          />
 
           <Section heading="The result">
             <p>The final dashboard gave clients a clear overview of what they held and its current value, supported crypto, tokenised assets, staking, and NFTs, and made common actions easy to find without intruding on the overview. It worked both as a quick check-in and a deeper exploration tool.</p>
             <p>It also proved the design system could hold up under real complexity — which led to adoption across other teams.</p>
           </Section>
 
-          <div className="my-12 w-full aspect-video rounded-2xl overflow-hidden border border-surface-muted shadow-xl">
-            <img
-              src="/case-studies/sygnum/dashboard-overlay-send.png"
-              alt="Send transaction overlay — inline action modal over the dashboard"
-              className="w-full h-full object-cover object-top"
-            />
-          </div>
+          <IMG
+            src="/case-studies/sygnum/sygnum-digital-assets-complex-concepts.png"
+            alt="Complex concepts — staking, tokenised assets and NFTs structured clearly"
+           
+          />
 
           <Section heading="Outcomes">
             <p>Without detailed analytics, success came through qualitative signals. Clients could clearly understand their digital asset holdings. Feedback from account teams was consistently positive. Support requests related to balances decreased. Other teams adopted the design system after seeing it work in a complex context.</p>

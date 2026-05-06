@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 const IMG = ({ src, alt }: { src: string; alt: string }) => (
-  <div className="my-12 w-full rounded-2xl overflow-hidden border border-surface-muted" style={{ background: "linear-gradient(135deg, #E5E7EB 0%, #F7F8FA 100%)" }}>
+  <div className="my-12 w-full rounded-2xl overflow-hidden border border-surface-muted" >
     <img src={src} alt={alt} className="w-full h-auto" />
   </div>
 );

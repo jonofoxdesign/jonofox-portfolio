@@ -7,11 +7,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Membership Sign-up Redesign — Goodlife Health Clubs | Jono Fox",
     description: "Redesigned Goodlife's membership sign-up to make contracts clear, choices understandable, and commitment something people felt good about.",
-    images: [{ url: "/case-studies/goodlife/goodlife-health-clubs-sign-up-hero.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/case-studies/goodlife/goodlife-health-clubs-sign-up-hero.png"],
   },
 };
 

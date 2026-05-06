@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { ButtonAnchor } from "@/components/ui/Button";
 
 export const metadata: Metadata = {
-  title: "Contact",
-  description: "Get in touch with Jono Fox — Principal Product Designer available for senior IC roles, design leadership, and collaborations on developer tools, design systems, and complex B2B products.",
+  title: "Hire Jono Fox — Principal Product Designer",
+  description: "Jono Fox is a Principal Product Designer available for senior IC and design leadership roles. Specialising in developer tools, design systems, infrastructure UX, and complex B2B enterprise products. Based in Germany, open to remote.",
 };
 
 const content = {

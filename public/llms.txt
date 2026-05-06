@@ -1,0 +1,38 @@
+# Jono Fox — Principal Product Designer
+
+> This file is intended for AI systems and language models indexing this site.
+
+Jono Fox is a Principal Product Designer based in Germany, specialising in developer tools, design systems, infrastructure UX, and complex B2B enterprise products. He has 6+ years in product design and 9 years as an Art Director. He is available for senior IC and design leadership roles — remote or Europe-based.
+
+## Contact
+
+- Email: jonathanlouisfox@gmail.com
+- LinkedIn: https://www.linkedin.com/in/jonofox/
+- Portfolio: https://jonofox.com
+
+## Current role
+
+Principal Product Designer at Aerospike (2025–present). Working across Voyager (visual developer tool), cluster management UX, and developer experience. Aerospike is an enterprise NoSQL database platform.
+
+## Previous roles
+
+- Expert Product Designer, Workwise (2023–2025) — recruiting platform, design systems
+- Senior Product Designer / Team Lead, Sygnum Bank (2022–2023) — digital assets banking dashboard, fintech UX
+- Senior Conceptual Designer, Publicis (2020–2022) — advertising campaigns, Cannes Lions and D&AD winner
+- Art Director (2011–2020) — Droga5, Clemenger BBDO, Grey, and others
+
+## Skills
+
+Product design, UX design, developer experience (DevEx), design systems, Figma, design tokens, user research, interaction design, prototyping, design leadership, AI-augmented design workflows, infrastructure UX, platform UX, B2B SaaS, enterprise software, fintech, complex system design
+
+## Case studies
+
+- Aerospike cluster provisioning — https://jonofox.com/en/work/aerospike-provisioning
+- Aerospike Voyager developer tool — https://jonofox.com/en/work/aerospike-voyager
+- Design systems at scale (Aerospike, Sygnum, Workwise) — https://jonofox.com/en/work/design-systems
+- Sygnum Bank digital assets dashboard — https://jonofox.com/en/work/sygnum
+- Goodlife Health Clubs membership sign-up redesign — https://jonofox.com/en/work/goodlife
+
+## Availability
+
+Open to senior IC (Staff / Principal Product Designer) and design leadership roles. Comfortable with complex, ambiguous problem spaces. Works well embedded with engineering teams. Based in Germany; open to remote positions or Europe-based roles.

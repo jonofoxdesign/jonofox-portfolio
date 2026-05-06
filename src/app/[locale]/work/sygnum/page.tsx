@@ -4,6 +4,15 @@ import CaseStudyLayout, { Section, CaseStudyImage } from "@/components/layout/Ca
 export const metadata: Metadata = {
   title: "Digital Assets Dashboard — Sygnum Bank",
   description: "Product design case study: digital assets dashboard for Sygnum Bank — the world's first regulated digital asset bank. Fintech UX design for high-net-worth private banking clients.",
+  openGraph: {
+    title: "Digital Assets Dashboard — Sygnum Bank | Jono Fox",
+    description: "At the world's first regulated digital asset bank, clients had to call their account manager just to check their balance. I designed the dashboard that changed that.",
+    images: [{ url: "/case-studies/sygnum/sygnum-digital-assets-dashboard-hero.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/case-studies/sygnum/sygnum-digital-assets-dashboard-hero.png"],
+  },
 };
 
 export default async function SygnumPage({ params }: { params: Promise<{ locale: string }> }) {

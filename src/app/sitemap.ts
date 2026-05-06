@@ -16,12 +16,16 @@ const pages = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return locales.flatMap((locale) =>
-    pages.map(({ path, priority, changeFrequency }) => ({
+  return pages.flatMap(({ path, priority, changeFrequency }) =>
+    locales.map((locale) => ({
       url: `${BASE_URL}/${locale}${path}`,
       lastModified: new Date(),
       changeFrequency,
       priority,
+      alternateRefs: locales.map((altLocale) => ({
+        href: `${BASE_URL}/${altLocale}${path}`,
+        hreflang: altLocale,
+      })),
     }))
   );
 }

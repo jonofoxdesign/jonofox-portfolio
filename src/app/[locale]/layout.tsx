@@ -27,13 +27,6 @@ export async function generateMetadata({
       ? "Principal Product Designer für Developer Tools, Design Systems und komplexe B2B-Produkte. Aerospike, Sygnum Bank, Goodlife. Verfügbar für Senior-IC- und Design-Leadership-Rollen."
       : "Jono Fox — Principal Product Designer specialising in developer tools, design systems, and complex B2B products. Aerospike, Sygnum Bank, Goodlife. Available for senior IC and design leadership roles.",
     metadataBase: new URL("https://jonofox.com"),
-    alternates: {
-      canonical: `/${locale}`,
-      languages: {
-        en: "/en",
-        de: "/de",
-      },
-    },
     openGraph: {
       type: "website",
       locale: isDE ? "de_DE" : "en_US",
@@ -90,11 +83,17 @@ export default async function LocaleLayout({
     "@type": "Person",
     name: "Jono Fox",
     url: "https://jonofox.com",
+    email: "jonathanlouisfox@gmail.com",
     jobTitle: "Principal Product Designer",
     description:
-      "Principal Product Designer specialising in developer tools, design systems, and complex B2B products. 6+ years in product design, 9 years as an Art Director. Available for senior IC and design leadership roles.",
+      "Principal Product Designer specialising in developer tools, design systems, and complex B2B enterprise products. 6+ years in product design, 9 years as an Art Director. Based in Germany. Available for senior IC and design leadership roles — remote or Europe-based.",
+    homeLocation: {
+      "@type": "Place",
+      name: "Germany",
+    },
     sameAs: [
       "https://www.linkedin.com/in/jonofox/",
+      "https://jonofox.com",
     ],
     knowsAbout: [
       "Product Design",
@@ -115,13 +114,34 @@ export default async function LocaleLayout({
       "Fintech",
       "DevEx",
       "AI-augmented Design",
+      "Infrastructure UX",
+      "Platform UX",
       "Art Direction",
     ],
     hasOccupation: {
       "@type": "Occupation",
       name: "Principal Product Designer",
-      skills:
-        "Product Design, UX Design, Design Systems, Developer Experience, Figma, User Research, Interaction Design, Prototyping, Design Leadership, B2B, SaaS, Enterprise, Fintech",
+      occupationLocation: {
+        "@type": "Country",
+        name: "Germany",
+      },
+      skills: [
+        "Product Design",
+        "UX Design",
+        "Design Systems",
+        "Developer Experience",
+        "Figma",
+        "User Research",
+        "Interaction Design",
+        "Prototyping",
+        "Design Leadership",
+        "B2B",
+        "SaaS",
+        "Enterprise Software",
+        "Fintech",
+        "Infrastructure UX",
+        "AI-augmented Design Workflows",
+      ],
     },
     worksFor: {
       "@type": "Organization",
@@ -130,7 +150,7 @@ export default async function LocaleLayout({
     },
     alumniOf: [
       { "@type": "Organization", name: "Workwise" },
-      { "@type": "Organization", name: "Sygnum Bank" },
+      { "@type": "Organization", name: "Sygnum Bank", url: "https://www.sygnum.com" },
       { "@type": "Organization", name: "Publicis" },
     ],
   };

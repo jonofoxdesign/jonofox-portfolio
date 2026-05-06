@@ -10,10 +10,10 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Jono Fox — Product Designer",
+  title: "Jono Fox — Principal Product Designer",
   description: "Principal product designer for developer tools and complex systems.",
   openGraph: {
-    title: "Jono Fox — Product Designer",
+    title: "Jono Fox — Principal Product Designer",
     description: "Principal product designer for developer tools and complex systems.",
     url: "https://jonofox.com",
     siteName: "Jono Fox",

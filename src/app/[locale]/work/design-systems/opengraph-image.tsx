@@ -1,6 +1,5 @@
 import { ImageResponse } from "next/og";
 import { readFileSync } from "fs";
-import { join } from "path";
 
 export const runtime = "nodejs";
 export const size = { width: 1200, height: 630 };
@@ -8,9 +7,9 @@ export const contentType = "image/png";
 
 export default function Image() {
   const heroBytes = readFileSync(
-    join(
-      process.cwd(),
-      "public/case-studies/design-systems/design-systems-hero.png"
+    new URL(
+      "../../../../../public/case-studies/design-systems/design-systems-hero.png",
+      import.meta.url
     )
   );
   const heroSrc = `data:image/png;base64,${heroBytes.toString("base64")}`;

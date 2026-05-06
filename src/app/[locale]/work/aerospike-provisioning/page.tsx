@@ -7,11 +7,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cluster Provisioning — Aerospike | Jono Fox",
     description: "A provisioning flow that lets teams launch Aerospike clusters in under 90 seconds, with safe defaults or deep configuration throughout.",
-    images: [{ url: "/case-studies/aerospike-provisioning/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/case-studies/aerospike-provisioning/og-image.png"],
   },
 };
 

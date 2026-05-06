@@ -7,11 +7,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Design Systems at Scale | Jono Fox",
     description: "Built design systems across three companies. At Aerospike, extended it into a documentation layer that AI tools use to generate system-consistent output by default.",
-    images: [{ url: "/case-studies/design-systems/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/case-studies/design-systems/og-image.png"],
   },
 };
 

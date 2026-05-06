@@ -7,11 +7,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Aerospike Voyager Developer Tool | Jono Fox",
     description: "End-to-end design of Aerospike's first visual developer tool. A guided path from first connection to confident use.",
-    images: [{ url: "/case-studies/aerospike-voyager/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/case-studies/aerospike-voyager/og-image.png"],
   },
 };
 

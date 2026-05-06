@@ -103,8 +103,8 @@ export default function Image() {
       <div
         style={{
           display: "flex",
-          width: 500,
-          flex: "0 0 500px",
+          width: 560,
+          flex: "0 0 560px",
           background: "linear-gradient(160deg, #E8F5F3 0%, rgba(42,157,143,0.18) 100%)",
           alignItems: "flex-end",
           justifyContent: "center",
@@ -116,7 +116,7 @@ export default function Image() {
           src={portraitSrc}
           style={{
             width: "100%",
-            height: "130%",
+            height: "115%",
             objectFit: "cover",
             objectPosition: "top center",
           }}

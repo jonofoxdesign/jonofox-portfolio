@@ -141,7 +141,7 @@ export default async function LocaleLayout({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
       />
-      <main>{children}</main>
+      <main id="main-content">{children}</main>
       <Footer />
     </NextIntlClientProvider>
   );

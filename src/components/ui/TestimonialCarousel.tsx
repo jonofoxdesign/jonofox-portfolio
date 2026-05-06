@@ -66,33 +66,33 @@ export default function TestimonialCarousel({
   const next = () => goTo(Math.min(pages.length - 1, page + 1));
 
   return (
-    <div>
+    <section aria-label="Testimonials" aria-roledescription="carousel">
       {/* Header row with navigation */}
       <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between mb-12">
         <h2 className="font-display text-4xl font-bold tracking-tight text-ink">
           {heading} <span className="text-teal">{headingAccent}</span>
         </h2>
-        <div className="flex items-center gap-3 flex-shrink-0">
+        <div className="flex items-center gap-3 flex-shrink-0" role="group" aria-label="Carousel navigation">
           <button
             onClick={prev}
             disabled={page === 0}
-            aria-label="Previous"
+            aria-label={`Previous testimonials (page ${page} of ${pages.length})`}
             className="w-9 h-9 rounded-full border border-surface-muted flex items-center justify-center text-ink-secondary hover:border-teal hover:text-teal transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
           >
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M10 12L6 8L10 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </button>
-          <span className="text-sm text-ink-disabled tabular-nums whitespace-nowrap">
+          <span className="text-sm text-ink-disabled tabular-nums whitespace-nowrap" aria-live="polite" aria-atomic="true">
             {page + 1} / {pages.length}
           </span>
           <button
             onClick={next}
             disabled={page === pages.length - 1}
-            aria-label="Next"
+            aria-label={`Next testimonials (page ${page + 2} of ${pages.length})`}
             className="w-9 h-9 rounded-full border border-surface-muted flex items-center justify-center text-ink-secondary hover:border-teal hover:text-teal transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
           >
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M6 4L10 8L6 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </button>
@@ -160,6 +160,6 @@ export default function TestimonialCarousel({
           </AnimatePresence>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import Link from "next/link";
 import { ButtonAnchor } from "@/components/ui/Button";
 
@@ -65,6 +65,8 @@ export function ImagePlaceholder({ label }: { label: string }) {
 
 /** Shared case study image — animated scroll reveal, no shadow */
 export function CaseStudyImage({ src, alt }: { src: string; alt: string }) {
+  const prefersReducedMotion = useReducedMotion();
+  const transition = prefersReducedMotion ? { duration: 0 } : revealTransition;
   return (
     <motion.div
       className="my-12 w-full rounded-2xl overflow-hidden border border-surface-muted"
@@ -72,7 +74,7 @@ export function CaseStudyImage({ src, alt }: { src: string; alt: string }) {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-60px" }}
-      transition={revealTransition}
+      transition={transition}
     >
       <img src={src} alt={alt} className="w-full h-auto" />
     </motion.div>
@@ -80,6 +82,8 @@ export function CaseStudyImage({ src, alt }: { src: string; alt: string }) {
 }
 
 export function Section({ heading, children }: { heading: string; children: React.ReactNode }) {
+  const prefersReducedMotion = useReducedMotion();
+  const transition = prefersReducedMotion ? { duration: 0 } : revealTransition;
   return (
     <motion.section
       className="mb-14"
@@ -87,7 +91,7 @@ export function Section({ heading, children }: { heading: string; children: Reac
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-60px" }}
-      transition={revealTransition}
+      transition={transition}
     >
       <h2 className="font-display text-2xl font-bold text-ink mb-4">{heading}</h2>
       <div className="space-y-4 text-ink-secondary leading-relaxed">{children}</div>
@@ -99,6 +103,9 @@ export default function CaseStudyLayout({ tag, title, intro, meta, children, loc
   const lang = locale === "de" ? "de" : "en";
   const labels = metaLabels[lang];
   const c = cta[lang];
+  const prefersReducedMotion = useReducedMotion();
+  const entryTransition = (delay: number) =>
+    prefersReducedMotion ? { duration: 0 } : { ...revealTransition, delay };
 
   return (
     <div className="pt-44">
@@ -110,7 +117,7 @@ export default function CaseStudyLayout({ tag, title, intro, meta, children, loc
           variants={revealVariants}
           initial="hidden"
           animate="visible"
-          transition={{ ...revealTransition, delay: 0.05 }}
+          transition={entryTransition(0.05)}
         >
           {tag}
         </motion.p>
@@ -121,7 +128,7 @@ export default function CaseStudyLayout({ tag, title, intro, meta, children, loc
           variants={revealVariants}
           initial="hidden"
           animate="visible"
-          transition={{ ...revealTransition, delay: 0.12 }}
+          transition={entryTransition(0.12)}
         >
           {title}
         </motion.h1>
@@ -132,7 +139,7 @@ export default function CaseStudyLayout({ tag, title, intro, meta, children, loc
           variants={revealVariants}
           initial="hidden"
           animate="visible"
-          transition={{ ...revealTransition, delay: 0.22 }}
+          transition={entryTransition(0.22)}
         >
           {intro}
         </motion.p>
@@ -143,7 +150,7 @@ export default function CaseStudyLayout({ tag, title, intro, meta, children, loc
           variants={revealVariants}
           initial="hidden"
           animate="visible"
-          transition={{ ...revealTransition, delay: 0.32 }}
+          transition={entryTransition(0.32)}
         >
           <div>
             <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-1">{labels.company}</p>

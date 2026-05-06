@@ -66,7 +66,7 @@ export default function Nav() {
             </Link>
 
             {/* Desktop nav — next to logo */}
-            <nav className="hidden md:flex items-center gap-6">
+            <nav aria-label="Main navigation" className="hidden md:flex items-center gap-6">
               {links.map((link) => {
                 const isActive = pathname === link.href || pathname.startsWith(link.href + "/");
                 return (
@@ -95,6 +95,8 @@ export default function Nav() {
               className="md:hidden flex flex-col gap-1.5 p-1"
               onClick={() => setMenuOpen((v) => !v)}
               aria-label="Toggle menu"
+              aria-expanded={menuOpen}
+              aria-controls="mobile-nav"
             >
               <span className={`block w-5 h-0.5 bg-ink transition-[transform,opacity] duration-200 ease-[cubic-bezier(0.23,1,0.32,1)] ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
               <span className={`block w-5 h-0.5 bg-ink transition-[transform,opacity] duration-200 ease-[cubic-bezier(0.23,1,0.32,1)] ${menuOpen ? "opacity-0" : ""}`} />
@@ -108,6 +110,9 @@ export default function Nav() {
           {menuOpen && (
             <motion.div
               key="mobile-menu"
+              id="mobile-nav"
+              role="navigation"
+              aria-label="Mobile navigation"
               className="md:hidden mt-2 backdrop-blur-xl rounded-2xl px-6 py-4 flex flex-col gap-4"
               variants={menuVariants}
               initial="hidden"

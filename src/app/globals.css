@@ -122,6 +122,18 @@
     overflow-x: hidden;
     background-color: var(--color-surface);
   }
+
+  /* Global focus-visible ring — keyboard navigation only, never on mouse click */
+  :focus-visible {
+    outline: 2px solid var(--color-teal);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* Remove outline for mouse users */
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
 }
 
 /* Gradient text utility */

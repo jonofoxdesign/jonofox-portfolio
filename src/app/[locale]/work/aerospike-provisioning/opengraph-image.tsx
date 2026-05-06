@@ -2,6 +2,7 @@ import { ImageResponse } from "next/og";
 import { readFileSync } from "fs";
 import { join } from "path";
 
+export const runtime = "nodejs";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -22,27 +23,28 @@ export default function Image() {
         width: "100%",
         height: "100%",
         display: "flex",
-        background: "#0c0c0f",
+        background: "#FAFAF8",
         fontFamily: "system-ui, -apple-system, sans-serif",
       }}
     >
+      {/* Left content */}
       <div
         style={{
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
           padding: "64px 56px 64px 72px",
-          width: 640,
-          flex: "0 0 640px",
+          width: 620,
+          flex: "0 0 620px",
         }}
       >
         <div
           style={{
             display: "flex",
             color: accent,
-            fontSize: 14,
+            fontSize: 13,
             fontWeight: 600,
-            letterSpacing: "0.1em",
+            letterSpacing: "0.12em",
             textTransform: "uppercase",
           }}
         >
@@ -52,8 +54,8 @@ export default function Image() {
         <div
           style={{
             display: "flex",
-            color: "#ffffff",
-            fontSize: 50,
+            color: "#111118",
+            fontSize: 46,
             fontWeight: 700,
             lineHeight: 1.1,
             letterSpacing: "-0.02em",
@@ -65,38 +67,31 @@ export default function Image() {
         <div
           style={{
             display: "flex",
-            color: "#444455",
-            fontSize: 15,
+            color: "#AAAAAA",
+            fontSize: 14,
           }}
         >
           jonofox.com · Case Study
         </div>
       </div>
 
+      {/* Right image panel */}
       <div
         style={{
           display: "flex",
           flex: 1,
-          background: "linear-gradient(135deg, #071f1d 0%, #0f3530 100%)",
+          background: "linear-gradient(135deg, #E4F4F2 0%, rgba(42, 157, 143, 0.24) 100%)",
           alignItems: "center",
           justifyContent: "center",
           overflow: "hidden",
           position: "relative",
         }}
       >
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            background: `radial-gradient(circle at 55% 45%, ${accent}28 0%, transparent 65%)`,
-            display: "flex",
-          }}
-        />
         <img
           src={heroSrc}
           style={{
-            width: "88%",
-            height: "88%",
+            width: "90%",
+            height: "90%",
             objectFit: "contain",
             objectPosition: "center",
           }}

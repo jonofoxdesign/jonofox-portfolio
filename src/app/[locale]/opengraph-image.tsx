@@ -1,15 +1,13 @@
 import { ImageResponse } from "next/og";
-import { readFileSync } from "fs";
 
 export const runtime = "nodejs";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
+const PORTRAIT_URL = "https://jonofox.com/portrait.png";
+
 export default function Image() {
-  const portraitBytes = readFileSync(
-    new URL("../../../public/portrait.png", import.meta.url)
-  );
-  const portraitSrc = `data:image/png;base64,${portraitBytes.toString("base64")}`;
+  const portraitSrc = PORTRAIT_URL;
 
   return new ImageResponse(
     <div

@@ -1,18 +1,12 @@
 import { ImageResponse } from "next/og";
-import { readFileSync } from "fs";
 
-export const runtime = "nodejs";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
+const VOYAGER_URL = "https://jonofox.com/case-studies/aerospike-voyager/aerospike-voyager-data-browser-hero.png";
+
 export default function Image() {
-  const voyagerBytes = readFileSync(
-    new URL(
-      "../../../../public/case-studies/aerospike-voyager/aerospike-voyager-data-browser-hero.png",
-      import.meta.url
-    )
-  );
-  const voyagerSrc = `data:image/png;base64,${voyagerBytes.toString("base64")}`;
+  const voyagerSrc = VOYAGER_URL;
 
   return new ImageResponse(
     <div

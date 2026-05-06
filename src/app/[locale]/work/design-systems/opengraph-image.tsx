@@ -1,18 +1,12 @@
 import { ImageResponse } from "next/og";
-import { readFileSync } from "fs";
 
-export const runtime = "nodejs";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
+const HERO_URL = "https://jonofox.com/case-studies/design-systems/design-systems-hero.png";
+
 export default function Image() {
-  const heroBytes = readFileSync(
-    new URL(
-      "../../../../../public/case-studies/design-systems/design-systems-hero.png",
-      import.meta.url
-    )
-  );
-  const heroSrc = `data:image/png;base64,${heroBytes.toString("base64")}`;
+  const heroSrc = HERO_URL;
 
   const accent = "#F57C00";
 

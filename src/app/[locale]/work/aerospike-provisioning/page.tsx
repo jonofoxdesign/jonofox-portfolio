@@ -71,7 +71,7 @@ export default async function AerospikeProvisioningPage({ params }: { params: Pr
             <p>Zu einfach gestaltet, und die zweite Gruppe würde es nicht vertrauen. Zu komplex, und die erste Gruppe würde ins Stocken geraten. Das Ziel war, Nutzern die Wahl zu lassen, wie viel Kontrolle sie brauchten – ohne diese Wahl wie eine Last wirken zu lassen.</p>
           </Section>
 
-          <CaseStudyImage src="/case-studies/aerospike-provisioning/aerospike-cloud-progressive-provisioning.png" alt="Progressive provisioning — simple defaults with advanced configuration available on demand" />
+          <CaseStudyImage wide src="/case-studies/aerospike-provisioning/aerospike-cloud-progressive-provisioning.png" alt="Progressive provisioning — simple defaults with advanced configuration available on demand" />
 
           <Section heading="Design für sichere Geschwindigkeit">
             <p><strong className="text-ink">Standardwerte, die widerspiegeln, wie Aerospike wirklich funktioniert.</strong> Die Standardwerte waren keine generischen Cloud-Presets. Sie basierten auf Aerospike Best Practices und wurden mit Engineers validiert, die die Datenbank täglich betreiben und unterstützen. Wenn ein Nutzer jeden Standardwert akzeptierte, musste das Ergebnis etwas sein, hinter dem das Aerospike-Team steht.</p>
@@ -80,7 +80,7 @@ export default async function AerospikeProvisioningPage({ params }: { params: Pr
             <p><strong className="text-ink">Dokumentation als Teil des Systems.</strong> Kontextbezogene Hinweise erschienen neben Entscheidungen, stimmten mit der Sprache und dem Verhalten der UI überein und verstärkten dasselbe mentale Modell über UI, APIs und Dokumentation hinweg. Nutzer konnten lernen und Entscheidungen validieren, ohne das Produkt zu verlassen.</p>
           </Section>
 
-          <CaseStudyImage src="/case-studies/aerospike-provisioning/aerospike-cloud-same-step-two-paths.png" alt="Same step, two paths — simple and advanced configuration side by side" />
+          <CaseStudyImage wide src="/case-studies/aerospike-provisioning/aerospike-cloud-same-step-two-paths.png" alt="Same step, two paths — simple and advanced configuration side by side" />
 
           <Section heading="Weg zu den ersten Daten">
             <p>Das Provisionieren eines Clusters dauert etwa 20 Minuten. Anstatt diese Zeit als Wartezeit zu behandeln, macht das Design sie nutzbar. Sobald ein Cluster gestartet ist, werden Nutzer sofort zu den zwei Aufgaben geleitet, die abgeschlossen sein müssen, bevor Daten fließen können: Netzwerkzugang einrichten und einen Datenbanknutzer erstellen. Beides ist verfügbar, bevor der Cluster live ist. Wenn das Provisioning abgeschlossen ist, haben die meisten Nutzer beides bereits erledigt.</p>
@@ -88,7 +88,7 @@ export default async function AerospikeProvisioningPage({ params }: { params: Pr
             <p>Die Erstellung von Datenbanknutzern war bewusst unkompliziert. Die wichtigste Entscheidung betraf das Passwort: Automatische Generierung war verfügbar, und das Passwort wurde einmal bei der Erstellung angezeigt. Ein CSV-Export ermöglichte die sichere Speicherung. Ein kleines Detail, aber eines, das zum Support-Problem wird, wenn es sorglos umgesetzt wird.</p>
           </Section>
 
-          <CaseStudyImage src="/case-studies/aerospike-provisioning/aerospike-cloud-finish-cluster-setup.png" alt="Finish cluster setup — network access and database user creation before the cluster is live" />
+          <CaseStudyImage wide src="/case-studies/aerospike-provisioning/aerospike-cloud-finish-cluster-setup.png" alt="Finish cluster setup — network access and database user creation before the cluster is live" />
 
           <Section heading="Ergebnis">
             <p>Der Flow wurde als Grundlage für die allgemeine Verfügbarkeit von Aerospike Cloud geliefert. Die Abschlussrate durch den vollständigen Provisioning-Wizard lag weit über den Erwartungen für einen mehrstufigen technischen Konfigurationsflow. Der Schritt mit der höchsten durchschnittlichen Zeit war der erweiterte Konfigurationsschritt mit 24 Sekunden – beabsichtigt. Geschwindigkeit, wo es schnell sein soll. Tiefe, wo sie gebraucht wird.</p>
@@ -97,7 +97,7 @@ export default async function AerospikeProvisioningPage({ params }: { params: Pr
             <p>Das übergeordnete Ziel war ein Team, das vom ersten Klick über einen laufenden Cluster bis zur verbundenen Anwendung in einer einzigen Sitzung kommen konnte. Provisioning-Wizard, Setup-Hinweise und der Netzwerkzugangs-Flow waren alle auf dieses Ziel ausgerichtet.</p>
           </Section>
 
-          <CaseStudyImage src="/case-studies/aerospike-provisioning/aerospike-cloud-docs.png" alt="Contextual documentation panel open during VPC peering setup" />
+          <CaseStudyImage wide src="/case-studies/aerospike-provisioning/aerospike-cloud-docs.png" alt="Contextual documentation panel open during VPC peering setup" />
 
           <Section heading="Was ich mitnehme">
             <p>Geschwindigkeit und Sicherheit erwiesen sich hier nicht als Gegensätze. Erfahrene Nutzer profitierten trotzdem sehr von klaren Standardwerten. Fehlerpfade und Wiederherstellung brauchten genauso viel Designzeit wie der Happy Path.</p>
@@ -128,7 +128,7 @@ export default async function AerospikeProvisioningPage({ params }: { params: Pr
             <p>Design it too simple and the second group would not trust it. Design it too complex and the first group would stall. The goal was to let users choose how much control they needed, without making that choice feel like a burden.</p>
           </Section>
 
-          <CaseStudyImage src="/case-studies/aerospike-provisioning/aerospike-cloud-progressive-provisioning.png" alt="Progressive provisioning — simple defaults with advanced configuration available on demand" />
+          <CaseStudyImage wide src="/case-studies/aerospike-provisioning/aerospike-cloud-progressive-provisioning.png" alt="Progressive provisioning — simple defaults with advanced configuration available on demand" />
 
           <Section heading="Designing for safe speed">
             <p><strong className="text-ink">Defaults that reflect how Aerospike actually works.</strong> Defaults were not generic cloud presets. They were based on Aerospike best practices and validated with engineers who run and support the database every day. If a user accepted every default, the result had to be something the Aerospike team would stand behind.</p>
@@ -137,7 +137,7 @@ export default async function AerospikeProvisioningPage({ params }: { params: Pr
             <p><strong className="text-ink">Docs as part of the system.</strong> Contextual guidance appeared alongside decisions, matched the language and behaviour of the UI, and reinforced the same mental model across UI, APIs, and docs. Users could learn and validate choices without leaving the product.</p>
           </Section>
 
-          <CaseStudyImage src="/case-studies/aerospike-provisioning/aerospike-cloud-same-step-two-paths.png" alt="Same step, two paths — simple and advanced configuration side by side" />
+          <CaseStudyImage wide src="/case-studies/aerospike-provisioning/aerospike-cloud-same-step-two-paths.png" alt="Same step, two paths — simple and advanced configuration side by side" />
 
           <Section heading="Getting to first data">
             <p>Provisioning a cluster takes around 20 minutes. Rather than treat that as dead time, the design puts it to use. Once a cluster is launched, users are directed immediately to the two tasks they need to complete before data can flow: set up network access and create a database user. Both are available before the cluster is live, so by the time provisioning completes, most users have already worked through them.</p>
@@ -145,7 +145,7 @@ export default async function AerospikeProvisioningPage({ params }: { params: Pr
             <p>Database user creation was designed to be fast. The main decision was the password: auto-generation was available, and the password was shown once on creation. A CSV export let users store it securely. A small detail, but the kind that becomes a support problem if it is handled carelessly.</p>
           </Section>
 
-          <CaseStudyImage src="/case-studies/aerospike-provisioning/aerospike-cloud-finish-cluster-setup.png" alt="Finish cluster setup — network access and database user creation before the cluster is live" />
+          <CaseStudyImage wide src="/case-studies/aerospike-provisioning/aerospike-cloud-finish-cluster-setup.png" alt="Finish cluster setup — network access and database user creation before the cluster is live" />
 
           <Section heading="Outcome">
             <p>The flow shipped as the foundation for Aerospike Cloud&apos;s general availability. Completion through the full provisioning wizard came in well above expectations for a multi-step technical configuration flow. The step with the highest average time was the advanced configuration step, at 24 seconds — intentional. Speed where it should be fast, depth where it needs to be.</p>
@@ -154,7 +154,7 @@ export default async function AerospikeProvisioningPage({ params }: { params: Pr
             <p>The underlying goal was a team that could go from first click to running cluster to connected application in a single session. Provisioning, the setup prompts, and the network access flow were all built toward that.</p>
           </Section>
 
-          <CaseStudyImage src="/case-studies/aerospike-provisioning/aerospike-cloud-docs.png" alt="Contextual documentation panel open during VPC peering setup" />
+          <CaseStudyImage wide src="/case-studies/aerospike-provisioning/aerospike-cloud-docs.png" alt="Contextual documentation panel open during VPC peering setup" />
 
           <Section heading="What I&apos;d carry forward">
             <p>Speed and safety turned out not to be opposites here. Advanced users still got a lot from having clear defaults. Error paths and recovery needed as much design time as the happy path.</p>

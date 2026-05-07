@@ -90,23 +90,35 @@ export function CaseStudyImage({ src, alt, wide }: { src: string; alt: string; w
       <AnimatePresence>
         {open && (
           <motion.div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 md:p-8 cursor-zoom-out"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 p-4 md:p-10"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
             onClick={() => setOpen(false)}
           >
-            <motion.img
-              src={src}
-              alt={alt}
-              className="max-w-full max-h-full rounded-xl object-contain shadow-2xl"
+            {/* Close button */}
+            <button
+              className="absolute top-4 right-4 md:top-6 md:right-6 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors"
+              onClick={() => setOpen(false)}
+              aria-label="Close"
+            >
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M2 2L14 14M14 2L2 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+              </svg>
+            </button>
+
+            {/* Image — white bg so light screenshots don't bleed into the overlay */}
+            <motion.div
+              className="rounded-2xl overflow-hidden bg-white shadow-2xl max-w-full max-h-full"
               initial={{ scale: 0.92, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.92, opacity: 0 }}
               transition={{ duration: 0.25, ease: [0.23, 1, 0.32, 1] }}
               onClick={(e) => e.stopPropagation()}
-            />
+            >
+              <img src={src} alt={alt} className="block max-w-[90vw] max-h-[85vh] object-contain" />
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>

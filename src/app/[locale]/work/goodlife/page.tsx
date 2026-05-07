@@ -55,7 +55,7 @@ export default async function GoodlifePage({ params }: { params: Promise<{ local
             <p>Aus geschäftlicher Sicht war der Flow auch veraltet und brüchig. Er stützte sich auf Muster, die Menschen durch den Checkout drängten, ohne ihnen ein Gefühl von Sicherheit zu geben. Das Ziel war nicht nur höhere Conversion. Ich wollte, dass das Erlebnis transparent wirkt, damit Menschen, die sich anmelden, sich wirklich gut darüber fühlen, wozu sie sich verpflichtet haben.</p>
           </Section>
 
-          <CaseStudyImage
+          <CaseStudyImage wide
             src="/case-studies/goodlife/goodlife-health-clubs-bad-reviews.png"
             alt="Kundenbewertungen — häufige Beschwerden über Bindungsangst und unklare Vertragsbedingungen"
           />
@@ -71,7 +71,7 @@ export default async function GoodlifePage({ params }: { params: Promise<{ local
             <p>Der Blick auf Wettbewerber bestätigte das Muster. Die meisten Fitnessstudios priorisierten Lead-Erfassung über Klarheit und versteckten bedeutungsvolle Details bis spät im Prozess. Die Chance war nicht, durch Entfernen von Optionen zu vereinfachen — es war, Optionen verständlich zu machen. Darunter fügte jede Entscheidung Komplexität hinzu: Standort, Mitgliedschaftsdauer, Anzahlungshöhe und standortspezifische Extras beeinflussten alle Preise und Konditionen und erzeugten Hunderte von gültigen Mitgliedschaftskonfigurationen.</p>
           </Section>
 
-          <CaseStudyImage
+          <CaseStudyImage wide
             src="/case-studies/goodlife/goodlife-health-clubs-configuration-complexity.png"
             alt="Konfigurationskomplexität — Standort, Mitgliedschaftsdauer, Anzahlung und Extras erzeugen Hunderte gültiger Mitgliedschaftskonfigurationen"
           />
@@ -82,7 +82,7 @@ export default async function GoodlifePage({ params }: { params: Promise<{ local
             <p>Das Ziel war nicht, Menschen durchzudrängen. Es war sicherzustellen, dass jemand, der die Zahlung erreichte, bereits genau verstand, wofür er sich anmeldete.</p>
           </Section>
 
-          <CaseStudyImage
+          <CaseStudyImage wide
             src="/case-studies/goodlife/goodlife-health-clubs-progressive-configuration.png"
             alt="Progressive Konfiguration — persistente Zusammenfassung aktualisiert sich in Echtzeit, während Nutzer Mitgliedschaftsdauer, Anzahlung und optionale Features anpassen"
           />
@@ -110,7 +110,7 @@ export default async function GoodlifePage({ params }: { params: Promise<{ local
             <p>From a business perspective, the flow was also dated and brittle. It relied on patterns that pushed people through checkout without helping them feel confident. The goal wasn&apos;t just higher conversion. I wanted the experience to feel transparent, so that people who signed up actually felt good about what they&apos;d agreed to.</p>
           </Section>
 
-          <CaseStudyImage
+          <CaseStudyImage wide
             src="/case-studies/goodlife/goodlife-health-clubs-bad-reviews.png"
             alt="Customer reviews — widespread complaints about lock-in anxiety and unclear contract terms"
           />
@@ -126,7 +126,7 @@ export default async function GoodlifePage({ params }: { params: Promise<{ local
             <p>Looking at competitors reinforced the pattern. Most gyms prioritised lead capture over clarity, hiding meaningful details until late in the process. The opportunity wasn&apos;t to simplify by removing choice — it was to make choice understandable. Underneath, every decision added complexity: location, membership length, deposit amount, and location-specific extras all affected pricing and terms, creating hundreds of valid membership configurations that needed to remain accurate, consistent, and explainable.</p>
           </Section>
 
-          <CaseStudyImage
+          <CaseStudyImage wide
             src="/case-studies/goodlife/goodlife-health-clubs-configuration-complexity.png"
             alt="Configuration complexity — location, membership length, deposit amount, and location-specific extras create hundreds of valid membership configurations"
           />
@@ -137,7 +137,7 @@ export default async function GoodlifePage({ params }: { params: Promise<{ local
             <p>The goal wasn&apos;t to push people through. It was to make sure that by the time someone reached payment, they already understood exactly what they were signing up for.</p>
           </Section>
 
-          <CaseStudyImage
+          <CaseStudyImage wide
             src="/case-studies/goodlife/goodlife-health-clubs-progressive-configuration.png"
             alt="Progressive configuration — persistent summary updates in real time as users adjust membership length, deposits, and optional features"
           />

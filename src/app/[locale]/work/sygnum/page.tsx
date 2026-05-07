@@ -55,7 +55,7 @@ export default async function SygnumPage({ params }: { params: Promise<{ locale:
             <p>Kunden waren vermögende Private-Banking-Kunden, die an persönlichen Service gewöhnt waren. Sie erwarteten trotzdem sofortigen Zugriff auf ihre Salden, klare Erklärungen zu ihrem Besitz und ein Erlebnis, das dem modernen Banking entspricht. Sie verstanden Finanzprodukte. Die Oberfläche musste das respektieren, nicht herabsehen.</p>
           </Section>
 
-          <CaseStudyImage
+          <CaseStudyImage wide
             src="/case-studies/sygnum/sygnum-digital-assets-problem-before-after.png"
             alt="Vorher-Nachher — vom Anruf beim Kundenbetreuer zum Self-Service-Dashboard"
            
@@ -68,7 +68,7 @@ export default async function SygnumPage({ params }: { params: Promise<{ locale:
             <p>Meine Reaktion war, in Phasen zu designen. Anstatt einem Dashboard, das das vollständige Bild widerspiegelte, staffelten wir die Arbeit in Etappen, jede gebunden an eine spezifische technische Abhängigkeit, die zuerst gelöst werden musste. Das ist eine andere Art von Designproblem. Man designed nicht für einen Zustand, der existiert, sondern einen Weg zu einem Zustand, der noch nicht existiert.</p>
           </Section>
 
-          <CaseStudyImage
+          <CaseStudyImage wide
             src="/case-studies/sygnum/sygnum-digital-assets-overview.png"
             alt="Digitale Asset-Übersicht — vollständiges Portfolio auf einen Blick"
           />
@@ -78,7 +78,7 @@ export default async function SygnumPage({ params }: { params: Promise<{ locale:
             <p>Häufige Aktionen wie Trading und Staking mussten leicht zu finden sein, ohne das Dashboard in ein Kontrollpanel zu verwandeln. Die Herausforderung war, zu vereinfachen ohne zu übervereinfachen. Regulierung machte Genauigkeit unverzichtbar. Asset-Komplexität – Salden, Gebühren, Settlement-Timing, Transaktionsstatus – konnte nicht versteckt, nur strukturiert werden.</p>
           </Section>
 
-          <CaseStudyImage
+          <CaseStudyImage wide
             src="/case-studies/sygnum/sygnum-digital-assets-information-architecture.png"
             alt="Informationsarchitektur — Assets nach dem mentalen Modell der Kunden gruppiert"
            
@@ -89,7 +89,7 @@ export default async function SygnumPage({ params }: { params: Promise<{ locale:
             <p>Es bewies auch, dass das Design System unter echter Komplexität standhält – was zur Adoption über andere Teams hinweg führte.</p>
           </Section>
 
-          <CaseStudyImage
+          <CaseStudyImage wide
             src="/case-studies/sygnum/sygnum-digital-assets-complex-concepts.png"
             alt="Komplexe Konzepte — Staking, tokenisierte Assets und NFTs strukturiert dargestellt"
            
@@ -114,7 +114,7 @@ export default async function SygnumPage({ params }: { params: Promise<{ locale:
             <p>Clients were high-net-worth private banking clients, accustomed to personal service. They still expected immediate access to their balances, clear explanations of what they owned, and an experience comparable to modern banking. They understood financial products. The interface needed to respect that, not talk down to it.</p>
           </Section>
 
-          <CaseStudyImage
+          <CaseStudyImage wide
             src="/case-studies/sygnum/sygnum-digital-assets-problem-before-after.png"
             alt="Before and after — from phone calls to self-service dashboard"
            
@@ -127,7 +127,7 @@ export default async function SygnumPage({ params }: { params: Promise<{ locale:
             <p>My response was to design in phases. Rather than one dashboard that reflected the full picture, we stepped the work out into stages, each tied to a specific technical dependency that needed to be resolved first. That&apos;s a different kind of design problem. You&apos;re not designing for a state that exists, you&apos;re designing a path to a state that doesn&apos;t yet.</p>
           </Section>
 
-          <CaseStudyImage
+          <CaseStudyImage wide
             src="/case-studies/sygnum/sygnum-digital-assets-overview.png"
             alt="Digital assets overview — full portfolio at a glance"
           />
@@ -137,7 +137,7 @@ export default async function SygnumPage({ params }: { params: Promise<{ locale:
             <p>Common actions like trading and staking needed to be easy to find without turning the dashboard into a control panel. The challenge was simplifying without oversimplifying. Regulation made accuracy non-negotiable. Asset complexity — balances, fees, settlement timing, transaction states — couldn&apos;t be hidden, only structured.</p>
           </Section>
 
-          <CaseStudyImage
+          <CaseStudyImage wide
             src="/case-studies/sygnum/sygnum-digital-assets-information-architecture.png"
             alt="Information architecture — assets grouped by client mental model"
            
@@ -148,7 +148,7 @@ export default async function SygnumPage({ params }: { params: Promise<{ locale:
             <p>It also proved the design system could hold up under real complexity — which led to adoption across other teams.</p>
           </Section>
 
-          <CaseStudyImage
+          <CaseStudyImage wide
             src="/case-studies/sygnum/sygnum-digital-assets-complex-concepts.png"
             alt="Complex concepts — staking, tokenised assets and NFTs structured clearly"
            

@@ -1,6 +1,7 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { useState } from "react";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import Link from "next/link";
 import { ButtonAnchor } from "@/components/ui/Button";
 
@@ -63,21 +64,53 @@ export function ImagePlaceholder({ label }: { label: string }) {
   );
 }
 
-/** Shared case study image — animated scroll reveal, no shadow */
-export function CaseStudyImage({ src, alt }: { src: string; alt: string }) {
+/** Shared case study image — animated scroll reveal, tap/click to expand.
+ *  Pass `wide` to break out of the text column on larger screens. */
+export function CaseStudyImage({ src, alt, wide }: { src: string; alt: string; wide?: boolean }) {
   const prefersReducedMotion = useReducedMotion();
+  const [open, setOpen] = useState(false);
   const transition = prefersReducedMotion ? { duration: 0 } : revealTransition;
   return (
-    <motion.div
-      className="my-12 w-full rounded-2xl overflow-hidden border border-surface-muted"
-      variants={revealVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "-60px" }}
-      transition={transition}
-    >
-      <img src={src} alt={alt} className="w-full h-auto" />
-    </motion.div>
+    <>
+      <motion.div
+        className={[
+          "my-12 rounded-2xl overflow-hidden border border-surface-muted cursor-zoom-in",
+          wide ? "lg:-mx-16 xl:-mx-32" : "",
+        ].join(" ")}
+        variants={revealVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-60px" }}
+        transition={transition}
+        onClick={() => setOpen(true)}
+      >
+        <img src={src} alt={alt} className="w-full h-auto" />
+      </motion.div>
+
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 md:p-8 cursor-zoom-out"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            onClick={() => setOpen(false)}
+          >
+            <motion.img
+              src={src}
+              alt={alt}
+              className="max-w-full max-h-full rounded-xl object-contain shadow-2xl"
+              initial={{ scale: 0.92, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.92, opacity: 0 }}
+              transition={{ duration: 0.25, ease: [0.23, 1, 0.32, 1] }}
+              onClick={(e) => e.stopPropagation()}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
 }
 

@@ -37,6 +37,20 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/webp"],
   },
+  async rewrites() {
+    return [
+      // Reverse-proxy PostHog through our own domain so ad blockers can't block it
+      // and connect-src 'self' CSP allows it
+      {
+        source: "/ingest/static/:path*",
+        destination: "https://eu-assets.i.posthog.com/static/:path*",
+      },
+      {
+        source: "/ingest/:path*",
+        destination: "https://eu.i.posthog.com/:path*",
+      },
+    ];
+  },
   async headers() {
     return [
       {

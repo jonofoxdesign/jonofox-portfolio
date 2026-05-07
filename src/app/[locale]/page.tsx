@@ -292,7 +292,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               <Link
                 key={i}
                 href={lp(card.href)}
-                className="group grid md:grid-cols-[1fr_320px] gap-8 items-center p-8 rounded-2xl border border-surface-muted hover:border-teal/30 hover:bg-teal-subtle/20 hover:-translate-y-0.5 transition-[transform,border-color,background-color] duration-300 ease-[cubic-bezier(0.23,1,0.32,1)] block"
+                className="group grid md:grid-cols-[1fr_320px] gap-8 items-center p-8 rounded-2xl border border-surface-muted hover:border-teal/30 hover:bg-teal-subtle/20 transition-all duration-200 block"
               >
                 <div className="order-2 md:order-1 space-y-3">
                   <span className="text-xs font-semibold tracking-widest text-ink-disabled uppercase">

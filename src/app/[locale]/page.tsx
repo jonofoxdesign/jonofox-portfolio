@@ -215,7 +215,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               src="/hero-color.png"
               alt="Jono Fox"
               className="w-full rounded-2xl"
-              fetchpriority="high"
+              fetchPriority="high"
               loading="eager"
             />
           </div>

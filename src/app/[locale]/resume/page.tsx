@@ -163,7 +163,7 @@ const content = {
       groups: [
         { label: "Design Tools", items: "Figma, FigJam, Adobe CC, Sketch, MUI" },
         { label: "UX & Research", items: "User interviews, usability testing, journey mapping, wireframing, design systems, UX writing" },
-        { label: "Systems & Frontend", items: "Design tokens, component libraries, AI-augmented workflows, design-to-dev alignment, CSS logic, Storybook" },
+        { label: "Systems & Frontend", items: "Design tokens, component libraries, AI-augmented workflows (Cursor, Claude Code, Codex), design-to-dev alignment, CSS logic, Storybook" },
         { label: "Other", items: "Agile, Jira, Confluence, Notion, PostHog, stakeholder workshops, technical discovery" },
       ],
     },
@@ -309,7 +309,7 @@ const content = {
       groups: [
         { label: "Design-Tools", items: "Figma, FigJam, Adobe CC, Sketch, MUI" },
         { label: "UX & Recherche", items: "Nutzerinterviews, Usability-Tests, Journey Mapping, Wireframing, Designsysteme, UX Writing" },
-        { label: "Systeme & Frontend", items: "Design Tokens, Komponentenbibliotheken, KI-gestützte Workflows, Zusammenarbeit mit Entwicklern, CSS-Logik, Storybook" },
+        { label: "Systeme & Frontend", items: "Design Tokens, Komponentenbibliotheken, KI-gestützte Workflows (Cursor, Claude Code, Codex), Zusammenarbeit mit Entwicklern, CSS-Logik, Storybook" },
         { label: "Weitere Kenntnisse", items: "Agile, Jira, Confluence, Notion, PostHog, Workshops, Technische Analyse" },
       ],
     },

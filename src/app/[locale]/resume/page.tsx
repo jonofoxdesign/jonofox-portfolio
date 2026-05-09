@@ -46,7 +46,7 @@ const content = {
     },
     summary: {
       heading: "Summary",
-      body: "Product Designer with six years in product and nine before that as an Art Director. I specialise in developer experience, design systems, and making complex technical workflows feel approachable without stripping out what makes them powerful. I've worked on enterprise database tooling, regulated fintech platforms, and recruiting infrastructure — always at the point where the problem space is genuinely unclear and working that out is part of the job. Recently built an AI reference layer into a design system that lets AI tools generate on-spec UI without manual correction. Open to senior IC and design leadership roles, remote or in person within Germany.",
+      body: "Product Designer with six years in product and nine before that as an Art Director. I specialise in developer experience, design systems, and making complex technical workflows feel approachable without stripping out what makes them powerful. I've worked on enterprise database tooling, regulated fintech platforms, and recruiting infrastructure. Usually brought in when the problem space is genuinely unclear and working that out is part of the job. Recently built an AI reference layer into a design system that lets AI tools generate on-spec UI without manual correction. Open to senior IC and design leadership roles, remote or in person within Germany.",
     },
     experience: {
       heading: "Experience",
@@ -57,8 +57,8 @@ const content = {
           location: "Remote",
           period: "Oct 2025 – Present",
           bullets: [
-            "Lead design for the Aerospike Cloud platform — cluster provisioning, observability dashboards, and admin tooling across AWS, GCP, and Azure.",
-            "Built a structured AI reference layer into the design system, enabling AI tools to generate on-spec UI without manual correction.",
+            "Lead design for Aerospike Cloud: cluster provisioning, observability dashboards, and admin tooling across AWS, GCP, and Azure.",
+            "Built a structured AI reference layer into the design system so AI tools can generate on-spec UI without manual correction.",
             "Partner with engineering and product leads to define UX strategy and scope for multi-cloud developer tools.",
           ],
         },
@@ -80,8 +80,8 @@ const content = {
           period: "Apr 2023 – Jan 2025",
           note: "titled Expert Product Designer internally",
           bullets: [
-            "Led design for candidate-facing and internal platforms, introducing a new UX strategy and unified design system from scratch.",
-            "Overhauled the Figma component library and integrated Storybook, significantly improving design-to-dev handoff quality and speed.",
+            "Led design for candidate-facing and internal platforms. Introduced a new UX strategy and built a unified design system from scratch.",
+            "Overhauled the Figma component library and integrated Storybook. Design-to-dev handoff got meaningfully better and faster.",
             "Ran usability testing cycles that directly shaped product prioritisation.",
           ],
         },
@@ -91,7 +91,7 @@ const content = {
           location: "Zurich, Switzerland",
           period: "Apr 2022 – Mar 2023",
           bullets: [
-            "First product designer at the world's first regulated crypto bank — built team processes, design tooling, and critique culture from scratch.",
+            "First product designer at the world's first regulated crypto bank. Built team processes, design tooling, and critique culture from scratch.",
             "Delivered a cross-platform design system and UI/UX for institutional and retail crypto products.",
             "Simplified complex blockchain workflows for mainstream adoption without losing the depth that expert users needed.",
           ],
@@ -192,7 +192,7 @@ const content = {
     },
     summary: {
       heading: "Profil",
-      body: "Produktdesigner mit sechs Jahren in der Produktgestaltung und neun Jahren davor als Art Director. Schwerpunkte: Developer Experience, Designsysteme und komplexe technische Abläufe, die sich zugänglich anfühlen, ohne an Tiefe zu verlieren. Ich habe an Enterprise-Datenbanktools, regulierten Fintech-Plattformen und Recruiting-Infrastruktur gearbeitet — immer dort, wo das Problem noch unklar ist und das Herausarbeiten Teil der Aufgabe ist. Zuletzt habe ich eine KI-Referenzebene in ein Designsystem eingebaut, die es KI-Tools ermöglicht, spezifikationskonforme UI ohne manuelle Korrekturen zu generieren. Offen für Senior-IC- und Design-Leadership-Rollen, remote oder in Person in Deutschland.",
+      body: "Produktdesigner mit sechs Jahren in der Produktgestaltung und neun Jahren davor als Art Director. Schwerpunkte: Developer Experience, Designsysteme und komplexe technische Abläufe, die sich zugänglich anfühlen, ohne an Tiefe zu verlieren. Ich habe an Enterprise-Datenbanktools, regulierten Fintech-Plattformen und Recruiting-Infrastruktur gearbeitet. Meistens dort, wo das Problem noch unklar ist und das Herausarbeiten Teil der Aufgabe ist. Zuletzt habe ich eine KI-Referenzebene in ein Designsystem eingebaut, die es KI-Tools ermöglicht, spezifikationskonforme UI ohne manuelle Korrekturen zu generieren. Offen für Senior-IC- und Design-Leadership-Rollen, remote oder in Person in Deutschland.",
     },
     experience: {
       heading: "Berufserfahrung",
@@ -203,7 +203,7 @@ const content = {
           location: "Remote",
           period: "Okt 2025 – Heute",
           bullets: [
-            "Verantwortlich für das Design der gesamten Aerospike Cloud Plattform — Cluster-Provisionierung, Observability-Dashboards und Admin-Tools über AWS, GCP und Azure.",
+            "Verantwortlich für das Design der Aerospike Cloud Plattform: Cluster-Provisionierung, Observability-Dashboards und Admin-Tools über AWS, GCP und Azure.",
             "Aufbau einer strukturierten KI-Referenzebene im Designsystem, die es KI-Tools ermöglicht, spezifikationskonforme UI ohne manuelle Korrekturen zu generieren.",
             "Enge Zusammenarbeit mit Engineering und Produkt zur Definition von UX-Strategie und Scope für Multi-Cloud-Developer-Tools.",
           ],
@@ -226,8 +226,8 @@ const content = {
           period: "Apr 2023 – Jan 2025",
           note: "intern als Expert Product Designer geführt",
           bullets: [
-            "Leitung des Designs für kandidatenseitige und interne Plattformen, Einführung einer neuen UX-Strategie und eines einheitlichen Designsystems von Grund auf.",
-            "Überarbeitung der Figma-Komponentenbibliothek und Storybook-Integration — deutliche Verbesserung der Design-to-Dev-Übergabe.",
+            "Leitung des Designs für kandidatenseitige und interne Plattformen. Einführung einer neuen UX-Strategie und Aufbau eines einheitlichen Designsystems von Grund auf.",
+            "Überarbeitung der Figma-Komponentenbibliothek und Storybook-Integration. Die Design-to-Dev-Übergabe wurde deutlich besser und schneller.",
             "Usability-Testing-Zyklen, die direkt die Produktpriorisierung beeinflusst haben.",
           ],
         },
@@ -237,7 +237,7 @@ const content = {
           location: "Zürich, Schweiz",
           period: "Apr 2022 – Mär 2023",
           bullets: [
-            "Erster Produktdesigner bei der weltweit ersten regulierten Krypto-Bank — Aufbau von Teamprozessen, Design-Tooling und Feedback-Kultur von Grund auf.",
+            "Erster Produktdesigner bei der weltweit ersten regulierten Krypto-Bank. Aufbau von Teamprozessen, Design-Tooling und Feedback-Kultur von Grund auf.",
             "Entwicklung eines plattformübergreifenden Designsystems und UI/UX für institutionelle und private Kunden.",
             "Vereinfachung komplexer Blockchain-Abläufe für eine breitere Nutzung — ohne die Tiefe für Experten zu verlieren.",
           ],

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ButtonAnchor, ButtonLink } from "@/components/ui/Button";
+import { ButtonAnchor } from "@/components/ui/Button";
 
 export async function generateMetadata({
   params,
@@ -16,14 +16,14 @@ export async function generateMetadata({
       : "Resume — Jono Fox, Principal Product Designer",
     description: isDE
       ? "Lebenslauf von Jono Fox — Principal Product Designer mit Schwerpunkt auf Developer Experience, Designsysteme und komplexe B2B-Produkte. Basiert in Herxheim, Deutschland. Offen für Remote-Rollen und persönliche Stellen in Deutschland."
-      : "Resume of Jono Fox — Principal Product Designer specialising in developer experience, design systems, and complex B2B products. Based in Herxheim, Germany. Open to remote roles and in-person positions within Germany.",
+      : "Resume of Jono Fox — Principal Product Designer specialising in developer experience, design systems, and AI-augmented design workflows. Six years in product, nine as an Art Director. Based in Germany, working remotely. Open to senior IC and design leadership roles.",
     openGraph: {
       title: isDE
         ? "Lebenslauf — Jono Fox, Principal Product Designer"
         : "Resume — Jono Fox, Principal Product Designer",
       description: isDE
-        ? "Principal Product Designer · Developer Experience · Designsysteme · Enterprise B2B"
-        : "Principal Product Designer · Developer Experience · Design Systems · Enterprise B2B",
+        ? "Principal Product Designer · Developer Experience · Designsysteme · Enterprise B2B · Remote · Deutschland"
+        : "Principal Product Designer · Developer Experience · Design Systems · AI-augmented workflows · Remote · Germany",
     },
   };
 }
@@ -46,7 +46,7 @@ const content = {
     },
     summary: {
       heading: "Summary",
-      body: "Product Designer specialising in developer experience, design systems, and simplifying complex technical workflows. I combine deep UX craft with systems thinking to create clarity in complex environments. Known for spotting patterns others miss and bringing calm, structure, and empathy to technical teams. I design tools that help people do their best work.",
+      body: "Product Designer with six years in product and nine before that as an Art Director. I specialise in developer experience, design systems, and making complex technical workflows feel approachable without stripping out what makes them powerful. I've worked on enterprise database tooling, regulated fintech platforms, and recruiting infrastructure — always at the point where the problem space is genuinely unclear and working that out is part of the job. Recently built an AI reference layer into a design system that lets AI tools generate on-spec UI without manual correction. Open to senior IC and design leadership roles, remote or in person within Germany.",
     },
     experience: {
       heading: "Experience",
@@ -57,9 +57,9 @@ const content = {
           location: "Remote",
           period: "Oct 2025 – Present",
           bullets: [
-            "Promoted to lead design across the Aerospike Cloud platform.",
-            "Partner with engineering and product leads to shape cluster provisioning, onboarding, and admin tools.",
-            "Drive design system evolution and developer-focused UX strategy across multi-cloud products.",
+            "Lead design for the Aerospike Cloud platform — cluster provisioning, observability dashboards, and admin tooling across AWS, GCP, and Azure.",
+            "Built a structured AI reference layer into the design system, enabling AI tools to generate on-spec UI without manual correction.",
+            "Partner with engineering and product leads to define UX strategy and scope for multi-cloud developer tools.",
           ],
         },
         {
@@ -68,20 +68,21 @@ const content = {
           location: "Remote",
           period: "Feb 2025 – Oct 2025",
           bullets: [
-            "Designed the full end-to-end Aerospike Cloud experience, from provisioning flows to observability dashboards.",
+            "Designed the full end-to-end Aerospike Cloud experience, from a provisioning flow that gets clusters live in under 90 seconds to observability dashboards.",
             "Improved task success rate by 32% through iterative user testing and flow optimisation.",
-            "Built alignment between backend and platform teams to map system logic to intuitive UI patterns.",
+            "Translated complex distributed-system logic into intuitive UI patterns, working closely with backend and platform engineering teams.",
           ],
         },
         {
-          title: "Expert Product Designer",
+          title: "Senior Product Designer",
           company: "Workwise",
           location: "Karlsruhe, Germany",
           period: "Apr 2023 – Jan 2025",
+          note: "titled Expert Product Designer internally",
           bullets: [
-            "Led design for candidate-facing and internal platforms; introduced new UX strategy and unified design system.",
-            "Improved design-to-dev handoff via an overhauled Figma component library and Storybook integration.",
-            "Conducted usability testing and prototyping.",
+            "Led design for candidate-facing and internal platforms, introducing a new UX strategy and unified design system from scratch.",
+            "Overhauled the Figma component library and integrated Storybook, significantly improving design-to-dev handoff quality and speed.",
+            "Ran usability testing cycles that directly shaped product prioritisation.",
           ],
         },
         {
@@ -90,9 +91,9 @@ const content = {
           location: "Zurich, Switzerland",
           period: "Apr 2022 – Mar 2023",
           bullets: [
-            "First product designer at the world's first regulated crypto bank. Built team processes from scratch.",
+            "First product designer at the world's first regulated crypto bank — built team processes, design tooling, and critique culture from scratch.",
             "Delivered a cross-platform design system and UI/UX for institutional and retail crypto products.",
-            "Simplified blockchain workflows to support mainstream adoption.",
+            "Simplified complex blockchain workflows for mainstream adoption without losing the depth that expert users needed.",
           ],
         },
         {
@@ -101,8 +102,8 @@ const content = {
           location: "Zurich, Switzerland",
           period: "Aug 2020 – Mar 2022",
           bullets: [
-            "Art direction, UI/UX, and visual strategy for UBS.",
-            "Drove concepting, prototyping, and campaign execution across multi-disciplinary teams.",
+            "Art direction, UI/UX, and visual strategy for UBS across multiple product lines.",
+            "Led concepting, prototyping, and campaign execution across multi-disciplinary teams.",
           ],
         },
         {
@@ -111,8 +112,8 @@ const content = {
           location: "Sydney, Australia",
           period: "Aug 2019 – Mar 2020",
           bullets: [
-            "Led design direction across UX, UI, and eCommerce builds (BigCommerce). Clients included Goodlife Health Clubs, DNA Connect, Gillette, Tiger Trays.",
-            "Oversaw projects end-to-end, from pitches to delivery.",
+            "Led design direction across UX, UI, and eCommerce builds. Clients included Goodlife Health Clubs, Gillette, DNA Connect.",
+            "Owned projects end-to-end — from pitch through delivery.",
           ],
         },
         {
@@ -135,19 +136,19 @@ const content = {
           ],
         },
         {
-          title: "Early Roles (2011–2016)",
+          title: "Art Director — Early Career",
           company: "Droga5 · Clemenger BBDO · Leo Burnett · Grey",
           location: "Australasia & Germany",
           period: "2011 – 2016",
           bullets: [
-            "Art Director at leading agencies across Australasia and Germany. Developed campaigns and digital experiences blending brand, interaction, and product design.",
+            "Art Director at some of the most awarded agencies in the world, working across Australasia and Germany on brand, digital, and product campaigns.",
           ],
         },
       ],
     },
     awards: {
       heading: "Awards & Recognition",
-      body: "Cannes Lions · D&AD · The One Show · The Webby Awards · New York Festivals · Deutscher Design Club · AXIS Awards · AWARD Awards",
+      body: "Awarded at Cannes Lions, D&AD, The One Show, The Webby Awards, New York Festivals, Deutscher Design Club, AXIS Awards, and AWARD Awards — spanning product design, digital, and advertising.",
     },
     education: {
       heading: "Education",
@@ -162,7 +163,7 @@ const content = {
       groups: [
         { label: "Design Tools", items: "Figma, FigJam, Adobe CC, Sketch, MUI" },
         { label: "UX & Research", items: "User interviews, usability testing, journey mapping, wireframing, design systems, UX writing" },
-        { label: "Systems & Frontend", items: "Design tokens, component libraries, design-to-dev alignment, CSS logic, Storybook integration" },
+        { label: "Systems & Frontend", items: "Design tokens, component libraries, AI-augmented workflows, design-to-dev alignment, CSS logic, Storybook" },
         { label: "Other", items: "Agile, Jira, Confluence, Notion, PostHog, stakeholder workshops, technical discovery" },
       ],
     },
@@ -191,7 +192,7 @@ const content = {
     },
     summary: {
       heading: "Profil",
-      body: "Produktdesigner mit Schwerpunkt auf Developer Experience, Designsysteme und einfache Benutzerführung bei komplexen technischen Abläufen. Ich verbinde tiefes UX-Wissen mit systematischem Denken, um Klarheit in komplexen Umgebungen zu schaffen. Bekannt dafür, Muster zu erkennen, die andere übersehen, und Ruhe, Struktur und Empathie in technische Teams zu bringen.",
+      body: "Produktdesigner mit sechs Jahren in der Produktgestaltung und neun Jahren davor als Art Director. Schwerpunkte: Developer Experience, Designsysteme und komplexe technische Abläufe, die sich zugänglich anfühlen, ohne an Tiefe zu verlieren. Ich habe an Enterprise-Datenbanktools, regulierten Fintech-Plattformen und Recruiting-Infrastruktur gearbeitet — immer dort, wo das Problem noch unklar ist und das Herausarbeiten Teil der Aufgabe ist. Zuletzt habe ich eine KI-Referenzebene in ein Designsystem eingebaut, die es KI-Tools ermöglicht, spezifikationskonforme UI ohne manuelle Korrekturen zu generieren. Offen für Senior-IC- und Design-Leadership-Rollen, remote oder in Person in Deutschland.",
     },
     experience: {
       heading: "Berufserfahrung",
@@ -202,9 +203,9 @@ const content = {
           location: "Remote",
           period: "Okt 2025 – Heute",
           bullets: [
-            "Befördert, um das Design der gesamten Aerospike Cloud Plattform zu leiten.",
-            "Zusammenarbeit mit Engineering- und Produktteams zur Entwicklung von Cluster-Provisionierung, Onboarding und Admin-Tools.",
-            "Verantwortung für die Weiterentwicklung des Designsystems und der UX-Strategie für Entwickler in Multi-Cloud-Produkten.",
+            "Verantwortlich für das Design der gesamten Aerospike Cloud Plattform — Cluster-Provisionierung, Observability-Dashboards und Admin-Tools über AWS, GCP und Azure.",
+            "Aufbau einer strukturierten KI-Referenzebene im Designsystem, die es KI-Tools ermöglicht, spezifikationskonforme UI ohne manuelle Korrekturen zu generieren.",
+            "Enge Zusammenarbeit mit Engineering und Produkt zur Definition von UX-Strategie und Scope für Multi-Cloud-Developer-Tools.",
           ],
         },
         {
@@ -213,21 +214,21 @@ const content = {
           location: "Remote",
           period: "Feb 2025 – Okt 2025",
           bullets: [
-            "Gestaltung der kompletten Aerospike Cloud Erfahrung, von Provisionierungsabläufen bis zu Dashboards.",
-            "Verbesserung der Aufgaben-Erfolgsrate um 32 % durch Nutzertests und Optimierung der Abläufe.",
-            "Zusammenarbeit mit Backend-Teams zur Entwicklung intuitiver UI-Muster.",
+            "Gestaltung der kompletten Aerospike Cloud Erfahrung — von einem Provisionierungsflow, der Cluster in unter 90 Sekunden in Betrieb nimmt, bis zu Observability-Dashboards.",
+            "Verbesserung der Aufgaben-Erfolgsrate um 32 % durch Nutzertests und iterative Optimierung der Abläufe.",
+            "Komplexe verteilte Systemlogik in intuitive UI-Muster übersetzt, in enger Zusammenarbeit mit Backend- und Plattform-Engineering.",
           ],
         },
         {
-          title: "Expert Product Designer",
+          title: "Senior Product Designer",
           company: "Workwise",
           location: "Karlsruhe, Deutschland",
           period: "Apr 2023 – Jan 2025",
+          note: "intern als Expert Product Designer geführt",
           bullets: [
-            "Leitung des Designs für Plattformen für Kandidaten und interne Teams.",
-            "Einführung einer neuen UX-Strategie und eines einheitlichen Designsystems.",
-            "Verbesserung der Zusammenarbeit zwischen Design und Entwicklung durch eine neue Figma-Bibliothek und Storybook-Integration.",
-            "Durchführung von Usability-Tests und Prototyping.",
+            "Leitung des Designs für kandidatenseitige und interne Plattformen, Einführung einer neuen UX-Strategie und eines einheitlichen Designsystems von Grund auf.",
+            "Überarbeitung der Figma-Komponentenbibliothek und Storybook-Integration — deutliche Verbesserung der Design-to-Dev-Übergabe.",
+            "Usability-Testing-Zyklen, die direkt die Produktpriorisierung beeinflusst haben.",
           ],
         },
         {
@@ -236,9 +237,9 @@ const content = {
           location: "Zürich, Schweiz",
           period: "Apr 2022 – Mär 2023",
           bullets: [
-            "Erster Produktdesigner bei der weltweit ersten regulierten Krypto-Bank. Aufbau von Designprozessen und Teamstruktur.",
+            "Erster Produktdesigner bei der weltweit ersten regulierten Krypto-Bank — Aufbau von Teamprozessen, Design-Tooling und Feedback-Kultur von Grund auf.",
             "Entwicklung eines plattformübergreifenden Designsystems und UI/UX für institutionelle und private Kunden.",
-            "Vereinfachung komplexer Blockchain-Abläufe für eine breitere Nutzung.",
+            "Vereinfachung komplexer Blockchain-Abläufe für eine breitere Nutzung — ohne die Tiefe für Experten zu verlieren.",
           ],
         },
         {
@@ -247,7 +248,7 @@ const content = {
           location: "Zürich, Schweiz",
           period: "Aug 2020 – Mär 2022",
           bullets: [
-            "Art Direction, UI/UX und visuelle Strategie für UBS.",
+            "Art Direction, UI/UX und visuelle Strategie für UBS über mehrere Produktlinien.",
             "Leitung von Konzepten, Prototypen und Kampagnen über mehrere Teams hinweg.",
           ],
         },
@@ -257,9 +258,8 @@ const content = {
           location: "Sydney, Australien",
           period: "Aug 2019 – Mär 2020",
           bullets: [
-            "Leitung von UX-, UI- und E-Commerce-Projekten (BigCommerce).",
-            "Kunden: Goodlife Health Clubs, DNA Connect, Gillette, Tiger Trays.",
-            "Betreuung der Projekte von der Idee bis zur Umsetzung.",
+            "Leitung von UX-, UI- und E-Commerce-Projekten. Kunden: Goodlife Health Clubs, Gillette, DNA Connect.",
+            "Projekte von der Idee bis zur Umsetzung verantwortet.",
           ],
         },
         {
@@ -268,8 +268,7 @@ const content = {
           location: "Sydney, Australien",
           period: "Jan 2019 – Aug 2019",
           bullets: [
-            "Leitung von digitalen Kampagnen und Markenprojekten.",
-            "Kunden: American Express, Samsung, ING.",
+            "Leitung von digitalen Kampagnen und Markenprojekten. Kunden: American Express, Samsung, ING.",
           ],
         },
         {
@@ -283,19 +282,19 @@ const content = {
           ],
         },
         {
-          title: "Frühere Rollen (2011–2016)",
+          title: "Art Director — Frühe Karriere",
           company: "Droga5 · Clemenger BBDO · Leo Burnett · Grey",
           location: "Australien, Neuseeland & Deutschland",
           period: "2011 – 2016",
           bullets: [
-            "Art Director in führenden Agenturen in Australien, Neuseeland und Deutschland. Marken-, Digital- und Produktdesigns.",
+            "Art Director in einigen der renommiertesten Agenturen weltweit — Marken-, Digital- und Produktkampagnen in Australien, Neuseeland und Deutschland.",
           ],
         },
       ],
     },
     awards: {
       heading: "Auszeichnungen",
-      body: "Cannes Lions · D&AD · The One Show · The Webby Awards · New York Festivals · Deutscher Design Club · AXIS Awards · AWARD Awards",
+      body: "Ausgezeichnet bei Cannes Lions, D&AD, The One Show, The Webby Awards, New York Festivals, Deutscher Design Club, AXIS Awards und AWARD Awards — in Produktdesign, Digital und Werbung.",
     },
     education: {
       heading: "Ausbildung",
@@ -310,7 +309,7 @@ const content = {
       groups: [
         { label: "Design-Tools", items: "Figma, FigJam, Adobe CC, Sketch, MUI" },
         { label: "UX & Recherche", items: "Nutzerinterviews, Usability-Tests, Journey Mapping, Wireframing, Designsysteme, UX Writing" },
-        { label: "Systeme & Frontend", items: "Design Tokens, Komponentenbibliotheken, Zusammenarbeit mit Entwicklern, CSS-Logik, Storybook" },
+        { label: "Systeme & Frontend", items: "Design Tokens, Komponentenbibliotheken, KI-gestützte Workflows, Zusammenarbeit mit Entwicklern, CSS-Logik, Storybook" },
         { label: "Weitere Kenntnisse", items: "Agile, Jira, Confluence, Notion, PostHog, Workshops, Technische Analyse" },
       ],
     },
@@ -334,9 +333,9 @@ export default async function ResumePage({
 
   return (
     <div className="min-h-screen bg-surface">
-      {/* Page header */}
-      <div className="border-b border-surface-muted bg-surface-light">
-        <div className="max-w-4xl mx-auto px-6 py-10 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+      {/* Page header — pt-44 matches the rest of the site's nav offset */}
+      <div className="border-b border-surface-muted bg-surface-light pt-44">
+        <div className="max-w-4xl mx-auto px-6 pb-10 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
           <div>
             <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-2">
               Jono Fox
@@ -345,7 +344,7 @@ export default async function ResumePage({
               {c.pageTitle}
             </h1>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-6">
             <Link
               href={c.switchHref}
               className="text-sm font-medium text-ink-secondary hover:text-ink transition-colors border-b border-transparent hover:border-ink pb-0.5"
@@ -394,11 +393,14 @@ export default async function ResumePage({
                       {role.period}
                     </span>
                   </div>
-                  <p className="text-sm text-ink-secondary mb-3">
+                  <p className="text-sm text-ink-secondary mb-1">
                     {role.company}
                     {role.location ? ` — ${role.location}` : ""}
                   </p>
-                  <ul className="space-y-1.5">
+                  {"note" in role && role.note && (
+                    <p className="text-xs text-ink-disabled italic mb-3">{role.note}</p>
+                  )}
+                  <ul className="space-y-1.5 mt-3">
                     {role.bullets.map((bullet, j) => (
                       <li key={j} className="flex gap-3 text-sm text-ink-secondary leading-relaxed">
                         <span className="mt-2 w-1 h-1 rounded-full bg-teal shrink-0" aria-hidden="true" />

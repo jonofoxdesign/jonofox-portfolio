@@ -86,10 +86,10 @@ export default async function LocaleLayout({
     email: "jonathanlouisfox@gmail.com",
     jobTitle: "Principal Product Designer",
     description:
-      "Principal Product Designer specialising in developer tools, design systems, and complex B2B enterprise products. 6+ years in product design, 9 years as an Art Director. Based in Germany. Available for senior IC and design leadership roles — remote or Europe-based.",
+      "Principal Product Designer specialising in developer tools, design systems, and complex B2B enterprise products. 6+ years in product design, 9 years as an Art Director. Based in Herxheim, Germany — working fully remote. Open to in-person roles within Germany. Available for senior IC and design leadership roles.",
     homeLocation: {
       "@type": "Place",
-      name: "Germany",
+      name: "Herxheim, Germany",
     },
     sameAs: [
       "https://www.linkedin.com/in/jonofox/",

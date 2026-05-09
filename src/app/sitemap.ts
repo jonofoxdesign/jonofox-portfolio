@@ -13,6 +13,7 @@ const pages = [
   { path: "/work/goodlife", priority: 0.7, changeFrequency: "yearly" as const },
   { path: "/work/sygnum", priority: 0.7, changeFrequency: "yearly" as const },
   { path: "/contact", priority: 0.6, changeFrequency: "yearly" as const },
+  { path: "/resume", priority: 0.7, changeFrequency: "monthly" as const },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -3,6 +3,7 @@ import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/layout/Nav";
 import PostHogProvider from "@/components/providers/PostHogProvider";
+import { getLocale } from "next-intl/server";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -23,10 +24,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const locale = await getLocale();
   return (
     <html
-      lang="en"
+      lang={locale}
       suppressHydrationWarning
       className={dmSans.variable}
     >

@@ -215,6 +215,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               src="/hero-color.png"
               alt="Jono Fox"
               className="w-full rounded-2xl"
+              fetchpriority="high"
+              loading="eager"
             />
           </div>
         </div>
@@ -313,7 +315,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                   style={{ background: card.gradient ?? "linear-gradient(135deg, #F3F4F6 0%, #E5E7EB 100%)" }}
                 >
                   {"image" in card && card.image && (
-                    <img src={card.image} alt={card.title} className="w-full h-full object-cover object-top" />
+                    <img src={card.image} alt={card.title} className="w-full h-full object-cover object-top" loading="lazy" />
                   )}
                 </div>
               </Link>

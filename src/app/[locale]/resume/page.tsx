@@ -57,9 +57,9 @@ const content = {
           location: "Remote",
           period: "Oct 2025 – Present",
           bullets: [
-            "Lead design for Voyager, Aerospike's main product: observability dashboards, admin tooling, and UX strategy across AWS, GCP, and Azure.",
+            "Lead design for Voyager, Aerospike's first visual developer tool: guided onboarding, data browsing, a visual filter builder, and an embedded MCP server. Shipped publicly April 2026.",
+            "In the first week of public preview, median time from connecting to a cluster to browsing the first record was 11 seconds.",
             "Built a structured AI reference layer into the design system so AI tools can generate on-spec UI without manual correction.",
-            "Partner with engineering and product leads to define scope and direction for multi-cloud developer tools.",
           ],
         },
         {
@@ -68,8 +68,8 @@ const content = {
           location: "Remote",
           period: "Feb 2025 – Oct 2025",
           bullets: [
-            "Designed the Aerospike Cloud provisioning experience, getting clusters live in under 90 seconds across three cloud providers.",
-            "Improved task success rate by 32% through iterative user testing and flow optimisation.",
+            "Designed the Aerospike Cloud provisioning experience, getting clusters live in under 90 seconds across AWS and GCP.",
+            "Flow completion exceeded expectations for a multi-step technical configuration. Abandonment was low, and validation errors declined steadily as the contextual guidance matured.",
             "Translated complex distributed-system logic into intuitive UI patterns, working closely with backend and platform engineering teams.",
           ],
         },
@@ -203,9 +203,9 @@ const content = {
           location: "Remote",
           period: "Okt 2025 – Heute",
           bullets: [
-            "Verantwortlich für das Design von Voyager, dem Hauptprodukt von Aerospike: Observability-Dashboards, Admin-Tools und UX-Strategie über AWS, GCP und Azure.",
+            "Verantwortlich für das Design von Voyager, dem ersten visuellen Developer-Tool von Aerospike: geführtes Onboarding, Datenbrowsing, ein visueller Filter-Builder und ein eingebetteter MCP-Server. Veröffentlicht April 2026.",
+            "In der ersten Woche der Public Preview: mediane Zeit vom Verbinden mit einem Cluster bis zum ersten Datensatz — 11 Sekunden.",
             "Aufbau einer strukturierten KI-Referenzebene im Designsystem, die es KI-Tools ermöglicht, spezifikationskonforme UI ohne manuelle Korrekturen zu generieren.",
-            "Enge Zusammenarbeit mit Engineering und Produkt zur Definition von Scope und Ausrichtung für Multi-Cloud-Developer-Tools.",
           ],
         },
         {
@@ -214,8 +214,8 @@ const content = {
           location: "Remote",
           period: "Feb 2025 – Okt 2025",
           bullets: [
-            "Gestaltung des Aerospike Cloud Provisionierungsflows, der Cluster in unter 90 Sekunden über drei Cloud-Anbieter in Betrieb nimmt.",
-            "Verbesserung der Aufgaben-Erfolgsrate um 32 % durch Nutzertests und iterative Optimierung der Abläufe.",
+            "Gestaltung des Aerospike Cloud Provisionierungsflows, der Cluster in unter 90 Sekunden über AWS und GCP in Betrieb nimmt.",
+            "Die Flow-Completion übertraf die Erwartungen für einen mehrstufigen technischen Konfigurationsflow. Die Abbruchrate war niedrig, Validierungsfehler gingen mit der Zeit zurück.",
             "Komplexe verteilte Systemlogik in intuitive UI-Muster übersetzt, in enger Zusammenarbeit mit Backend- und Plattform-Engineering.",
           ],
         },

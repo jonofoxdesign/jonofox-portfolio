@@ -15,7 +15,7 @@ export async function generateMetadata({
       ? "Lebenslauf — Jono Fox, Principal Product Designer"
       : "Resume — Jono Fox, Principal Product Designer",
     description: isDE
-      ? "Lebenslauf von Jono Fox — Principal Product Designer mit Schwerpunkt auf Developer Experience, Designsysteme und komplexe B2B-Produkte. Basiert in Herxheim, Deutschland. Offen für Remote-Rollen und persönliche Stellen in Deutschland."
+      ? "Lebenslauf von Jono Fox — Principal Product Designer mit Schwerpunkt auf Developer Experience, Designsysteme und komplexe B2B-Produkte. Basiert in Herxheim bei Landau, Deutschland. Offen für Remote-Rollen und persönliche Stellen in Deutschland."
       : "Resume of Jono Fox — Principal Product Designer specialising in developer experience, design systems, and AI-augmented design workflows. Six years in product, nine as an Art Director. Based in Germany, working remotely. Open to senior IC and design leadership roles.",
     openGraph: {
       title: isDE
@@ -36,7 +36,7 @@ const content = {
     switchLabel: "Auf Deutsch lesen",
     switchHref: "/de/resume",
     contact: {
-      location: "Herxheim, Germany",
+      location: "Herxheim bei Landau, Germany",
       availability: "Remote — open to in-person roles within Germany",
       email: "jonathanlouisfox@gmail.com",
       linkedin: "linkedin.com/in/jonofox",
@@ -57,9 +57,9 @@ const content = {
           location: "Remote",
           period: "Oct 2025 – Present",
           bullets: [
-            "Lead design for Aerospike Cloud: cluster provisioning, observability dashboards, and admin tooling across AWS, GCP, and Azure.",
+            "Lead design for Voyager, Aerospike's main product: observability dashboards, admin tooling, and UX strategy across AWS, GCP, and Azure.",
             "Built a structured AI reference layer into the design system so AI tools can generate on-spec UI without manual correction.",
-            "Partner with engineering and product leads to define UX strategy and scope for multi-cloud developer tools.",
+            "Partner with engineering and product leads to define scope and direction for multi-cloud developer tools.",
           ],
         },
         {
@@ -68,7 +68,7 @@ const content = {
           location: "Remote",
           period: "Feb 2025 – Oct 2025",
           bullets: [
-            "Designed the full end-to-end Aerospike Cloud experience, from a provisioning flow that gets clusters live in under 90 seconds to observability dashboards.",
+            "Designed the Aerospike Cloud provisioning experience, getting clusters live in under 90 seconds across three cloud providers.",
             "Improved task success rate by 32% through iterative user testing and flow optimisation.",
             "Translated complex distributed-system logic into intuitive UI patterns, working closely with backend and platform engineering teams.",
           ],
@@ -182,8 +182,8 @@ const content = {
     switchLabel: "Read in English",
     switchHref: "/en/resume",
     contact: {
-      location: "Herxheim, Deutschland",
-      availability: "Remote — offen für persönliche Stellen in Deutschland",
+      location: "Herxheim bei Landau, Deutschland",
+      availability: "Remote, offen für Vor-Ort-Positionen in Deutschland",
       email: "jonathanlouisfox@gmail.com",
       linkedin: "linkedin.com/in/jonofox",
       linkedinHref: "https://www.linkedin.com/in/jonofox/",
@@ -203,9 +203,9 @@ const content = {
           location: "Remote",
           period: "Okt 2025 – Heute",
           bullets: [
-            "Verantwortlich für das Design der Aerospike Cloud Plattform: Cluster-Provisionierung, Observability-Dashboards und Admin-Tools über AWS, GCP und Azure.",
+            "Verantwortlich für das Design von Voyager, dem Hauptprodukt von Aerospike: Observability-Dashboards, Admin-Tools und UX-Strategie über AWS, GCP und Azure.",
             "Aufbau einer strukturierten KI-Referenzebene im Designsystem, die es KI-Tools ermöglicht, spezifikationskonforme UI ohne manuelle Korrekturen zu generieren.",
-            "Enge Zusammenarbeit mit Engineering und Produkt zur Definition von UX-Strategie und Scope für Multi-Cloud-Developer-Tools.",
+            "Enge Zusammenarbeit mit Engineering und Produkt zur Definition von Scope und Ausrichtung für Multi-Cloud-Developer-Tools.",
           ],
         },
         {
@@ -214,7 +214,7 @@ const content = {
           location: "Remote",
           period: "Feb 2025 – Okt 2025",
           bullets: [
-            "Gestaltung der kompletten Aerospike Cloud Erfahrung — von einem Provisionierungsflow, der Cluster in unter 90 Sekunden in Betrieb nimmt, bis zu Observability-Dashboards.",
+            "Gestaltung des Aerospike Cloud Provisionierungsflows, der Cluster in unter 90 Sekunden über drei Cloud-Anbieter in Betrieb nimmt.",
             "Verbesserung der Aufgaben-Erfolgsrate um 32 % durch Nutzertests und iterative Optimierung der Abläufe.",
             "Komplexe verteilte Systemlogik in intuitive UI-Muster übersetzt, in enger Zusammenarbeit mit Backend- und Plattform-Engineering.",
           ],

@@ -211,7 +211,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
           {/* Portrait */}
           <div className="animate-fade-up-1 relative flex justify-center md:justify-end">
-            <picture>
+            <picture className="w-full">
               <source media="(min-width: 768px)" srcSet="/jono/jono-fox-product-designer.jpg" />
               <img
                 src="/jono/jono-fox-product-designer-mobile.jpg"

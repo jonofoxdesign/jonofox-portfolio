@@ -64,7 +64,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
 
           {/* Right — portrait */}
           <div className="flex justify-center md:justify-end">
-            <picture>
+            <picture className="w-full">
               <source media="(min-width: 768px)" srcSet="/jono/jono-fox-hire-product-designer.jpg" />
               <img
                 src="/jono/jono-fox-hire-product-designer-mobile.jpg"

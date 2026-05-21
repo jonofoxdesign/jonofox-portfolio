@@ -215,7 +215,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               src="/jono/jono-hero.jpg"
               alt="Jono Fox"
               className="w-full rounded-2xl object-cover max-h-[420px] md:max-h-[580px]"
-              style={{ objectPosition: "center 30%" }}
+              style={{ objectPosition: "center 15%" }}
               fetchPriority="high"
               loading="eager"
             />

@@ -53,7 +53,14 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
             className="w-12 h-12 rounded-full object-cover object-top flex-shrink-0 mt-0.5"
             loading="eager"
           />
-          <div className="bg-white border border-surface-muted rounded-2xl rounded-tl-sm px-5 py-4 shadow-sm">
+          <div
+            className="backdrop-blur-xl rounded-2xl rounded-tl-sm px-5 py-4"
+            style={{
+              background: "linear-gradient(160deg, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.38) 100%)",
+              boxShadow: "0 8px 32px rgba(31,45,61,0.12), 0 1.5px 0 0 rgba(255,255,255,0.9) inset, 0 -1px 0 0 rgba(255,255,255,0.2) inset",
+              border: "1px solid rgba(255,255,255,0.5)",
+            }}
+          >
             <p className="text-base text-ink leading-relaxed">
               {c.body}
             </p>

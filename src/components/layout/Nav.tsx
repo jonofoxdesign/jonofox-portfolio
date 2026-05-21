@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
 import LanguageToggle from "@/components/ui/LanguageToggle";
+import Logo from "@/components/ui/Logo";
 
 const menuVariants = {
   hidden: { opacity: 0, y: -8, scale: 0.98 },
@@ -62,7 +63,7 @@ export default function Nav() {
           {/* Logo + links grouped left */}
           <div className="flex items-center gap-8">
             <Link href={localePath("/")} className="flex items-center">
-              <img src="/logo.svg" alt="Jono Fox" className="h-12 w-auto" />
+              <Logo />
             </Link>
 
             {/* Desktop nav — next to logo */}

@@ -36,15 +36,15 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
 
         {/* Circle photo + heading */}
         <div className="flex items-center gap-5 mb-8">
+          <h1 className="font-display text-5xl md:text-6xl font-bold tracking-tight text-ink leading-tight">
+            {c.heading} <span className="text-teal">{c.headingAccent}</span>
+          </h1>
           <img
             src="/jono/jono-fox-hire-product-designer-mobile.jpg"
             alt="Jono Fox"
             className="w-16 h-16 rounded-full object-cover object-top flex-shrink-0"
             loading="eager"
           />
-          <h1 className="font-display text-5xl md:text-6xl font-bold tracking-tight text-ink leading-tight">
-            {c.heading} <span className="text-teal">{c.headingAccent}</span>
-          </h1>
         </div>
 
         <p className="text-xl font-medium text-ink leading-relaxed mb-3">

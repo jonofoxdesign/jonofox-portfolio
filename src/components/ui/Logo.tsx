@@ -24,9 +24,9 @@ export default function Logo() {
 
       {/* Live text */}
       <div className="flex items-center font-sans text-sm tracking-wide">
-        <span className="text-ink font-medium">Jono <span className="text-fox">Fox</span></span>
+        <span className="text-ink font-medium">Jono Fox</span>
         <span className="text-ink-disabled mx-2 font-light">/</span>
-        <span className="text-ink-secondary font-normal">Product Designer</span>
+        <span className="text-fox font-normal">Product Designer</span>
       </div>
     </div>
   );

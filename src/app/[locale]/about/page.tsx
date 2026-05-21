@@ -208,16 +208,6 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
             {c.skills.heading} <span className="text-teal">{c.skills.headingAccent}</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-16 items-start">
-            {/* Photo */}
-            <picture className="w-full">
-              <source media="(min-width: 768px)" srcSet="/jono/jono-fox-principal-designer-aerospike.jpg" />
-              <img
-                src="/jono/jono-fox-principal-designer-aerospike-mobile.jpg"
-                alt="Jono Fox — Principal Product Designer at Aerospike, based in Germany"
-                className="w-full rounded-2xl object-cover object-top max-h-[360px] md:max-h-[400px]"
-                loading="lazy"
-              />
-            </picture>
             {/* Skills stacked */}
             <div className="space-y-8">
               <div>
@@ -245,6 +235,16 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                 </div>
               </div>
             </div>
+            {/* Photo */}
+            <picture className="w-full">
+              <source media="(min-width: 768px)" srcSet="/jono/jono-fox-principal-designer-aerospike.jpg" />
+              <img
+                src="/jono/jono-fox-principal-designer-aerospike-mobile.jpg"
+                alt="Jono Fox — Principal Product Designer at Aerospike, based in Germany"
+                className="w-full rounded-2xl object-cover object-top max-h-[360px] md:max-h-[400px]"
+                loading="lazy"
+              />
+            </picture>
           </div>
         </div>
       </section>

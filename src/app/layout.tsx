@@ -1,15 +1,8 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/layout/Nav";
 import PostHogProvider from "@/components/providers/PostHogProvider";
 import { getLocale } from "next-intl/server";
-
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  variable: "--next-font-dm-sans",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "Jono Fox — Principal Product Designer",
@@ -30,7 +23,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     <html
       lang={locale}
       suppressHydrationWarning
-      className={dmSans.variable}
+      className=""
     >
       <body className="font-sans bg-surface text-ink antialiased" suppressHydrationWarning>
         {/* Skip to main content — visible on focus for keyboard users */}

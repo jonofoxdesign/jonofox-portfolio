@@ -48,10 +48,42 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "PP Woodland";
+  src: url("/fonts/PPWoodland-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PP Woodland";
+  src: url("/fonts/PPWoodland-Ultralight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PP Radio Grotesk";
+  src: url("/fonts/PPRadioGrotesk-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PP Radio Grotesk";
+  src: url("/fonts/PPRadioGrotesk-RegularItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
 @theme {
   /* Fonts */
-  --font-display: "PP Neue Montreal", sans-serif;
-  --font-sans: var(--next-font-dm-sans), sans-serif;
+  --font-display: "PP Woodland", serif;
+  --font-sans: "PP Radio Grotesk", sans-serif;
 
   /* Ink (text) */
   --color-ink: #1F2D3D;

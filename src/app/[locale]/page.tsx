@@ -271,7 +271,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             {c.pillars.items.map((pillar, i) => (
               <div key={i} className="space-y-4">
                 <div className="w-8 h-0.5 bg-gradient-accent" />
-                <h3 className="font-display font-medium text-xl text-ink leading-snug">
+                <h3 className="font-sans font-semibold text-xl text-ink leading-snug">
                   {pillar.title}
                 </h3>
                 <p className="text-sm text-ink-secondary leading-relaxed">

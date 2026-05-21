@@ -214,7 +214,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
               <img
                 src="/jono/jono-fox-principal-designer-aerospike-mobile.jpg"
                 alt="Jono Fox — Principal Product Designer at Aerospike, based in Germany"
-                className="w-full rounded-2xl object-cover object-top max-h-[480px] md:max-h-[600px]"
+                className="w-full rounded-2xl object-cover object-top max-h-[360px] md:max-h-[400px]"
                 loading="lazy"
               />
             </picture>

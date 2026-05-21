@@ -31,7 +31,8 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
 
   return (
     <div className="pt-44 min-h-screen">
-      <div className="max-w-2xl mx-auto px-6 pb-24">
+      <div className="max-w-6xl mx-auto px-6 pb-24">
+        <div className="max-w-2xl">
 
         {/* Circle photo + heading */}
         <div className="flex items-center gap-5 mb-8">
@@ -68,6 +69,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
           </ButtonAnchor>
         </div>
 
+        </div>
       </div>
     </div>
   );

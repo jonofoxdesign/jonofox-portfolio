@@ -27,7 +27,7 @@ export default function Logo() {
 
       {/* Live text — from Figma spec */}
       <div className="flex items-baseline font-sans">
-        <span className="text-ink font-normal" style={{ fontSize: "18px" }}>Jono Fox</span>
+        <span className="text-ink font-normal" style={{ fontSize: "16px" }}>Jono Fox</span>
         <span className="text-ink font-normal mx-2" style={{ fontSize: "12px" }}>/</span>
         <span className="font-normal" style={{ fontSize: "12px", color: "#F57B03" }}>Product Designer</span>
       </div>

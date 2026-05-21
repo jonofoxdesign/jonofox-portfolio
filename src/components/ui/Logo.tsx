@@ -29,9 +29,7 @@ export default function Logo() {
   return (
     <div className="flex items-center gap-3">
       <LogoIcon />
-      <span className="font-sans font-normal text-ink" style={{ fontSize: "16px" }}>
-        Jono <span style={{ color: "#F57B03" }}>Fox</span>
-      </span>
+      <span className="font-sans font-normal text-ink" style={{ fontSize: "16px" }}>Jono Fox</span>
     </div>
   );
 }

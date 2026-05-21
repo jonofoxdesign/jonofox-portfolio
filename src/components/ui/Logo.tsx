@@ -25,12 +25,11 @@ export default function Logo() {
         <path d="M30.4369 4.22488C31.3002 4.22488 32 3.57308 32 2.76904C32 1.965 31.3002 1.3132 30.4369 1.3132C29.5736 1.3132 28.8738 1.965 28.8738 2.76904C28.8738 3.57308 29.5736 4.22488 30.4369 4.22488Z" fill="#1F2D3D"/>
       </svg>
 
-      {/* Live text — from Figma spec */}
-      <div className="flex items-baseline font-sans">
-        <span className="text-ink font-normal" style={{ fontSize: "16px" }}>Jono Fox</span>
-        <span className="text-ink font-normal mx-2" style={{ fontSize: "12px" }}>/</span>
-        <span className="font-normal" style={{ fontSize: "12px", color: "#F57B03" }}>Product Designer</span>
-      </div>
+      {/* Live text */}
+      <span className="font-normal font-sans" style={{ fontSize: "16px" }}>
+        <span className="text-ink">Jono </span>
+        <span style={{ color: "#F57B03" }}>Fox</span>
+      </span>
     </div>
   );
 }

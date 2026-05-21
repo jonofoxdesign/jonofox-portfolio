@@ -109,7 +109,7 @@ export default function Nav() {
           <div className="flex md:hidden w-full items-center justify-between">
             <Link href={localePath("/")} className="flex items-center gap-3">
               <LogoIcon />
-              <span className="text-base font-normal font-sans text-ink">Jono Fox</span>
+              <span className="text-base font-normal font-sans text-ink pb-0.5 border-b-2 border-fox">Jono Fox</span>
             </Link>
             <button
               className="md:hidden flex flex-col gap-1.5 p-1"

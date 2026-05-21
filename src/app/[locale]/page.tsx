@@ -264,7 +264,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       {/* What I do best */}
       <section className="py-24 bg-surface-light">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="font-display text-4xl font-bold tracking-tight text-ink mb-16">
+          <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-ink mb-10 md:mb-16">
             {c.pillars.heading} <span className="text-teal">{c.pillars.headingAccent}</span>
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -289,7 +289,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       {/* Featured work */}
       <section className="py-24">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="font-display text-4xl font-bold tracking-tight text-ink mb-16">
+          <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-ink mb-10 md:mb-16">
             {c.work.heading} <span className="text-fox">{c.work.headingAccent}</span>
           </h2>
           <div className="space-y-4">
@@ -303,7 +303,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                   <span className="text-xs font-semibold tracking-widest text-ink-disabled uppercase">
                     {card.tag}
                   </span>
-                  <h3 className="font-display font-bold text-3xl text-ink leading-snug">
+                  <h3 className="font-display font-bold text-3xl md:text-4xl text-ink leading-snug">
                     {card.title}
                   </h3>
                   <p className="text-sm text-ink-secondary leading-relaxed">
@@ -345,7 +345,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-96 h-96 rounded-full bg-teal/10 blur-3xl pointer-events-none" />
         <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-96 h-96 rounded-full bg-fox/10 blur-3xl pointer-events-none" />
         <div className="relative max-w-2xl mx-auto px-6 text-center">
-          <h2 className="font-display text-4xl font-bold tracking-tight mb-4">
+          <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-4">
             {c.cta.heading} <span className="text-fox">{c.cta.headingAccent}</span>
           </h2>
           <p className="text-ink-disabled mb-8 leading-relaxed">

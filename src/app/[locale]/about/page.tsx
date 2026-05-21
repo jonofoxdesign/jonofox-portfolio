@@ -149,12 +149,15 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
               <TextLink href={contactHref}>{c.hero.contact}</TextLink>
             </div>
             <div className="flex justify-center md:justify-end">
-              <img
-                src="/jono/jono-fox-principal-designer-aerospike.jpg"
-                alt="Jono Fox — Principal Product Designer at Aerospike, based in Germany"
-                className="w-full rounded-2xl object-cover object-top max-h-[380px] md:max-h-[700px]"
-                loading="lazy"
-              />
+              <picture>
+                <source media="(min-width: 768px)" srcSet="/jono/jono-fox-principal-designer-aerospike.jpg" />
+                <img
+                  src="/jono/jono-fox-principal-designer-aerospike-mobile.jpg"
+                  alt="Jono Fox — Principal Product Designer at Aerospike, based in Germany"
+                  className="w-full rounded-2xl object-cover object-top max-h-[380px] md:max-h-[700px]"
+                  loading="lazy"
+                />
+              </picture>
             </div>
           </div>
         </div>

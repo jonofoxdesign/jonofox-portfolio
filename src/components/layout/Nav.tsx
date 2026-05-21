@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
 import LanguageToggle from "@/components/ui/LanguageToggle";
-import Logo from "@/components/ui/Logo";
+import { LogoIcon } from "@/components/ui/Logo";
 
 const menuVariants = {
   hidden: { opacity: 0, y: -8, scale: 0.98 },
@@ -60,15 +60,27 @@ export default function Nav() {
             border: "1px solid rgba(255,255,255,0.5)",
           }}
         >
-          {/* 3-column grid: logo | nav | toggle */}
-          <div className="flex-1 hidden md:grid grid-cols-3 items-center">
-            {/* Left — logo */}
-            <Link href={localePath("/")} className="flex items-center">
-              <Logo />
-            </Link>
+          {/* Desktop: flat flex row — logo | 64px | links (40px gap) | 64px | toggle */}
+          <div className="flex-1 hidden md:flex items-center">
+            {/* Logo — home link with active-state underline */}
+            {(() => {
+              const isHome = pathname === `/${locale}` || pathname === `/${locale}/`;
+              return (
+                <Link href={localePath("/")} className="flex items-center gap-3">
+                  <LogoIcon />
+                  <span className={`text-sm font-normal font-sans transition-[color,border-color] duration-200 pb-0.5 border-b-2 ${
+                    isHome
+                      ? "text-ink border-fox"
+                      : "text-ink-secondary border-transparent hover:text-ink hover:border-ink"
+                  }`}>
+                    Jono Fox
+                  </span>
+                </Link>
+              );
+            })()}
 
-            {/* Centre — nav links */}
-            <nav aria-label="Main navigation" className="flex items-center justify-center gap-10">
+            {/* Nav links — 64px from logo */}
+            <nav aria-label="Main navigation" className="ml-16 flex items-center gap-10">
               {links.map((link) => {
                 const isActive = pathname === link.href || pathname.startsWith(link.href + "/");
                 return (
@@ -87,16 +99,17 @@ export default function Nav() {
               })}
             </nav>
 
-            {/* Right — language toggle */}
-            <div className="flex justify-end">
+            {/* Language toggle — 64px from links */}
+            <div className="ml-16">
               <LanguageToggle />
             </div>
           </div>
 
           {/* Mobile: logo left, hamburger right */}
           <div className="flex md:hidden flex-1 items-center justify-between">
-            <Link href={localePath("/")} className="flex items-center">
-              <Logo />
+            <Link href={localePath("/")} className="flex items-center gap-3">
+              <LogoIcon />
+              <span className="text-sm font-normal font-sans text-ink">Jono Fox</span>
             </Link>
             <button
               className="md:hidden flex flex-col gap-1.5 p-1"

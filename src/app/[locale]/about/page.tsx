@@ -204,7 +204,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
       {/* Skills */}
       <section className="py-24 bg-surface-light">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="font-display text-2xl font-bold text-ink mb-10">
+          <h2 className="font-display text-3xl font-bold text-ink mb-10">
             {c.skills.heading} <span className="text-teal">{c.skills.headingAccent}</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-16 items-start">

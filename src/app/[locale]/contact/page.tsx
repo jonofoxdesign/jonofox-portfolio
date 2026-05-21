@@ -31,51 +31,43 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
 
   return (
     <div className="pt-44 min-h-screen">
-      <div className="max-w-6xl mx-auto px-6 pb-24">
-        <div className="grid md:grid-cols-2 gap-16 items-start">
+      <div className="max-w-2xl mx-auto px-6 pb-24">
 
-          {/* Left — content */}
-          <div>
-            <h1 className="font-display text-5xl md:text-6xl font-bold tracking-tight text-ink leading-tight mb-6">
-              {c.heading} <span className="text-teal">{c.headingAccent}</span>
-            </h1>
-            <p className="text-xl font-medium text-ink leading-relaxed mb-3">
-              {c.subheading.split("\n").map((line, i) => (
-                <span key={i}>{line}{i === 0 && <br />}</span>
-              ))}
-            </p>
-            <p className="text-lg text-ink-secondary leading-relaxed mb-10">
-              {c.body}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <ButtonAnchor href="mailto:jonathanlouisfox@gmail.com" variant="teal">
-                {c.email}
-              </ButtonAnchor>
-              <ButtonAnchor
-                href="https://www.linkedin.com/in/jonofox/"
-                target="_blank"
-                rel="noopener noreferrer"
-                variant="outline"
-              >
-                {c.linkedin}
-              </ButtonAnchor>
-            </div>
-          </div>
-
-          {/* Right — portrait */}
-          <div className="flex justify-center md:justify-end">
-            <picture className="w-full">
-              <source media="(min-width: 768px)" srcSet="/jono/jono-fox-hire-product-designer.jpg" />
-              <img
-                src="/jono/jono-fox-hire-product-designer-mobile.jpg"
-                alt="Jono Fox — Principal Product Designer available for senior IC and design leadership roles"
-                className="w-full rounded-2xl object-cover object-top max-h-[380px] md:max-h-[620px]"
-                loading="lazy"
-              />
-            </picture>
-          </div>
-
+        {/* Circle photo + heading */}
+        <div className="flex items-center gap-5 mb-8">
+          <img
+            src="/jono/jono-fox-hire-product-designer-mobile.jpg"
+            alt="Jono Fox"
+            className="w-16 h-16 rounded-full object-cover object-top flex-shrink-0"
+            loading="eager"
+          />
+          <h1 className="font-display text-5xl md:text-6xl font-bold tracking-tight text-ink leading-tight">
+            {c.heading} <span className="text-teal">{c.headingAccent}</span>
+          </h1>
         </div>
+
+        <p className="text-xl font-medium text-ink leading-relaxed mb-3">
+          {c.subheading.split("\n").map((line, i) => (
+            <span key={i}>{line}{i === 0 && <br />}</span>
+          ))}
+        </p>
+        <p className="text-lg text-ink-secondary leading-relaxed mb-10">
+          {c.body}
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4">
+          <ButtonAnchor href="mailto:jonathanlouisfox@gmail.com" variant="teal">
+            {c.email}
+          </ButtonAnchor>
+          <ButtonAnchor
+            href="https://www.linkedin.com/in/jonofox/"
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="outline"
+          >
+            {c.linkedin}
+          </ButtonAnchor>
+        </div>
+
       </div>
     </div>
   );

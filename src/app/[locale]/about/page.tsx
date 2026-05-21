@@ -128,37 +128,24 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
 
   return (
     <div>
-      {/* Hero */}
+      {/* Hero — text only */}
       <section className="pt-44 pb-24 bg-surface-light">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-start">
-            <div>
-              <h1 className="font-display text-5xl md:text-6xl font-bold tracking-tight text-ink leading-tight mb-8">
-                {c.hero.h1a}{" "}
-                <span className="text-teal">{c.hero.h1b}</span>
-              </h1>
-              <p className="text-lg text-ink-secondary leading-relaxed mb-6">
-                {c.hero.p1}
-              </p>
-              <p className="text-lg text-ink-secondary leading-relaxed mb-6">
-                {c.hero.p2}
-              </p>
-              <p className="text-lg text-ink-secondary leading-relaxed mb-10">
-                {c.hero.p3}
-              </p>
-              <TextLink href={contactHref}>{c.hero.contact}</TextLink>
-            </div>
-            <div className="flex justify-center md:justify-end">
-              <picture className="w-full">
-                <source media="(min-width: 768px)" srcSet="/jono/jono-fox-principal-designer-aerospike.jpg" />
-                <img
-                  src="/jono/jono-fox-principal-designer-aerospike-mobile.jpg"
-                  alt="Jono Fox — Principal Product Designer at Aerospike, based in Germany"
-                  className="w-full rounded-2xl object-cover object-top max-h-[380px] md:max-h-[700px]"
-                  loading="lazy"
-                />
-              </picture>
-            </div>
+          <div className="max-w-3xl">
+            <h1 className="font-display text-5xl md:text-6xl font-bold tracking-tight text-ink leading-tight mb-8">
+              {c.hero.h1a}{" "}
+              <span className="text-teal">{c.hero.h1b}</span>
+            </h1>
+            <p className="text-lg text-ink-secondary leading-relaxed mb-6">
+              {c.hero.p1}
+            </p>
+            <p className="text-lg text-ink-secondary leading-relaxed mb-6">
+              {c.hero.p2}
+            </p>
+            <p className="text-lg text-ink-secondary leading-relaxed mb-10">
+              {c.hero.p3}
+            </p>
+            <TextLink href={contactHref}>{c.hero.contact}</TextLink>
           </div>
         </div>
       </section>
@@ -220,29 +207,42 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
           <h2 className="font-display text-2xl font-bold text-ink mb-10">
             {c.skills.heading} <span className="text-teal">{c.skills.headingAccent}</span>
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div>
-              <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-4">{c.skills.howIThink}</p>
-              <div className="flex flex-wrap gap-2">
-                {c.skills.howIThinkItems.map((s) => (
-                  <span key={s} className="px-3 py-1 rounded-full bg-surface-muted text-xs text-ink-secondary">{s}</span>
-                ))}
+          <div className="grid md:grid-cols-2 gap-16 items-start">
+            {/* Photo */}
+            <picture className="w-full">
+              <source media="(min-width: 768px)" srcSet="/jono/jono-fox-principal-designer-aerospike.jpg" />
+              <img
+                src="/jono/jono-fox-principal-designer-aerospike-mobile.jpg"
+                alt="Jono Fox — Principal Product Designer at Aerospike, based in Germany"
+                className="w-full rounded-2xl object-cover object-top max-h-[480px] md:max-h-[600px]"
+                loading="lazy"
+              />
+            </picture>
+            {/* Skills stacked */}
+            <div className="space-y-8">
+              <div>
+                <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-4">{c.skills.howIThink}</p>
+                <div className="flex flex-wrap gap-2">
+                  {c.skills.howIThinkItems.map((s) => (
+                    <span key={s} className="px-3 py-1 rounded-full bg-surface-muted text-xs text-ink-secondary">{s}</span>
+                  ))}
+                </div>
               </div>
-            </div>
-            <div>
-              <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-4">{c.skills.whatIDo}</p>
-              <div className="flex flex-wrap gap-2">
-                {c.skills.whatIDoItems.map((s) => (
-                  <span key={s} className="px-3 py-1 rounded-full bg-teal-subtle text-xs text-teal">{s}</span>
-                ))}
+              <div>
+                <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-4">{c.skills.whatIDo}</p>
+                <div className="flex flex-wrap gap-2">
+                  {c.skills.whatIDoItems.map((s) => (
+                    <span key={s} className="px-3 py-1 rounded-full bg-teal-subtle text-xs text-teal">{s}</span>
+                  ))}
+                </div>
               </div>
-            </div>
-            <div>
-              <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-4">{c.skills.howIWork}</p>
-              <div className="flex flex-wrap gap-2">
-                {c.skills.howIWorkItems.map((s) => (
-                  <span key={s} className="px-3 py-1 rounded-full bg-surface-muted text-xs text-ink-secondary">{s}</span>
-                ))}
+              <div>
+                <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-4">{c.skills.howIWork}</p>
+                <div className="flex flex-wrap gap-2">
+                  {c.skills.howIWorkItems.map((s) => (
+                    <span key={s} className="px-3 py-1 rounded-full bg-surface-muted text-xs text-ink-secondary">{s}</span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

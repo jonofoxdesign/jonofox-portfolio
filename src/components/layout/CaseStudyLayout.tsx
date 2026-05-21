@@ -138,7 +138,7 @@ export function Section({ heading, children }: { heading: string; children: Reac
       viewport={{ once: true, margin: "-60px" }}
       transition={transition}
     >
-      <h2 className="font-display text-2xl font-bold text-ink mb-4">{heading}</h2>
+      <h2 className="font-display text-3xl font-bold text-ink mb-4">{heading}</h2>
       <div className="space-y-4 text-ink-secondary leading-relaxed">{children}</div>
     </motion.section>
   );

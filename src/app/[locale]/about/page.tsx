@@ -155,7 +155,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 mb-12">
             <div>
-              <h2 className="font-display text-2xl font-bold text-ink mb-8">{c.roles.heading}</h2>
+              <h2 className="font-display text-3xl font-bold text-ink mb-8">{c.roles.heading}</h2>
               <div className="space-y-6">
                 {roles.map((role) => (
                   <div key={role.company} className="flex justify-between items-start gap-4">
@@ -169,7 +169,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
               </div>
             </div>
             <div>
-              <h2 className="font-display text-2xl font-bold text-ink mb-8">
+              <h2 className="font-display text-3xl font-bold text-ink mb-8">
                 {c.awards.heading} <span className="text-fox">{c.awards.headingAccent}</span>
               </h2>
               <p className="text-sm text-ink-secondary mb-6">{c.awards.descriptor}</p>
@@ -252,7 +252,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
       {/* Values */}
       <section className="py-24 bg-surface">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="font-display text-2xl font-bold text-ink mb-10">
+          <h2 className="font-display text-3xl font-bold text-ink mb-10">
             {c.values.heading} <span className="text-fox">{c.values.headingAccent}</span>
           </h2>
           <div className="grid md:grid-cols-3 gap-8">

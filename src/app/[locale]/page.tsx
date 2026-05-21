@@ -303,7 +303,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                   <span className="text-xs font-semibold tracking-widest text-ink-disabled uppercase">
                     {card.tag}
                   </span>
-                  <h3 className="font-display font-bold text-2xl text-ink leading-snug">
+                  <h3 className="font-display font-bold text-3xl text-ink leading-snug">
                     {card.title}
                   </h3>
                   <p className="text-sm text-ink-secondary leading-relaxed">

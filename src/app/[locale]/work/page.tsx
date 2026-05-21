@@ -156,7 +156,7 @@ export default async function WorkPage({ params }: { params: Promise<{ locale: s
                 <span className="text-xs font-semibold tracking-widest text-ink-disabled uppercase">
                   {cs.tag}
                 </span>
-                <h2 className="font-display font-bold text-2xl text-ink leading-snug">
+                <h2 className="font-display font-bold text-3xl text-ink leading-snug">
                   {cs.title}
                 </h2>
                 <p className="text-sm text-ink-secondary leading-relaxed">

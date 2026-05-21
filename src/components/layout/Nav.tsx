@@ -60,14 +60,15 @@ export default function Nav() {
             border: "1px solid rgba(255,255,255,0.5)",
           }}
         >
-          {/* Logo + links grouped left */}
-          <div className="flex items-center gap-8">
+          {/* 3-column grid: logo | nav | toggle */}
+          <div className="flex-1 hidden md:grid grid-cols-3 items-center">
+            {/* Left — logo */}
             <Link href={localePath("/")} className="flex items-center">
               <Logo />
             </Link>
 
-            {/* Desktop nav — next to logo */}
-            <nav aria-label="Main navigation" className="hidden md:flex items-center gap-6">
+            {/* Centre — nav links */}
+            <nav aria-label="Main navigation" className="flex items-center justify-center gap-6">
               {links.map((link) => {
                 const isActive = pathname === link.href || pathname.startsWith(link.href + "/");
                 return (
@@ -85,13 +86,18 @@ export default function Nav() {
                 );
               })}
             </nav>
-          </div>
 
-          {/* Right — language toggle + hamburger */}
-          <div className="flex items-center gap-4">
-            <div className="hidden md:flex">
+            {/* Right — language toggle */}
+            <div className="flex justify-end">
               <LanguageToggle />
             </div>
+          </div>
+
+          {/* Mobile: logo left, hamburger right */}
+          <div className="flex md:hidden flex-1 items-center justify-between">
+            <Link href={localePath("/")} className="flex items-center">
+              <Logo />
+            </Link>
             <button
               className="md:hidden flex flex-col gap-1.5 p-1"
               onClick={() => setMenuOpen((v) => !v)}

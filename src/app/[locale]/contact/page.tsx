@@ -62,13 +62,14 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
             </div>
           </div>
 
-          {/* Right — 2×2 photo grid */}
-          <div className="grid grid-cols-2 gap-3">
-            {["/jono/jono1.png", "/jono/jono2.png", "/jono/jono4.png", "/jono/jono3.png"].map((src, i) => (
-              <div key={i} className="aspect-square rounded-2xl overflow-hidden">
-                <img src={src} alt="Jono Fox" className="w-full h-full object-cover" />
-              </div>
-            ))}
+          {/* Right — portrait */}
+          <div className="flex justify-center md:justify-end">
+            <img
+              src="/jono/jono-contact.jpg"
+              alt="Jono Fox"
+              className="w-full max-w-sm rounded-2xl object-cover"
+              loading="lazy"
+            />
           </div>
 
         </div>

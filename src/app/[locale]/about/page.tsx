@@ -131,21 +131,31 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
       {/* Hero */}
       <section className="pt-44 pb-24 bg-surface-light">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="max-w-3xl">
-            <h1 className="font-display text-5xl md:text-6xl font-bold tracking-tight text-ink leading-tight mb-8">
-              {c.hero.h1a}{" "}
-              <span className="text-teal">{c.hero.h1b}</span>
-            </h1>
-            <p className="text-lg text-ink-secondary leading-relaxed mb-6">
-              {c.hero.p1}
-            </p>
-            <p className="text-lg text-ink-secondary leading-relaxed mb-6">
-              {c.hero.p2}
-            </p>
-            <p className="text-lg text-ink-secondary leading-relaxed mb-10">
-              {c.hero.p3}
-            </p>
-            <TextLink href={contactHref}>{c.hero.contact}</TextLink>
+          <div className="grid md:grid-cols-2 gap-16 items-start">
+            <div>
+              <h1 className="font-display text-5xl md:text-6xl font-bold tracking-tight text-ink leading-tight mb-8">
+                {c.hero.h1a}{" "}
+                <span className="text-teal">{c.hero.h1b}</span>
+              </h1>
+              <p className="text-lg text-ink-secondary leading-relaxed mb-6">
+                {c.hero.p1}
+              </p>
+              <p className="text-lg text-ink-secondary leading-relaxed mb-6">
+                {c.hero.p2}
+              </p>
+              <p className="text-lg text-ink-secondary leading-relaxed mb-10">
+                {c.hero.p3}
+              </p>
+              <TextLink href={contactHref}>{c.hero.contact}</TextLink>
+            </div>
+            <div className="flex justify-end">
+              <img
+                src="/jono/jono-about.jpg"
+                alt="Jono Fox"
+                className="w-full max-w-sm rounded-2xl object-cover"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </section>

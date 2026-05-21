@@ -209,12 +209,12 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             </div>
           </div>
 
-          {/* Portrait — always colour */}
+          {/* Portrait */}
           <div className="animate-fade-up-1 relative flex justify-center md:justify-end">
             <img
-              src="/hero-color.png"
+              src="/jono/jono-hero.jpg"
               alt="Jono Fox"
-              className="w-full rounded-2xl"
+              className="w-full rounded-2xl object-cover"
               fetchPriority="high"
               loading="eager"
             />

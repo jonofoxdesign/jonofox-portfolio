@@ -152,8 +152,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
               <img
                 src="/jono/jono-about.jpg"
                 alt="Jono Fox"
-                className="w-full rounded-2xl object-cover max-h-[380px] md:max-h-[640px]"
-                style={{ objectPosition: "center 25%" }}
+                className="w-full rounded-2xl object-cover object-top max-h-[380px] md:max-h-[640px]"
                 loading="lazy"
               />
             </div>

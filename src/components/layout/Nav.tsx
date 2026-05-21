@@ -75,7 +75,7 @@ export default function Nav() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`text-base font-normal transition-[color,border-color] duration-200 pb-0.5 border-b-2 ${
+                    className={`text-sm font-normal transition-[color,border-color] duration-200 pb-0.5 border-b-2 ${
                       isActive
                         ? "text-ink border-fox"
                         : "text-ink-secondary border-transparent hover:text-ink hover:border-ink"

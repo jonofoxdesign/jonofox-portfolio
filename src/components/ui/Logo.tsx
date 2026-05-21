@@ -26,9 +26,9 @@ export default function Logo() {
       </svg>
 
       {/* Live text */}
-      <span style={{ fontSize: "16px" }}>
-        <span className="font-sans font-normal text-ink">Jono </span>
-        <span className="font-display italic font-bold" style={{ color: "#F57B03" }}>Fox</span>
+      <span className="font-sans font-normal" style={{ fontSize: "16px" }}>
+        <span className="text-ink">Jono </span>
+        <span style={{ color: "#F57B03" }}>Fox</span>
       </span>
     </div>
   );

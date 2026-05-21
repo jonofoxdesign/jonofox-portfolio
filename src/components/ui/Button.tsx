@@ -11,7 +11,7 @@ const tapTransition = {
 };
 
 const base =
-  "flex items-center justify-center px-6 py-3 rounded-xl font-medium font-display text-base transition-colors";
+  "flex items-center justify-center px-6 py-3 rounded-xl font-medium font-sans text-base transition-colors";
 
 const variants = {
   primary:   `${base} bg-fox text-white hover:bg-fox-hover`,
@@ -91,7 +91,7 @@ export function TextLink({ children, className, ...props }: TextLinkProps) {
       style={{ display: "inline-block" }}
     >
       <Link
-        className={`text-base font-medium font-display text-teal hover:text-teal-hover transition-colors ${className ?? ""}`}
+        className={`text-base font-medium font-sans text-teal hover:text-teal-hover transition-colors ${className ?? ""}`}
         {...props}
       >
         {children}

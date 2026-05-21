@@ -49,17 +49,17 @@
 }
 
 @font-face {
-  font-family: "PP Woodland";
-  src: url("/fonts/PPWoodland-Bold.otf") format("opentype");
-  font-weight: 700;
+  font-family: "PP Kyoto";
+  src: url("/fonts/PPKyoto-Extrabold.otf") format("opentype");
+  font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "PP Woodland";
-  src: url("/fonts/PPWoodland-Ultralight.otf") format("opentype");
-  font-weight: 200;
+  font-family: "PP Kyoto";
+  src: url("/fonts/PPKyoto-Medium.otf") format("opentype");
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -82,7 +82,7 @@
 
 @theme {
   /* Fonts */
-  --font-display: "PP Woodland", serif;
+  --font-display: "PP Kyoto", serif;
   --font-sans: "PP Radio Grotesk", sans-serif;
 
   /* Ink (text) */

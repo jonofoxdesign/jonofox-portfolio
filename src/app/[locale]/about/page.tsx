@@ -148,11 +148,12 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
               </p>
               <TextLink href={contactHref}>{c.hero.contact}</TextLink>
             </div>
-            <div className="flex justify-end">
+            <div className="flex justify-center md:justify-end">
               <img
                 src="/jono/jono-about.jpg"
                 alt="Jono Fox"
-                className="w-full max-w-sm rounded-2xl object-cover"
+                className="w-full rounded-2xl object-cover max-h-[380px] md:max-h-[640px]"
+                style={{ objectPosition: "center 25%" }}
                 loading="lazy"
               />
             </div>

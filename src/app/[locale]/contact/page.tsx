@@ -67,7 +67,8 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
             <img
               src="/jono/jono-contact.jpg"
               alt="Jono Fox"
-              className="w-full max-w-sm rounded-2xl object-cover"
+              className="w-full rounded-2xl object-cover max-h-[380px] md:max-h-[560px]"
+              style={{ objectPosition: "center 20%" }}
               loading="lazy"
             />
           </div>

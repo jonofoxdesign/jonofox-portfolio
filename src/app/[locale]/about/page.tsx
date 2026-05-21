@@ -148,11 +148,11 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
               </p>
               <TextLink href={contactHref}>{c.hero.contact}</TextLink>
             </div>
-            <div className="flex justify-center md:justify-end">
+            <div className="flex justify-center md:justify-end md:pt-8">
               <img
-                src="/jono/jono-about.jpg"
-                alt="Jono Fox"
-                className="w-full rounded-2xl object-cover object-top max-h-[380px] md:max-h-[640px]"
+                src="/jono/jono-fox-principal-designer-aerospike.jpg"
+                alt="Jono Fox — Principal Product Designer at Aerospike, based in Germany"
+                className="w-full rounded-2xl object-cover object-top max-h-[380px] md:max-h-[700px]"
                 loading="lazy"
               />
             </div>

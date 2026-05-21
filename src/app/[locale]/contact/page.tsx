@@ -63,11 +63,11 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
           </div>
 
           {/* Right — portrait */}
-          <div className="flex justify-center md:justify-end">
+          <div className="flex justify-center md:justify-end md:pt-8">
             <img
-              src="/jono/jono-contact.jpg"
-              alt="Jono Fox"
-              className="w-full rounded-2xl object-cover object-top max-h-[380px] md:max-h-[560px]"
+              src="/jono/jono-fox-hire-product-designer.jpg"
+              alt="Jono Fox — Principal Product Designer available for senior IC and design leadership roles"
+              className="w-full rounded-2xl object-cover object-top max-h-[380px] md:max-h-[620px]"
               loading="lazy"
             />
           </div>

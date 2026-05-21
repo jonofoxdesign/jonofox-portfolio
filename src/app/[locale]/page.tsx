@@ -210,11 +210,11 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           </div>
 
           {/* Portrait */}
-          <div className="animate-fade-up-1 relative flex justify-center md:justify-end">
+          <div className="animate-fade-up-1 relative flex justify-center md:justify-end md:pt-8">
             <img
-              src="/jono/jono-hero.jpg"
-              alt="Jono Fox"
-              className="w-full rounded-2xl object-cover object-top max-h-[420px] md:max-h-[580px]"
+              src="/jono/jono-fox-product-designer.jpg"
+              alt="Jono Fox — Principal Product Designer specialising in developer tools and complex B2B products"
+              className="w-full rounded-2xl object-cover object-top max-h-[420px] md:max-h-[640px]"
               fetchPriority="high"
               loading="eager"
             />

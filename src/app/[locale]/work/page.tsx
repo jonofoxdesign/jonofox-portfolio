@@ -132,7 +132,7 @@ export default async function WorkPage({ params }: { params: Promise<{ locale: s
   const c = content[locale as keyof typeof content] ?? content.en;
 
   return (
-    <div className="pt-44">
+    <div className="pt-36 md:pt-44">
       <div className="max-w-6xl mx-auto px-6 pb-24">
         {/* Header */}
         <div className="mb-20 max-w-2xl">

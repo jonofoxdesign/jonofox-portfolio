@@ -129,7 +129,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   return (
     <div>
       {/* Hero — text only */}
-      <section className="pt-44 pb-24 bg-surface-light">
+      <section className="pt-36 md:pt-44 pb-24 bg-surface-light">
         <div className="max-w-6xl mx-auto px-6">
           <div className="max-w-3xl">
             <h1 className="font-display text-5xl md:text-6xl font-bold tracking-tight text-ink leading-tight mb-8">

@@ -30,7 +30,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
   const c = content[locale as keyof typeof content] ?? content.en;
 
   return (
-    <div className="pt-44 min-h-screen">
+    <div className="pt-36 md:pt-44 min-h-screen">
       <div className="max-w-6xl mx-auto px-6 pb-24">
         <div className="max-w-2xl">
 

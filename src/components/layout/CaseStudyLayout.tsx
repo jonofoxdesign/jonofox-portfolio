@@ -153,7 +153,7 @@ export default function CaseStudyLayout({ tag, title, intro, meta, children, loc
     prefersReducedMotion ? { duration: 0 } : { ...revealTransition, delay };
 
   return (
-    <div className="pt-44">
+    <div className="pt-36 md:pt-44">
       <div className="max-w-3xl mx-auto px-6 pb-24">
 
         {/* Tag */}

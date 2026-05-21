@@ -210,7 +210,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           </div>
 
           {/* Portrait */}
-          <div className="animate-fade-up-1 relative flex justify-center md:justify-end md:pt-8">
+          <div className="animate-fade-up-1 relative flex justify-center md:justify-end">
             <img
               src="/jono/jono-fox-product-designer.jpg"
               alt="Jono Fox — Principal Product Designer specialising in developer tools and complex B2B products"

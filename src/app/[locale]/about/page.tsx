@@ -148,7 +148,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
               </p>
               <TextLink href={contactHref}>{c.hero.contact}</TextLink>
             </div>
-            <div className="flex justify-center md:justify-end md:pt-8">
+            <div className="flex justify-center md:justify-end">
               <img
                 src="/jono/jono-fox-principal-designer-aerospike.jpg"
                 alt="Jono Fox — Principal Product Designer at Aerospike, based in Germany"

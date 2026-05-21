@@ -49,16 +49,16 @@
 }
 
 @font-face {
-  font-family: "PP Kyoto";
-  src: url("/fonts/PPKyoto-Extrabold.otf") format("opentype");
-  font-weight: 800;
+  font-family: "GT Alpina";
+  src: url("/fonts/GT-Alpina-Standard-Bold-Trial.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "PP Kyoto";
-  src: url("/fonts/PPKyoto-Medium.otf") format("opentype");
+  font-family: "GT Alpina";
+  src: url("/fonts/GT-Alpina-Standard-Medium-Trial.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -82,7 +82,7 @@
 
 @theme {
   /* Fonts */
-  --font-display: "PP Kyoto", serif;
+  --font-display: "GT Alpina", serif;
   --font-sans: "PP Radio Grotesk", sans-serif;
 
   /* Ink (text) */

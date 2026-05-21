@@ -68,14 +68,14 @@ export default function Nav() {
             </Link>
 
             {/* Centre — nav links */}
-            <nav aria-label="Main navigation" className="flex items-center justify-center gap-6">
+            <nav aria-label="Main navigation" className="flex items-center justify-center gap-10">
               {links.map((link) => {
                 const isActive = pathname === link.href || pathname.startsWith(link.href + "/");
                 return (
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`text-sm font-medium transition-[color,border-color] duration-200 pb-0.5 border-b-2 ${
+                    className={`text-base font-normal transition-[color,border-color] duration-200 pb-0.5 border-b-2 ${
                       isActive
                         ? "text-ink border-fox"
                         : "text-ink-secondary border-transparent hover:text-ink hover:border-ink"

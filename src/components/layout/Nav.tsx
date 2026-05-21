@@ -50,10 +50,10 @@ export default function Nav() {
       )}
     </AnimatePresence>
     <header className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-4 px-4">
-      <div className="w-full max-w-6xl">
+      <div className="w-full md:w-auto">
         {/* Main bar */}
         <div
-          className="backdrop-blur-xl rounded-2xl px-6 h-16 flex items-center justify-between"
+          className="backdrop-blur-xl rounded-2xl px-8 h-14 flex items-center"
           style={{
             background: "linear-gradient(160deg, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.38) 100%)",
             boxShadow: "0 8px 32px rgba(31,45,61,0.12), 0 1.5px 0 0 rgba(255,255,255,0.9) inset, 0 -1px 0 0 rgba(255,255,255,0.2) inset",
@@ -61,7 +61,7 @@ export default function Nav() {
           }}
         >
           {/* Desktop: flat flex row — logo | 64px | links (40px gap) | 64px | toggle */}
-          <div className="flex-1 hidden md:flex items-center">
+          <div className="hidden md:flex items-center">
             {/* Logo — home link with active-state underline */}
             {(() => {
               const isHome = pathname === `/${locale}` || pathname === `/${locale}/`;
@@ -106,7 +106,7 @@ export default function Nav() {
           </div>
 
           {/* Mobile: logo left, hamburger right */}
-          <div className="flex md:hidden flex-1 items-center justify-between">
+          <div className="flex md:hidden w-full items-center justify-between">
             <Link href={localePath("/")} className="flex items-center gap-3">
               <LogoIcon />
               <span className="text-sm font-normal font-sans text-ink">Jono Fox</span>

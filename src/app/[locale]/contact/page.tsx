@@ -34,27 +34,31 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
       <div className="max-w-6xl mx-auto px-6 pb-24">
         <div className="max-w-2xl">
 
-        {/* Circle photo + heading */}
-        <div className="flex items-center gap-5 mb-8">
-          <h1 className="font-display text-5xl md:text-6xl font-bold tracking-tight text-ink leading-tight">
-            {c.heading} <span className="text-teal">{c.headingAccent}</span>
-          </h1>
-          <img
-            src="/jono/jono-fox-hire-product-designer-mobile.jpg"
-            alt="Jono Fox"
-            className="w-16 h-16 rounded-full object-cover object-top flex-shrink-0"
-            loading="eager"
-          />
-        </div>
+        {/* Heading */}
+        <h1 className="font-display text-5xl md:text-6xl font-bold tracking-tight text-ink leading-tight mb-8">
+          {c.heading} <span className="text-teal">{c.headingAccent}</span>
+        </h1>
 
-        <p className="text-xl font-medium text-ink leading-relaxed mb-3">
+        <p className="text-xl font-medium text-ink leading-relaxed mb-8">
           {c.subheading.split("\n").map((line, i) => (
             <span key={i}>{line}{i === 0 && <br />}</span>
           ))}
         </p>
-        <p className="text-lg text-ink-secondary leading-relaxed mb-10">
-          {c.body}
-        </p>
+
+        {/* Speech bubble card */}
+        <div className="flex items-start gap-4 mb-10">
+          <img
+            src="/jono/jono-fox-hire-product-designer-mobile.jpg"
+            alt="Jono Fox"
+            className="w-12 h-12 rounded-full object-cover object-top flex-shrink-0 mt-0.5"
+            loading="eager"
+          />
+          <div className="bg-white border border-surface-muted rounded-2xl rounded-tl-sm px-5 py-4 shadow-sm">
+            <p className="text-base text-ink leading-relaxed">
+              {c.body}
+            </p>
+          </div>
+        </div>
         <div className="flex flex-col sm:flex-row gap-4">
           <ButtonAnchor href="mailto:jonathanlouisfox@gmail.com" variant="teal">
             {c.email}

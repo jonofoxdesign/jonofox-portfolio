@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useParams } from "next/navigation";
+import Logo from "@/components/ui/Logo";
 
 export default function Footer() {
   const params = useParams();
@@ -22,7 +23,7 @@ export default function Footer() {
         {/* Left — logo + links */}
         <div className="flex items-center gap-8">
           <Link href={localePath("/")}>
-            <img src="/logo.svg" alt="Jono Fox" className="h-10 w-auto" />
+            <Logo />
           </Link>
           <nav aria-label="Footer navigation" className="flex items-center gap-6">
             {links.map((link) => (

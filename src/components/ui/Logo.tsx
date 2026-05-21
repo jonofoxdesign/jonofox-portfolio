@@ -2,7 +2,7 @@ export default function Logo() {
   return (
     <div className="flex items-center gap-3">
       {/* Fox tail icon — clean Vector.svg, 60×60 viewBox */}
-      <svg width="28" height="28" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="32" height="32" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <linearGradient id="logo-grad" x1="1.76465" y1="30" x2="57.8904" y2="30" gradientUnits="userSpaceOnUse">
             <stop stopColor="#F37227"/>

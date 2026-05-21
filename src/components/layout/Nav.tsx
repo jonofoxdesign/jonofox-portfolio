@@ -53,7 +53,7 @@ export default function Nav() {
       <div className="w-full md:w-auto">
         {/* Main bar */}
         <div
-          className="backdrop-blur-xl rounded-2xl px-8 h-14 flex items-center"
+          className="backdrop-blur-xl rounded-2xl px-5 h-14 flex items-center"
           style={{
             background: "linear-gradient(160deg, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.38) 100%)",
             boxShadow: "0 8px 32px rgba(31,45,61,0.12), 0 1.5px 0 0 rgba(255,255,255,0.9) inset, 0 -1px 0 0 rgba(255,255,255,0.2) inset",
@@ -68,7 +68,7 @@ export default function Nav() {
               return (
                 <Link href={localePath("/")} className="flex items-center gap-3">
                   <LogoIcon />
-                  <span className={`text-sm font-normal font-sans transition-[color,border-color] duration-200 pb-0.5 border-b-2 ${
+                  <span className={`text-sm font-normal font-sans transition-[color,border-color] duration-200 pb-0.5 border-b-2 translate-y-0.5 ${
                     isHome
                       ? "text-ink border-fox"
                       : "text-ink-secondary border-transparent hover:text-ink hover:border-ink"
@@ -79,15 +79,15 @@ export default function Nav() {
               );
             })()}
 
-            {/* Nav links — 64px from logo */}
-            <nav aria-label="Main navigation" className="ml-16 flex items-center gap-10">
+            {/* Nav links — 64px from logo, fixed width to match DE locale */}
+            <nav aria-label="Main navigation" className="ml-16 flex items-center justify-center gap-10 min-w-[272px]">
               {links.map((link) => {
                 const isActive = pathname === link.href || pathname.startsWith(link.href + "/");
                 return (
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`text-sm font-normal transition-[color,border-color] duration-200 pb-0.5 border-b-2 ${
+                    className={`text-sm font-normal transition-[color,border-color] duration-200 pb-0.5 border-b-2 translate-y-0.5 ${
                       isActive
                         ? "text-ink border-fox"
                         : "text-ink-secondary border-transparent hover:text-ink hover:border-ink"

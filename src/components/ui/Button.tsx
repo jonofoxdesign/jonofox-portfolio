@@ -15,7 +15,7 @@ const base =
 
 const variants = {
   primary:   `${base} bg-fox-button text-ink hover:bg-fox-button-hover`,
-  teal:      `${base} bg-teal text-white hover:bg-teal-hover`,
+  teal:      `${base} bg-teal-button text-ink hover:bg-teal-button-hover`,
   outline:   `${base} gradient-border text-ink`,
   outlineLight: `${base} gradient-border text-white`,
 };

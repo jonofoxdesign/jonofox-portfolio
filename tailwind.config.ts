@@ -26,6 +26,8 @@ const config: Config = {
           hover: "#1C6960",
           subtle: "#E0F5F2",
           display: "#2A9D8F",
+          button: "#32B9A9",
+          "button-hover": "#2CA596",
         },
         fox: {
           DEFAULT: "#B85D00",

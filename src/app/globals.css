@@ -103,6 +103,9 @@
   --color-teal-subtle: #E0F5F2;
   /* Large-text tier (2026-08-14): original teal already clears the 3:1 large-text AA minimum (3.32:1), so heading accents can stay bright. Use only on bold text ≥24px (or ≥18.66px bold). */
   --color-teal-display: #2A9D8F;
+  /* Button tier (2026-08-14): white text capped teal at ~4.5:1 with almost no headroom to lighten (current #238377 was already basically the ceiling). Paired with dark ink text instead, the button can go brighter than even the original teal — #32B9A9 gives ink 5.76:1, #2CA596 (hover) gives ink 4.62:1. Only used by the teal button's own bg/hover/text classes. */
+  --color-teal-button: #32B9A9;
+  --color-teal-button-hover: #2CA596;
 
   /* Fox orange — darkened 2026-08-14 for WCAG AA text contrast (was #F57C00 / #DB6800, 2.70:1 / 3.50:1 vs white; now 4.56:1 / 5.83:1). Use for small text, buttons, links. */
   --color-fox: #B85D00;

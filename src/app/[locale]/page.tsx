@@ -200,7 +200,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               {c.hero.sub}
             </p>
             <div className="animate-fade-up-2 flex flex-col sm:flex-row gap-4">
-              <ButtonLink href={lp("/work")} variant="primary">
+              <ButtonLink href={lp("/work")} variant="teal">
                 {c.hero.cta1}
               </ButtonLink>
               <ButtonLink href={lp("/contact")} variant="outline">

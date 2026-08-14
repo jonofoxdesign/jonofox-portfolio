@@ -30,7 +30,7 @@ type LinkButtonProps = Omit<ComponentProps<typeof Link>, "className"> & {
 };
 
 export function ButtonLink({
-  variant = "primary",
+  variant = "teal",
   children,
   className,
   ...props
@@ -59,7 +59,7 @@ type AnchorButtonProps = Omit<
 };
 
 export function ButtonAnchor({
-  variant = "primary",
+  variant = "teal",
   children,
   className,
   ...props

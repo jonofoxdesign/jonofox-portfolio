@@ -192,9 +192,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           <div>
             <h1 className="animate-fade-up font-display text-5xl md:text-6xl font-bold tracking-tight leading-tight text-ink mb-6">
               {c.hero.headline1}{" "}
-              <span className="text-teal italic">{c.hero.headline2}</span>{" "}
+              <span className="text-teal-display italic">{c.hero.headline2}</span>{" "}
               {c.hero.headline3}{" "}
-              <span className="text-fox">{c.hero.headline4}</span>
+              <span className="text-fox-display">{c.hero.headline4}</span>
             </h1>
             <p className="animate-fade-up-1 text-lg text-ink-secondary leading-relaxed mb-8 max-w-lg">
               {c.hero.sub}
@@ -265,7 +265,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <section className="py-24 bg-surface-light">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-ink mb-10 md:mb-16">
-            {c.pillars.heading} <span className="text-teal">{c.pillars.headingAccent}</span>
+            {c.pillars.heading} <span className="text-teal-display">{c.pillars.headingAccent}</span>
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {c.pillars.items.map((pillar, i) => (
@@ -290,7 +290,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <section className="py-24">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-ink mb-10 md:mb-16">
-            {c.work.heading} <span className="text-fox">{c.work.headingAccent}</span>
+            {c.work.heading} <span className="text-fox-display">{c.work.headingAccent}</span>
           </h2>
           <div className="space-y-4">
             {c.work.cards.map((card, i) => (
@@ -346,7 +346,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-96 h-96 rounded-full bg-fox/10 blur-3xl pointer-events-none" />
         <div className="relative max-w-2xl mx-auto px-6 text-center">
           <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-4">
-            {c.cta.heading} <span className="text-fox">{c.cta.headingAccent}</span>
+            {c.cta.heading} <span className="text-fox-display">{c.cta.headingAccent}</span>
           </h2>
           <p className="text-ink-disabled mb-8 leading-relaxed">
             {c.cta.body}

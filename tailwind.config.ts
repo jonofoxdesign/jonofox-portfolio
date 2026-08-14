@@ -25,11 +25,13 @@ const config: Config = {
           DEFAULT: "#238377",
           hover: "#1C6960",
           subtle: "#E0F5F2",
+          display: "#2A9D8F",
         },
         fox: {
           DEFAULT: "#B85D00",
           hover: "#9E5000",
           subtle: "#FFF2E0",
+          display: "#E47300",
         },
       },
       fontFamily: {

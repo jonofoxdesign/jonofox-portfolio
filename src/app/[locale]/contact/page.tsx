@@ -36,7 +36,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
 
         {/* Heading */}
         <h1 className="font-display text-5xl md:text-6xl font-bold tracking-tight text-ink leading-tight mb-8">
-          {c.heading} <span className="text-teal">{c.headingAccent}</span>
+          {c.heading} <span className="text-teal-display">{c.headingAccent}</span>
         </h1>
 
         <p className="text-xl font-medium text-ink leading-relaxed mb-8">

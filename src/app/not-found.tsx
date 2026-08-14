@@ -7,7 +7,7 @@ export default function NotFound() {
         <div className="max-w-xl">
           <p className="text-xs font-semibold tracking-widest text-ink-disabled uppercase mb-6">404</p>
           <h1 className="font-display text-5xl md:text-6xl font-bold tracking-tight text-ink leading-tight mb-6">
-            Nothing to see <span className="text-teal">here</span>
+            Nothing to see <span className="text-teal-display">here</span>
           </h1>
           <p className="text-lg text-ink-secondary leading-relaxed mb-10">
             That page doesn't exist. Maybe it moved, maybe it never did. Either way, there's better stuff elsewhere.

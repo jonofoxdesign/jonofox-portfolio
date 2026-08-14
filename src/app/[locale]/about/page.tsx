@@ -134,7 +134,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
           <div className="max-w-3xl">
             <h1 className="font-display text-5xl md:text-6xl font-bold tracking-tight text-ink leading-tight mb-8">
               {c.hero.h1a}{" "}
-              <span className="text-teal">{c.hero.h1b}</span>
+              <span className="text-teal-display">{c.hero.h1b}</span>
             </h1>
             <p className="text-lg text-ink-secondary leading-relaxed mb-6">
               {c.hero.p1}
@@ -170,7 +170,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
             </div>
             <div>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-ink mb-6 md:mb-8">
-                {c.awards.heading} <span className="text-fox">{c.awards.headingAccent}</span>
+                {c.awards.heading} <span className="text-fox-display">{c.awards.headingAccent}</span>
               </h2>
               <p className="text-sm text-ink-secondary mb-6">{c.awards.descriptor}</p>
               <div className="grid grid-cols-2 gap-x-8 gap-y-3">
@@ -205,7 +205,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
       <section className="py-24 bg-surface-light">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-ink mb-8 md:mb-10">
-            {c.skills.heading} <span className="text-teal">{c.skills.headingAccent}</span>
+            {c.skills.heading} <span className="text-teal-display">{c.skills.headingAccent}</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-16 items-start">
             {/* Skills stacked */}
@@ -253,7 +253,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
       <section className="py-24 bg-surface">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-ink mb-8 md:mb-10">
-            {c.values.heading} <span className="text-fox">{c.values.headingAccent}</span>
+            {c.values.heading} <span className="text-fox-display">{c.values.headingAccent}</span>
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {c.values.items.map((v) => (

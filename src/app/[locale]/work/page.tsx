@@ -137,7 +137,7 @@ export default async function WorkPage({ params }: { params: Promise<{ locale: s
         {/* Header */}
         <div className="mb-20 max-w-2xl">
           <h1 className="font-display text-5xl md:text-6xl font-bold tracking-tight text-ink leading-tight mb-6">
-            {c.heading} <span className="text-teal">{c.headingAccent}</span> {c.heading2}
+            {c.heading} <span className="text-teal-display">{c.headingAccent}</span> {c.heading2}
           </h1>
           <p className="text-lg text-ink-secondary leading-relaxed">
             {c.sub}
@@ -187,7 +187,7 @@ export default async function WorkPage({ params }: { params: Promise<{ locale: s
         <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-96 h-96 rounded-full bg-fox/10 blur-3xl pointer-events-none" />
         <div className="relative max-w-2xl mx-auto px-6 text-center">
           <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-4">
-            {c.ctaHeading} <span className="text-teal">{c.ctaAccent}</span>
+            {c.ctaHeading} <span className="text-teal-display">{c.ctaAccent}</span>
           </h2>
           <p className="text-ink-disabled mb-8">
             {c.ctaBody}

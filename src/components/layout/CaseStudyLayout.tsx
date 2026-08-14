@@ -237,7 +237,7 @@ export default function CaseStudyLayout({ tag, title, intro, meta, children, loc
         <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-96 h-96 rounded-full bg-fox/10 blur-3xl pointer-events-none" />
         <div className="relative max-w-2xl mx-auto px-6 text-center">
           <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-4">
-            {c.heading} <span className="text-fox">{c.headingAccent}</span>
+            {c.heading} <span className="text-fox-display">{c.headingAccent}</span>
           </h2>
           <p className="text-ink-disabled mb-8 leading-relaxed">
             {c.body}

@@ -14,7 +14,7 @@ const base =
   "flex items-center justify-center px-6 py-3 rounded-xl font-medium font-sans text-base transition-colors";
 
 const variants = {
-  primary:   `${base} bg-fox text-white hover:bg-fox-hover`,
+  primary:   `${base} bg-fox-button text-ink hover:bg-fox-button-hover`,
   teal:      `${base} bg-teal text-white hover:bg-teal-hover`,
   outline:   `${base} gradient-border text-ink`,
   outlineLight: `${base} gradient-border text-white`,

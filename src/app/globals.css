@@ -110,6 +110,9 @@
   --color-fox-subtle: #FFF2E0;
   /* Large-text tier (2026-08-14): original fox fails even the 3:1 large-text minimum (2.70:1), so this is a lighter-but-still-passing shade (3.11:1) for heading accents. Use only on bold text ≥24px (or ≥18.66px bold). */
   --color-fox-display: #E47300;
+  /* Button tier (2026-08-14): white text forced the button background dark and muddy. Paired with dark ink text instead, the button can go back to the original bright orange and still pass — #F57C00 gives ink 5.17:1, #E57400 (hover) gives ink 4.55:1. Only used by the primary button's own bg/hover/text classes, nowhere else. */
+  --color-fox-button: #F57C00;
+  --color-fox-button-hover: #E57400;
 
   /* Indigo */
   --color-indigo: #5A4FCF;

@@ -32,6 +32,8 @@ const config: Config = {
           hover: "#9E5000",
           subtle: "#FFF2E0",
           display: "#E47300",
+          button: "#F57C00",
+          "button-hover": "#E57400",
         },
       },
       fontFamily: {

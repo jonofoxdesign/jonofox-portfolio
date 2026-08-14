@@ -16,7 +16,7 @@ const content = {
       headline2: "complex",
       headline3: "tools that feel",
       headline4: "clear",
-      sub: "Principal product designer for developer tools and complex enterprise systems. I help teams build things that are as understandable as they are powerful, and create the design foundations that scale with them.",
+      sub: "I'm a Principal Product Designer working on developer tools and complex enterprise systems. My job is making things people can actually understand, and building the design foundations that hold up as the team grows around them.",
       cta1: "See my work",
       cta2: "Get in contact",
     },

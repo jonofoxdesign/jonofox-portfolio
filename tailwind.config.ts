@@ -22,13 +22,13 @@ const config: Config = {
           inverse: "#1F2D3D",
         },
         teal: {
-          DEFAULT: "#2A9D8F",
-          hover: "#21867A",
+          DEFAULT: "#238377",
+          hover: "#1C6960",
           subtle: "#E0F5F2",
         },
         fox: {
-          DEFAULT: "#F57C00",
-          hover: "#DB6800",
+          DEFAULT: "#B85D00",
+          hover: "#9E5000",
           subtle: "#FFF2E0",
         },
       },

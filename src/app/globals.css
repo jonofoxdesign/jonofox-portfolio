@@ -97,14 +97,14 @@
   --color-surface-muted: #E5E7EB;
   --color-surface-inverse: #1F2D3D;
 
-  /* Teal */
-  --color-teal: #2A9D8F;
-  --color-teal-hover: #21867A;
+  /* Teal — darkened 2026-08-14 for WCAG AA text contrast (was #2A9D8F / #21867A, 3.13:1 / 4.42:1 vs white; now 4.58:1 / 6.48:1) */
+  --color-teal: #238377;
+  --color-teal-hover: #1C6960;
   --color-teal-subtle: #E0F5F2;
 
-  /* Fox orange */
-  --color-fox: #F57C00;
-  --color-fox-hover: #DB6800;
+  /* Fox orange — darkened 2026-08-14 for WCAG AA text contrast (was #F57C00 / #DB6800, 2.70:1 / 3.50:1 vs white; now 4.56:1 / 5.83:1) */
+  --color-fox: #B85D00;
+  --color-fox-hover: #9E5000;
   --color-fox-subtle: #FFF2E0;
 
   /* Indigo */

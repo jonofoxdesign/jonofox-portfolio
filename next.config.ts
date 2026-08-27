@@ -34,6 +34,9 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  // PostHog's API uses trailing slashes (/e/, /decide/). Without this,
+  // Next.js redirects them and event capture breaks.
+  skipTrailingSlashRedirect: true,
   images: {
     formats: ["image/webp"],
   },
@@ -44,6 +47,11 @@ const nextConfig: NextConfig = {
       {
         source: "/ingest/static/:path*",
         destination: "https://eu-assets.i.posthog.com/static/:path*",
+      },
+      // Remote config — served from the assets host for correct cache headers
+      {
+        source: "/ingest/array/:path*",
+        destination: "https://eu-assets.i.posthog.com/array/:path*",
       },
       {
         source: "/ingest/:path*",

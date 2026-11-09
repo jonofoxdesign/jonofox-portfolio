@@ -76,13 +76,9 @@ export default async function DesignSystemsPage({ params }: { params: Promise<{ 
             <p>Ich konzentrierte mich auf die Teile, die zwischen Teams am meisten Reibung erzeugten. Tokens als Grundlage: Farbe, Typografie, Abstände und Layout, einmal definiert und zwischen Design und Code gemappt. Komponenten mit klaren Zuständen und Verhalten, von Anfang an barrierefrei gebaut. Contribution-Regeln, die klar machten, wie sich das System weiterentwickelt. Und Dokumentation, die Entscheidungen erklärt, also nicht nur was man verwendet, sondern warum es existiert und wann.</p>
           </Section>
 
-          <Section heading="Dark Mode war das Symptom">
-            <p>Im August meldete eine unserer Frontend-Engineers, dass der Dark Mode in Voyager falsch aussah. Ich hielt es für ein Paletten-Problem und verbrachte einen ganzen Tag damit, Farben neu auszubalancieren. Jede Runde reparierte einen Screen und machte einen anderen kaputt.</p>
-            <p>Die Farben waren gar nicht das Problem. Teile der Oberfläche waren schnell gebaut worden, oft mit KI-Hilfe, mit hardgecodeten Hex-Werten statt Tokens. Ein Token ändert sich mit dem Theme. Ein Hex-Wert nicht. Die Dokumentation in Figma hatte das nicht verhindert, und Design-Reviews auch nicht.</p>
-            <p>Das war der Moment, in dem ich aufgehört habe, Figma als Quelle der Wahrheit zu behandeln. Wenn Menschen und Tools aus dem Code bauen, muss die Wahrheit im Code liegen.</p>
-          </Section>
 
           <Section heading="Eine Quelle, jede Ebene">
+            <p>Also habe ich die Wahrheit an einen Ort gelegt: in den Code. Jede andere Ebene liest von dort.</p>
             <p><strong className="text-ink">Code.</strong> Tokens, Komponenten und die Nutzungsregeln liegen im Repo. Was nicht gemergt ist, ist nicht Teil des Systems. Das ist die ganze Regel.</p>
             <p><strong className="text-ink">Skills.</strong> Aus vielen einzelnen Skill-Dateien wurden zwei. Eine zum Bauen: Komponenten, Layouts, Seiten, Tokens, Icons und Motion. Eine zum Prüfen. Claude, Cursor und Codex lesen dieselben Dateien wie das Team.</p>
             <p><strong className="text-ink">Storybook.</strong> Zieht seine Referenzen aus denselben Dateien und ersetzt die verstreuten Docs in Figma, Confluence und den Skills. Zu jeder Komponente steht, wann man sie nimmt, zum Beispiel Select oder Autocomplete. Das hilft Menschen und LLMs gleichermaßen, die richtige Variante zu wählen. Ein Link für alle, die UI bauen.</p>
@@ -139,13 +135,9 @@ export default async function DesignSystemsPage({ params }: { params: Promise<{ 
             <p>I focused on the parts that created the most friction between teams. Tokens as the foundation: colour, typography, spacing and layout, defined once and mapped between design and code. Components with clear states and behaviours, built with accessibility from the start. Contribution rules that made it clear how the system evolved. And documentation that explained decisions, so not just what to use, but why it existed and when.</p>
           </Section>
 
-          <Section heading="Dark mode was the symptom">
-            <p>In August, one of our frontend engineers flagged that Voyager&apos;s dark mode looked wrong. I took it as a palette problem and spent a whole day rebalancing colours. Each round fixed one screen and broke another.</p>
-            <p>The colours were fine. Parts of the interface had been built quickly, often with AI help, using hard-coded hex values instead of tokens. A token changes when the theme changes. A hex value doesn&apos;t. The documentation in Figma hadn&apos;t stopped that from happening, and neither had design review.</p>
-            <p>That was when I stopped treating Figma as the source of truth. If people and tools are building from the code, the truth has to live in the code.</p>
-          </Section>
 
           <Section heading="One source, every layer">
+            <p>So I put the truth in one place: the code. Every other layer reads from there.</p>
             <p><strong className="text-ink">Code.</strong> Tokens, components and the usage rules live in the repo. If it isn&apos;t merged, it isn&apos;t the system. That&apos;s the whole rule.</p>
             <p><strong className="text-ink">Skills.</strong> We went from a pile of separate skill files down to two. One for building: components, layouts, pages, tokens, icons and motion. One for checking. Claude, Cursor and Codex read the same files the team does.</p>
             <p><strong className="text-ink">Storybook.</strong> Pulls its reference material from those same files, and replaces the docs that used to be spread across Figma, Confluence and the skills. Each component says when to use it, like select versus autocomplete, which helps people and LLMs pick the right variant. One link for anyone building UI.</p>

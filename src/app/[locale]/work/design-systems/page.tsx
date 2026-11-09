@@ -90,7 +90,7 @@ export default async function DesignSystemsPage({ params }: { params: Promise<{ 
 
           <Section heading="Was sich für Designer geändert hat">
             <p>Designer bei Aerospike sollen keine Frontend-Engineers werden. Aber wir lesen Storybook, tauschen Props und Varianten und bringen kleine Änderungen selbst per Pull Request ein, etwa eine neue Chip-Variante. Ein Design-Ticket ist fertig, wenn es einen Figma-Link oder eine Claude-Spec gibt. Das Frontend-Ticket folgt danach.</p>
-            <p>Auch die KI-Seite ist einfacher geworden. Als meine Kollegin Krissi ihr Claude auf die aktuelle Theme-Bibliothek statt auf die alten Skill-Dateien gerichtet hat, wurde der Output sofort konsistenter. Es gab nur noch eine Stelle, an der es nachschauen konnte.</p>
+            <p>Auch die KI-Seite ist einfacher geworden. Als neue Designer im Team ihr Claude auf die aktuelle Theme-Bibliothek statt auf die alten Skill-Dateien gerichtet haben, wurde der Output sofort konsistenter. Es gab nur noch eine Stelle, an der es nachschauen konnte.</p>
           </Section>
 
           <CaseStudyImage wide src="/case-studies/design-systems/design-systems-change-flow.png" alt="Wie eine Änderung ins System kommt: Exploration, Pull Request, Validierung, menschliche Entscheidung, Merge" />
@@ -149,7 +149,7 @@ export default async function DesignSystemsPage({ params }: { params: Promise<{ 
 
           <Section heading="What changed for designers">
             <p>Designers at Aerospike aren&apos;t expected to become frontend engineers. But we read Storybook, swap props and variants, and raise small pull requests ourselves, like adding a new chip variant. A design ticket is done when there&apos;s a Figma link or a Claude spec. The frontend ticket follows from that.</p>
-            <p>The AI side got simpler too. When Krissi, the other designer on the team, pointed her Claude at the current theme library instead of the old skill files, the output got noticeably more consistent straight away. There was only one place left for it to look.</p>
+            <p>The AI side got simpler too. When new designers on the team pointed their Claude at the current theme library instead of the old skill files, the output got noticeably more consistent straight away. There was only one place left for it to look.</p>
           </Section>
 
           <CaseStudyImage wide src="/case-studies/design-systems/design-systems-change-flow.png" alt="How a change gets into the system: explore, pull request, validation, a person decides, merge" />

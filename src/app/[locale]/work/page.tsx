@@ -35,7 +35,7 @@ const content = {
       {
         tag: "MULTIPLE COMPANIES",
         title: "Design systems that designers, engineers, and AI tools all follow",
-        body: "Built systems from scratch across three companies, with a documentation layer at Aerospike that makes AI-generated output system-consistent by default.",
+        body: "Systems built from scratch at three companies. At Aerospike the source of truth moved into the code, so designers, engineers and AI tools all build from the same place.",
         cta: "View case study",
         href: "/work/design-systems",
         image: "/case-studies/design-systems/design-systems-hero.png",
@@ -75,7 +75,7 @@ const content = {
       {
         tag: "AEROSPIKE",
         title: "Kontrolle nach Bedarf. Sicherheit als Standard.",
-        body: "Ein Provisioning-Flow, der Teams ermöglicht, Aerospike-Cluster in unter 90 Sekunden zu starten – mit sicheren Standards oder tiefer Konfiguration und klarer Führung auf dem Weg.",
+        body: "Ein Provisioning-Flow, der Teams ermöglicht, Aerospike-Cluster in unter 90 Sekunden zu starten, mit sicheren Standards oder tiefer Konfiguration und klarer Führung auf dem Weg.",
         cta: "Fallstudie ansehen",
         href: "/work/aerospike-provisioning",
         image: "/case-studies/aerospike-provisioning/aerospike-cloud-provisioning-hero.png",
@@ -84,7 +84,7 @@ const content = {
       {
         tag: "AEROSPIKE",
         title: "Der Aha-Moment sollte nicht drei Tage dauern",
-        body: "End-to-End-Design von Aerospikes erstem visuellem Developer-Tool. Ein geführter Weg von der ersten Verbindung bis zum vollen Verständnis – mit einer Grundlage für KI-gestützte Workflows.",
+        body: "End-to-End-Design von Aerospikes erstem visuellem Developer-Tool. Ein geführter Weg von der ersten Verbindung bis zum vollen Verständnis, mit einer Grundlage für KI-gestützte Workflows.",
         cta: "Fallstudie ansehen",
         href: "/work/aerospike-voyager",
         image: "/case-studies/aerospike-voyager/aerospike-voyager-data-browser-hero.png",
@@ -93,7 +93,7 @@ const content = {
       {
         tag: "MEHRERE UNTERNEHMEN",
         title: "Design Systems, die Designer, Entwickler und KI-Tools gleichermaßen befolgen",
-        body: "Systeme von Grund auf in drei Unternehmen aufgebaut – mit einer Dokumentationsebene bei Aerospike, die KI-generierten Output standardmäßig systemkonsistent macht.",
+        body: "Systeme von Grund auf in drei Unternehmen aufgebaut. Bei Aerospike ist die Quelle der Wahrheit in den Code gewandert, sodass Designer, Engineers und KI-Tools alle aus derselben Stelle bauen.",
         cta: "Fallstudie ansehen",
         href: "/work/design-systems",
         image: "/case-studies/design-systems/design-systems-hero.png",

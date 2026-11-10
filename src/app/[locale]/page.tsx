@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Jono Fox — Principal Product Designer",
-  description: "Jono Fox — Principal Product Designer specialising in developer tools, design systems, and complex B2B products. Aerospike, Sygnum Bank, Goodlife. Available for senior IC and design leadership roles.",
+  title: "Jono Fox | Principal Product Designer",
+  description: "Jono Fox | Principal Product Designer specialising in developer tools, design systems, and complex B2B products. Aerospike, Sygnum Bank, Goodlife. Available for senior IC and design leadership roles.",
 };
 import { ButtonLink, ButtonAnchor, TextLink } from "@/components/ui/Button";
 import TestimonialCarousel from "@/components/ui/TestimonialCarousel";
@@ -28,7 +28,7 @@ const content = {
       items: [
         {
           title: "Design systems that designers, engineers, and AI tools can trust",
-          body: "A design system only works if everyone uses it. So I build them as shared infrastructure: tokens, components, contribution rules, and documentation that holds up as teams grow. At Aerospike I took that further, building a structured layer that AI tools use to generate output that's system-consistent by default. That's increasingly the part that matters.",
+          body: "A design system only works if everyone uses it, and these days that includes the AI tools building alongside the team. So I build them as shared infrastructure: tokens, components, contribution rules and documentation. At Aerospike the code is the source of truth. Storybook, the skill files AI tools read, and Figma all follow from it, and a check on every pull request shows where things have drifted.",
         },
         {
           title: "Make developer tools feel approachable without dumbing them down",
@@ -65,7 +65,7 @@ const content = {
         {
           tag: "MULTIPLE COMPANIES",
           title: "Design systems that designers, engineers, and AI tools all follow",
-          body: "Built systems from scratch across three companies, with a documentation layer at Aerospike that makes AI-generated output system-consistent by default.",
+          body: "Systems built from scratch at three companies. At Aerospike the source of truth moved into the code, so designers, engineers and AI tools all build from the same place.",
           cta: "View case study",
           href: "/work/design-systems",
           image: "/case-studies/design-systems/design-systems-hero.png",
@@ -103,7 +103,7 @@ const content = {
       items: [
         {
           title: "Design Systems, auf die Designer, Entwickler und KI-Tools vertrauen können",
-          body: "Ein Design System funktioniert nur, wenn alle es verwenden. Daher baue ich sie als gemeinsame Infrastruktur: Tokens, Komponenten, Contribution-Regeln und Dokumentation, die auch mit wachsenden Teams standhält. Bei Aerospike bin ich noch weiter gegangen – mit einer strukturierten Ebene, die KI-Tools nutzen, um standardmäßig systemkonsistenten Output zu erzeugen. Genau das ist es, was zunehmend zählt.",
+          body: "Ein Design System funktioniert nur, wenn alle es verwenden, und dazu gehören heute auch die KI-Tools, die neben dem Team bauen. Daher baue ich sie als gemeinsame Infrastruktur: Tokens, Komponenten, Contribution-Regeln und Dokumentation. Bei Aerospike ist der Code die Quelle der Wahrheit. Storybook, die Skill-Dateien, die KI-Tools lesen, und Figma folgen alle daraus, und eine Prüfung bei jedem Pull Request zeigt, wo etwas abgedriftet ist.",
         },
         {
           title: "Developer-Tools zugänglich machen, ohne sie zu vereinfachen",
@@ -122,7 +122,7 @@ const content = {
         {
           tag: "AEROSPIKE",
           title: "Kontrolle nach Bedarf. Sicherheit als Standard.",
-          body: "Ein Provisioning-Flow, der Teams ermöglicht, Aerospike-Cluster in unter 90 Sekunden zu starten – mit sicheren Standards oder tiefer Konfiguration und klarer Führung auf dem Weg.",
+          body: "Ein Provisioning-Flow, der Teams ermöglicht, Aerospike-Cluster in unter 90 Sekunden zu starten, mit sicheren Standards oder tiefer Konfiguration und klarer Führung auf dem Weg.",
           cta: "Fallstudie ansehen",
           href: "/work/aerospike-provisioning",
           image: "/case-studies/aerospike-provisioning/aerospike-cloud-provisioning-hero.png",
@@ -131,7 +131,7 @@ const content = {
         {
           tag: "AEROSPIKE",
           title: "Der Aha-Moment sollte nicht drei Tage dauern",
-          body: "End-to-End-Design von Aerospikes erstem visuellem Developer-Tool. Ein geführter Weg von der ersten Verbindung bis zum vollen Verständnis – mit einer Grundlage für KI-gestützte Workflows.",
+          body: "End-to-End-Design von Aerospikes erstem visuellem Developer-Tool. Ein geführter Weg von der ersten Verbindung bis zum vollen Verständnis, mit einer Grundlage für KI-gestützte Workflows.",
           cta: "Fallstudie ansehen",
           href: "/work/aerospike-voyager",
           image: "/case-studies/aerospike-voyager/aerospike-voyager-data-browser-hero.png",
@@ -140,7 +140,7 @@ const content = {
         {
           tag: "MEHRERE UNTERNEHMEN",
           title: "Design Systems, die Designer, Entwickler und KI-Tools gleichermaßen befolgen",
-          body: "Systeme von Grund auf in drei Unternehmen aufgebaut – mit einer Dokumentationsebene bei Aerospike, die KI-generierten Output standardmäßig systemkonsistent macht.",
+          body: "Systeme von Grund auf in drei Unternehmen aufgebaut. Bei Aerospike ist die Quelle der Wahrheit in den Code gewandert, sodass Designer, Engineers und KI-Tools alle aus derselben Stelle bauen.",
           cta: "Fallstudie ansehen",
           href: "/work/design-systems",
           image: "/case-studies/design-systems/design-systems-hero.png",
@@ -215,7 +215,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               <source media="(min-width: 768px)" srcSet="/jono/jono-fox-product-designer.jpg" />
               <img
                 src="/jono/jono-fox-product-designer-mobile.jpg"
-                alt="Jono Fox — Principal Product Designer specialising in developer tools and complex B2B products"
+                alt="Jono Fox | Principal Product Designer specialising in developer tools and complex B2B products"
                 className="w-full rounded-2xl object-cover object-top max-h-[420px] md:max-h-[640px]"
                 fetchPriority="high"
                 loading="eager"

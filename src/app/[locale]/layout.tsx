@@ -19,13 +19,13 @@ export async function generateMetadata({
   return {
     title: {
       default: isDE
-        ? "Jono Fox — Principal Product Designer"
-        : "Jono Fox — Principal Product Designer",
+        ? "Jono Fox | Principal Product Designer"
+        : "Jono Fox | Principal Product Designer",
       template: "%s | Jono Fox",
     },
     description: isDE
       ? "Principal Product Designer für Developer Tools, Design Systems und komplexe B2B-Produkte. Aerospike, Sygnum Bank, Goodlife. Verfügbar für Senior-IC- und Design-Leadership-Rollen."
-      : "Jono Fox — Principal Product Designer specialising in developer tools, design systems, and complex B2B products. Aerospike, Sygnum Bank, Goodlife. Available for senior IC and design leadership roles.",
+      : "Jono Fox | Principal Product Designer specialising in developer tools, design systems, and complex B2B products. Aerospike, Sygnum Bank, Goodlife. Available for senior IC and design leadership roles.",
     metadataBase: new URL("https://jonofox.com"),
     openGraph: {
       type: "website",
@@ -33,7 +33,7 @@ export async function generateMetadata({
       alternateLocale: isDE ? "en_US" : "de_DE",
       url: `https://jonofox.com/${locale}`,
       siteName: "Jono Fox",
-      title: "Jono Fox — Principal Product Designer",
+      title: "Jono Fox | Principal Product Designer",
       description:
         "Principal product designer for developer tools and complex systems.",
       images: [
@@ -41,13 +41,13 @@ export async function generateMetadata({
           url: "/og-image.png",
           width: 1200,
           height: 630,
-          alt: "Jono Fox — Principal Product Designer",
+          alt: "Jono Fox | Principal Product Designer",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Jono Fox — Principal Product Designer",
+      title: "Jono Fox | Principal Product Designer",
       description:
         "Principal product designer for developer tools and complex systems.",
       images: ["/og-image.png"],
@@ -86,7 +86,7 @@ export default async function LocaleLayout({
     email: "jonathanlouisfox@gmail.com",
     jobTitle: "Principal Product Designer",
     description:
-      "Principal Product Designer specialising in developer tools, design systems, and complex B2B enterprise products. 6+ years in product design, 9 years as an Art Director. Based in Herxheim bei Landau, Germany — working fully remote. Open to in-person roles within Germany. Available for senior IC and design leadership roles.",
+      "Principal Product Designer specialising in developer tools, design systems, and complex B2B enterprise products. 6+ years in product design, 9 years as an Art Director. Based in Herxheim bei Landau, Germany, working fully remote. Open to in-person roles within Germany. Available for senior IC and design leadership roles.",
     homeLocation: {
       "@type": "Place",
       name: "Herxheim bei Landau, Germany",

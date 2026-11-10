@@ -3,7 +3,7 @@ import { ButtonAnchor, TextLink } from "@/components/ui/Button";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Jono Fox — Principal Product Designer with 6+ years in product and 9 years as an Art Director. Specialist in developer tools, design systems, DevEx, and enterprise B2B products. Expert in Figma and AI-augmented design workflows.",
+  description: "Jono Fox | Principal Product Designer with 6+ years in product and 9 years as an Art Director. Specialist in developer tools, design systems, DevEx, and enterprise B2B products. Works across Figma, code and AI-assisted workflows.",
 };
 
 const roles = [
@@ -47,7 +47,7 @@ const content = {
       whatIDo: "What I do",
       howIWork: "How I work",
       howIThinkItems: ["Deep focus", "Systems thinking", "Decision driven", "Asks 'Why' a lot", "Pattern recognition", "Team mentoring"],
-      whatIDoItems: ["DevEx design", "Scalable design systems", "Figma libraries", "AI-augmented workflows", "Product strategy", "User research"],
+      whatIDoItems: ["DevEx design", "Scalable design systems", "Figma & Storybook", "AI-augmented workflows", "Product strategy", "User research"],
       howIWorkItems: ["Feedback friendly", "Problem-first", "Shares early", "Human-centered", "Cuts complexity", "Pragmatic polish"],
     },
     values: {
@@ -64,7 +64,7 @@ const content = {
         },
         {
           title: "Ask 'how can this be more fun?'",
-          body: "There should always be time to step back and ask this. I want to create the small moments that people notice without knowing why — the things that make a product feel properly finished.",
+          body: "There should always be time to step back and ask this. I want to create the small moments people notice without knowing why. They're what makes a product feel properly finished.",
         },
       ],
     },
@@ -97,7 +97,7 @@ const content = {
       whatIDo: "Was ich tue",
       howIWork: "Wie ich arbeite",
       howIThinkItems: ["Tiefe Konzentration", "Systemdenken", "Entscheidungsorientiert", "Fragt oft 'Warum'", "Mustererkennung", "Team-Mentoring"],
-      whatIDoItems: ["DevEx Design", "Skalierbare Design Systems", "Figma-Bibliotheken", "KI-gestützte Workflows", "Produktstrategie", "Nutzerforschung"],
+      whatIDoItems: ["DevEx Design", "Skalierbare Design Systems", "Figma & Storybook", "KI-gestützte Workflows", "Produktstrategie", "Nutzerforschung"],
       howIWorkItems: ["Feedbackoffen", "Problemorientiert", "Teilt früh", "Menschenzentriert", "Reduziert Komplexität", "Pragmatische Sorgfalt"],
     },
     values: {
@@ -114,7 +114,7 @@ const content = {
         },
         {
           title: "Fragen: 'Wie kann das mehr Spaß machen?'",
-          body: "Es sollte immer Zeit geben, einen Schritt zurückzutreten und das zu fragen. Ich möchte die kleinen Momente schaffen, die Menschen bemerken, ohne zu wissen warum – die Dinge, die ein Produkt wirklich fertig wirken lassen.",
+          body: "Es sollte immer Zeit geben, einen Schritt zurückzutreten und das zu fragen. Ich möchte die kleinen Momente schaffen, die Menschen bemerken, ohne zu wissen, warum. Sie lassen ein Produkt wirklich fertig wirken.",
         },
       ],
     },
@@ -240,7 +240,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
               <source media="(min-width: 768px)" srcSet="/jono/jono-fox-principal-designer-aerospike.jpg" />
               <img
                 src="/jono/jono-fox-principal-designer-aerospike-mobile.jpg"
-                alt="Jono Fox — Principal Product Designer at Aerospike, based in Germany"
+                alt="Jono Fox | Principal Product Designer at Aerospike, based in Germany"
                 className="w-full rounded-2xl object-cover object-top max-h-[360px] md:max-h-[400px]"
                 loading="lazy"
               />
